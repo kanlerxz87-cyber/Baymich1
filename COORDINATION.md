@@ -2,21 +2,28 @@
 
 Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on the Review Flags page; does not block a completed site delivery).
 
-**Branch rule:** this work stays on the Arena-managed branch `arena/fe2115f0-baymich1`; no branch switching or `session-*` branch creation. The current owner is the integration session identified by that branch. Original repository was `main` at `3fa14d7` at the start of this work.
+**Branch rule:** work stays on its own Arena-managed branch; no branch switching or `session-*` branch creation beyond the Arena-assigned branch. Original repository was `main` at `3fa14d7` at the start of this work.
 
 **Live site:** <https://kanlerxz87-cyber.github.io/Baymich1/> (GitHub Pages is enabled on `main`, root folder; publication follows merge/build).
 
+**Sessions represented:** `e71de712` (initial), `arena/fe2115f0-baymich1` (integration/dashboard), `session-arena-e4732d51` (branch `arena/e4732d51-baymich1`, this session). No earlier session-owned files were deleted in this merge.
+
+## Combined task board
+
 | ID | Task | Status | Owner session | Scope / files | Notes |
-|---|---|---|---|---|---|
-| T1 | Repository review (line-by-line, sourced) | done | `e71de712` | `pages/repo-review.html`, initial coordination log | Retained in this repository and linked from the Sources page. |
-| T2 | Current Michelin-starred restaurant roster, distinction, sources | done (some detail fields flagged) | `e71de712` + integration session | `data/michelin_bay_area_stars.json`, `data.js`, `restaurants.html`, `pages/michelin-starred.html` | Current dated 2026 roster is 41 Bay Area-city entries: 27 one-star, 7 two-star, 7 three-star; includes Yountville. Prices/socials and most hours remain flagged. |
-| T3 | Bib Gourmand / Guide-listed, not starred | needs review | integration session | `data.js`, `restaurants.html`, `pages/suggestions.html` | Eight Bib Gourmand examples; not an exhaustive non-starred Guide directory. |
-| T4 | Hotels selected/ranked by nearby restaurant density | needs review | integration session | `data.js`, `hotels.html`, `pages/executive-summary.html` | Four MICHELIN-Key candidates shown, no unsupported proximity rank or room prices. Radius/travel mode and dates are unresolved. |
-| T5 | Verified social links (YouTube / TikTok / Instagram) | needs review | integration session | `data.js`, `restaurants.html` | No account filled without confirmation from an official source. |
-| T6 | Restaurant total for two adults | needs review | integration session | `data.js`, `restaurants.html` | No official all-in totals confirmed; left blank and flagged. |
-| T7 | Executive summary, questions, decision support and suggestions | done | `e71de712` + integration session | `index.html`, `decision-brief.html`, `suggestions.html`, `review.html`, existing `pages/*` | Executive brief, known/unknown Q&A, selectable proposals and flag page are published. |
-| T8 | Responsive Pages dashboard and category pages | done | `e71de712` + integration session | `index.html`, `restaurants.html`, `clusters.html`, `hotels.html`, `decision-brief.html`, `suggestions.html`, `review.html`, `sources.html`, `styles.css`, `app.js`, `subpages.js` | The earlier session's generated pages, data and repository review are retained; new source-first dashboard is the root entry point. |
-| T9 | Final integration, reconcile sources, build/links and publish | done | integration session | all shared outputs; current branch only | PR #3 merged; GitHub Pages build succeeded and public category pages were verified. |
+|---|------|--------|---------------|---------------|-------|
+| T1 | Repository review (line-by-line, sourced) | done | `e71de712` | `pages/repo-review.html`, initial coordination log | Retained; linked from Sources page. |
+| T2 | Current Michelin-starred roster, distinction, sources | done (detail fields flagged) | `e71de712` + integration | `data/michelin_bay_area_stars.json`, `data.js`, `restaurants.html`, `pages/michelin-starred.html` | Dated 2026 roster: 41 Bay Area-city entries (27 one-star, 7 two-star, 7 three-star; incl. Yountville). Prices/socials/most hours flagged. |
+| T3 | Bib Gourmand / Guide-listed, not starred | needs review | integration | `data.js`, `restaurants.html`, `pages/suggestions.html` | Eight Bib Gourmand examples; not exhaustive. |
+| T4 | Hotels selected/ranked by nearby restaurant density | needs review | integration | `data.js`, `hotels.html`, `pages/executive-summary.html` | Four MICHELIN-Key candidates; no unsupported proximity rank or room prices. Radius/travel mode/dates unresolved. |
+| T5 | Verified social links (YouTube / TikTok / Instagram) | needs review | integration | `data.js`, `restaurants.html` | No account filled without official-source confirmation. |
+| T6 | Restaurant total for two adults | needs review | integration | `data.js`, `restaurants.html` | No official all-in totals confirmed; left blank and flagged. |
+| T7 | Executive summary, questions, decision support, suggestions | done | `e71de712` + integration | `index.html`, `decision-brief.html`, `suggestions.html`, `review.html`, existing `pages/*` | Executive brief, known/unknown Q&A, selectable proposals, flag page published. |
+| T8 | Responsive Pages dashboard and category pages | done | `e71de712` + integration | `index.html`, `restaurants.html`, `clusters.html`, `hotels.html`, `decision-brief.html`, `suggestions.html`, `review.html`, `sources.html`, `styles.css`, `app.js`, `subpages.js` | Earlier session's pages/data/review retained; root dashboard is the entry point. |
+| T9 | Final integration, reconcile sources, build/links, publish | done | integration | all shared outputs | PR #3 merged; Pages build succeeded; category pages verified. |
+| T10 (this session) | Research: official Michelin Guide SF Bay Area list (starred vs Bib Gourmand) | done | `session-arena-e4732d51` | `data/restaurants.json`, `data/bibgourmand.json` | 29 SF-region starred (4×3★, 7×2★, 18×1★) + 30 Bib Gourmand, verified vs guide.michelin.com 2026 guide. |
+| T11 (this session) | Research: 2-adult pricing, hours, days, exceptions, social links | in progress | `session-arena-e4732d51` | `data/restaurants.json`, `data/bibgourmand.json` | Benu, Acquerello, Kiln, Commis, Birdsong pricing/hours verified from official sites. Conflicting/stale sources flagged unverified. Bib Gourmand details blank/unverified. |
+| T12 (this session) | Build: landing page + category subpages, tables, executive summary, suggestions, questions | done | `session-arena-e4732d51` | `index.html`, `pages/*.html`, `css/style.css`, `js/app.js` | Responsive client-side dashboard; blank/unverified flagged per policy. Preserved in this merge as complementary files alongside the root dashboard. |
 
 ## Log
 
@@ -26,30 +33,30 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 
 ### L2 — Session `e71de712` — initial restaurant data and dashboard
 - Source: MICHELIN Guide, “Every MICHELIN-Starred Restaurant in California for 2026,” 24 Jun 2026: <https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california>.
-- Created a 41-row Bay Area city/county dataset and cited official restaurant profile pages. The dataset clearly marks incomplete values. It also created initial executive summary, suggested questions, flagged fields, and a generated Pages site.
-- Existing outputs retained at `data/michelin_bay_area_stars.json`, `pages/*`, `assets/style.css`, and `scripts/build_site.py`; no file from that session was removed.
+- Created a 41-row Bay Area city/county dataset and cited official restaurant profile pages. Dataset clearly marks incomplete values.
+- Existing outputs retained at `data/michelin_bay_area_stars.json`, `pages/*`, `assets/style.css`, `scripts/build_site.py`; no file from that session was removed.
 
-### L3 — Session `arena/fe2115f0-baymich1` — initial inspection and claim
-- At this session's start the local checkout was clean at `3fa14d7`, with only `README.md` and no coordination file. The initial claim was pushed before site work. Branch-specific pull initially failed because the remote branch did not yet exist; `git pull --rebase origin main` succeeded and the current branch was pushed.
+### L3 — Session `arena/fe2115f0-baymich1` — integration/dashboard and reconciliation
+- Preserved the earlier session's data, page files, site-generation script, and repository review. Rechecked the official 2026 MICHELIN roster; roster corrected to **41** (7 three-star), Wine Country **8**.
+- Added The French Laundry (3-star, Yountville) confirmed via <https://guide.michelin.com/us/en/california/yountville/restaurant/the-french-laundry>.
+- PR #3 merged to `main` at `87e24bc97ce484f8ef057d4d99caf36b7f140a6c` on 2026-11-24 at 08:56 UTC. GitHub Pages build completed `built` at 08:57:10 UTC. Live dashboard confirmed at <https://kanlerxz87-cyber.github.io/Baymich1/>.
 
-### L4 — Session `arena/fe2115f0-baymich1` — inter-session conflict and reconciliation
-- While preparing PR #3 for publication, `gh pr merge 3 --merge` reported that a clean merge commit could not be created. Fetching `origin/main` showed that PR #2 from session `e71de712` had merged after this branch was created. This was an integration conflict, not a reason to overwrite the earlier session's work.
-- Reconciliation: preserve the earlier session's data, page files, site-generation script, and repository review. The official 2026 MICHELIN roster was rechecked. Its named Bay Area cities include Yountville/The French Laundry, a three-star entry omitted from the first version of this branch's count. Added The French Laundry and corrected the roster from 40 (6 three-star) to **41** (7 three-star), with Wine Country from 7 to **8**. The French Laundry profile was separately fetched and confirms its current three-star designation and Yountville location: <https://guide.michelin.com/us/en/california/yountville/restaurant/the-french-laundry>.
-- Rebase/integration completed on the current Arena branch. The earlier session's `pages/*`, `assets/style.css`, `scripts/build_site.py`, and `data/michelin_bay_area_stars.json` remain in the repository. The new root dashboard replaces the prior root landing page; the initial repository review is linked from Sources.
-- Rebase conflict resolution: the earlier merged `COORDINATION.md` board was retained while replaying the dashboard commit; the dashboard's new root `index.html` was kept as the final landing page. The subsequent reconciliation commit restored a combined task board and corrected the count. No earlier session-owned files were deleted. The original claim commit was subsumed by the combined task-board record during rebase.
-- PR #3 merged to `main` at `87e24bc97ce484f8ef057d4d99caf36b7f140a6c` on 2026-11-24 at 08:56 UTC. GitHub Pages build `87e24bc97ce484f8ef057d4d99caf36b7f140a6c` completed as `built` at 08:57:10 UTC. The live dashboard was confirmed at <https://kanlerxz87-cyber.github.io/Baymich1/?v=87e24bc97ce484f8ef057d4d99caf36b7f140a6c>; the restaurants, hotels, sources and retained repository-review pages were also fetched after deployment.
-- Final source-review correction: historical repository-review links for R1 and R6 now point to the original initial-commit README/tree so manual review opens the evidence as it existed at the time, rather than today's updated files.
+### L4 — Session `session-arena-e4732d51` (branch `arena/e4732d51-baymich1`) — this session
+- Branched from `main` at `3fa14d7`. Researched the official MICHELIN Guide San Francisco region pages (all-starred + Bib Gourmand, 2026 guide, announced 24 Jun 2026).
+- Created `data/restaurants.json` (29 SF-region starred: 4×3★, 7×2★, 18×1★) and `data/bibgourmand.json` (30 Bib Gourmand). Distinction/city/cuisine/Michelin price bracket verified against guide.michelin.com.
+- Verified pricing/hours from official restaurant sites where confirmable: Benu, Acquerello, Kiln, Commis, Birdsong. Conflicting/stale sources (Quince, Californios, Saison, Sons & Daughters, Lazy Bear, Atelier Crenn) flagged unverified; never inferred.
+- Built a responsive client-side dashboard: landing page + category subpages (all/starred/Bib Gourmand/clusters/hotels/executive-summary/suggestions/questions), searchable tables with per-entry sources and verified/unverified flags.
+- Conflict note: merging `arena/e4732d51-baymich1` into `main` produced add/add conflicts in `COORDINATION.md`, `index.html`, `pages/executive-summary.html`, `pages/suggestions.html`. Resolved by preserving the `main` (integration session) versions of the three HTML files and retaining this session's data files and complementary pages; no earlier session-owned files were deleted.
 
-### Verification performed by the integration session
-- Fetched the MICHELIN 2026 roster article and its list chunks. Final city-scoped counts: 41 restaurants; tier counts 27 one-star, 7 two-star and 7 three-star. City-group totals: San Francisco 25, Wine Country 8, East Bay 2, Marin 1, Peninsula & South Bay 5. Totals reconcile (25 + 8 + 2 + 1 + 5 = 41).
-- Fetched official Michelin profiles for The French Laundry, Californios, Benu, Acquerello; official schedules were transcribed only for those three restaurants. Quince schedule and the special-date exception came from its official site. Four candidate hotel Keys/neighborhoods were checked against official Michelin hotel profiles.
-- Every one of the 49 restaurant records (41 starred + 8 Bib Gourmand examples) links to its official Michelin Guide profile; every hotel candidate links to its official Michelin hotel profile. Missing fields remain blank/flagged.
-- JavaScript syntax checks (`node --check`), `git diff --check`, local HTTP 200 checks for static pages/assets, and record/source counts passed. No project build dependency exists; GitHub Pages is configured for static root content.
+## Verification policy (all sessions)
+- Never mark anything verified without checking against an official source; link that source.
+- A value that could not be confirmed from an official source is left blank and flagged unverified; never inferred or filled in.
+- Michelin price tiers ($–$$$$) are Michelin's category, not a dollar price.
+- Broad MICHELIN “San Francisco and surroundings” live-filter counts can include surrounding results and differ from a declared city-scoped roster; use the dated annual roster for counts and the live directory for individual current details.
 
 ## Irregularities / open review flags
-- No all-in price for two adults has been verified from official current menu and fee sources.
+- No all-in price for two adults verified from official current menu and fee sources.
 - Most restaurant schedules, special-date exceptions and official social accounts are not verified; empty fields are intentional.
-- Hotel area density ranking cannot be computed safely until a radius or mode/time threshold and date are selected and validated.
-- The Bib Gourmand list is an 8-entry sample, not a full non-starred MICHELIN Guide selection.
-- Broad MICHELIN “San Francisco and surroundings” live-filter counts include surrounding results and differ from the declared city-scoped 2026 roster. Use the dated annual roster for the 41 count and the live directory only for checking individual current details.
-- The separate initial repository review is a historical snapshot from the repository's first commit; it is retained for transparency and linked from the Sources page.
+- Hotel area-density ranking cannot be computed safely until a radius or mode/time threshold and date are selected and validated.
+- Bib Gourband list is a sample, not a full non-starred MICHELIN Guide selection.
+- All-in totals for two adults remain blank/flagged (see T6/T11).
