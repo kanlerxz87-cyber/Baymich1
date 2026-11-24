@@ -12,6 +12,10 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 
 | ID | Task | Status | Owner session | Scope / files | Notes |
 |---|------|--------|---------------|---------------|-------|
+| T13 | Cross-check current dashboard against retained research datasets and log discrepancies | in progress | `arena/b67691bb-baymich1` | `COORDINATION.md` only | Audit found conflicting counts and unsupported future-dated claims across retained artifacts; no shared site/data files changed. |
+
+| ID | Task | Status | Owner session | Scope / files | Notes |
+|---|------|--------|---------------|---------------|-------|
 | T1 | Repository review (line-by-line, sourced) | done | `e71de712` | `pages/repo-review.html`, initial coordination log | Retained; linked from Sources page. |
 | T2 | Current Michelin-starred roster, distinction, sources | done (detail fields flagged) | `e71de712` + integration | `data/michelin_bay_area_stars.json`, `data.js`, `restaurants.html`, `pages/michelin-starred.html` | Dated 2026 roster: 41 Bay Area-city entries (27 one-star, 7 two-star, 7 three-star; incl. Yountville). Prices/socials/most hours flagged. |
 | T3 | Bib Gourmand / Guide-listed, not starred | needs review | integration | `data.js`, `restaurants.html`, `pages/suggestions.html` | Eight Bib Gourmand examples; not exhaustive. |
