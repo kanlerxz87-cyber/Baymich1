@@ -61,3 +61,46 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Hotel area-density ranking cannot be computed safely until a radius or mode/time threshold and date are selected and validated.
 - Bib Gourmand list is a sample, not a full non-starred MICHELIN Guide selection.
 - Broad MICHELIN “San Francisco and surroundings” live-filter counts can include surrounding results and differ from a declared city-scoped roster; use the dated annual roster for counts and the live directory for individual current details.
+
+
+## Session `arena-4ffa0e6d` (branch `arena/4ffa0e6d-baymich1`, base `67a6016`)
+
+**Branch note:** this session works only on its Arena-assigned branch. The `session-*/<task>` pattern from the task brief is not used because Arena fixes each session to one branch; coordination is recorded here instead. No other branch was created, switched to, or pushed.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T13 | Re-verify the 41-entry 9-county starred roster against the official 2026 California list | done | `arena-4ffa0e6d` | `data.js` (starred lines), `data/michelin_official_pages_2026-11-24.json` | Official list: 10 three-star, 13 two-star, 60 one-star statewide = 83 (matches the article's own total). Nine-county filter gives 7 / 7 / 27 = 41. |
+| T14 | Address, cuisine, price tier, website, phone, days and hours from official Michelin pages | needs review | `arena-4ffa0e6d` | `data.js`, `data/michelin_official_pages_2026-11-24.json`, `scripts/apply_official_reads.py` | 14 of 41 read this session (Benu, Atelier Crenn, Californios, Quince, Enclos, SingleThread, The French Laundry, Acquerello, Birdsong, Kiln, Lazy Bear, Saison, Sons & Daughters, Commis). Sons & Daughters has no schedule. 27 one-stars still have roster status only. |
+| T15 | Hotel ranking by nearby Michelin restaurants | needs review | `arena-4ffa0e6d` | `data.js` (hotels block) | Not ranked. Official hotel pages carry a 'Restaurants near the hotel' list but do not state its radius. Four Seasons Embarcadero: 222 Sansome St., two MICHELIN Keys, 155 rooms (verified). Decision needed on the radius and mode before ranking. |
+| T16 | Social links (YouTube / TikTok / Instagram) from official restaurant sites | unclaimed (open) | — | — | Not searched this session. Michelin pages do not list social accounts; the restaurant sites are the next source. Every social cell stays blank. |
+| T17 | Rebuild the live dashboard from the verified data and update the notes | done | `arena-4ffa0e6d` | `data.js`, `subpages.js`, `index.html`, `README.md`, `COORDINATION.md` | 71 table rows render with no script errors (41 starred + 30 Bib); 0 broken local links. Legacy `pages/`, `data/restaurants.json`, `data/michelin_bay_area_stars.json` and `scripts/build_site.py` were NOT regenerated (see flags). |
+
+## Log
+
+### L5 — Session `arena-4ffa0e6d` — this session
+- **Roster (T13).** Read the official article "Every MICHELIN-Starred Restaurant in California for 2026" (24 Jun 2026): <https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california>. Filtered to nine counties: 3★ Atelier Crenn, Benu, Californios, Quince (SF); Enclos (Sonoma); SingleThread (Healdsburg); The French Laundry (Yountville). 2★ Acquerello, Birdsong, Kiln, Lazy Bear, Saison, Sons & Daughters (SF); Commis (Oakland). 1★ 27 entries (15 SF; Sun Moon Studio, Oakland; Madcap, San Anselmo; Selby's, Atherton; Wakuriya, San Mateo; The Village Pub, Woodside; Plumed Horse, Saratoga; Protégé, Palo Alto; Auberge du Soleil, Rutherford; Auro, Calistoga; Press, Saint Helena; Cyrus, Geyserville; Troubadour, Healdsburg).
+- **Michelin's own SF filter (T13 note).** <https://guide.michelin.com/us/en/california/san-francisco/restaurants> reads "San Francisco and surroundings" with 4 / 7 / 18 starred and 30 Bib Gourmand. That is a different geographic filter from the nine-county roster; its 18 one-star composition is not reconciled line by line here. The earlier 29-entry file `data/restaurants.json` was built from that filter.
+- **Official restaurant pages (T14).** Read on guide.michelin.com (address, cuisine, price symbol, 'Visit Website', phone, Location schedule). Entries and links are in `data/michelin_official_pages_2026-11-24.json`. Prior values not supported by these pages were replaced: Quince's earlier 5–8 PM Tuesday hours in `data.js` (official page: 5–9 PM). The 29-entry file `data/restaurants.json` still carries an unverified 'closed Jan–Nov 2026, reopens Nov 28' note for Quince; it is not on the official page and is flagged, not used.
+- **Two schedules to confirm.** SingleThread and The French Laundry display the same hours every day of the week (4:00–8:45 PM and 4:00–8:00 PM). These are flagged on their rows.
+- **Bib Gourmand (T17).** `data/bibgourmand.json` (30 entries) replaces the 8 sample rows. The official Bib page (<https://guide.michelin.com/us/en/california/san-francisco/restaurants/bib-gourmand>) reads "1-30 of 30 restaurants" and its first three names match. Yank Sing, one of the old samples, is not among the 30 and was removed.
+- **Couple totals.** Five restaurants keep the earlier verified per-person prices from official sites (Benu, Acquerello, Kiln, Commis, Birdsong). Totals are arithmetic on those inputs, with service stated. Tax and gratuity are excluded. They were not re-checked this session.
+- **Hotels (T15).** Four Seasons Hotel San Francisco at Embarcadero page: <https://guide.michelin.com/us/en/hotels-stays/san-francisco-bay-area/four-seasons-hotel-san-francisco-at-embarcadero-12158>. Verified address, two MICHELIN Keys, 155 rooms. No ranking was computed.
+- **QA.** `node` syntax check on `subpages.js`; a jsdom render of `restaurants.html` (71 rows, 0 script errors); local link check (0 broken).
+
+### Verification performed this session
+- Each official Michelin restaurant page read (chunk 0; chunk 1 where the schedule was cut off) for the 14 rows listed above.
+- Star counts reconciled: state 83 = 10 + 13 + 60; nine counties 41 = 7 + 7 + 27; city cluster on the site: SF 25 = 4 + 6 + 15.
+- Bib count (30) and first three names checked on the official Bib page.
+
+## Irregularities / open review flags
+1. **Two star datasets in the repo.** `data/michelin_bay_area_stars.json` (41, nine counties) and `data/restaurants.json` (29, Michelin "San Francisco and surroundings" filter) disagree on scope. The live site uses the 41-entry roster. Old `pages/*`, `scripts/build_site.py` and the 29-entry file were not regenerated.
+2. **Duplicate site generations.** Root pages (`index.html`, `restaurants.html`, `hotels.html`, ...) with `data.js`/`app.js`/`subpages.js`, and older `pages/*` built from `data/michelin_bay_area_stars.json` with `assets/style.css`, coexist. The live site is the root set.
+3. **Hand edits to `data.js`.** The 14 official reads were applied by `scripts/apply_official_reads.py`, the Bib list by `scripts/apply_bib_list.py`, and the Four Seasons fields and `subpages.js` text by hand. Re-running the scripts on a fresh copy will not reproduce the hotel or text edits.
+4. **Michelin schedules.** SingleThread and The French Laundry show identical daily hours; confirm on their sites.
+5. **Starred restaurants without hours or price.** 27 one-stars have no address, cuisine, hours or website in the table. Sons & Daughters has no schedule.
+6. **Social links:** 0 verified out of 41 starred and 30 Bib entries.
+7. **Two-adult totals:** 5 estimates (Benu, Acquerello, Kiln, Commis, Birdsong), not re-checked this session; Acquerello and Birdsong have no all-in total.
+8. **Bib Gourmand:** the 30 entries are the official filter count. Only the count and first three names were re-read this session; the others are carried from the earlier pass.
+9. **Hotel ranking:** not computed. The radius and travel mode are undecided.
+10. **Selected Restaurants:** Michelin lists 86 'Selected' restaurants in the SF filter. None are catalogued.
+11. **Michelin filter mismatch:** the live "San Francisco and surroundings" filter (4 / 7 / 18 / 30) is not the nine-county roster (7 / 7 / 27); the difference is not reconciled line by line.

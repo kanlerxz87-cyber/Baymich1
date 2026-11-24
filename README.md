@@ -10,13 +10,14 @@ The repository’s GitHub Pages publishing source is the `main` branch at the re
 
 ## Scope and evidence
 
-- Current starred entries use the official MICHELIN Guide California 2026 selection, revealed June 24, 2026. The roster is filtered to the named Bay Area cities displayed in the site: **41 restaurants**.
-- Eight Bib Gourmand entries are samples, not the full non-starred Guide selection. Bib Gourmand is clearly separated from Michelin Stars.
-- All restaurant entries link to an official MICHELIN Guide profile. Hotel candidates link to official MICHELIN hotel profiles.
-- Missing price, social, operating-hour and distance fields are intentionally unfilled and flagged. Broad MICHELIN price symbols are not converted into a total for two adults.
-- Hotel candidates are not ranked by nearby restaurant count because no distance radius or travel mode was supplied/verified. Michelin Key awards are kept distinct from restaurant stars.
+- **Starred (41):** the official MICHELIN Guide California 2026 list (revealed 24 June 2026), filtered to the nine Bay Area counties: 7 three-star, 7 two-star, 27 one-star. Source: <https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california>.
+- **Verified in detail (14 of 41, 24 Nov 2026):** address, cuisine, price tier, website, phone and schedule, read from each official Michelin restaurant page. Sons & Daughters has no schedule. The other 27 have roster status only.
+- **Bib Gourmand (30):** the official "San Francisco and surroundings" Bib Gourmand filter. Count and first three names re-read on 24 Nov 2026; the rest carried from the earlier pass. Michelin's 86 "Selected Restaurants" are not catalogued.
+- **Couple totals:** five restaurants show arithmetic on official per-person prices, with service stated and tax excluded. All others are marked "Not verified".
+- **Social links:** none verified yet; every social cell is blank.
+- **Hotels:** four candidates. No ranking is computed; the radius and travel mode are a pending decision.
 
-See [COORDINATION.md](COORDINATION.md) for task ownership and verification status. See the site’s Sources page for primary-source links and limitations, including the retained [repository review](pages/repo-review.html) from the initial integration pass.
+Missing values are left blank and flagged, never inferred. See [COORDINATION.md](COORDINATION.md) for the task board, the verification log and the open-flags list, and the site's Sources and Flagged for review pages.
 
 ## Run locally
 

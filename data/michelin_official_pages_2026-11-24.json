@@ -1,0 +1,133 @@
+{
+ "checked": "2026-11-24",
+ "method": "fetch of official guide.michelin.com restaurant page (chunk 0 of each); fields = page header (address, cuisine, price symbol), 'Visit Website' and phone links, and the Location weekly schedule. 'hours' = Michelin schedule text; 'not on page' means the schedule did not appear in the fetched text.",
+ "records": {
+  "Benu": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu",
+   "address": "22 Hawthorne St., San Francisco, CA 94105",
+   "cuisine": "Asian, Contemporary",
+   "price": "$$$$",
+   "website": "https://www.benusf.com/",
+   "phone": "+1 415-685-4860",
+   "schedule": "Mon closed; Tue closed; Wed 5–8 PM; Thu 5–8 PM; Fri 5–8:30 PM; Sat 5–8:30 PM; Sun closed"
+  },
+  "Atelier Crenn": {
+   "url": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/atelier-crenn",
+   "address": "3127 Fillmore St., San Francisco, CA 94123",
+   "cuisine": "Contemporary, French",
+   "price": "$$$$",
+   "website": "https://www.ateliercrenn.com/",
+   "phone": "+1 415-440-0462",
+   "schedule": "Mon closed; Tue–Sat 4:45–8:45 PM; Sun closed"
+  },
+  "Californios": {
+   "url": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/californios",
+   "address": "355 11th St., San Francisco, CA 94103",
+   "cuisine": "Mexican, Contemporary",
+   "price": "$$$$",
+   "website": "https://www.californiossf.com/",
+   "phone": "+1 415-757-0994",
+   "schedule": "Mon closed; Tue–Sat 5–10 PM; Sun closed"
+  },
+  "Quince": {
+   "url": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/quince",
+   "address": "470 Pacific Ave., San Francisco, CA 94133",
+   "cuisine": "Contemporary, Californian",
+   "price": "$$$$",
+   "website": "https://www.quincerestaurant.com/",
+   "phone": "+1 415-775-8500",
+   "schedule": "Mon closed; Tue–Thu 5–9 PM; Fri–Sat 11:30 AM–1 PM and 5–9 PM; Sun closed"
+  },
+  "Enclos": {
+   "url": "https://guide.michelin.com/ca/en/california/sonoma/restaurant/enclos",
+   "address": "139 E. Napa St., Sonoma, CA 95476",
+   "cuisine": "Contemporary, Californian",
+   "price": "$$$$",
+   "website": "https://enclos-sonoma.com/",
+   "phone": "+1 707-387-1724",
+   "schedule": "Mon closed; Tue closed; Wed–Sat 5:30–8 PM; Sun closed (chunk 1)"
+  },
+  "SingleThread": {
+   "url": "https://guide.michelin.com/ca/en/california/healdsburg/restaurant/singlethread",
+   "address": "131 North St., Healdsburg, CA 95448",
+   "cuisine": "Contemporary, Californian",
+   "price": "$$$$",
+   "website": "https://www.singlethreadfarms.com/",
+   "phone": "+1 707-723-4646",
+   "schedule": "Mon–Sun 4–8:45 PM as displayed (chunk 1; confirm on restaurant site — displayed daily hours look unusual)"
+  },
+  "The French Laundry": {
+   "url": "https://guide.michelin.com/ca/en/california/yountville/restaurant/the-french-laundry",
+   "address": "6640 Washington St., Yountville, CA 94599",
+   "cuisine": "Contemporary, French",
+   "price": "$$$$",
+   "website": "https://www.thomaskeller.com/tfl",
+   "phone": "+1 707-944-2380",
+   "schedule": "Mon–Sun 4–8 PM as displayed (chunk 1; confirm on restaurant site — displayed daily hours look unusual)"
+  },
+  "Acquerello": {
+   "url": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/acquerello",
+   "address": "1722 Sacramento St., San Francisco, CA 94109",
+   "cuisine": "Italian, Contemporary",
+   "price": "$$$$",
+   "website": "https://www.acquerellosf.com/",
+   "phone": "+1 415-567-5432",
+   "schedule": "Mon closed; Tue–Sat 5:30–9:45 PM; Sun closed"
+  },
+  "Birdsong": {
+   "url": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/birdsong",
+   "address": "1085 Mission St., San Francisco, CA 94103",
+   "cuisine": "Contemporary, American",
+   "price": "$$$$",
+   "website": "https://www.birdsongsf.com/",
+   "phone": "+1 415-369-9161",
+   "schedule": "Mon closed; Tue–Thu 5:30–8 PM; Fri–Sat 5–8:30 PM; Sun closed"
+  },
+  "Kiln": {
+   "url": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/kiln-1210355",
+   "address": "149 Fell St., San Francisco, CA 94102",
+   "cuisine": "Contemporary",
+   "price": "$$$$",
+   "website": "https://www.kilnsf.com/",
+   "phone": "+1 415-982-9722",
+   "schedule": "Mon closed; Tue–Thu 6–8 PM; Fri–Sat 5–8:30 PM; Sun closed (chunk 1)"
+  },
+  "Lazy Bear": {
+   "url": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/lazy-bear",
+   "address": "3416 19th St., San Francisco, CA 94110",
+   "cuisine": "Contemporary, Modern Cuisine",
+   "price": "$$$$",
+   "website": "https://www.lazybearsf.com/",
+   "phone": "+1 415-874-9921",
+   "schedule": "Mon closed; Tue–Sat 5–11 PM; Sun closed"
+  },
+  "Saison": {
+   "url": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/saison",
+   "address": "178 Townsend St., San Francisco, CA 94107",
+   "cuisine": "Californian, Contemporary",
+   "price": "$$$$",
+   "website": "https://www.saisonsf.com/",
+   "phone": "+1 415-828-7990",
+   "schedule": "Mon closed; Tue–Sat 5–9:30 PM; Sun closed"
+  },
+  "Sons & Daughters": {
+   "url": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/sons-daughters",
+   "address": "2875 18th St., San Francisco, CA 94110",
+   "cuisine": "Contemporary",
+   "price": "$$$$",
+   "website": "https://www.sonsanddaughterssf.com/",
+   "phone": "+1 415-994-7933",
+   "schedule": "not on chunk 0"
+  },
+  "Commis": {
+   "url": "https://guide.michelin.com/ca/en/california/oakland/restaurant/commis",
+   "address": "3859 Piedmont Ave., Oakland, CA 94611",
+   "cuisine": "Contemporary",
+   "price": "$$$$",
+   "website": "https://www.commisrestaurant.com/",
+   "phone": "+1 510-653-3902",
+   "schedule": "Mon closed; Tue–Sat 5–9:30 PM; Sun closed"
+  }
+ },
+ "note_chunk1": "Chunk-1 reads were used where chunk 0 ended before the schedule. Two displayed schedules (SingleThread, The French Laundry) show identical daily hours and are flagged for confirmation."
+}
