@@ -4,7 +4,7 @@
     "guideEdition": "2026 (MICHELIN Guide California, stars announced June 24, 2026)",
     "dataAsOf": "2026-11-24",
     "officialMichelinRegion": "https://guide.michelin.com/us/en/california/san-francisco/restaurants",
-    "verificationPolicy": "Every distinction, city, cuisine and Michelin price bracket below is verified against the official MICHELIN Guide site (guide.michelin.com). Exact 2-adult pricing, opening hours, days open, exceptions and social links are only marked verified when confirmed from the restaurant's official website or an official Michelin listing. Blank values = could not be confirmed from an official source; flagged unverified, never inferred.",
+    "verificationPolicy": "Every distinction, city, cuisine and Michelin price bracket below is verified against the official MICHELIN Guide site (guide.michelin.com). Exact 2-adult pricing, opening hours, days open, exceptions and social links are only marked verified when confirmed from the restaurant's official website or an official Michelin listing. Blank values = could not be confirmed from an official source; flagged unverified, never inferred. Audit 2026-11-24 (session 08523399): unofficial price ranges removed; \"computed\" totals are arithmetic from official per-person prices and official service charges, labelled as such.",
     "counts": {
       "threeStar": 4,
       "twoStar": 7,
@@ -13,6 +13,18 @@
       "bibGourmand": 30,
       "selectedTotal": 86,
       "guideListedTotal": 145
+    },
+    "lastAudit": {
+      "date": "2026-11-24",
+      "session": "08523399",
+      "fieldsCleared": [
+        "californios",
+        "atelier-crenn",
+        "lazy-bear",
+        "saison",
+        "sons-daughters",
+        "state-bird-provisions"
+      ]
     }
   },
   "restaurants": [
@@ -30,23 +42,23 @@
       "address": "470 Pacific Avenue, San Francisco, CA 94133",
       "website": "http://www.quincerestaurant.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince",
-      "estPricePerPerson": "$298–$390 tasting menu (sources vary; see priceSource)",
-      "estPrice2AdultsTotal": "$596–$780 food only (2 adults), before service/tax/pairings",
-      "priceSource": "OpenTable ($298 tasting); TravelsForStars ($360–$390); SF Standard ($360). Official site quincerestaurant.com not yet re-verified after renovation reopening.",
+      "estPricePerPerson": null,
+      "estPrice2AdultsTotal": null,
+      "priceSource": "Not published on the official site or Michelin listing (checked 2026-11-24).",
       "priceVerified": false,
-      "hours": "Dinner: Tue–Thu 5:30pm–9:00pm; Fri–Sat 5:00pm–9:30pm",
+      "hours": "Michelin listing: Tue–Thu & Sat 5:00–9:00pm; Fri 11:30am–1:00pm and 5:00–9:00pm; Sat lunch 11:30am–1:00pm. Official site: main dining room reservations 5:00–8:00pm.",
       "daysOpen": "Tuesday–Saturday",
-      "exceptions": "Monday & Sunday: closed (per OpenTable; confirm on official site after Nov 28, 2026 reopening)",
+      "exceptions": "Official site: closed Nov 26 and Dec 25–26, 2026 (Christmas Eve lunch and New Year's Eve dinner offered). Sunday & Monday closed (Michelin listing).",
       "instagram": null,
       "youtube": null,
       "tiktok": null,
       "socialVerified": false,
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince",
-        "https://www.opentable.com/r/quince-san-francisco",
-        "https://sfstandard.com/2023/11/06/san-francisco-michelin-star-restaurant-quince-reopens/"
+        "https://www.quincerestaurant.com/"
       ],
-      "notes": "Three-Michelin-starred Californian. Closed Jan–Nov 2026 for 20th-anniversary renovation, reopened Nov 28, 2026. Re-verify hours/price from quincerestaurant.com."
+      "notes": "Three-Michelin-starred Californian, 470 Pacific Ave. CORRECTION 2026-11-24: earlier note (\"closed Jan–Nov 2026, reopened Nov 28, 2026\") was NOT supported; the cited sources were 2023 articles about the renovation that reopened in Nov 2023.",
+      "unverifiedPriceNote": "Earlier values ($298–$390 pp, $596–$780 for two) were from third-party sites and were removed. No official per-person price found on quincerestaurant.com or the Michelin listing (checked 2026-11-24)."
     },
     {
       "id": "californios",
@@ -62,8 +74,8 @@
       "address": "355 11th Street, San Francisco, CA 94103",
       "website": "http://www.californiossf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/californios",
-      "estPricePerPerson": "$325–$450 tasting menu (sources vary)",
-      "estPrice2AdultsTotal": "$650–$900 food only (2 adults), before service/tax/pairings",
+      "estPricePerPerson": null,
+      "estPrice2AdultsTotal": null,
       "priceSource": "TravelsForStars (Jul 2026: $325 pp); OpenTable ($450 bar tasting); RestaurantsForKings (older: $425 + 22% service). Conflict — confirm on californiossf.com.",
       "priceVerified": false,
       "hours": "Tue–Sat 5:00pm–9:00pm",
@@ -78,7 +90,8 @@
         "https://www.opentable.com/r/californios-san-francisco",
         "https://www.travelsforstars.com/blog/2026/07/09/californios-san-francisco"
       ],
-      "notes": "World's first Mexican restaurant with three Michelin stars (2026). Chef Val Cantú. Price sources conflict ($325 vs $425 vs $450) — unverified pending official site."
+      "notes": "World's first Mexican restaurant with three Michelin stars (2026). Chef Val Cantú. Price sources conflict ($325 vs $425 vs $450) — unverified pending official site.",
+      "unverifiedPriceNote": "Removed in 2026-11-24 audit (not confirmed on an official source): $325–$450 tasting menu (sources vary) | $650–$900 food only (2 adults), before service/tax/pairings"
     },
     {
       "id": "benu",
@@ -98,9 +111,9 @@
       "estPrice2AdultsTotal": "$850 food only + 22% service (~$1,037 total with service), 2 adults, before tax/pairings",
       "priceSource": "Official benusf.com/info: tasting menu $425 pp + 22% service charge; optional wine pairing ~$250; corkage $100; valet $30.",
       "priceVerified": true,
-      "hours": "Dinner Wednesday–Saturday",
-      "daysOpen": "Wednesday–Saturday",
-      "exceptions": "Sunday & Monday: closed; Tuesday seating 5:30–7:30pm (per listing). Closed Sundays and Mondays.",
+      "hours": "Dinner Wednesday–Saturday (official benusf.com/info). Start times: not verified.",
+      "daysOpen": "Wednesday–Saturday (dinner)",
+      "exceptions": "Tuesday, Sunday & Monday not listed as dinner days on the official page. Tuesday seating and booking-release timing removed (not verified).",
       "instagram": null,
       "youtube": null,
       "tiktok": null,
@@ -110,7 +123,8 @@
         "https://www.benusf.com/info",
         "https://www.hangphamweddings.com/blog/benu-where-californian-bounty-meets-asian-alchemy/"
       ],
-      "notes": "Three-Michelin-starred. Chef Corey Lee. Tasting ~15–20+ courses, plan ~3 hours. Reservations via SevenRooms, released 30 days ahead at 10am."
+      "notes": "Three-Michelin-starred. Chef Corey Lee. Official page also lists $100 corkage per 750 ml bottle and $30 valet.",
+      "totalMethod": "Computed: 2 × $425 + 22% service charge (official rates). Not an official all-in quote; tax and pairings excluded."
     },
     {
       "id": "atelier-crenn",
@@ -126,8 +140,8 @@
       "address": "3127 Fillmore Street, San Francisco, CA 94123",
       "website": "https://www.ateliercrenn.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/atelier-crenn",
-      "estPricePerPerson": "$300–$500 per person (price tier; exact current menu price not confirmed from official site)",
-      "estPrice2AdultsTotal": "$600–$1,000 estimate (2 adults), unverified",
+      "estPricePerPerson": null,
+      "estPrice2AdultsTotal": null,
       "priceSource": "enprimeurclub.com verified profile ($300–$500 pp). Older sources: $325–$335 tasting. Not confirmed from ateliercrenn.com.",
       "priceVerified": false,
       "hours": "Tue–Sat 5:00–8:30pm",
@@ -142,7 +156,8 @@
         "https://www.enprimeurclub.com/restaurants/atelier-crenn",
         "https://www.frommers.com/destinations/san-francisco/restaurants/atelier-crenn/"
       ],
-      "notes": "Three-Michelin-starred. Chef Dominique Crenn. Instagram @atelier.crenn found via listing; verify handle. Exact current tasting price unverified."
+      "notes": "Three-Michelin-starred. Chef Dominique Crenn. Instagram @atelier.crenn found via listing; verify handle. Exact current tasting price unverified.",
+      "unverifiedPriceNote": "Removed in 2026-11-24 audit (not confirmed on an official source): $300–$500 per person (price tier; exact current menu price not confirmed from official site) | $600–$1,000 estimate (2 adults), unverified"
     },
     {
       "id": "acquerello",
@@ -159,7 +174,7 @@
       "website": "https://www.acquerellosf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello",
       "estPricePerPerson": "$295 seasonal tasting + 20% service + 4% SF surcharge (~$370 pp all-in food); four-course $185",
-      "estPrice2AdultsTotal": "$590 food only + ~24% charges (~$732 total with service/surcharge), 2 adults",
+      "estPrice2AdultsTotal": "$590 food only + 24% charges (~$732 total), 2 adults; computed from official rates, excludes wine and tax",
       "priceSource": "Official acquerellosf.com/seasonal-tasting-menu: Seasonal Tasting Menu $295 pp; 20% service charge + 4% employer-mandate surcharge added.",
       "priceVerified": true,
       "hours": "Not confirmed from official site",
@@ -173,7 +188,8 @@
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello",
         "https://www.acquerellosf.com/seasonal-tasting-menu"
       ],
-      "notes": "Two-Michelin-starred Italian. Official-site pricing verified. Hours/days still need official confirmation."
+      "notes": "Two-Michelin-starred Italian. Official-site pricing verified. Hours/days still need official confirmation.",
+      "totalMethod": "Computed: 2 × $295 + 20% service + 4% surcharge (official rates); excludes wine and tax."
     },
     {
       "id": "kiln",
@@ -193,9 +209,9 @@
       "estPrice2AdultsTotal": "$630 food only + 20% service (~$756 total with service), 2 adults",
       "priceSource": "Official kilnsf.com/information: Kiln tasting menu $315, all purchases include additional 20% service charge; beverage pairing $175, reserve $375, spirit-free $145.",
       "priceVerified": true,
-      "hours": "Tue–Thu 6:00–8:30pm; Fri–Sat 5:00–8:30pm",
-      "daysOpen": "Tuesday–Saturday",
-      "exceptions": "Monday & Sunday: closed",
+      "hours": "Tue–Thu 6:00–8:30pm; Fri–Sat 5:00–8:30pm (dinner only; official kilnsf.com/information)",
+      "daysOpen": "Tuesday–Saturday (dinner)",
+      "exceptions": "Sunday & Monday not listed as open on official page. Reservations via Tock; released 1st of month at 12pm PST. Parties of 1–3: final & non-refundable within 72 hours.",
       "instagram": null,
       "youtube": null,
       "tiktok": null,
@@ -205,7 +221,8 @@
         "https://www.kilnsf.com/information",
         "https://www.opentable.com/r/kiln-san-francisco"
       ],
-      "notes": "Two-Michelin-starred. Chef John Wesley. 18–20 servings, 2.5–3 hours. Reservations via Tock, released 1st of month at 12pm PST."
+      "notes": "Two-Michelin-starred. Chef John Wesley. 18–20 servings, 2.5–3 hours. Reservations via Tock, released 1st of month at 12pm PST.",
+      "totalMethod": "Computed: 2 × $315 + 20% service charge (official rates); tax and pairings excluded."
     },
     {
       "id": "lazy-bear",
@@ -221,8 +238,8 @@
       "address": "3416 19th Street, San Francisco, CA 94110",
       "website": "http://lazybearsf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/lazy-bear",
-      "estPricePerPerson": "$320 dinner ticket (official tickets page; date-stamped 2019 — may be stale). Older sources $160–$211 pp.",
-      "estPrice2AdultsTotal": "$640 estimate (2 adults) from dated official page — UNVERIFIED",
+      "estPricePerPerson": null,
+      "estPrice2AdultsTotal": null,
       "priceSource": "Official lazybearsf.com/tickets (archived 2019): dinner ticket $320 pp, not incl. beverages/service/tax. Conflicting older third-party prices $160–$211. Price unverified due to stale source.",
       "priceVerified": false,
       "hours": "Tuesday–Saturday, seatings 5:00pm–9:00pm (two seatings ~6pm & 8:30pm)",
@@ -237,7 +254,8 @@
         "https://www.lazybearsf.com/tickets/",
         "https://restaurantguru.com/Lazy-Bear-San-Francisco"
       ],
-      "notes": "Two-Michelin-starred. Ticketed dinner party format. Price page is dated (2019) — re-verify on lazybearsf.com."
+      "notes": "Two-Michelin-starred. Ticketed dinner party format. Price page is dated (2019) — re-verify on lazybearsf.com.",
+      "unverifiedPriceNote": "Removed in 2026-11-24 audit (not confirmed on an official source): $320 dinner ticket (official tickets page; date-stamped 2019 — may be stale). Older sources $160–$211 pp. | $640 estimate (2 adults) from dated official page — UNVERIFIED"
     },
     {
       "id": "saison",
@@ -253,8 +271,8 @@
       "address": "178 Townsend Street, San Francisco, CA 94107",
       "website": "https://saisonsf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saison",
-      "estPricePerPerson": "Tasting from $368 pp (OpenTable Experiences $368–$566 range) + 20% service + tax + 6% SF mandate",
-      "estPrice2AdultsTotal": "$736 food only + charges, 2 adults (all-in can run well north of $700 pp per source)",
+      "estPricePerPerson": null,
+      "estPrice2AdultsTotal": null,
       "priceSource": "menuexplore.com (Nov 2026) citing saisonsf.com/OpenTable Experiences: tasting starts $368 pp, pairings extra, +20% service + ~8.5% tax + 6% mandate. Bar experience $58–$98 pp.",
       "priceVerified": false,
       "hours": "Tuesday–Saturday 5:00pm–9:30pm",
@@ -269,7 +287,8 @@
         "https://menuexplore.com/saison-san-francisco-menu/",
         "https://www.exploretock.com/saison/experience/497584/saison-bar-experience"
       ],
-      "notes": "Two-Michelin-starred live-fire. 18 seats. Tasting menu only (no a la carte). Price range from third-party aggregator — confirm on saisonsf.com."
+      "notes": "Two-Michelin-starred live-fire. 18 seats. Tasting menu only (no a la carte). Price range from third-party aggregator — confirm on saisonsf.com.",
+      "unverifiedPriceNote": "Removed in 2026-11-24 audit (not confirmed on an official source): Tasting from $368 pp (OpenTable Experiences $368–$566 range) + 20% service + tax + 6% SF mandate | $736 food only + charges, 2 adults (all-in can run well north of $700 pp per source)"
     },
     {
       "id": "sons-daughters",
@@ -285,8 +304,8 @@
       "address": "2875 18th Street, San Francisco, CA",
       "website": "https://www.sonsanddaughterssf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sons-daughters",
-      "estPricePerPerson": "$295–$315 pp tasting (24 courses) + 20% service; sources conflict due to 2025 chef/location change",
-      "estPrice2AdultsTotal": "$590–$630 food only + 20% service, 2 adults",
+      "estPricePerPerson": null,
+      "estPrice2AdultsTotal": null,
       "priceSource": "SF Chronicle (Nov 2025): $295 pp + 20% service at new Mission location. RestaurantsForKings (Jun 2026): $315 pp. OpenTable (older Nob Hill): $145 pp. Conflict — unverified.",
       "priceVerified": false,
       "hours": "Tuesday–Saturday, two seatings from ~5:30pm",
@@ -301,7 +320,8 @@
         "https://www.sfchronicle.com/food/restaurants/article/sons-daughters-michelin-21061608.php",
         "https://restaurantsforkings.com/blog/how-to-book-sons-and-daughters"
       ],
-      "notes": "Two-Michelin-starred (+ Green Star). Chef Harrison Cheney. New Nordic. Moved Nov 2025 to former Osito space. Price unverified pending sonsanddaughterssf.com."
+      "notes": "Two-Michelin-starred (+ Green Star). Chef Harrison Cheney. New Nordic. Moved Nov 2025 to former Osito space. Price unverified pending sonsanddaughterssf.com.",
+      "unverifiedPriceNote": "Removed in 2026-11-24 audit (not confirmed on an official source): $295–$315 pp tasting (24 courses) + 20% service; sources conflict due to 2025 chef/location change | $590–$630 food only + 20% service, 2 adults"
     },
     {
       "id": "birdsong",
@@ -333,7 +353,8 @@
         "https://www.birdsongsf.com/experience",
         "https://guides.seatswiper.com/how-to-get-a-reservation-at-birdsong-san-francisco"
       ],
-      "notes": "Two-Michelin-starred (since 2024). Chef Christopher Bleidorn. Wood-fired hearth. Tock reservations, release 1st of month."
+      "notes": "Two-Michelin-starred (since 2024). Chef Christopher Bleidorn. Wood-fired hearth. Tock reservations, release 1st of month.",
+      "totalMethod": "Computed: 2 × official per-person price (Journey $350 or Discovery $290); excludes beverages, tax and any fees not stated on the official page."
     },
     {
       "id": "commis",
@@ -353,9 +374,9 @@
       "estPrice2AdultsTotal": "$558 food only + 20% service (~$670 with service), 2 adults",
       "priceSource": "Official commisrestaurant.com/info/: Dining Room 10-course tasting $279 pp; excludes beverages, sales tax, 20% service charge; optional global beverage pairing $139 pp; $100 pp deposit.",
       "priceVerified": true,
-      "hours": "Dinner Tue–Thu 5:00–8:30pm; Fri–Sat 5:00–9:00pm",
-      "daysOpen": "Tuesday–Saturday",
-      "exceptions": "Sunday & Monday: closed",
+      "hours": "Not stated on official commisrestaurant.com/info (checked 2026-11-24). Unverified.",
+      "daysOpen": "Unverified",
+      "exceptions": "Unverified",
       "instagram": null,
       "youtube": null,
       "tiktok": null,
@@ -364,7 +385,8 @@
         "https://guide.michelin.com/us/en/california/oakland/restaurant/commis",
         "https://commisrestaurant.com/info/"
       ],
-      "notes": "Two-Michelin-starred Oakland restaurant. Chef James Syhabout. OpenTable listing shows $259 (older); official site $279 used here."
+      "notes": "Two-Michelin-starred Oakland restaurant. Chef James Syhabout. OpenTable listing shows $259 (older); official site $279 used here.",
+      "totalMethod": "Computed: 2 × $279 + 20% service charge (official rates); excludes beverages and sales tax."
     },
     {
       "id": "niku-steakhouse",
@@ -500,8 +522,8 @@
       "address": "1529 Fillmore Street, San Francisco, CA 94115",
       "website": "https://www.statebirdsf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/state-bird-provisions",
-      "estPricePerPerson": "$50–$100 per person",
-      "estPrice2AdultsTotal": "$100–$200 (2 adults)",
+      "estPricePerPerson": null,
+      "estPrice2AdultsTotal": null,
       "priceSource": "enprimeurclub.com verified profile $50–100 pp; Frommers dishes $3–$22; sirved.com review ~$100 pp (no alcohol).",
       "priceVerified": false,
       "hours": "Mon–Thu 5:30–10pm; Fri–Sat 5:30–10:30pm; Sun 5:30–10pm",
@@ -516,7 +538,8 @@
         "https://www.enprimeurclub.com/restaurants/state-bird-provisions",
         "https://www.frommers.com/destinations/san-francisco/restaurants/state-bird-provisions/"
       ],
-      "notes": "One-Michelin-starred. Chefs Nicole Krasinski & Stuart Brioza. Dim sum-style cart service. Hours from listing aggregation — confirm on statebirdsf.com."
+      "notes": "One-Michelin-starred. Chefs Nicole Krasinski & Stuart Brioza. Dim sum-style cart service. Hours from listing aggregation — confirm on statebirdsf.com.",
+      "unverifiedPriceNote": "Removed in 2026-11-24 audit (not confirmed on an official source): $50–$100 per person | $100–$200 (2 adults)"
     },
     {
       "id": "hilda-and-jesse",
