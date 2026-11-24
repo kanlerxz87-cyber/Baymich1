@@ -10,6 +10,7 @@ window.BAY_DATA = {
     {name:"Quince",city:"San Francisco",area:"San Francisco",type:"star",stars:3,source:"https://guide.michelin.com/ca/en/california/san-francisco/restaurant/quince",website:"https://www.quincerestaurant.com/",hours:{Mon:"Closed",Tue:"5:00–8:00 pm",Wed:"5:00–8:00 pm",Thu:"5:00–8:00 pm",Fri:"5:00–8:00 pm",Sat:"5:00–8:00 pm",Sun:"Closed"},exception:"Official site notes closures Nov 26 and Dec 25–26, 2026; special dates can change."},
     {name:"Enclos",city:"Sonoma",area:"Wine Country",type:"star",stars:3,source:"https://guide.michelin.com/ca/en/california/sonoma/restaurant/enclos"},
     {name:"SingleThread",city:"Healdsburg",area:"Wine Country",type:"star",stars:3,source:"https://guide.michelin.com/ca/en/california/healdsburg/restaurant/singlethread"},
+    {name:"The French Laundry",city:"Yountville",area:"Wine Country",type:"star",stars:3,source:"https://guide.michelin.com/us/en/california/yountville/restaurant/the-french-laundry"},
     // 2 stars
     {name:"Commis",city:"Oakland",area:"East Bay",type:"star",stars:2,source:"https://guide.michelin.com/ca/en/california/oakland/restaurant/commis"},
     {name:"Acquerello",city:"San Francisco",area:"San Francisco",type:"star",stars:2,source:"https://guide.michelin.com/ca/en/california/san-francisco/restaurant/acquerello",website:"https://www.acquerellosf.com/",hours:{Mon:"Closed",Tue:"5:30–9:45 pm",Wed:"5:30–9:45 pm",Thu:"5:30–9:45 pm",Fri:"5:30–9:45 pm",Sat:"5:30–9:45 pm",Sun:"Closed"}},
@@ -66,7 +67,7 @@ window.BAY_DATA = {
     {name:"San Francisco",count:25,sub:"25 starred restaurants",x:49,y:25},
     {name:"Marin",count:1,sub:"San Anselmo · 1",x:45,y:13},
     {name:"East Bay",count:2,sub:"Oakland · 2",x:68,y:36},
-    {name:"Wine Country",count:7,sub:"Napa & Sonoma towns · 7",x:49,y:2},
+    {name:"Wine Country",count:8,sub:"Napa & Sonoma towns · 8",x:49,y:2},
     {name:"Peninsula & South Bay",count:5,sub:"Atherton, Palo Alto, San Mateo, Saratoga & Woodside · 5",x:47,y:68}
   ]
 };
