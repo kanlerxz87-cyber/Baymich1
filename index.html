@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home · Bay Area Michelin Dashboard</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="index.html">Bay Area Michelin Dashboard</a></div>
+  <nav class="nav"><a class="on" href="index.html">Home</a><a class="" href="pages/michelin-starred.html">Michelin starred</a><a class="" href="pages/executive-summary.html">Executive summary</a><a class="" href="pages/flagged-for-review.html">Flagged for review</a><a class="" href="pages/suggestions.html">Suggestions &amp; questions</a><a class="" href="pages/repo-review.html">Repo review</a></nav>
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <h1>SF Bay Area Michelin dashboard</h1>
+  <p>Michelin-starred restaurants, sources, open questions and review items. Every value links to an official source or is marked <strong>Unverified</strong>.</p>
+</section>
+
+<section class="kpis">
+  <div class="kpi"><div class="n">41</div><div class="l">Starred (Bay Area, 2026)</div></div>
+  <div class="kpi"><div class="n">41 / 41</div><div class="l">Rows with an official Michelin link</div></div>
+  <div class="kpi bad"><div class="n">33</div><div class="l">Rows with hours not captured (of 41)</div></div>
+  <div class="kpi bad"><div class="n">0</div><div class="l">Verified couple costs</div></div>
+</section>
+
+<section class="grid">
+  <a class="tile" href="pages/michelin-starred.html"><h3>Michelin starred</h3><p>41 Bay Area restaurants with official 2026 star levels, hours where captured, and sources.</p><span class="badge ok">Live</span></a><a class="tile" href="pages/executive-summary.html"><h3>Executive summary</h3><p>Key findings, clusters, what is still missing.</p><span class="badge ok">Live</span></a><a class="tile" href="pages/suggestions.html"><h3>Suggestions &amp; questions</h3><p>Options to choose from, and the questions that need answers first.</p><span class="badge ok">Live</span></a><a class="tile" href="pages/flagged-for-review.html"><h3>Flagged for review</h3><p>Unverified values, conflicts, open tasks.</p><span class="badge ok">Live</span></a><a class="tile" href="pages/repo-review.html"><h3>Repo review</h3><p>Sourced review of the repo, with links for manual checks.</p><span class="badge ok">Live</span></a><div class="tile dim"><h3>Bib Gourmand &amp; Recommended</h3><p>Listed-but-no-star restaurants. Not captured yet.</p><span class="badge warn">Pending</span></div><div class="tile dim"><h3>Hotels (ranking)</h3><p>Ranked by nearby Michelin restaurants. Needs radius decision.</p><span class="badge warn">Pending</span></div><div class="tile dim"><h3>Activities</h3><p>Not started.</p><span class="badge warn">Pending</span></div><div class="tile dim"><h3>Social links</h3><p>YouTube / TikTok / Instagram. None verified yet.</p><span class="badge warn">Pending</span></div>
+</section>
+
+<section class="card">
+  <h2>Start here</h2>
+  <ol class="list">
+    <li><a href="pages/michelin-starred.html">Open the starred table</a> — one row per restaurant, stacks on phones.</li>
+    <li><a href="pages/executive-summary.html">Read the executive summary</a> for the key numbers.</li>
+    <li><a href="pages/suggestions.html">Choose a path</a> — nothing changes until you pick.</li>
+  </ol>
+</section>
+
+</main>
+<footer class="foot">
+  Data as of 2026-11-24 · Every value links to an official source or is marked <strong>Unverified</strong>. ·
+  Source repo: <a href="https://github.com/kanlerxz87-cyber/Baymich1">github.com/kanlerxz87-cyber/Baymich1</a>
+</footer>
+</body>
+</html>
