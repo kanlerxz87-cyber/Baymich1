@@ -21,11 +21,11 @@ Session ID: `session-arena-e4732d51`
 
 | # | Task | Scope (files) | Status | Owner | Sources / verification | Irregularities |
 |---|------|---------------|--------|-------|------------------------|----------------|
-| 1 | Create coordination board & claim tasks | COORDINATION.md | in progress | session-arena-e4732d51 | — | — |
-| 2 | Research: official Michelin Guide SF Bay Area restaurant list (guide-listed vs starred, Bib Gourmand) | docs/data/restaurants.md | unclaimed | — | michelinguide.com | — |
+| 1 | Create coordination board & claim tasks | COORDINATION.md | done | session-arena-e4732d51 | — | — |
+| 2 | Research: official Michelin Guide SF Bay Area restaurant list (guide-listed vs starred, Bib Gourmand) | docs/data/restaurants.md | done | session-arena-e4732d51 | michelinguide.com (all-starred + bib-gourmand pages, 2026 guide) | 29 starred (4×3★,7×2★,18×1★), 30 Bib Gourmand captured from official site |
 | 3 | Research: Michelin star clusters in SF Bay Area | docs/analysis/clusters.md | unclaimed | — | michelinguide.com | — |
 | 4 | Research: hotels ranked by Michelin restaurant proximity/count | docs/data/hotels.md | unclaimed | — | official hotel sites / michelinguide.com | — |
-| 5 | Research: pricing (2 adults), hours, days open, exceptions, social links per restaurant | docs/data/restaurants.md | unclaimed | — | official restaurant sites | — |
+| 5 | Research: pricing (2 adults), hours, days open, exceptions, social links per restaurant | data/restaurants.json, data/bibgourmand.json | in progress | session-arena-e4732d51 | official restaurant sites | Starred: Benu, Acquerello, Kiln, Commis, Birdsong pricing/hours verified from official sites. Quince, Californios, Saison, S&D, Lazy Bear, Atelier Crenn = conflicting/stale sources, flagged unverified. Bib Gourmand: not yet researched (blank/unverified). |
 | 6 | Build: GitHub Pages site structure (landing page + category subpages) | index.html, category pages, assets | unclaimed | — | — | — |
 | 7 | Build: tables with all entries, sources, unverified flags | site pages | unclaimed | — | — | — |
 | 8 | Build: executive summary | docs/executive-summary.md | unclaimed | — | — | — |
