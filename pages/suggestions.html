@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suggestions — Review Before Implementing</title>
+<meta name="description" content="Suggestions for improving the Bay Area Michelin Guide site, to review and choose the best path before implementing changes.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      Baymich1
+    </div>
+    <button class="menu-btn" aria-label="Open menu" onclick="toggleDrawer()">&#9776;</button>
+    <nav class="site-nav" id="topNav">
+      <a href="restaurants.html">Restaurants</a>
+      <a href="hotels.html">Hotels (Michelin Keys)</a>
+      <a href="bib-gourmand.html">Bib Gourmand</a>
+      <a href="executive-summary.html">Executive Summary</a>
+      <a href="suggestions.html">Suggestions</a>
+      <a href="questions.html">Questions &amp; Answers</a>
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<div class="nav-drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-panel">
+    <div class="drawer-close"><button aria-label="Close menu" onclick="toggleDrawer()">&#215;</button></div>
+    <a href="restaurants.html">Michelin Starred Restaurants</a>
+    <a href="hotels.html">Michelin Key Hotels</a>
+    <a href="bib-gourmand.html">Bib Gourmand</a>
+    <a href="executive-summary.html">Executive Summary</a>
+    <a href="suggestions.html">Suggestions</a>
+    <a href="questions.html">Questions &amp; Answers</a>
+    <a href="../index.html">Home</a>
+  </div>
+</div>
+
+<main class="page">
+  <div class="wrap">
+    <nav style="margin-bottom:14px; font-size:0.85rem; color:var(--muted);">
+      <a href="../index.html" style="color:var(--accent); text-decoration:none;">&#9664; Home</a> &nbsp; <span style="color:#999;">&#8259;</span> Suggestions &amp; Review
+    </nav>
+
+    <section>
+      <h2 style="font-size:1.1rem; margin-bottom:6px; color:var(--accent);">Suggestions for improving the site</h2>
+      <p style="font-size:0.9rem; color:var(--muted); margin-bottom:16px;">Review these suggestions and choose the best path before implementing any changes. None are committed; each needs a decision.</p>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">A. Add an interactive map</h3>
+      <p style="font-size:0.88rem; color:var(--muted);">A map with pins for each starred restaurant and Key hotel would make clusters instantly visible. Use relative URLs and have the dev server proxy them; never call localhost from browser-facing code. Consider Leaflet (free, open source) with a GeoJSON file of venue addresses geocoded from official sources.</p>
+      <ul style="margin-bottom:14px; padding-left:18px; font-size:0.85rem; color:var(--muted);">
+        <li>Pros: cluster visualization, mobile-friendly trip planning, direct differentiation from a plain table.</li>
+        <li>Cons: geocoding must be verified per address; map tiles need a provider (attribution required); adds build complexity.</li>
+      </ul>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">B. Complete missing prices, hours &amp; social links</h3>
+      <p style="font-size:0.88rem; color:var(--muted);">Most rows still have price/hours flagged <span class="unverified">unverified</span>. Before publishing as "complete," fetch each venue's official site (or MICHELIN Guide page) and fill in: tasting-menu price, service charge, days open, hours, exceptions (holidays/closures), and YouTube/TikTok/Instagram handles.</p>
+      <ul style="margin-bottom:14px; padding-left:18px; font-size:0.85rem; color:var(--muted);">
+        <li>Priority: the 5 three-star and 11 two-star restaurants (highest decision value).</li>
+        <li>Mark anything still unconfirmed as blank/unverified — never infer.</li>
+      </ul>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">C. Add a "total all-in cost" estimate column</h3>
+      <p style="font-size:0.88rem; color:var(--muted);">Currently the table shows food-only estimates for 2 adults before tax, service and drinks. Add a clearly-labeled "all-in est." column (add ~20–22% service + ~8.625% SF sales tax + drinks/wine pairing). Label it an estimate and show the formula so users aren't misled.</p>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">D. Handle closed / moved venues clearly</h3>
+      <p style="font-size:0.88rem; color:var(--muted);">Osito (closed permanently) and The Shota (temporarily closed since Mar 2025) are flagged. Sons &amp; Daughters moved to 2875 18th St in Nov 2025. Add a visible "Status" badge (Open / Temporarily closed / Closed / Moved) and a "last verified" date on each row.</p>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">E. Add Bib Gourmand &amp; Recommended restaurants to the main dashboard</h3>
+      <p style="font-size:0.88rem; color:var(--muted);">Currently Bib Gourmand is a separate page. Consider a toggle on the restaurants page to show "starred only" vs "starred + Bib Gourmand + Recommended" so users can see value options alongside stars.</p>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">F. Hotel ranking is Baymich1 analysis, not MICHELIN</h3>
+      <p style="font-size:0.88rem; color:var(--muted);">The "nearby starred restaurants" hotel ranking is our own analysis. Label it clearly as non-official on the hotels page (already done) and consider adding actual hotel prices from official hotel sites if you want a cost comparison.</p>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">G. Mobile performance &amp; accessibility</h3>
+      <p style="font-size:0.88rem; color:var(--muted);">Tables are responsive but wide; on very small phones consider a card view per restaurant instead of a table. Keep color contrast above WCAG AA (the Michelin red on white and gold badges were checked). Add image alt text and ARIA labels to the drawer menu (already partially done).</p>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">H. GitHub Pages publishing</h3>
+      <p style="font-size:0.88rem; color:var(--muted);">Enable GitHub Pages on the repo (Settings → Pages → deploy from branch) and set a custom 404. Run a broken-link check after every content change (all external links open in new tabs with rel="noopener").</p>
+
+      <div style="background:#fff3e6; border:1px solid #e2cf9e; border-radius:8px; padding:14px; margin-top:18px; font-size:0.85rem; color:var(--muted);">
+        <strong>Decision needed:</strong> Which suggestions to implement before publishing to GitHub Pages. Recommended minimum viable scope: B (complete key prices/hours), D (closed/moved badges), and H (publish). Map (A) and all-in cost (C) are phase 2.
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; font-size:0.85rem;">
+      <div><h4>Navigation</h4><ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="executive-summary.html">Executive Summary</a></li>
+        <li><a href="questions.html">Questions &amp; Answers</a></li>
+      </ul></div>
+      <div><h4>Related</h4><ul>
+        <li><a href="COORDINATION.md">Task board</a></li>
+      </ul></div>
+    </div>
+    <div class="hr"></div>
+    <p style="font-size:0.78rem; color:#8a8374; text-align:center;">Baymich1 &bull; Suggestions are for review; nothing is implemented without a decision.</p>
+  </div>
+</footer>
+
+<script>
+function toggleDrawer(){
+  const d = document.getElementById('drawer');
+  const open = d.classList.toggle('open');
+  d.setAttribute('aria-hidden', !open);
+}
+document.querySelectorAll('.drawer-panel a').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('drawer').setAttribute('aria-hidden','true');
+}));
+</script>
+
+</body>
+</html>

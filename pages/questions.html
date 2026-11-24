@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questions &amp; Answers — Before Any Decision</title>
+<meta name="description" content="Clear list of questions, information and answers that must be addressed before decisions can be reasonably made from the Bay Area Michelin data, plus suggestions to discover missing information.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      Baymich1
+    </div>
+    <button class="menu-btn" aria-label="Open menu" onclick="toggleDrawer()">&#9776;</button>
+    <nav class="site-nav" id="topNav">
+      <a href="restaurants.html">Restaurants</a>
+      <a href="hotels.html">Hotels (Michelin Keys)</a>
+      <a href="bib-gourmand.html">Bib Gourmand</a>
+      <a href="executive-summary.html">Executive Summary</a>
+      <a href="suggestions.html">Suggestions</a>
+      <a href="questions.html">Questions &amp; Answers</a>
+      <a href="../index.html">Home</a>
+    </nav>
+  </div>
+</header>
+
+<div class="nav-drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-panel">
+    <div class="drawer-close"><button aria-label="Close menu" onclick="toggleDrawer()">&#215;</button></div>
+    <a href="restaurants.html">Michelin Starred Restaurants</a>
+    <a href="hotels.html">Michelin Key Hotels</a>
+    <a href="bib-gourmand.html">Bib Gourmand</a>
+    <a href="executive-summary.html">Executive Summary</a>
+    <a href="suggestions.html">Suggestions</a>
+    <a href="questions.html">Questions &amp; Answers</a>
+    <a href="../index.html">Home</a>
+  </div>
+</div>
+
+<main class="page">
+  <div class="wrap">
+    <nav style="margin-bottom:14px; font-size:0.85rem; color:var(--muted);">
+      <a href="../index.html" style="color:var(--accent); text-decoration:none;">&#9664; Home</a> &nbsp; <span style="color:#999;">&#8259;</span> Questions &amp; Answers
+    </nav>
+
+    <section>
+      <h2 style="font-size:1.1rem; margin-bottom:6px; color:var(--accent);">Questions, information &amp; answers to resolve before any decision</h2>
+      <p style="font-size:0.9rem; color:var(--muted); margin-bottom:16px;">These are the items that must be addressed before the data can be used to make a reasonable decision. Each shows what we have, what we don't have, and how to discover the missing information.</p>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">1. Restaurant prices &amp; total cost for two adults</h3>
+      <table class="res-table">
+        <thead><tr><th style="width:6%;">#</th><th style="width:34%;">Question</th><th style="width:30%;">What we have</th><th style="width:30%;">What we lack / how to discover</th></tr></thead>
+        <tbody>
+        <tr><td>1</td><td>What is the exact per-person tasting-menu price for each starred restaurant?</td><td>Confirmed from official sites for Benu ($425+22%), Kiln ($315+20%), Lazy Bear ($295+20%+$5), Quince ($390/$270/$475), Saison (from $368), Sons &amp; Daughters ($315+20%).</td><td>Atelier Crenn exact current price (official site failed to load). All one-star and most two-star prices. Discover: fetch each venue's official site or MICHELIN Guide listing; record price + service charge %.</td></tr>
+        <tr><td>2</td><td>What is the total all-in cost for 2 adults (tax + service + drinks)?</td><td>Food-only estimates computed where price known. SF sales tax 8.625%; service 20–22% common.</td><td>Drinks/wine pairing prices not collected. Discover: fetch wine pairing cost from venue sites; build a formula column labeled "estimate."</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">2. Days open &amp; hours (with exceptions)</h3>
+      <table class="res-table">
+        <thead><tr><th style="width:6%;">#</th><th style="width:34%;">Question</th><th style="width:30%;">What we have</th><th style="width:30%;">What we lack / how to discover</th></tr></thead>
+        <tbody>
+        <tr><td>3</td><td>Which days is each venue open, and what are the hours?</td><td>Confirmed: Quince Tue–Sat 5–8pm; Benu dinner Wed–Sat; Lazy Bear dinner Tue–Sat; Kiln dinner nightly ~5pm; Atelier Crenn Tue–Sat 5–8:30pm.</td><td>Hours missing for most one-star and several two-star venues. Holiday/closure exceptions not captured anywhere. Discover: fetch each venue's "hours" page; note exceptions (e.g. Quince closed Nov 26, Dec 25–26).</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">3. Venue status (open / closed / moved)</h3>
+      <table class="res-table">
+        <thead><tr><th style="width:6%;">#</th><th style="width:34%;">Question</th><th style="width:30%;">What we have</th><th style="width:30%;">What we lack / how to discover</th></tr></thead>
+        <tbody>
+        <tr><td>4</td><td>Are any starred venues closed, relocated, or temporarily shut?</td><td>Osito closed permanently. The Shota temporarily closed since Mar 2025. Sons &amp; Daughters moved Nov 2025 to 2875 18th St. Canyon Ranch Woodside closed late Oct 2025.</td><td>Could be more closures since June 2025. Discover: re-check each venue's official site and recent news before relying on the list.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">4. Social links (YouTube / TikTok / Instagram)</h3>
+      <table class="res-table">
+        <thead><tr><th style="width:6%;">#</th><th style="width:34%;">Question</th><th style="width:30%;">What we have</th><th style="width:30%;">What we lack / how to discover</th></tr></thead>
+        <tbody>
+        <tr><td>5</td><td>Does every restaurant/activity have a YouTube, TikTok or Instagram link?</td><td>Instagram handles collected for ~12 venues (e.g. @benusf, @quencesf, @kilnsf, @lazybearsf, @narisf, @sonsanddaughterssf, @misterjius, @sanhowon, @statebirdprovisions, @californios, @ateliercrenn).</td><td>Most venues still blank. TikTok and YouTube links almost entirely absent. Discover: search each venue name + platform; link only verified official accounts.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">5. Hotel ranking confidence</h3>
+      <table class="res-table">
+        <thead><tr><th style="width:6%;">#</th><th style="width:34%;">Question</th><th style="width:30%;">What we have</th><th style="width:30%;">What we lack / how to discover</th></tr></thead>
+        <tbody>
+        <tr><td>6</td><td>Can hotels be reliably ranked by nearby Michelin restaurants?</td><td>MICHELIN Key levels from MICHELIN / press. Nearby-restaurant list is Baymich1 analysis, labeled non-official.</td><td>Hotel prices not published by MICHELIN. "Nearby" is subjective (walking vs driving distance). Discover: define a distance radius, geocode hotels and restaurants, compute proximity objectively.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">6. Data freshness &amp; source authority</h3>
+      <table class="res-table">
+        <thead><tr><th style="width:6%;">#</th><th style="width:34%;">Question</th><th style="width:30%;">What we have</th><th style="width:30%;">What we lack / how to discover</th></tr></thead>
+        <tbody>
+        <tr><td>7</td><td>Is the data current (2025 selection)? Could stars have changed?</td><td>Based on MICHELIN Guide California 2025 (announced June 2025), plus Time Out SF update (Nov 2025) confirming Kiln → 2 stars, The Shota closure.</td><td>Stars change annually; a 2026 selection may exist. Discover: re-check guide.michelin.com for the latest selection before any decision; add a "data as of" date on every page.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 style="font-size:0.95rem; margin-bottom:8px; color:var(--accent);">7. Suggestions to discover missing information</h3>
+      <ul style="margin-bottom:14px; padding-left:18px; font-size:0.88rem; color:var(--muted);">
+        <li>Fetch each venue's official website (listed in the Source column) and record price, hours, days, exceptions, and social handles.</li>
+        <li>Cross-check star status against the official MICHELIN Guide (guide.michelin.com) — treat press articles as secondary, MICHELIN as authoritative.</li>
+        <li>For social links, search "[venue name] Instagram/TikTok/YouTube" and link only verified official accounts.</li>
+        <li>Set a "last verified" date per row and re-verify quarterly or before each MICHELIN annual announcement.</li>
+        <li>Log every irregularity (e.g., Kiln homepage still shows a one-star badge though it is two-star) in COORDINATION.md under Flagged for Review.</li>
+      </ul>
+
+      <p style="font-size:0.8rem; color:var(--muted); margin-top:14px;"><strong>Bottom line:</strong> No booking or hotel decision should rest solely on this site until items 1–6 are resolved and each table row carries an official source link or is explicitly blank/unverified. This site is a planning dashboard, not a reservation system.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; font-size:0.85rem;">
+      <div><h4>Navigation</h4><ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="executive-summary.html">Executive Summary</a></li>
+        <li><a href="suggestions.html">Suggestions</a></li>
+      </ul></div>
+    </div>
+    <div class="hr"></div>
+    <p style="font-size:0.78rem; color:#8a8374; text-align:center;">Baymich1 &bull; Data: MICHELIN Guide California 2025. Confirm with the venue before booking.</p>
+  </div>
+</footer>
+
+<script>
+function toggleDrawer(){
+  const d = document.getElementById('drawer');
+  const open = d.classList.toggle('open');
+  d.setAttribute('aria-hidden', !open);
+}
+document.querySelectorAll('.drawer-panel a').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('drawer').setAttribute('aria-hidden','true');
+}));
+</script>
+
+</body>
+</html>

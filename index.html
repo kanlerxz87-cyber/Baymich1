@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bay Area Michelin Guide &amp; Map — Starred Restaurants, Hotels &amp; Planning</title>
+<meta name="description" content="An organized, mobile-friendly dashboard of Michelin-starred and Michelin Guide-listed restaurants and Michelin Key hotels across the San Francisco Bay Area, with verified pricing, hours, and official sources.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <span class="dot" aria-hidden="true"></span>
+      Baymich1
+    </div>
+    <button class="menu-btn" aria-label="Open menu" onclick="toggleDrawer()">&#9776;</button>
+    <nav class="site-nav" id="topNav">
+      <a href="pages/restaurants.html">Restaurants</a>
+      <a href="pages/hotels.html">Hotels (Michelin Keys)</a>
+      <a href="pages/bib-gourmand.html">Bib Gourmand</a>
+      <a href="pages/executive-summary.html">Executive Summary</a>
+      <a href="pages/suggestions.html">Suggestions</a>
+      <a href="pages/questions.html">Questions &amp; Answers</a>
+    </nav>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="nav-drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-panel">
+    <div class="drawer-close"><button aria-label="Close menu" onclick="toggleDrawer()">&#215;</button></div>
+    <a href="pages/restaurants.html">Michelin Starred Restaurants</a>
+    <a href="pages/hotels.html">Michelin Key Hotels</a>
+    <a href="pages/bib-gourmand.html">Bib Gourmand</a>
+    <a href="pages/executive-summary.html">Executive Summary</a>
+    <a href="pages/suggestions.html">Suggestions</a>
+    <a href="pages/questions.html">Questions &amp; Answers</a>
+  </div>
+</div>
+
+<main class="page">
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">San Francisco Bay Area &bull; Michelin Guide California 2025</div>
+        <h1>Michelin Guide &amp; Map Dashboard</h1>
+        <p>Starred and Guide-listed restaurants, Michelin Key hotels, verified pricing for two adults, opening hours, official sources, and social links — organized for trip planning and decision making.</p>
+        <div class="hero-meta">
+          <span class="chip star">&#9733; Up to 3 Stars</span>
+          <span class="chip green">Green Star</span>
+          <span class="chip outline">&#9733; Listed (no star)</span>
+          <span class="chip outline">&#128203; Michelin Keys</span>
+          <span class="chip outline">&#128247; Mobile friendly</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <h2>What this site is</h2>
+      <p>A clean, mobile-friendly dashboard of the <strong>MICHELIN Guide California 2025</strong> selection for the San Francisco Bay Area. Every entry shows whether the venue is merely <em>listed</em> in the Guide or currently holds a <em>Michelin star</em>, together with verified pricing (estimate range for two adults), days and hours open, official venue link, a link to the MICHELIN Guide listing, and any YouTube / TikTok / Instagram links we could verify.</p>
+      <ul>
+        <li><strong>Data standard:</strong> Every table row links to an official source. Values that cannot be confirmed from an official source are left <em>blank</em> and flagged <span class="unverified">unverified</span> — nothing is inferred or invented.</li>
+        <li><strong>Pricing:</strong> Shown as an estimated total for 2 adults (food only, before tax/service/drinks) where a tasting menu or menu price is published; otherwise an estimate range is given and flagged.</li>
+        <li><strong>Verification status:</strong> All entries verified line by line against official venue websites or the MICHELIN Guide. Irregularities are noted on the Suggestions page.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 style="font-size:1.05rem; margin-bottom:10px; color:var(--accent);">Quick links by category</h2>
+      <div class="dash-grid">
+        <a class="dash-card" href="pages/restaurants.html">
+          <div class="num">42+</div>
+          <div class="lbl">Starred restaurants (Bay Area)</div>
+        </a>
+        <a class="dash-card" href="pages/hotels.html">
+          <div class="num">19</div>
+          <div class="lbl">Michelin Key hotels</div>
+        </a>
+        <a class="dash-card" href="pages/bib-gourmand.html">
+          <div class="num">30+</div>
+          <div class="lbl">Bib Gourmand (value)</div>
+        </a>
+        <a class="dash-card" href="pages/executive-summary.html">
+          <div class="num">1</div>
+          <div class="lbl">Executive summary</div>
+        </a>
+        <a class="dash-card" href="pages/suggestions.html">
+          <div class="num">1</div>
+          <div class="lbl">Suggestions &amp; review</div>
+        </a>
+        <a class="dash-card" href="pages/questions.html">
+          <div class="num">1</div>
+          <div class="lbl">Questions &amp; answers</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="map-wrap">
+      <h3>Cluster view: where the stars are</h3>
+      <p style="font-size:0.9rem; color:var(--muted); margin-bottom:10px;">Michelin-starred restaurants cluster in <strong>San Francisco</strong> (SoMa, Mission, Nob Hill, Jackson Square, Cow Hollow, Hayes Valley, Financial District), <strong>Napa/Sonoma wine country</strong> (Yountville, St. Helena, Healdsburg, Calistoga, Rutherford, Geyserville, Sonoma), the <strong>Peninsula</strong> (Palo Alto, Redwood City, San Mateo, Woodside, Saratoga), and the <strong>East Bay</strong> (Oakland, Berkeley, San Anselmo). See the full table on the Restaurants page.</p>
+      <div style="font-size:0.82rem; color:var(--muted);">Interactive map coming in a future release. Until then, each restaurant row links to its official site and the MICHELIN Guide listing for directions.</div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; font-size:0.85rem;">
+      <div>
+        <h4>Baymich1</h4>
+        <p>San Francisco Bay Area Michelin Guide dashboard. Organized, verified, mobile-friendly.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="pages/restaurants.html">Starred Restaurants</a></li>
+          <li><a href="pages/hotels.html">Michelin Key Hotels</a></li>
+          <li><a href="pages/bib-gourmand.html">Bib Gourmand</a></li>
+          <li><a href="pages/executive-summary.html">Executive Summary</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Review &amp; input</h4>
+        <ul>
+          <li><a href="pages/suggestions.html">Suggestions (pre-implementation)</a></li>
+          <li><a href="pages/questions.html">Questions &amp; Answers</a></li>
+          <li><a href="COORDINATION.md">Task board (COORDINATION.md)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sources</h4>
+        <ul>
+          <li><a href="https://guide.michelin.com/us/en/california/san-francisco/restaurants/all-starred" target="_blank" rel="noopener">MICHELIN Guide — SF starred</a></li>
+          <li><a href="https://www.michelin.com/en/publications/products-and-services/michelin-guide-california-2025-selection" target="_blank" rel="noopener">MICHELIN Guide California 2025 selection</a></li>
+          <li><a href="https://guide.michelin.com/us/en/hotels" target="_blank" rel="noopener">MICHELIN Key hotels</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hr"></div>
+    <p style="font-size:0.78rem; color:#8a8374; text-align:center;">Data reflects the MICHELIN Guide California 2025 selection (announced June 2025) and venue-published pricing/hours. Restaurant operations, stars, prices and hours change — always confirm with the venue and the MICHELIN Guide before booking. Prices are food-only estimates for two adults before tax, service charge, and drinks unless stated otherwise.</p>
+  </div>
+</footer>
+
+<script>
+function toggleDrawer(){
+  const d = document.getElementById('drawer');
+  const open = d.classList.toggle('open');
+  d.setAttribute('aria-hidden', !open);
+}
+// close drawer when clicking a link
+document.querySelectorAll('.drawer-panel a').forEach(a=>a.addEventListener('click',()=>{
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('drawer').setAttribute('aria-hidden','true');
+}));
+</script>
+
+</body>
+</html>
