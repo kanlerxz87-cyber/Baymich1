@@ -1,137 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suggestions — Baymich1 MICHELIN Guide SF Bay Area</title>
-  <meta name="description"content="Suggested improvements to the Michelin Guide SF Bay Area site, for review before implementing any changes.">
-  <link rel="stylesheet" href="../css/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suggestions &amp; questions · Bay Area Michelin Dashboard</title>
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a href="../index.html" class="brand">Baymich<span class="accent">1</span></a>
-      <span class="tagline">MICHELIN Guide San Francisco Bay Area &bull; Suggestions</span>
-      <nav id="nav">
-        <a href="restaurants.html">All restaurants</a>
-        <a href="starred.html">Starred</a>
-        <a href="bib-gourmand.html">Bib Gourmand</a>
-        <a href="clusters.html">Clusters</a>
-        <a href="hotels.html">Hotels</a>
-        <a href="executive-summary.html">Executive summary</a>
-        <a href="suggestions.html" class="active">Suggestions</a>
-        <a href="questions.html">Open questions</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Open menu">Menu</button>
-    </div>
-    <div id="mobile-menu"></div>
-  </header>
+<header class="top">
+  <div class="brand"><a href="../index.html">Bay Area Michelin Dashboard</a></div>
+  <nav class="nav"><a class="" href="../index.html">Home</a><a class="" href="../pages/michelin-starred.html">Michelin starred</a><a class="" href="../pages/executive-summary.html">Executive summary</a><a class="" href="../pages/flagged-for-review.html">Flagged for review</a><a class="on" href="../pages/suggestions.html">Suggestions &amp; questions</a><a class="" href="../pages/repo-review.html">Repo review</a></nav>
+</header>
+<main class="wrap">
 
-  <section class="section">
-    <div class="container">
-      <h2>Suggestions &amp; proposed improvements</h2>
-      <p class="lead">Review these suggestions and choose the best path before implementing any changes. None are approved or live; each includes a rationale and an open decision flag.</p>
+<section class="hero">
+  <h1>Suggestions &amp; questions</h1>
+  <p>Nothing here changes the site. Review the suggestions, answer the questions, then choose a path. Reply in chat with the IDs you want (for example, "S1, S2, S3, Q1 yes").</p>
+</section>
 
-      <h3 style="margin:18px 0 8px">A. Data &amp; verification suggestions</h3>
-      <table style="width:100%;border-collapse:collapse;font-size:0.86rem;margin-bottom:16px">
-        <thead><tr style="text-align:left"><th style="padding:8px;border-bottom:1px solid #e2e8f0">#</th><th style="padding:8px;border-bottom:1px solid #e2e8f0">Suggestion</th><th style="padding:8px;border-bottom:1px solid #e2e8f0">Rationale</th><th style="padding:8px;border-bottom:1px solid #e2e8f0">Decision needed</th></tr></thead>
-        <tbody>
-          <tr>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">A1</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Re-verify exact 2-adult pricing for Quince, Californios, Saison, Sons &amp; Daughters, Lazy Bear, Atelier Crenn from each restaurant&rsquo;s official website (current sources conflict or are dated).</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">User requires real verified pricing; conflicting third-party figures ($298–$450 pp) must not be presented as fact.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Confirm official-site price before displaying totals.</td>
-          </tr>
-          <tr>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">A2</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Fill blank hours / days open / exceptions for all 30 Bib Gourmand restaurants and the remaining starred restaurants (Niku, Wolfsbane, Nisei, Naides, etc.) from official sites.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">User requires opening hours and exceptions for every listing.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Prioritize Bib Gourmand, then remaining starred.</td>
-          </tr>
-          <tr>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">A3</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Add verified Instagram / YouTube / TikTok handles per restaurant.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">User wants a social link for every restaurant/activity; currently almost all social fields are blank/unverified.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Decide whether to accept third-party-verified handles or official-only.</td>
-          </tr>
-          <tr>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">A4</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Re-scrape the official Michelin Guide after each annual ceremony to keep star/Bib Gourmand data current.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Stars change yearly (e.g., Californios and Wolfsbane gained stars in 2026; Le Comptoir, O&rsquo; by Claude Le Tohic, Shota, Kenzo lost them).</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Set an annual refresh task.</td>
-          </tr>
-        </tbody>
-      </table>
+<section class="card">
+  <h2>Questions that need answers before deciding</h2>
+  <div class="tablewrap"><table class="data">
+    <thead><tr><th>ID</th><th>Question</th><th>Context</th><th>Status</th></tr></thead>
+    <tbody><tr>
+  <td data-label="ID"><span class="badge bad">Q1</span></td><td data-label="Question"><strong>Which &#x27;Bay Area&#x27; definition should the site use?</strong></td>
+  <td data-label="Context">Answered in the site: 9 counties (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, Sonoma). Needs your confirmation.</td><td data-label="Status"><span class="badge ok">Partly answered</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q2</span></td><td data-label="Question"><strong>What dollar figure counts as the couple cost?</strong></td>
+  <td data-label="Context">Michelin gives tiers only. Options: (a) official menu price from each restaurant site, (b) reservation-platform prices, (c) keep tiers only. None is verified yet.</td><td data-label="Status"><span class="badge warn">Open</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q3</span></td><td data-label="Question"><strong>What radius counts for hotel ranking?</strong></td>
+  <td data-label="Context">Walking (0.5 mi), short drive (5 mi) or county-wide? Also: count starred only, or starred plus Bib and Recommended?</td><td data-label="Status"><span class="badge warn">Open</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q4</span></td><td data-label="Question"><strong>Which social platforms count as a &#x27;corresponding link&#x27;?</strong></td>
+  <td data-label="Context">Official brand account linked from the restaurant&#x27;s own website, or any account found by search? The first option is easier to verify.</td><td data-label="Status"><span class="badge warn">Open</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q5</span></td><td data-label="Question"><strong>Visit window and party details</strong></td>
+  <td data-label="Context">Dates, time of day and budget per person would let the site show which places are open on your days.</td><td data-label="Status"><span class="badge warn">Open</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q6</span></td><td data-label="Question"><strong>Is Wine Country (Napa, Sonoma) in scope?</strong></td>
+  <td data-label="Context">Eight of 41 starred places are in Napa and Sonoma. They are included now as Bay Area counties. Confirm or remove.</td><td data-label="Status"><span class="badge ok">Partly answered</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q7</span></td><td data-label="Question"><strong>Should future data changes go through a PR to main?</strong></td>
+  <td data-label="Context">Pages publishes from main, so content goes live only after a merge. Please confirm this is how you want future changes handled.</td><td data-label="Status"><span class="badge warn">Open</span></td></tr></tbody></table></div>
+</section>
 
-      <h3 style="margin:18px 0 8px">B. Site &amp; UX suggestions</h3>
-      <table style="width:100%;border-collapse:collapse;font-size:0.86rem;margin-bottom:16px">
-        <thead><tr style="text-align:left"><th style="padding:8px;border-bottom:1px solid #e2e8f0">#</th><th style="padding:8px;border-bottom:1px solid #e2e8f0">Suggestion</th><th style="padding:8px;border-bottom:1px solid #e2e8f0">Rationale</th><th style="padding:8px;border-bottom:1px solid #e2e8f0">Decision needed</th></tr></thead>
-        <tbody>
-          <tr>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">B1</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Add an interactive map (Leaflet, free) with markers for each restaurant, colored by star level, linked to the table rows.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Project goal explicitly includes a &ldquo;guide and map&rdquo; and clustering analysis; a map makes clusters actionable.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Approve map library and geocoding source for addresses.</td>
-          </tr>
-          <tr>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">B2</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Switch from price bracket ($$$$) to exact all-in 2-adult total (food + service + tax + estimated pairing) as the default sort/display.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">User wants total price for 2 adults presented clearly for decision making.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Confirm formula (service %, tax %) to apply uniformly.</td>
-          </tr>
-          <tr>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">B3</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Add an &ldquo;activities&rdquo; category (e.g., nearby Michelin-starred hotel dining, food markets, wine-tasting) with YouTube/TikTok/Instagram links, since the user asked for restaurants <em>or activities</em>.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Scope explicitly includes activities alongside restaurants.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Define activity list and source standard.</td>
-          </tr>
-          <tr>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">B4</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Add a print-friendly / export (CSV) button for the restaurant table.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Helps users compare options offline when deciding.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Low effort; approve.</td>
-          </tr>
-          <tr>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">B5</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Add per-entry &ldquo;last verified&rdquo; date and a &ldquo;Report a discrepancy&rdquo; link.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Supports the no-hallucination / verification standard and keeps data honest over time.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Approve.</td>
-          </tr>
-        </tbody>
-      </table>
+<section class="card">
+  <h2>Suggestions (choose the path)</h2>
+  <div class="tablewrap"><table class="data">
+    <thead><tr><th>ID</th><th>Suggestion</th><th>Why</th><th>Effort / needs</th><th>Advice</th></tr></thead>
+    <tbody><tr>
+  <td data-label="ID"><span class="badge ok">S1</span></td><td data-label="Suggestion"><strong>Add filters (county, star level, price tier, open-on-day)</strong></td>
+  <td data-label="Why">Lets a planner narrow 41 rows quickly on a phone.</td><td data-label="Effort / needs">Medium effort. Needs a small script on the page (GitHub Pages can run it).</td><td data-label="Advice">Recommended: do first</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S2</span></td><td data-label="Suggestion"><strong>Add a &#x27;last verified&#x27; date to every row</strong></td>
+  <td data-label="Why">Shows how old each value is. Important for hours and openings.</td><td data-label="Effort / needs">Low effort. Needs a date field per row in the JSON.</td><td data-label="Advice">Recommended: do first</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S3</span></td><td data-label="Suggestion"><strong>Add an automated link checker (GitHub Actions)</strong></td>
+  <td data-label="Why">Catches broken Michelin and restaurant links after each change.</td><td data-label="Effort / needs">Low to medium effort. Adds a workflow file. The sandbox cannot reach guide.michelin.com from bash, so checks must run on GitHub.</td><td data-label="Advice">Recommended</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S4</span></td><td data-label="Suggestion"><strong>Finish the Bib Gourmand / Recommended table (T3)</strong></td>
+  <td data-label="Why">Covers the &#x27;listed but no star&#x27; group the brief asks for.</td><td data-label="Effort / needs">Medium effort. Needs a full pass of the Michelin Bay Area listing.</td><td data-label="Advice">Recommended</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S5</span></td><td data-label="Suggestion"><strong>Build the hotel ranking (T4)</strong></td>
+  <td data-label="Why">Ranks hotels by nearby starred and listed restaurants.</td><td data-label="Effort / needs">Needs Q3 answered first.</td><td data-label="Advice">Decide after Q3</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S6</span></td><td data-label="Suggestion"><strong>Add social links (T5) using rule Q4</strong></td>
+  <td data-label="Why">Covers the YouTube / TikTok / Instagram requirement.</td><td data-label="Effort / needs">Medium to high effort, one search per restaurant.</td><td data-label="Advice">Decide after Q4</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S7</span></td><td data-label="Suggestion"><strong>Couple cost from official menu prices (T6)</strong></td>
+  <td data-label="Why">Gives a real estimate range instead of blanks.</td><td data-label="Effort / needs">High effort. Each restaurant&#x27;s menu must be checked. Leave blank where no official price exists.</td><td data-label="Advice">Decide after Q2</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S8</span></td><td data-label="Suggestion"><strong>Add a map view</strong></td>
+  <td data-label="Why">Shows clusters visually.</td><td data-label="Effort / needs">Medium effort. Needs a map library, which adds a dependency.</td><td data-label="Advice">Optional</td></tr></tbody></table></div>
+  <p class="small muted">Recommended path: S1 + S2 + S3, then T3 (Bib / Recommended). This adds value without needing the open questions answered.</p>
+</section>
 
-      <h3 style="margin:18px 0 8px">C. Hotel &amp; analysis suggestions</h3>
-      <table style="width:100%;border-collapse:collapse;font-size:0.86rem;margin-bottom:16px">
-        <thead><tr style="text-align:left"><th style="padding:8px;border-bottom:1px solid #e2e8f0">#</th><th style="padding:8px;border-bottom:1px solid #e2e8f0">Suggestion</th><th style="padding:8px;border-bottom:1px solid #e2e8f0">Rationale</th><th style="padding:8px;border-bottom:1px solid #e2e8f0">Decision needed</th></tr></thead>
-        <tbody>
-          <tr>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">C1</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Replace the reasoned hotel nearby-starred counts with an actual radius count (e.g., starred restaurants within 1 mile / 5 km) computed from verified addresses.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Current hotel ranking is an estimate, not official; user wants hotels ranked by amount of Michelin restaurants around them.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Confirm radius and geocoding method before displaying counts as fact.</td>
-          </tr>
-          <tr>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">C2</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Add verified hotel pricing (per night for 2 adults) and Michelin Keys status where available.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Parallel to restaurant pricing request; improves decision making.</td>
-            <td style="padding:8px;border-bottom:1px solid #e2e8f0">Source official hotel sites.</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="callout">
-        <strong>Process note.</strong> Each suggestion above is a proposed path, not a committed change. Review, pick the best path, then implement in a separate branch and re-verify before merging to the live GitHub Pages site. See the Open Questions page for prerequisites.
-      </div>
-
-      <p style="margin-top:18px;font-size:0.82rem;color:#64748b">Data compiled 2026-11-24. Source: guide.michelin.com (2026 MICHELIN Guide California).</p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p><strong>Baymich1</strong> — MICHELIN Guide San Francisco Bay Area. Unofficial visitor planning resource; not affiliated with MICHELIN.</p>
-      <p>Data verified against <a href="https://guide.michelin.com" target="_blank" rel="noopener">guide.michelin.com</a> (2026 MICHELIN Guide California).</p>
-    </div>
-  </footer>
+</main>
+<footer class="foot">
+  Data as of 2026-11-24 · Every value links to an official source or is marked <strong>Unverified</strong>. ·
+  Source repo: <a href="https://github.com/kanlerxz87-cyber/Baymich1">github.com/kanlerxz87-cyber/Baymich1</a>
+</footer>
 </body>
 </html>
