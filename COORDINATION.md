@@ -26,12 +26,12 @@ Session ID: `session-arena-e4732d51`
 | 3 | Research: Michelin star clusters in SF Bay Area | docs/analysis/clusters.md | unclaimed | — | michelinguide.com | — |
 | 4 | Research: hotels ranked by Michelin restaurant proximity/count | docs/data/hotels.md | unclaimed | — | official hotel sites / michelinguide.com | — |
 | 5 | Research: pricing (2 adults), hours, days open, exceptions, social links per restaurant | data/restaurants.json, data/bibgourmand.json | in progress | session-arena-e4732d51 | official restaurant sites | Starred: Benu, Acquerello, Kiln, Commis, Birdsong pricing/hours verified from official sites. Quince, Californios, Saison, S&D, Lazy Bear, Atelier Crenn = conflicting/stale sources, flagged unverified. Bib Gourmand: not yet researched (blank/unverified). |
-| 6 | Build: GitHub Pages site structure (landing page + category subpages) | index.html, category pages, assets | unclaimed | — | — | — |
-| 7 | Build: tables with all entries, sources, unverified flags | site pages | unclaimed | — | — | — |
-| 8 | Build: executive summary | docs/executive-summary.md | unclaimed | — | — | — |
-| 9 | Build: suggestions section (pre-implementation review) | docs/suggestions.md | unclaimed | — | — | — |
-| 10 | Build: open questions / information needed / answers before decisions | docs/questions.md | unclaimed | — | — | — |
-| 11 | Verification: line-by-line source check of every table row | all data files | unclaimed | — | official sources | — |
+| 6 | Build: GitHub Pages site structure (landing page + category subpages) | index.html, pages/*.html, css/style.css, js/app.js | done | session-arena-e4732d51 | — | Landing + all category subpages built |
+| 7 | Build: tables with all entries, sources, unverified flags | pages/restaurants.html, starred.html, bib-gourmand.html + data JSON | done | session-arena-e4732d51 | — | Responsive tables; blank/unverified flagged per policy |
+| 8 | Build: executive summary | pages/executive-summary.html | done | session-arena-e4732d51 | — | Executive summary page built |
+| 9 | Build: suggestions section (pre-implementation review) | pages/suggestions.html | done | session-arena-e4732d51 | — | Suggestions page built |
+| 10 | Build: open questions / information needed / answers before decisions | pages/questions.html | done | session-arena-e4732d51 | — | Open questions page built |
+| 11 | Verification: line-by-line source check of every table row | data/restaurants.json, data/bibgourmand.json, pages/*.html | in progress | session-arena-e4732d51 | official sources | Michelin distinction/city/cuisine/bracket verified vs guide.michelin.com for all 59. Pricing/hours verified from official sites for Benu, Acquerello, Kiln, Commis, Birdsong; conflicts flagged unverified for others. Bib Gourmand details pending. |
 | 12 | Integration: merge branches, re-verify combined data, confirm no broken links, publish to GitHub Pages | all | unclaimed | — | — | — |
 
 ## Log
