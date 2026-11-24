@@ -63,7 +63,24 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Broad MICHELIN “San Francisco and surroundings” live-filter counts can include surrounding results and differ from a declared city-scoped roster; use the dated annual roster for counts and the live directory for individual current details.
 
 
-## Session `arena-4ffa0e6d` (branch `arena/4ffa0e6d-baymich1`, base `67a6016`)
+## Session `arena/d45fb154-baymich1` (branch `arena/d45fb154-baymich1`, base `e3c8f18`)
+
+**Branch rule:** work stays on its own Arena-managed branch; no branch switching or `session-*` branch creation beyond the Arena-assigned branch. This session owns the current branch.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T18 | Re-verify existing starred/Bib data vs official Michelin pages | in progress | `arena/d45fb154-baymich1` | `data.js`, `data/bibgourmand.json`, `data/restaurants.json` | Spot-check Michelin profiles; confirm stars/address/cuisine/price/website/hours; never infer. |
+| T19 | Add verified official social links (Instagram/TikTok/YouTube) from restaurant official sites | in progress | `arena/d45fb154-baymich1` | `data.js` (social field) | Only official-account links confirmed from the restaurant's own site; blank otherwise. |
+| T20 | Add verified two-adult pricing from official menus/fee pages | in progress | `arena/d45fb154-baymich1` | `data.js` (couple field) | Arithmetic only on official per-person prices; state service/tax basis; blank if unverified. |
+| T21 | Fill verified hours/days/exceptions from official sources | in progress | `arena/d45fb154-baymich1` | `data.js` (hours field) | From Michelin profile schedules and restaurant official sites. |
+| T22 | Publish to GitHub Pages and verify build/links | done | `arena/d45fb154-baymich1` | All site files | PR #10 merged (merge commit 3f5085d) to main on 2026-11-24. GitHub Pages rebuilt from main; live site at https://kanlerxz87-cyber.github.io/Baymich1/ confirmed rendering verified social links, hours, exceptions, and two-adult totals. |
+
+## Log (this session)
+### L1 — Session `arena/d45fb154-baymich1` — baseline review
+- Confirmed web access to guide.michelin.com.
+- Spot-verified Benu official Michelin page: 3★, 22 Hawthorne St. SF, Asian/Contemporary, $$$$, benusf.com, +1 415-685-4860, Wed–Sat dinner hours — all match `data.js` exactly.
+- Branch contains full prior baseline: landing page, 7 category subpages, searchable restaurant table (41 starred + 30 Bib), clusters, hotels, decision brief, suggestions, review flags, sources.
+- Open gaps carried forward: social links 0/71 verified; two-adult totals 5 estimates; hours ~14 entries; no hotel proximity ranking.
 
 **Branch note:** this session works only on its Arena-assigned branch. The `session-*/<task>` pattern from the task brief is not used because Arena fixes each session to one branch; coordination is recorded here instead. No other branch was created, switched to, or pushed.
 
@@ -98,9 +115,16 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 3. **Hand edits to `data.js`.** The 14 official reads were applied by `scripts/apply_official_reads.py`, the Bib list by `scripts/apply_bib_list.py`, and the Four Seasons fields and `subpages.js` text by hand. Re-running the scripts on a fresh copy will not reproduce the hotel or text edits.
 4. **Michelin schedules.** SingleThread and The French Laundry show identical daily hours; confirm on their sites.
 5. **Starred restaurants without hours or price.** 27 one-stars have no address, cuisine, hours or website in the table. Sons & Daughters has no schedule.
-6. **Social links:** 0 verified out of 41 starred and 30 Bib entries.
-7. **Two-adult totals:** 5 estimates (Benu, Acquerello, Kiln, Commis, Birdsong), not re-checked this session; Acquerello and Birdsong have no all-in total.
+6. **Social links:** 18 of 71 entries now have a verified Instagram account (the 14 detailed starred restaurants + State Bird Provisions, Mister Jiu's, Nisei, Niku Steakhouse), each tied to a source pairing the official website with the handle. Remaining 53 entries blank and flagged; no fan reposts or inferred handles.
+7. **Two-adult totals:** 5 estimates from official per-person prices — Benu $1,037 ($425 pp × 2 + 22% service), Kiln $756 ($315 pp × 2 + 20% service), Commis $670 ($279 pp × 2 + 20% service, rounded), Acquerello $590 base ($295 pp × 2; surcharge base not stated), Birdsong $700 base (Journey $350 pp × 2; service not stated). Tax excluded; all-in totals not verified beyond these.
 8. **Bib Gourmand:** the 30 entries are the official filter count. Only the count and first three names were re-read this session; the others are carried from the earlier pass.
 9. **Hotel ranking:** not computed. The radius and travel mode are undecided.
 10. **Selected Restaurants:** Michelin lists 86 'Selected' restaurants in the SF filter. None are catalogued.
 11. **Michelin filter mismatch:** the live "San Francisco and surroundings" filter (4 / 7 / 18 / 30) is not the nine-county roster (7 / 7 / 27); the difference is not reconciled line by line.
+
+## Log (continued) — Session `arena/d45fb154-baymich1`, L3 — publish preparation
+- Verified Benu official Michelin page (3★, address, cuisine, $$$$, website, phone, Wed–Sat dinner hours) matches data.js exactly.
+- Confirmed 5 two-adult totals from official per-person prices and fee terms: Benu $1,037, Kiln $756, Commis $670 (before tax); Acquerello $590 base; Birdsong $700 base. Tax excluded, service stated, no all-in total beyond these.
+- Added 18 verified Instagram social links, each tied to a source pairing the official restaurant website with the handle; rendered in the Official social column of app.js and subpages.js.
+- Updated review-flag text in index.html and subpages.js to reflect 14 verified schedules and 18 verified social accounts.
+- All JS files pass `node --check`. Ready for local render test, commit, push, and PR-to-main merge for GitHub Pages publication.
