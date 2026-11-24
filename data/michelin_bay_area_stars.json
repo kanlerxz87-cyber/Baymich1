@@ -8,7 +8,8 @@
     "Hours are copied only from the Michelin restaurant page. 'Not captured' means the value was not read in this pass, not that it does not exist.",
     "Michelin star list and star levels come from the official article (24 Jun 2026): 3★ 7, 2★ 7, 1★ 27 in the nine-county Bay Area, plus Napa/Sonoma. 'Lost star' press reports were not verified and are not included.",
     "Cuisine is blank everywhere: no official cuisine value was read in this pass.",
-    "County is general geography (not from Michelin) and is flagged F12."
+    "County is general geography (not from Michelin) and is flagged F12.",
+    "SCOPE NOTE (T13, 2026-11-24): 41 = nine-county Bay Area count (3★ 7, 2★ 7, 1★ 27), re-counted from the official article's city lists (3★: Atelier Crenn, Benu, Californios, Quince, SingleThread, Enclos, The French Laundry; 2★ includes 6 SF + Commis, Oakland). It is NOT the Michelin San Francisco page count of 29 (4×3★, 7×2★, 18×1★; 'San Francisco and surroundings', restaurants.json). Use the stated scope on every count."
   ],
   "sources": {
     "A": {

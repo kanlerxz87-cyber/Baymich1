@@ -28,25 +28,24 @@
       "cuisine": "Contemporary (Californian)",
       "michelinPriceBracket": "$$$$",
       "address": "470 Pacific Avenue, San Francisco, CA 94133",
-      "website": "http://www.quincerestaurant.com/",
+      "website": "https://www.quincerestaurant.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince",
-      "estPricePerPerson": "$298–$390 tasting menu (sources vary; see priceSource)",
-      "estPrice2AdultsTotal": "$596–$780 food only (2 adults), before service/tax/pairings",
-      "priceSource": "OpenTable ($298 tasting); TravelsForStars ($360–$390); SF Standard ($360). Official site quincerestaurant.com not yet re-verified after renovation reopening.",
+      "estPricePerPerson": null,
+      "estPrice2AdultsTotal": null,
+      "priceSource": "Not on official site (quincerestaurant.com, fetched 2026-11-24, lists no prices). Press only, unverified: $270 four-course and $360 longer tasting menu per SF Chronicle/Robb Report coverage of the renovation reopening (Nov 2023) and Bold Italic (2026). Earlier $298/$390 figures (OpenTable, TravelsForStars) are not used. Two-adult total not verified.",
       "priceVerified": false,
-      "hours": "Dinner: Tue–Thu 5:30pm–9:00pm; Fri–Sat 5:00pm–9:30pm",
-      "daysOpen": "Tuesday–Saturday",
-      "exceptions": "Monday & Sunday: closed (per OpenTable; confirm on official site after Nov 28, 2026 reopening)",
+      "hours": "Official site: open Tuesday–Saturday. Main dining room reservations 5:00–8:00 pm; Bolinas Bar seating first-come, first-serve (except the California Coast & Valleys menu, which needs a reservation). Four-course lunch menu offered Friday and Saturday.",
+      "daysOpen": "Tuesday–Saturday (official site)",
+      "exceptions": "Official site banner: closed Nov 26 and Dec 25–26; Christmas Eve lunch and New Year's Eve dinner are offered (reservations via the site's booking link).",
       "instagram": null,
       "youtube": null,
       "tiktok": null,
       "socialVerified": false,
       "sourceLinks": [
-        "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince",
-        "https://www.opentable.com/r/quince-san-francisco",
-        "https://sfstandard.com/2023/11/06/san-francisco-michelin-star-restaurant-quince-reopens/"
+        "https://www.quincerestaurant.com/",
+        "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince"
       ],
-      "notes": "Three-Michelin-starred Californian. Closed Jan–Nov 2026 for 20th-anniversary renovation, reopened Nov 28, 2026. Re-verify hours/price from quincerestaurant.com."
+      "notes": "Three-Michelin-starred Californian (Michelin 2026 selection). Official site (fetched 2026-11-24): year-long renovation and redesign; Tuesday–Saturday. CORRECTION: the earlier record stating 'closed Jan–Nov 2026, reopened Nov 28, 2026' was wrong. The Nov 28 reopening reported by SF Chronicle (Nov 6, 2023) and SF Standard (Nov 6, 2023) is from 2023. Verified: Michelin 3-star, Tue–Sat, Dec 25–26 closure. Unverified: price, exact hours, social links."
     },
     {
       "id": "californios",

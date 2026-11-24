@@ -24,7 +24,7 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 | T10 (this session) | Research: official Michelin Guide SF Bay Area list (starred vs Bib Gourmand) | done | `session-arena-e4732d51` | `data/restaurants.json`, `data/bibgourmand.json` | 29 SF-region starred (4×3★, 7×2★, 18×1★) + 30 Bib Gourmand, verified vs guide.michelin.com 2026 guide. |
 | T11 (this session) | Research: 2-adult pricing, hours, days, exceptions, social links | done | `session-arena-e4732d51` | `data/restaurants.json`, `data/bibgourmand.json` | Pricing/hours verified from official restaurant sites where confirmable: Benu (benusf.com/info), Acquerello (acquerellosf.com), Kiln (kilnsf.com/information), Commis (commisrestaurant.com/info), Birdsong (birdsongsf.com/experience). Conflicting/stale sources flagged unverified and never inferred (Quince, Californios, Saison, Sons & Daughters, Lazy Bear, Atelier Crenn). Bib Gourmand details blank/unverified. Verified data published to GitHub Pages main. |
 | T12 (this session) | Build: landing page + category subpages, tables, executive summary, suggestions, questions | done | `session-arena-e4732d51` | `index.html`, `pages/*.html`, `css/style.css`, `js/app.js` | Responsive client-side dashboard; blank/unverified flagged per policy. Preserved in this merge as complementary files alongside the root dashboard. Live site published at https://kanlerxz87-cyber.github.io/Baymich1/ |
-| T13 (cc2db2ea) | Verify Quince status/hours/price vs official site; reconcile 41 vs 29 Bay Area star scopes | in progress | `cc2db2ea` (branch `arena/cc2db2ea-baymich1`) | `data/restaurants.json` (Quince entry), `data/michelin_bay_area_stars.json` (rules text); requests logged for `pages/questions.html`, `data.js` | Claimed 2026-11-24. |
+| T13 (cc2db2ea) | Verify Quince status/hours/price vs official site; reconcile 41 vs 29 Bay Area star scopes | needs review | `cc2db2ea` (branch `arena/cc2db2ea-baymich1`) | `data/restaurants.json` (Quince entry), `data/michelin_bay_area_stars.json` (scope note); request logged for `pages/questions.html` and `data.js` | Quince stale renovation/reopening claim corrected in data; the 41 vs 29 gap is a scope difference, both verified against official Michelin pages. |
 
 ## Log
 
@@ -62,3 +62,19 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Hotel area-density ranking cannot be computed safely until a radius or mode/time threshold and date are selected and validated.
 - Bib Gourmand list is a sample, not a full non-starred MICHELIN Guide selection.
 - Broad MICHELIN “San Francisco and surroundings” live-filter counts can include surrounding results and differ from a declared city-scoped roster; use the dated annual roster for counts and the live directory for individual current details.
+
+### L5 — Session `cc2db2ea` (branch `arena/cc2db2ea-baymich1`) — T13
+- Claimed T13 and pushed the claim before editing.
+- **Star-count reconciliation (resolved as a scope difference, not an error):**
+  - Michelin article, “Every MICHELIN-Starred Restaurant in California for 2026” (24 Jun 2026): <https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california>. Counted the Bay Area cities in its statewide star lists: 3★ = 7 (Atelier Crenn, Benu, Californios, Quince, SingleThread, Enclos, The French Laundry); 2★ = 7 (Acquerello, Birdsong, Kiln, Lazy Bear, Saison, Sons & Daughters, Commis); 1★ = 27. Total 41, nine counties. This matches `data/michelin_bay_area_stars.json`.
+  - Michelin “San Francisco and surroundings” restaurants page (145 listed; 4 three-star, 7 two-star, 18 one-star, 30 Bib Gourmand, 86 selected): <https://guide.michelin.com/us/en/california/san-francisco/restaurants>. This matches `data/restaurants.json` (29 starred). Both are valid; the two scopes differ.
+- **Quince correction:** Official site <https://www.quincerestaurant.com/> (fetched 2026-11-24) shows Tuesday–Saturday, reservations 5:00–8:00 pm, a Friday/Saturday lunch, and closures Nov 26 and Dec 25–26. It lists no prices. The earlier “closed Jan–Nov 2026, reopened Nov 28, 2026” claim was wrong. The Nov 28 reopening was in 2023 (SF Chronicle, 6 Nov 2023: <https://www.sfchronicle.com/food/restaurants/article/quince-reopening-san-francisco-18453277.php>). The derived two-adult total ($596–$780) was an inference and has been cleared. Press prices ($270 / $360) are marked unverified.
+- **Requests for the integration session (not edited here, per the ownership rule):**
+  1. `pages/questions.html` lines ~72–73 still ask about a “Nov 28, 2026 renovation reopening”. Change to the 2023 reopening, or remove.
+  2. `data.js` Quince record: confirm hours and remove any per-person price not on the official site.
+  3. Show both star scopes (41 nine-county; 29 SF-and-surroundings) with their labels on the starred page.
+
+### Irregularities added (T13)
+- Two Michelin star counts (41 and 29) are both official but different scopes; the site must label the scope on every count.
+- Quince renovation/reopening date was stale (2023 press applied to 2026). Corrected in data; the public pages still need the request above.
+- Two-adult totals from derived ranges were removed. No official all-in total was found for Quince.
