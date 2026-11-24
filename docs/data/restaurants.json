@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "scope": "Michelin Guide restaurants, San Francisco Bay Area (verified rows only)",
+    "verified_on": "2026-11-24",
+    "method": "Each row opened on its official guide.michelin.com restaurant page. Star icons, address, cuisine, price tier, website and phone were read from that page. Hours are shown only where the page displayed them; otherwise they are blank and flagged.",
+    "pricing_note": "Michelin shows only a price tier ($ to $$$$), not a dollar amount. No official per-person or two-adult total was verified, so the two-adult price column is blank for every row.",
+    "social_note": "No YouTube, TikTok or Instagram links have been verified yet. The column is blank by design."
+  },
+  "michelin_listing_counts": {
+    "source": "https://guide.michelin.com/us/en/california/san-francisco/restaurants",
+    "category": "San Francisco and surroundings (145 restaurants)",
+    "three_star": 4,
+    "two_star": 7,
+    "one_star": 18,
+    "bib_gourmand": 30,
+    "selected": 86
+  },
+  "rows": [
+    {
+      "name": "Quince",
+      "michelin_status": "3 Stars",
+      "cuisine": "Contemporary, Californian",
+      "address": "470 Pacific Ave., San Francisco, CA 94133",
+      "michelin_price_tier": "$$$$",
+      "two_adult_total": "",
+      "hours": "Tue–Thu 5–9 PM · Fri–Sat 11:30 AM–1 PM and 5–9 PM · Sun & Mon closed",
+      "hours_exceptions": "Page shows no holiday exceptions",
+      "social_links": "",
+      "michelin_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince",
+      "website": "https://www.quincerestaurant.com/",
+      "phone": "+1 415-775-8500",
+      "verification": "Verified on official Michelin page"
+    },
+    {
+      "name": "Atelier Crenn",
+      "michelin_status": "3 Stars",
+      "cuisine": "Contemporary, French",
+      "address": "3127 Fillmore St., San Francisco, CA 94123",
+      "michelin_price_tier": "$$$$",
+      "two_adult_total": "",
+      "hours": "",
+      "hours_exceptions": "Hours not captured from official page — verify",
+      "social_links": "",
+      "michelin_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/atelier-crenn",
+      "website": "https://www.ateliercrenn.com/",
+      "phone": "+1 415-440-0462",
+      "verification": "Stars, address, cuisine, price tier verified on official Michelin page; hours unverified"
+    },
+    {
+      "name": "Benu",
+      "michelin_status": "3 Stars",
+      "cuisine": "Asian, Contemporary",
+      "address": "22 Hawthorne St., San Francisco, CA 94105",
+      "michelin_price_tier": "$$$$",
+      "two_adult_total": "",
+      "hours": "Wed–Thu 5–8 PM · Fri–Sat 5–8:30 PM · Mon, Tue & Sun closed",
+      "hours_exceptions": "Page shows no holiday exceptions",
+      "social_links": "",
+      "michelin_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu",
+      "website": "https://www.benusf.com/",
+      "phone": "+1 415-685-4860",
+      "verification": "Verified on official Michelin page"
+    },
+    {
+      "name": "Californios",
+      "michelin_status": "3 Stars (2026 promotion per press)",
+      "cuisine": "Mexican, Contemporary",
+      "address": "355 11th St., San Francisco, CA 94103",
+      "michelin_price_tier": "$$$$",
+      "two_adult_total": "",
+      "hours": "Tue–Sat 5–10 PM · Mon & Sun closed",
+      "hours_exceptions": "Page shows no holiday exceptions",
+      "social_links": "",
+      "michelin_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/californios",
+      "website": "https://www.californiossf.com/",
+      "phone": "+1 415-757-0994",
+      "verification": "Verified on official Michelin page; promotion year confirmed by press only (Eater, SacBee)"
+    },
+    {
+      "name": "Lazy Bear",
+      "michelin_status": "2 Stars",
+      "cuisine": "Contemporary, Modern Cuisine",
+      "address": "3416 19th St., San Francisco, CA 94110",
+      "michelin_price_tier": "$$$$",
+      "two_adult_total": "",
+      "hours": "Tue–Sat 5–11 PM · Mon & Sun closed",
+      "hours_exceptions": "Page shows no holiday exceptions",
+      "social_links": "",
+      "michelin_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/lazy-bear",
+      "website": "https://www.lazybearsf.com/",
+      "phone": "+1 415-874-9921",
+      "verification": "Verified on official Michelin page"
+    },
+    {
+      "name": "Saison",
+      "michelin_status": "2 Stars",
+      "cuisine": "Californian, Contemporary",
+      "address": "178 Townsend St., San Francisco, CA 94107",
+      "michelin_price_tier": "$$$$",
+      "two_adult_total": "",
+      "hours": "Tue–Thu 5–9:30 PM · Mon closed",
+      "hours_exceptions": "Fri–Sun hours not captured from official page — verify",
+      "social_links": "",
+      "michelin_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saison",
+      "website": "https://www.saisonsf.com/",
+      "phone": "+1 415-828-7990",
+      "verification": "Verified on official Michelin page; Fri–Sun hours unverified"
+    },
+    {
+      "name": "Acquerello",
+      "michelin_status": "2 Stars",
+      "cuisine": "Italian, Contemporary",
+      "address": "1722 Sacramento St., San Francisco, CA 94109",
+      "michelin_price_tier": "$$$$",
+      "two_adult_total": "",
+      "hours": "Tue–Sat 5:30–9:45 PM · Mon & Sun closed",
+      "hours_exceptions": "Page shows no holiday exceptions",
+      "social_links": "",
+      "michelin_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello",
+      "website": "https://www.acquerellosf.com/",
+      "phone": "+1 415-567-5432",
+      "verification": "Verified on official Michelin page"
+    },
+    {
+      "name": "Birdsong",
+      "michelin_status": "2 Stars",
+      "cuisine": "Contemporary, American",
+      "address": "1085 Mission St., San Francisco, CA 94103",
+      "michelin_price_tier": "$$$$",
+      "two_adult_total": "",
+      "hours": "",
+      "hours_exceptions": "Hours not captured from official page — verify",
+      "social_links": "",
+      "michelin_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/birdsong",
+      "website": "https://www.birdsongsf.com/",
+      "phone": "+1 415-369-9161",
+      "verification": "Stars, address, cuisine, price tier verified on official Michelin page; hours unverified"
+    },
+    {
+      "name": "Commis (Oakland)",
+      "michelin_status": "2 Stars",
+      "cuisine": "Contemporary",
+      "address": "3859 Piedmont Ave., Oakland, CA 94611",
+      "michelin_price_tier": "$$$$",
+      "two_adult_total": "",
+      "hours": "",
+      "hours_exceptions": "Hours not captured from official page — verify",
+      "social_links": "",
+      "michelin_url": "https://guide.michelin.com/us/en/california/oakland/restaurant/commis",
+      "website": "https://www.commisrestaurant.com/",
+      "phone": "+1 510-653-3902",
+      "verification": "Stars, address, cuisine, price tier verified on official Michelin page; hours unverified. Located in Oakland (East Bay)"
+    },
+    {
+      "name": "Abacá",
+      "michelin_status": "Listed (no star or Bib shown on Michelin page)",
+      "cuisine": "Filipino, Californian",
+      "address": "Kimpton Alton Fisherman's Wharf, 2700 Jones St., San Francisco, CA 94133",
+      "michelin_price_tier": "$$",
+      "two_adult_total": "",
+      "hours": "",
+      "hours_exceptions": "Hours not captured from official page — verify",
+      "social_links": "",
+      "michelin_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/abaca",
+      "website": "https://www.restaurantabaca.com/",
+      "phone": "+1 415-486-0788",
+      "verification": "Listed status, address, cuisine, price tier verified on official Michelin page; hours unverified"
+    }
+  ],
+  "press_reported_not_verified": [
+    {
+      "name": "Sons & Daughters (2 Stars per press)",
+      "note": "Official Michelin slug guessed as /sons-and-daughters returned an error. Not verified.",
+      "press_source": "https://sf.eater.com/restaurant-news/212958/2026-michelin-star-winners-california-guide-san-francisco-bay-area"
+    },
+    {
+      "name": "Kiln, San Francisco (press list)",
+      "note": "Official slug /kiln returns the London restaurant, not a San Francisco entry. Not verified.",
+      "press_source": "https://sf.eater.com/restaurant-news/212958/2026-michelin-star-winners-california-guide-san-francisco-bay-area"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "last_updated": "2026-11-24",
+  "executive_summary": {
+    "headline": "Verified so far: 10 Michelin rows in the SF Bay Area (9 starred, 1 listed). Everything else is pending.",
+    "bullets": [
+      "Michelin's official San Francisco listing reports 145 restaurants for 'San Francisco and surroundings': 4 three-star, 7 two-star, 18 one-star, 30 Bib Gourmand, 86 Selected. Source: guide.michelin.com (see Sources).",
+      "Each of the 10 verified rows was checked on its own official Michelin page for star status, address, cuisine, price tier, website and phone. Hours were captured for 5 rows in full and Saison partially (Tue–Thu only).",
+      "Two-adult prices are NOT filled in. Michelin shows only a $-to-$$$$ tier, and no official dollar figure was verified. Price tiers shown are Michelin's own labels.",
+      "Clusters from verified addresses: Downtown/SoMa and Mission area (Californios, Benu, Birdsong, Saison, Lazy Bear); Fillmore and Pacific Heights area (Atelier Crenn, Acquerello); Financial District/Jackson Square (Quince); Fisherman's Wharf (Abacá); Oakland (Commis). Neighborhood labels are for orientation only and are not from an official source.",
+      "Hotels: NOT ranked. The ranking needs a radius and a scoring rule that you have not chosen yet (see Questions). No hotel data has been verified.",
+      "Activities and social links (YouTube, TikTok, Instagram): NOT collected. No links have been verified.",
+      "Press reports list more 1-star and 2-star SF restaurants, plus 2026 changes. These are NOT in the verified table until each Michelin page is checked (see Flagged for Review)."
+    ]
+  },
+  "questions": {
+    "answered": [
+      {
+        "q": "How many Michelin restaurants are in the SF Bay Area listing?",
+        "a": "145 for 'San Francisco and surroundings' on the official listing (4 three-star, 7 two-star, 18 one-star, 30 Bib Gourmand, 86 Selected).",
+        "source": "https://guide.michelin.com/us/en/california/san-francisco/restaurants"
+      },
+      {
+        "q": "What does each Michelin tier mean?",
+        "a": "3 Stars: Exceptional cuisine. 2 Stars: Excellent cooking. 1 Star: High quality cooking. Bib Gourmand: Good quality, good value cooking. Selected: Good cooking.",
+        "source": "https://guide.michelin.com/us/en/california/san-francisco/restaurants"
+      },
+      {
+        "q": "Do the 10 verified restaurants currently hold the stars shown?",
+        "a": "Yes, per their official Michelin pages on 2026-11-24. Abacá has no star or Bib on its page.",
+        "source": "https://guide.michelin.com/us/en/california/san-francisco/restaurants"
+      }
+    ],
+    "open": [
+      {
+        "q": "Which restaurants should be in scope: SF only, or all Bay Area (Oakland, Peninsula, Napa, Sonoma)?",
+        "why": "Changes the row count and whether Commis (Oakland) and Benu-area entries are included.",
+        "how_to_find": "Your decision. Michelin's own category is 'San Francisco and surroundings'."
+      },
+      {
+        "q": "What is the two-adult cost per restaurant?",
+        "why": "Required for the price column. Michelin has no dollar figure.",
+        "how_to_find": "Read each restaurant's official website or booking page (menu and price listed) and record date and source. Blank if not published."
+      },
+      {
+        "q": "What are the hours and exceptions for each restaurant on the visit date?",
+        "why": "Hours change by season and holiday. Michelin pages do not show holiday exceptions.",
+        "how_to_find": "Confirm on each restaurant's official website or booking page for the chosen date. Record the date checked."
+      },
+      {
+        "q": "What is the ranking rule for hotels?",
+        "why": "Count of Michelin restaurants within a radius is not defined yet. Options: walking distance, drive time, or straight-line km.",
+        "how_to_find": "Your decision (see Suggestions). Then pull hotel coordinates from Michelin hotel pages and the restaurant addresses."
+      },
+      {
+        "q": "Which social platforms count, and must a link be from the restaurant's own account?",
+        "why": "Determines what 'verified' means for YouTube/TikTok/Instagram links.",
+        "how_to_find": "Your decision. Official-account links can be verified from the restaurant's website, which links to its accounts."
+      },
+      {
+        "q": "Which Michelin edition is current?",
+        "why": "The press reports used here are from 2026. Edition and date must be confirmed before publishing.",
+        "how_to_find": "Check guide.michelin.com news and the latest ceremony page before each publish."
+      },
+      {
+        "q": "Should the 1-star and Bib Gourmand lists be added in full?",
+        "why": "There are 18 one-star and 30 Bib Gourmand entries in scope; only press names are known.",
+        "how_to_find": "Open each official listing page and record only what it shows. Roughly 48 pages to check."
+      }
+    ]
+  },
+  "suggestions": [
+    {
+      "id": "S1",
+      "title": "Automate the Michelin listing check",
+      "detail": "A script could read the official listing and flag changes. Options: (a) manual monthly review, (b) scripted fetch, which needs Michelin's terms of use checked first, (c) a licensed data source if Michelin offers one.",
+      "status": "Awaiting your choice"
+    },
+    {
+      "id": "S2",
+      "title": "Add a visit-date picker",
+      "detail": "Pick a date and see which restaurants are open that day, using the hours data. Needs hours for all rows first.",
+      "status": "Awaiting your choice"
+    },
+    {
+      "id": "S3",
+      "title": "Show a 'last verified' date on every row",
+      "detail": "Each row would show the date its official source was checked, so stale data is visible.",
+      "status": "Awaiting your choice"
+    },
+    {
+      "id": "S4",
+      "title": "Add filters (stars, cuisine, city, price tier)",
+      "detail": "Makes the restaurant table usable on phones without scrolling through every row.",
+      "status": "Awaiting your choice"
+    },
+    {
+      "id": "S5",
+      "title": "Define a weighted hotel score",
+      "detail": "Example: count of 3-star within 2 km (weight 3), 2-star (2), 1-star (1), Bib (0.5). The weights and radius are your choice.",
+      "status": "Awaiting your choice"
+    },
+    {
+      "id": "S6",
+      "title": "Add an automatic link checker",
+      "detail": "A GitHub Action could test every source and social link on each change and report any that fail, before publishing.",
+      "status": "Awaiting your choice"
+    },
+    {
+      "id": "S7",
+      "title": "Split data into one file per category",
+      "detail": "Restaurants, hotels and activities in separate files would let parallel sessions work without merge conflicts.",
+      "status": "Awaiting your choice"
+    },
+    {
+      "id": "S8",
+      "title": "Add a LICENSE and fuller README",
+      "detail": "The repo has no license and a one-line README. Needed before others reuse the site.",
+      "status": "Awaiting your choice"
+    }
+  ],
+  "flagged": [
+    {
+      "item": "Kiln (San Francisco)",
+      "issue": "Official slug /california/san-francisco/restaurant/kiln returned the London Kiln page, not a San Francisco entry. Eater lists 'Kiln, San Francisco' as a 2-star.",
+      "action": "Find the correct SF Michelin page or confirm it is not listed. Do not add until confirmed.",
+      "source": "https://guide.michelin.com/us/en/greater-london/london/restaurant/kiln"
+    },
+    {
+      "item": "Sons & Daughters (San Francisco)",
+      "issue": "Guessed slug /sons-and-daughters returned an error. Eater lists it as a 2-star.",
+      "action": "Find the official page URL on the Michelin SF listing and verify.",
+      "source": "https://sf.eater.com/restaurant-news/212958/2026-michelin-star-winners-california-guide-san-francisco-bay-area"
+    },
+    {
+      "item": "Date conflict in press reports",
+      "issue": "SF Post (dated 2026-03-26) says no new stars in the initial release. Eater (dated 2026-06-25) lists new 2026 one-stars (Naides, Wolfsbane, Troubadour). Both may be correct for different events, but the timeline is not confirmed from an official Michelin announcement.",
+      "action": "Confirm the 2026 announcement date on guide.michelin.com before publishing.",
+      "source": "https://sanfranciscopost.com/michelin-guide-2026-new-stars-san-francisco-dining/"
+    },
+    {
+      "item": "Star count reconciliation",
+      "issue": "Eater's SF 3-star list (Atelier Crenn, Benu, Californios, Quince) matches Michelin's 4 three-star count. Eater's 2-star entries inside SF and Oakland total 7 and include Kiln and Sons & Daughters, neither verified on an official page.",
+      "action": "Reconcile against the official listing once each 2-star page is checked.",
+      "source": "https://guide.michelin.com/us/en/california/san-francisco/restaurants"
+    },
+    {
+      "item": "Hours not captured",
+      "issue": "Official pages for Atelier Crenn, Birdsong, Commis, Abacá did not show hours in the fetched content. Saison hours shown only for Tue–Thu.",
+      "action": "Open each page directly to confirm hours; leave blank until confirmed.",
+      "source": "https://guide.michelin.com/us/en/california/san-francisco/restaurants"
+    },
+    {
+      "item": "Press-reported 1-star names not checked on official pages",
+      "issue": "Press lists (Eater, SacBee) include these San Francisco 1-star restaurants: 7 Adams, Angler, Hilda and Jesse, Kin Khao, Mister Jiu's, Naides (new 2026), Nari, Niku Steakhouse, Nisei, San Ho Won, Sorrel, Ssal, State Bird Provisions, The Progress, Wolfsbane (new 2026). None are verified on an official Michelin page yet. Press reports also say Le Comptoir at Bar Crenn, O' by Claude Le Tohic and Shota lost their stars.",
+      "action": "Check each name on the official listing before adding to the verified table.",
+      "source": "https://sf.eater.com/restaurant-news/212958/2026-michelin-star-winners-california-guide-san-francisco-bay-area"
+    },
+    {
+      "item": "Repo irregularities",
+      "issue": "Repo contained only README.md ('# Baymich1') and one commit. No LICENSE, .gitignore, or CI. COORDINATION.md was missing and has been created. The branch name is fixed to arena/7e371c2d-baymich1, so the session-<id>/<task> naming in the task brief does not apply here.",
+      "action": "Review the branch-naming convention and add a LICENSE if the repo is shared.",
+      "source": "https://github.com/kanlerxz87-cyber/Baymich1"
+    }
+  ],
+  "hotels": {
+    "status": "Not started",
+    "method": "Count Michelin-listed restaurants within a radius of each hotel; rank hotels by the count (scoring weights to be chosen, see Suggestion S5). Hotel data source: Michelin hotel pages.",
+    "rows": []
+  },
+  "activities": {
+    "status": "Not started",
+    "method": "Activities and attractions have not been researched. Social links (YouTube/TikTok/Instagram) for any future activity must be checked against the official account.",
+    "rows": []
+  },
+  "sources": [
+    {
+      "label": "Michelin Guide — San Francisco and surroundings (official listing)",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurants",
+      "supports": "145 total; star/Bib/Selected counts; tier definitions"
+    },
+    {
+      "label": "Michelin — Quince",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince",
+      "supports": "3 stars, address, price tier, hours, website, phone"
+    },
+    {
+      "label": "Michelin — Atelier Crenn",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/atelier-crenn",
+      "supports": "3 stars, address, price tier, website, phone"
+    },
+    {
+      "label": "Michelin — Benu",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu",
+      "supports": "3 stars, address, price tier, hours, website, phone"
+    },
+    {
+      "label": "Michelin — Californios",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/californios",
+      "supports": "3 stars, address, price tier, hours, website, phone"
+    },
+    {
+      "label": "Michelin — Lazy Bear",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/lazy-bear",
+      "supports": "2 stars, address, price tier, hours, website, phone"
+    },
+    {
+      "label": "Michelin — Saison",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saison",
+      "supports": "2 stars, address, price tier, Tue–Thu hours, website, phone"
+    },
+    {
+      "label": "Michelin — Acquerello",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello",
+      "supports": "2 stars, address, price tier, hours, website, phone"
+    },
+    {
+      "label": "Michelin — Birdsong",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/birdsong",
+      "supports": "2 stars, address, price tier, website, phone"
+    },
+    {
+      "label": "Michelin — Commis (Oakland)",
+      "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/commis",
+      "supports": "2 stars, address, price tier, website, phone"
+    },
+    {
+      "label": "Michelin — Abacá",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/abaca",
+      "supports": "Listed (no star/Bib), address, price tier, website, phone"
+    },
+    {
+      "label": "Eater SF — 2026 Michelin winners (press, not official)",
+      "url": "https://sf.eater.com/restaurant-news/212958/2026-michelin-star-winners-california-guide-san-francisco-bay-area",
+      "supports": "Press list used only to flag items for checking"
+    },
+    {
+      "label": "SacBee — 2026 California Michelin stars (press, not official)",
+      "url": "https://www.sacbee.com/news/california/article316251485.html",
+      "supports": "Press context only"
+    },
+    {
+      "label": "San Francisco Post — 2026 Michelin additions (press, not official)",
+      "url": "https://sanfranciscopost.com/michelin-guide-2026-new-stars-san-francisco-dining/",
+      "supports": "Press context only; date conflict flagged"
+    },
+    {
+      "label": "GitHub repo (this site)",
+      "url": "https://github.com/kanlerxz87-cyber/Baymich1",
+      "supports": "Repo review"
+    }
+  ]
+}
