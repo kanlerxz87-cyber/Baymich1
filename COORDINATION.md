@@ -12,7 +12,7 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 
 | ID | Task | Status | Owner session | Scope / files | Notes |
 |---|------|--------|---------------|---------------|-------|
-| T13 | Cross-check current dashboard against retained research datasets and log discrepancies | in progress | `arena/b67691bb-baymich1` | `COORDINATION.md` only | Audit found conflicting counts and unsupported future-dated claims across retained artifacts; no shared site/data files changed. |
+| T13 | Cross-check current dashboard against retained research datasets and log discrepancies | needs review | `arena/b67691bb-baymich1` | `COORDINATION.md` only | Static consistency audit completed; discrepancies need an integration pass before changing shared outputs. |
 
 | ID | Task | Status | Owner session | Scope / files | Notes |
 |---|------|--------|---------------|---------------|-------|
@@ -60,6 +60,10 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Missing fields left blank and flagged unverified; never inferred.
 
 ## Irregularities / open review flags
+- **T13 audit (2026-11-24): retained artifacts disagree.** `data/michelin_bay_area_stars.json` contains 41 rows and drives `scripts/build_site.py`; `data/restaurants.json` contains 29 starred + `data/bibgourmand.json` 30 Bib Gourmand rows; the root dashboard (`data.js`, `index.html`, `restaurants.html`) describes the earlier 41-star / 8-Bib sample. The pages do not present a unified 59-restaurant dataset. Keep these datasets separate until an integration pass reconciles scope and re-verifies each row; official Guide URLs exist on all 59 newer records, but presence of a link alone is not line-by-line validation.
+- **Potential future-date assertion:** Quince's record in `data/restaurants.json` says it reopened Nov 28, 2026, which is future-dated as of this audit (Nov 24, 2026). Do not present the reopening as a fact until the official restaurant site confirms it. Price and schedule fields in that record are explicitly unverified and rely partly on non-official sources.
+- **Local link check:** scanned `href`/`src` in all checked-in HTML files; zero missing local targets. This does not check external link availability or factual accuracy.
+- **Claim/push process note:** initial `git pull --rebase origin arena/b67691bb-baymich1` failed because that branch did not yet exist on origin. The audit claim commit was pushed with upstream tracking after that failure; no remote history was rebased or overwritten.
 - No all-in price for two adults verified from official current menu and fee sources.
 - Most restaurant schedules, special-date exceptions and official social accounts are not verified; empty fields are intentional.
 - Hotel area-density ranking cannot be computed safely until a radius or mode/time threshold and date are selected and validated.
