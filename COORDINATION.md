@@ -25,10 +25,19 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 | T11 (this session) | Research: 2-adult pricing, hours, days, exceptions, social links | done | `session-arena-e4732d51` | `data/restaurants.json`, `data/bibgourmand.json` | Pricing/hours verified from official restaurant sites where confirmable: Benu (benusf.com/info), Acquerello (acquerellosf.com), Kiln (kilnsf.com/information), Commis (commisrestaurant.com/info), Birdsong (birdsongsf.com/experience). Conflicting/stale sources flagged unverified and never inferred (Quince, Californios, Saison, Sons & Daughters, Lazy Bear, Atelier Crenn). Bib Gourmand details blank/unverified. Verified data published to GitHub Pages main. |
 | T12 (this session) | Build: landing page + category subpages, tables, executive summary, suggestions, questions | done | `session-arena-e4732d51` | `index.html`, `pages/*.html`, `css/style.css`, `js/app.js` | Responsive client-side dashboard; blank/unverified flagged per policy. Preserved in this merge as complementary files alongside the root dashboard. Live site published at https://kanlerxz87-cyber.github.io/Baymich1/ |
 | T13 (session `arena-6f1a05c4`) | Repo review refresh: count/data conflicts, inferred values, stale hours | in progress | `arena-6f1a05c4` (branch `arena/6f1a05c4-baymich1`) | `pages/repo-review.html`, `data/bay-area-starred.json`, `COORDINATION.md` | Claimed. |
-| T14 (session `arena-6f1a05c4`) | Official Michelin roster reconciliation (SF region 29 starred) with links | in progress | `arena-6f1a05c4` | `data/bay-area-starred.json`, `data/bay-area-starred.md` | Claimed. |
-| T15 (session `arena-6f1a05c4`) | Hours, days open, exceptions, price bracket, address from official Michelin restaurant pages | in progress | `arena-6f1a05c4` | `data/bay-area-starred.json` | Claimed. |
+| T14 (session `arena-6f1a05c4`) | Official Michelin roster reconciliation (SF region 29 starred) with links | done | `arena-6f1a05c4` | `data/bay-area-starred.json`, `data/bay-area-starred.md` | 29 starred (4×3★, 7×2★, 18×1★) matched to official SF-region header and per-row Michelin pages. Bay Area names outside the SF region not fully reconciled (open item). |
+| T15 (session `arena-6f1a05c4`) | Hours, days open, exceptions, price bracket, address from official Michelin restaurant pages | needs review | `arena-6f1a05c4` | `data/bay-area-starred.json`, `data/bay-area-starred.md` | Hours, address, cuisine, Michelin price, website and phone captured for all 29 from official pages (Niku hours captured in a later page chunk). Holiday exceptions and 2-adult cost not captured; flagged unverified. |
+| T16 | Social links (YouTube / TikTok / Instagram) | unclaimed | — | — | Next session to claim. |
+| T17 | Hotel ranking by nearby starred-restaurant density | unclaimed | — | — | Needs radius/mode/date decision from user. |
+| T18 | Site rebuild from verified data (index/nav/table data) | unclaimed | — | — | Shared outputs: final integration session only. |
 
 ## Log
+
+### L6 — Session `arena-6f1a05c4` — T14/T15 outputs
+- Output: `data/bay-area-starred.json` and `data/bay-area-starred.md` (29 starred, SF region). Sources: official 2026 California article plus each official restaurant page at guide.michelin.com/us/en/california/...
+- Not captured: 2-adult costs, social links, holiday exceptions (flagged unverified per row). Bay Area one- and two-star names outside the SF region are not yet reconciled.
+- Cross-session requests (not edited here): `README.md`, `index.html`, `data.js` and `scripts/build_site.py` still show 41 starred; `data/restaurants.json` has stale rows. Requested for the final integration session (T18). Log only.
+- T16–T18 added as unclaimed rows; not started.
 
 ### L5 — Session `arena-6f1a05c4` (branch `arena/6f1a05c4-baymich1`) — claim
 - Claimed T13–T15 on the Arena-assigned branch only (no other branches created or switched). Scope: repo review refresh, official roster reconciliation, official hours/price/address pages for starred entries.

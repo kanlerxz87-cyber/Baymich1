@@ -1,0 +1,1200 @@
+{
+ "meta": {
+  "title": "Michelin-starred restaurants — San Francisco and surroundings (Michelin region), verified 2026-11-24",
+  "scopeUsed": "Michelin 'San Francisco and surroundings' region: 4 three-star, 7 two-star, 18 one-star = 29 (matches the region header counts on guide.michelin.com/us/en/california/san-francisco/restaurants)",
+  "officialRoster": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california (24 Jun 2026; 83 starred statewide: 10 three-star, 13 two-star, 60 one-star)",
+  "regionPageHeader": "https://guide.michelin.com/us/en/california/san-francisco/restaurants",
+  "verificationPolicy": "Name, address, cuisine, Michelin price symbol, website, phone and day-by-day hours come from the official MICHELIN restaurant page. Blank = not confirmed from an official source; never inferred. 2-adult cost and social links were not captured in this pass (blank, unverified).",
+  "membershipNote": "Membership of the 29 was taken from official restaurant pages (city and star per the official article and region page). Region counts match the official SF-region header: 4/7/18.",
+  "capturedOn": "2026-11-24"
+ },
+ "restaurants": [
+  {
+   "id": "atelier-crenn",
+   "name": "Atelier Crenn",
+   "stars": 3,
+   "distinction": "3 MICHELIN Stars",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "3127 Fillmore St., San Francisco, CA 94123",
+   "cuisine": "Contemporary, French",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.ateliercrenn.com/",
+   "phone": "+1 415-440-0462",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "4:45 PM-8:45 PM",
+    "Wed": "4:45 PM-8:45 PM",
+    "Thu": "4:45 PM-8:45 PM",
+    "Fri": "4:45 PM-8:45 PM",
+    "Sat": "4:45 PM-8:45 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/atelier-crenn",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/atelier-crenn",
+    "https://www.ateliercrenn.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "benu",
+   "name": "Benu",
+   "stars": 3,
+   "distinction": "3 MICHELIN Stars",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "22 Hawthorne St., San Francisco, CA 94105",
+   "cuisine": "Asian, Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.benusf.com/",
+   "phone": "+1 415-685-4860",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "closed",
+    "Wed": "5 PM-8 PM",
+    "Thu": "5 PM-8 PM",
+    "Fri": "5 PM-8:30 PM",
+    "Sat": "5 PM-8:30 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu",
+    "https://www.benusf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "californios",
+   "name": "Californios",
+   "stars": 3,
+   "distinction": "3 MICHELIN Stars",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "355 11th St., San Francisco, CA 94103",
+   "cuisine": "Mexican, Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.californiossf.com/",
+   "phone": "+1 415-757-0994",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5 PM-10 PM",
+    "Wed": "5 PM-10 PM",
+    "Thu": "5 PM-10 PM",
+    "Fri": "5 PM-10 PM",
+    "Sat": "5 PM-10 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/californios",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/californios",
+    "https://www.californiossf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "quince",
+   "name": "Quince",
+   "stars": 3,
+   "distinction": "3 MICHELIN Stars",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "470 Pacific Ave., San Francisco, CA 94133",
+   "cuisine": "Contemporary, Californian",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.quincerestaurant.com/",
+   "phone": "+1 415-775-8500",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5 PM-9 PM",
+    "Wed": "5 PM-9 PM",
+    "Thu": "5 PM-9 PM",
+    "Fri": "11:30 AM-1 PM, 5 PM-9 PM",
+    "Sat": "11:30 AM-1 PM, 5 PM-9 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince",
+    "https://www.quincerestaurant.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "acquerello",
+   "name": "Acquerello",
+   "stars": 2,
+   "distinction": "2 MICHELIN Stars",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "1722 Sacramento St., San Francisco, CA 94109",
+   "cuisine": "Italian, Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.acquerellosf.com/",
+   "phone": "+1 415-567-5432",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5:30 PM-9:45 PM",
+    "Wed": "5:30 PM-9:45 PM",
+    "Thu": "5:30 PM-9:45 PM",
+    "Fri": "5:30 PM-9:45 PM",
+    "Sat": "5:30 PM-9:45 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello",
+    "https://www.acquerellosf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "birdsong",
+   "name": "Birdsong",
+   "stars": 2,
+   "distinction": "2 MICHELIN Stars",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "1085 Mission St., San Francisco, CA 94103",
+   "cuisine": "Contemporary, American",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.birdsongsf.com/",
+   "phone": "+1 415-369-9161",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5:30 PM-8 PM",
+    "Wed": "5:30 PM-8 PM",
+    "Thu": "5:30 PM-8 PM",
+    "Fri": "5 PM-8:30 PM",
+    "Sat": "5 PM-8:30 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/birdsong",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/birdsong",
+    "https://www.birdsongsf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "commis",
+   "name": "Commis",
+   "stars": 2,
+   "distinction": "2 MICHELIN Stars",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "Oakland",
+   "county": "Alameda",
+   "address": "3859 Piedmont Ave., Oakland, CA 94611",
+   "cuisine": "Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.commisrestaurant.com/",
+   "phone": "+1 510-653-3902",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5 PM-9:30 PM",
+    "Wed": "5 PM-9:30 PM",
+    "Thu": "5 PM-9:30 PM",
+    "Fri": "5 PM-9:30 PM",
+    "Sat": "5 PM-9:30 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/oakland/restaurant/commis",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/oakland/restaurant/commis",
+    "https://www.commisrestaurant.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "kiln",
+   "name": "Kiln",
+   "stars": 2,
+   "distinction": "2 MICHELIN Stars",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "149 Fell St., San Francisco, CA 94102",
+   "cuisine": "Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.kilnsf.com/",
+   "phone": "+1 415-982-9722",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "6 PM-8 PM",
+    "Wed": "6 PM-8 PM",
+    "Thu": "6 PM-8 PM",
+    "Fri": "5 PM-8:30 PM",
+    "Sat": "5 PM-8:30 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kiln-1210355",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kiln-1210355",
+    "https://www.kilnsf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "lazy-bear",
+   "name": "Lazy Bear",
+   "stars": 2,
+   "distinction": "2 MICHELIN Stars",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "3416 19th St., San Francisco, CA 94110",
+   "cuisine": "Contemporary, Modern Cuisine",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.lazybearsf.com/",
+   "phone": "+1 415-874-9921",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5 PM-11 PM",
+    "Wed": "5 PM-11 PM",
+    "Thu": "5 PM-11 PM",
+    "Fri": "5 PM-11 PM",
+    "Sat": "5 PM-11 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/lazy-bear",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/lazy-bear",
+    "https://www.lazybearsf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "saison",
+   "name": "Saison",
+   "stars": 2,
+   "distinction": "2 MICHELIN Stars",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "178 Townsend St., San Francisco, CA 94107",
+   "cuisine": "Californian, Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.saisonsf.com/",
+   "phone": "+1 415-828-7990",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5 PM-9:30 PM",
+    "Wed": "5 PM-9:30 PM",
+    "Thu": "5 PM-9:30 PM",
+    "Fri": "5 PM-9:30 PM",
+    "Sat": "5 PM-9:30 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saison",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saison",
+    "https://www.saisonsf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "sons-daughters",
+   "name": "Sons & Daughters",
+   "stars": 2,
+   "distinction": "2 MICHELIN Stars",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "2875 18th St., San Francisco, CA 94110",
+   "cuisine": "Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.sonsanddaughterssf.com/",
+   "phone": "+1 415-994-7933",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5:30 PM-8:30 PM",
+    "Wed": "5:30 PM-8:30 PM",
+    "Thu": "5:30 PM-8:30 PM",
+    "Fri": "5:30 PM-8:30 PM",
+    "Sat": "5:30 PM-8:30 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sons-daughters",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sons-daughters",
+    "https://www.sonsanddaughterssf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "7-adams",
+   "name": "7 Adams",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "1963 Sutter St., San Francisco, CA 94115",
+   "cuisine": "Californian, Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.7adamsrestaurant.com/",
+   "phone": "+1 415-655-9154",
+   "hours": {
+    "Mon": "5:30 PM-9 PM",
+    "Tue": "5:30 PM-9 PM",
+    "Wed": "5:30 PM-9 PM",
+    "Thu": "5:30 PM-9 PM",
+    "Fri": "5 PM-10 PM",
+    "Sat": "5 PM-10 PM",
+    "Sun": "5 PM-9 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/7-adams",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/7-adams",
+    "https://www.7adamsrestaurant.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "angler-sf",
+   "name": "Angler SF",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "132 The Embarcadero, San Francisco, CA 94105",
+   "cuisine": "Contemporary, Seafood",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://anglersf.com/",
+   "phone": "+1 415-872-9442",
+   "hours": {
+    "Mon": "5 PM-9 PM",
+    "Tue": "11:30 AM-2 PM, 5 PM-9 PM",
+    "Wed": "11:30 AM-2 PM, 5 PM-9 PM",
+    "Thu": "11:30 AM-2 PM, 5 PM-9 PM",
+    "Fri": "11:30 AM-2 PM, 5 PM-9 PM",
+    "Sat": "11:30 AM-2 PM, 5 PM-9 PM",
+    "Sun": "5 PM-9 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/angler-sf",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/angler-sf",
+    "https://anglersf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "hilda-and-jesse",
+   "name": "Hilda and Jesse",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "701 Union St., San Francisco, CA 94133",
+   "cuisine": "American, Contemporary",
+   "michelinPriceBracket": "$$$",
+   "website": "https://www.hildaandjessesf.com/",
+   "phone": "+1 415-872-7023",
+   "hours": {
+    "Mon": "5:30 PM-9 PM",
+    "Tue": "closed",
+    "Wed": "closed",
+    "Thu": "5:30 PM-9 PM",
+    "Fri": "5:30 PM-9 PM",
+    "Sat": "10 AM-2 PM",
+    "Sun": "10 AM-2 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hilda-and-jesse",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hilda-and-jesse",
+    "https://www.hildaandjessesf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "kin-khao",
+   "name": "Kin Khao",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "Parc 55 San Francisco, 55 Cyril Magnin St., San Francisco, CA 94102",
+   "cuisine": "Thai, Californian",
+   "michelinPriceBracket": "$$$",
+   "website": "https://www.kinkhao.com/",
+   "phone": "+1 415-362-7456",
+   "hours": {
+    "Mon": "11:30 AM-2 PM, 5:30 PM-9 PM",
+    "Tue": "11:30 AM-2 PM, 5:30 PM-9 PM",
+    "Wed": "11:30 AM-2 PM, 5:30 PM-9 PM",
+    "Thu": "11:30 AM-2 PM, 5:30 PM-9 PM",
+    "Fri": "11:30 AM-2 PM, 5:30 PM-10 PM",
+    "Sat": "11:30 AM-2 PM, 5:30 PM-10 PM",
+    "Sun": "11:30 AM-2 PM, 5:30 PM-9 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kin-khao",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kin-khao",
+    "https://www.kinkhao.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "mister-jius",
+   "name": "Mister Jiu’s",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "28 Waverly Pl., San Francisco, CA 94108",
+   "cuisine": "Chinese, Contemporary",
+   "michelinPriceBracket": "$$$",
+   "website": "https://misterjius.com/",
+   "phone": "+1 415-857-9688",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5 PM-9 PM",
+    "Wed": "5 PM-9 PM",
+    "Thu": "5 PM-9 PM",
+    "Fri": "5 PM-9:30 PM",
+    "Sat": "5 PM-9:30 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s",
+    "https://misterjius.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "naides",
+   "name": "Naides",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "708 Bush St., San Francisco, CA 94108",
+   "cuisine": "Filipino, Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.restaurantnaides.com/",
+   "phone": "not captured",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "closed",
+    "Wed": "closed",
+    "Thu": "5:30 PM-8:30 PM",
+    "Fri": "5:30 PM-8:30 PM",
+    "Sat": "5:30 PM-8:30 PM",
+    "Sun": "5:30 PM-8:30 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/naides",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/naides",
+    "https://www.restaurantnaides.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "nari",
+   "name": "Nari",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "Hotel Kabuki - JDV by Hyatt, 1625 Post St., San Francisco, CA 94115",
+   "cuisine": "Thai, Contemporary",
+   "michelinPriceBracket": "$$$",
+   "website": "https://www.narisf.com/",
+   "phone": "+1 415-868-6274",
+   "hours": {
+    "Mon": "5:30 PM-9 PM",
+    "Tue": "5:30 PM-9 PM",
+    "Wed": "5:30 PM-9 PM",
+    "Thu": "5:30 PM-9 PM",
+    "Fri": "5:30 PM-9:30 PM",
+    "Sat": "5:30 PM-9:30 PM",
+    "Sun": "5:30 PM-9 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nari",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nari",
+    "https://www.narisf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "niku-steakhouse",
+   "name": "Niku Steakhouse",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "61 Division St., San Francisco, CA 94103",
+   "cuisine": "Steakhouse",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.nikusteakhouse.com/",
+   "phone": "+1 415-829-7817",
+   "hours": {
+    "Mon": "5 PM-9 PM",
+    "Tue": "5 PM-9 PM",
+    "Wed": "5 PM-9 PM",
+    "Thu": "5 PM-9 PM",
+    "Fri": "5 PM-10 PM",
+    "Sat": "5 PM-10 PM",
+    "Sun": "5 PM-9 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/niku-steakhouse",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/niku-steakhouse",
+    "https://www.nikusteakhouse.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "nisei",
+   "name": "Nisei",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "2316 Polk St., San Francisco, CA 94109",
+   "cuisine": "Japanese, Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.restaurantnisei.com/",
+   "phone": "+1 415-827-6898",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "closed",
+    "Wed": "5 PM-9 PM",
+    "Thu": "5 PM-9 PM",
+    "Fri": "5 PM-9 PM",
+    "Sat": "5 PM-9 PM",
+    "Sun": "5 PM-9 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nisei",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nisei",
+    "https://www.restaurantnisei.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "san-ho-won",
+   "name": "San Ho Won",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "2170 Bryant St., San Francisco, CA 94110",
+   "cuisine": "Korean, Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.sanhowon.com/",
+   "phone": "+1 415-868-4479",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5 PM-10 PM",
+    "Wed": "5 PM-10 PM",
+    "Thu": "5 PM-10 PM",
+    "Fri": "5 PM-10 PM",
+    "Sat": "4:30 PM-10 PM",
+    "Sun": "4:30 PM-10 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/san-ho-won",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/san-ho-won",
+    "https://www.sanhowon.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "sorrel",
+   "name": "Sorrel",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "3228 Sacramento St., San Francisco, CA 94115",
+   "cuisine": "Contemporary, Italian",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.sorrelrestaurant.com/",
+   "phone": "+1 415-525-3765",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "closed",
+    "Wed": "5 PM-9 PM",
+    "Thu": "5 PM-9 PM",
+    "Fri": "5 PM-9 PM",
+    "Sat": "5 PM-9 PM",
+    "Sun": "5 PM-9 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sorrel",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sorrel",
+    "https://www.sorrelrestaurant.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "ssal",
+   "name": "Ssal",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "2226 Polk St., San Francisco, CA 94109",
+   "cuisine": "Korean, Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://ssalsf.com/",
+   "phone": "+1 415-814-2704",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "closed",
+    "Wed": "5:30 PM-8:30 PM",
+    "Thu": "5:30 PM-8:30 PM",
+    "Fri": "5:30 PM-8:30 PM",
+    "Sat": "5:30 PM-8:30 PM",
+    "Sun": "5:30 PM-8:30 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ssal",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ssal",
+    "https://ssalsf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "state-bird-provisions",
+   "name": "State Bird Provisions",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "1529 Fillmore St., San Francisco, CA 94115",
+   "cuisine": "Californian",
+   "michelinPriceBracket": "$$$",
+   "website": "https://www.statebirdsf.com/",
+   "phone": "+1 415-795-1272",
+   "hours": {
+    "Mon": "5:30 PM-10 PM",
+    "Tue": "5:30 PM-10 PM",
+    "Wed": "5:30 PM-10 PM",
+    "Thu": "5:30 PM-10 PM",
+    "Fri": "closed",
+    "Sat": "5:30 PM-10:30 PM",
+    "Sun": "5:30 PM-10 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/state-bird-provisions",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/state-bird-provisions",
+    "https://www.statebirdsf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "the-progress",
+   "name": "The Progress",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "1525 Fillmore St., San Francisco, CA 94115",
+   "cuisine": "Californian",
+   "michelinPriceBracket": "$$$",
+   "website": "https://theprogress-sf.com/",
+   "phone": "+1 415-673-1294",
+   "hours": {
+    "Mon": "5:30 PM-10 PM",
+    "Tue": "5:30 PM-10 PM",
+    "Wed": "5:30 PM-10 PM",
+    "Thu": "5:30 PM-10 PM",
+    "Fri": "5:30 PM-10 PM",
+    "Sat": "5:30 PM-10 PM",
+    "Sun": "5:30 PM-10 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/the-progress",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/the-progress",
+    "https://theprogress-sf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "wolfsbane",
+   "name": "Wolfsbane",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Francisco",
+   "county": "San Francisco",
+   "address": "2495 3rd St., San Francisco, CA 94107",
+   "cuisine": "Contemporary, Californian",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://wolfsbanesf.com/",
+   "phone": "+1 415-961-4017",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5:30 PM-10 PM",
+    "Wed": "5:30 PM-10 PM",
+    "Thu": "5:30 PM-10 PM",
+    "Fri": "5:30 PM-10 PM",
+    "Sat": "5:30 PM-10 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/wolfsbane",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-francisco/restaurant/wolfsbane",
+    "https://wolfsbanesf.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "madcap",
+   "name": "Madcap",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Anselmo",
+   "county": "Marin",
+   "address": "198 Sir Francis Drake Blvd., San Anselmo, CA 94960",
+   "cuisine": "Contemporary, Asian Contemporary",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.madcapmarin.com/",
+   "phone": "+1 415-453-9898",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "5:30 PM-8:30 PM",
+    "Wed": "5:30 PM-8:30 PM",
+    "Thu": "5:30 PM-8:30 PM",
+    "Fri": "5:30 PM-9 PM",
+    "Sat": "5:30 PM-9 PM",
+    "Sun": "closed"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap",
+    "https://www.madcapmarin.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "sun-moon-studio",
+   "name": "Sun Moon Studio",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "Oakland",
+   "county": "Alameda",
+   "address": "1940 Union St., Ste. 21, Oakland, CA 94607",
+   "cuisine": "Californian",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.sunmoonstudio.com/",
+   "phone": null,
+   "hours": {
+    "Mon": "closed",
+    "Tue": "closed",
+    "Wed": "closed",
+    "Thu": "5 PM-9 PM",
+    "Fri": "5 PM-9 PM",
+    "Sat": "5 PM-9 PM",
+    "Sun": "5 PM-8 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/oakland/restaurant/sun-moon-studio",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/oakland/restaurant/sun-moon-studio",
+    "https://www.sunmoonstudio.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": null
+  },
+  {
+   "id": "wakuriya",
+   "name": "Wakuriya",
+   "stars": 1,
+   "distinction": "1 MICHELIN Star",
+   "currentlyStarred": true,
+   "listedInMichelinGuide": true,
+   "city": "San Mateo",
+   "county": "San Mateo",
+   "address": "115 De Anza Blvd., San Mateo, CA 94402",
+   "cuisine": "Japanese, Californian",
+   "michelinPriceBracket": "$$$$",
+   "website": "https://www.wakuriya.com/",
+   "phone": "+1 650-286-0410",
+   "hours": {
+    "Mon": "closed",
+    "Tue": "closed",
+    "Wed": "6:30 PM-9:30 PM",
+    "Thu": "6:30 PM-9:30 PM",
+    "Fri": "6:30 PM-9:30 PM",
+    "Sat": "6 PM-9 PM",
+    "Sun": "6 PM-9 PM"
+   },
+   "hoursStatus": "verified",
+   "michelinUrl": "https://guide.michelin.com/us/en/california/san-mateo/restaurant/wakuriya",
+   "sources": [
+    "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california",
+    "https://guide.michelin.com/us/en/california/san-mateo/restaurant/wakuriya",
+    "https://www.wakuriya.com/"
+   ],
+   "exact2AdultPrice": null,
+   "price2AdultsStatus": "unverified - no exact official 2-adult total captured in this pass",
+   "socials": {
+    "instagram": null,
+    "youtube": null,
+    "tiktok": null
+   },
+   "socialStatus": "unverified - not captured in this pass",
+   "note": "Michelin: 'This establishment manages its own bookings.'"
+  }
+ ],
+ "starredOutsideMichelinSfRegion": {
+  "note": "Named as 3-star in the official 2026 California article (statewide: 10 three-star, 13 two-star, 60 one-star). These are outside Michelin's 'San Francisco and surroundings' region, so not in the 29. Restaurant pages not captured in this pass; hours, price and phone are blank and unverified.",
+  "threeStar": [
+   {
+    "name": "Enclos",
+    "city": "Sonoma",
+    "area": "Wine Country",
+    "stars": 3,
+    "source": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california"
+   },
+   {
+    "name": "SingleThread",
+    "city": "Healdsburg",
+    "area": "Wine Country",
+    "stars": 3,
+    "source": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california"
+   },
+   {
+    "name": "The French Laundry",
+    "city": "Yountville",
+    "area": "Napa Valley",
+    "stars": 3,
+    "source": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california"
+   }
+  ],
+  "notReconciled": "Remaining one-star and two-star Bay Area names outside SF region (Peninsula, South Bay, East Bay, Napa, Sonoma) were not fully reconciled against the official article list in this pass. Open item."
+ }
+}
