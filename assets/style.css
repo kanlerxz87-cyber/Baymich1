@@ -1,0 +1,53 @@
+
+:root{--ink:#1d2433;--muted:#667085;--line:#e4e7ec;--bg:#f7f8fa;--card:#fff;--gold:#b48a1e;--ok:#067647;--okbg:#ecfdf3;--warn:#b54708;--warnbg:#fffaeb;--bad:#b42318;--badbg:#fef3f2;--new:#1849a9;--newbg:#eff8ff}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:#1849a9}
+.top{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line);padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.brand a{font-weight:700;color:var(--ink);text-decoration:none}
+.nav{display:flex;flex-wrap:wrap;gap:6px}
+.nav a{font-size:14px;padding:6px 10px;border-radius:999px;text-decoration:none;color:var(--ink);background:#f2f4f7}
+.nav a.on{background:var(--ink);color:#fff}
+.wrap{max-width:1200px;margin:0 auto;padding:16px}
+.hero{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:14px}
+.hero h1{margin:0 0 6px;font-size:clamp(22px,4vw,30px)}
+.hero p{margin:6px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px}
+.card h2{margin:0 0 8px;font-size:20px}
+.list li{margin:6px 0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px}
+.kpi .n{font-size:26px;font-weight:700;color:var(--ink)}
+.kpi .l{font-size:13px;color:var(--muted)}
+.kpi.bad .n{color:var(--bad)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:14px}
+.tile{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;text-decoration:none;color:var(--ink)}
+.tile:hover{border-color:#98a2b3}
+.tile h3{margin:0 0 4px;font-size:17px}
+.tile p{margin:0 0 8px;color:var(--muted);font-size:14px}
+.tile.dim{opacity:.7}
+.badge{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;margin:2px 4px 2px 0;white-space:nowrap}
+.badge.ok{background:var(--okbg);color:var(--ok)}
+.badge.warn{background:var(--warnbg);color:var(--warn)}
+.badge.bad{background:var(--badbg);color:var(--bad)}
+.badge.new{background:var(--newbg);color:var(--new)}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.legend{font-size:14px}
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table.data{width:100%;border-collapse:collapse;font-size:14px}
+table.data th,table.data td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.data th{background:#f9fafb;font-size:12px;text-transform:uppercase;letter-spacing:.02em;color:var(--muted);position:sticky;top:0}
+table.data tr:hover td{background:#fcfcfd}
+.foot{max-width:1200px;margin:20px auto;padding:0 16px 24px;color:var(--muted);font-size:13px}
+code{background:#f2f4f7;padding:0 4px;border-radius:4px}
+@media (max-width:720px){
+  .wrap{padding:10px}
+  table.data thead{display:none}
+  table.data,table.data tbody,table.data tr,table.data td{display:block;width:100%}
+  table.data tr{border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:6px 10px;background:#fff}
+  table.data td{border:0;padding:5px 0;display:flex;gap:10px;justify-content:space-between}
+  table.data td::before{content:attr(data-label);font-size:11px;text-transform:uppercase;color:var(--muted);flex:0 0 40%;font-weight:600}
+  table.data td[data-label="Restaurant"]{font-size:16px}
+  table.data td[data-label="Restaurant"]::before{content:none}
+}

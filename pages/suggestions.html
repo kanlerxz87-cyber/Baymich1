@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suggestions &amp; questions · Bay Area Michelin Dashboard</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html">Bay Area Michelin Dashboard</a></div>
+  <nav class="nav"><a class="" href="../index.html">Home</a><a class="" href="../pages/michelin-starred.html">Michelin starred</a><a class="" href="../pages/executive-summary.html">Executive summary</a><a class="" href="../pages/flagged-for-review.html">Flagged for review</a><a class="on" href="../pages/suggestions.html">Suggestions &amp; questions</a><a class="" href="../pages/repo-review.html">Repo review</a></nav>
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <h1>Suggestions &amp; questions</h1>
+  <p>Nothing here changes the site. Review the suggestions, answer the questions, then choose a path. Reply in chat with the IDs you want (for example, "S1, S2, S3, Q1 yes").</p>
+</section>
+
+<section class="card">
+  <h2>Questions that need answers before deciding</h2>
+  <div class="tablewrap"><table class="data">
+    <thead><tr><th>ID</th><th>Question</th><th>Context</th><th>Status</th></tr></thead>
+    <tbody><tr>
+  <td data-label="ID"><span class="badge bad">Q1</span></td><td data-label="Question"><strong>Which &#x27;Bay Area&#x27; definition should the site use?</strong></td>
+  <td data-label="Context">Answered in the site: 9 counties (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, Sonoma). Needs your confirmation.</td><td data-label="Status"><span class="badge ok">Partly answered</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q2</span></td><td data-label="Question"><strong>What dollar figure counts as the couple cost?</strong></td>
+  <td data-label="Context">Michelin gives tiers only. Options: (a) official menu price from each restaurant site, (b) reservation-platform prices, (c) keep tiers only. None is verified yet.</td><td data-label="Status"><span class="badge warn">Open</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q3</span></td><td data-label="Question"><strong>What radius counts for hotel ranking?</strong></td>
+  <td data-label="Context">Walking (0.5 mi), short drive (5 mi) or county-wide? Also: count starred only, or starred plus Bib and Recommended?</td><td data-label="Status"><span class="badge warn">Open</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q4</span></td><td data-label="Question"><strong>Which social platforms count as a &#x27;corresponding link&#x27;?</strong></td>
+  <td data-label="Context">Official brand account linked from the restaurant&#x27;s own website, or any account found by search? The first option is easier to verify.</td><td data-label="Status"><span class="badge warn">Open</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q5</span></td><td data-label="Question"><strong>Visit window and party details</strong></td>
+  <td data-label="Context">Dates, time of day and budget per person would let the site show which places are open on your days.</td><td data-label="Status"><span class="badge warn">Open</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q6</span></td><td data-label="Question"><strong>Is Wine Country (Napa, Sonoma) in scope?</strong></td>
+  <td data-label="Context">Eight of 41 starred places are in Napa and Sonoma. They are included now as Bay Area counties. Confirm or remove.</td><td data-label="Status"><span class="badge ok">Partly answered</span></td></tr><tr>
+  <td data-label="ID"><span class="badge bad">Q7</span></td><td data-label="Question"><strong>Should future data changes go through a PR to main?</strong></td>
+  <td data-label="Context">Pages publishes from main, so content goes live only after a merge. Please confirm this is how you want future changes handled.</td><td data-label="Status"><span class="badge warn">Open</span></td></tr></tbody></table></div>
+</section>
+
+<section class="card">
+  <h2>Suggestions (choose the path)</h2>
+  <div class="tablewrap"><table class="data">
+    <thead><tr><th>ID</th><th>Suggestion</th><th>Why</th><th>Effort / needs</th><th>Advice</th></tr></thead>
+    <tbody><tr>
+  <td data-label="ID"><span class="badge ok">S1</span></td><td data-label="Suggestion"><strong>Add filters (county, star level, price tier, open-on-day)</strong></td>
+  <td data-label="Why">Lets a planner narrow 41 rows quickly on a phone.</td><td data-label="Effort / needs">Medium effort. Needs a small script on the page (GitHub Pages can run it).</td><td data-label="Advice">Recommended: do first</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S2</span></td><td data-label="Suggestion"><strong>Add a &#x27;last verified&#x27; date to every row</strong></td>
+  <td data-label="Why">Shows how old each value is. Important for hours and openings.</td><td data-label="Effort / needs">Low effort. Needs a date field per row in the JSON.</td><td data-label="Advice">Recommended: do first</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S3</span></td><td data-label="Suggestion"><strong>Add an automated link checker (GitHub Actions)</strong></td>
+  <td data-label="Why">Catches broken Michelin and restaurant links after each change.</td><td data-label="Effort / needs">Low to medium effort. Adds a workflow file. The sandbox cannot reach guide.michelin.com from bash, so checks must run on GitHub.</td><td data-label="Advice">Recommended</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S4</span></td><td data-label="Suggestion"><strong>Finish the Bib Gourmand / Recommended table (T3)</strong></td>
+  <td data-label="Why">Covers the &#x27;listed but no star&#x27; group the brief asks for.</td><td data-label="Effort / needs">Medium effort. Needs a full pass of the Michelin Bay Area listing.</td><td data-label="Advice">Recommended</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S5</span></td><td data-label="Suggestion"><strong>Build the hotel ranking (T4)</strong></td>
+  <td data-label="Why">Ranks hotels by nearby starred and listed restaurants.</td><td data-label="Effort / needs">Needs Q3 answered first.</td><td data-label="Advice">Decide after Q3</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S6</span></td><td data-label="Suggestion"><strong>Add social links (T5) using rule Q4</strong></td>
+  <td data-label="Why">Covers the YouTube / TikTok / Instagram requirement.</td><td data-label="Effort / needs">Medium to high effort, one search per restaurant.</td><td data-label="Advice">Decide after Q4</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S7</span></td><td data-label="Suggestion"><strong>Couple cost from official menu prices (T6)</strong></td>
+  <td data-label="Why">Gives a real estimate range instead of blanks.</td><td data-label="Effort / needs">High effort. Each restaurant&#x27;s menu must be checked. Leave blank where no official price exists.</td><td data-label="Advice">Decide after Q2</td></tr><tr>
+  <td data-label="ID"><span class="badge ok">S8</span></td><td data-label="Suggestion"><strong>Add a map view</strong></td>
+  <td data-label="Why">Shows clusters visually.</td><td data-label="Effort / needs">Medium effort. Needs a map library, which adds a dependency.</td><td data-label="Advice">Optional</td></tr></tbody></table></div>
+  <p class="small muted">Recommended path: S1 + S2 + S3, then T3 (Bib / Recommended). This adds value without needing the open questions answered.</p>
+</section>
+
+</main>
+<footer class="foot">
+  Data as of 2026-11-24 · Every value links to an official source or is marked <strong>Unverified</strong>. ·
+  Source repo: <a href="https://github.com/kanlerxz87-cyber/Baymich1">github.com/kanlerxz87-cyber/Baymich1</a>
+</footer>
+</body>
+</html>

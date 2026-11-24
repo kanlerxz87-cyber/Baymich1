@@ -1,0 +1,835 @@
+{
+  "as_of": "2026-11-24",
+  "scope": "San Francisco Bay Area, 9 counties (Alameda, Contra Costa, Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, Sonoma). Michelin star list = official 2026 California selection (ceremony 24 Jun 2026).",
+  "rules": [
+    "Every row has a source link to an official Michelin page (guide.michelin.com or michelin.com).",
+    "A value that could not be confirmed from an official source is left blank and marked UNVERIFIED.",
+    "Michelin price tiers ($ to $$$$) are Michelin's category, not a dollar price. No dollar prices were verified in this pass.",
+    "Hours are copied only from the Michelin restaurant page. 'Not captured' means the value was not read in this pass, not that it does not exist.",
+    "Michelin star list and star levels come from the official article (24 Jun 2026): 3★ 7, 2★ 7, 1★ 27 in the nine-county Bay Area, plus Napa/Sonoma. 'Lost star' press reports were not verified and are not included.",
+    "Cuisine is blank everywhere: no official cuisine value was read in this pass.",
+    "County is general geography (not from Michelin) and is flagged F12."
+  ],
+  "sources": {
+    "A": {
+      "label": "Michelin Guide — Every MICHELIN-Starred Restaurant in California for 2026 (article, 24 Jun 2026)",
+      "url": "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california"
+    },
+    "B": {
+      "label": "Michelin press release — The MICHELIN Guide California 2026 (26 Jun 2026)",
+      "url": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-california-2026"
+    },
+    "C": {
+      "label": "Michelin Guide — San Francisco restaurant listing (pages 1–3)",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurants"
+    },
+    "D": {
+      "label": "Michelin Guide — restaurant detail pages (address, price tier, hours, website, phone)",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurants"
+    },
+    "P1": {
+      "label": "Cross-check (press, not used as value source): Press Democrat, Michelin stars 2026",
+      "url": "https://www.pressdemocrat.com/2026/06/24/michelin-stars-2026-which-california-restaurants-won-which-lost/"
+    },
+    "P2": {
+      "label": "Cross-check (press): SFist, Californios elevated to three stars; Wolfsbane and Naides",
+      "url": "https://sfist.com/2026/06/25/californios-elevated-to-three-michelin-stars-wolfsbane-and-naides/"
+    }
+  },
+  "starred": [
+    {
+      "name": "Atelier Crenn",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 3,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "3127 Fillmore St., San Francisco",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "https://ateliercrenn.com/",
+      "phone": "+1 415-440-0462",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/atelier-crenn",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Benu",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 3,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "22 Hawthorne St., San Francisco",
+      "hours": "Wed–Thu 5–8 PM · Fri–Sat 5–8:30 PM · Mon, Tue, Sun closed",
+      "hours_status": "VERIFIED",
+      "website": "https://benusf.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/benu",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Californios",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 3,
+      "new": true,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "355 11th St., San Francisco",
+      "hours": "Tue–Sat 5–10 PM · Mon, Sun closed",
+      "hours_status": "VERIFIED",
+      "website": "https://californiossf.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/californios",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Quince",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 3,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "470 Pacific Ave., San Francisco, CA 94133",
+      "hours": "Tue–Thu 5–9 PM · Fri–Sat 11:30 AM–1 PM & 5–9 PM · Mon, Sun closed",
+      "hours_status": "VERIFIED",
+      "website": "https://quincerestaurant.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/quince",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "The French Laundry",
+      "city": "Yountville",
+      "county": "Napa",
+      "stars": 3,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "6640 Washington St., Yountville",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "https://thomaskeller.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/yountville/restaurant/the-french-laundry",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Enclos",
+      "city": "Sonoma",
+      "county": "Sonoma",
+      "stars": 3,
+      "new": true,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "139 E. Napa St., Sonoma",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "https://enclos-sonoma.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/sonoma/restaurant/enclos",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "SingleThread",
+      "city": "Healdsburg",
+      "county": "Sonoma",
+      "stars": 3,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "131 North St., Healdsburg",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "https://singlethreadfarms.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/healdsburg/restaurant/singlethread",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Acquerello",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 2,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "1722 Sacramento St., San Francisco",
+      "hours": "Tue–Sat 5:30–9:45 PM · Mon, Sun closed",
+      "hours_status": "VERIFIED",
+      "website": "https://acquerellosf.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/acquerello",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Birdsong",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 2,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "1085 Mission St., San Francisco",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "https://birdsongsf.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/birdsong",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Kiln",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 2,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "149 Fell St., San Francisco",
+      "hours": "Tue–Thu 6–8 PM · Fri–Sat 5–8:30 PM · Mon, Sun closed",
+      "hours_status": "VERIFIED",
+      "website": "https://kilnsf.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/kiln-1210355",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED",
+      "flag": "F1"
+    },
+    {
+      "name": "Lazy Bear",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 2,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "3416 19th St., San Francisco",
+      "hours": "Tue–Sat 5–11 PM · Mon, Sun closed",
+      "hours_status": "VERIFIED",
+      "website": "https://lazybearsf.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/lazy-bear",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Saison",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 2,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "178 Townsend St., San Francisco",
+      "hours": "Tue–Thu 5–9:30 PM · Mon closed · Fri–Sun not captured",
+      "hours_status": "PARTIAL",
+      "website": "https://saisonsf.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/saison",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Sons & Daughters",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 2,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "2875 18th St., San Francisco",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "https://sonsanddaughterssf.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/sons-daughters",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Commis",
+      "city": "Oakland",
+      "county": "Alameda",
+      "stars": 2,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "$$$$",
+      "address": "3859 Piedmont Ave., Oakland",
+      "hours": "Tue–Sat 5–9:30 PM · Mon, Sun closed",
+      "hours_status": "VERIFIED",
+      "website": "https://commisrestaurant.com/",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/oakland/restaurant/commis",
+      "sources": [
+        "A",
+        "D"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "7 Adams",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/7-adams",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Angler SF",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/angler-sf",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Hilda and Jesse",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/hilda-and-jesse",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Kin Khao",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/kin-khao",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Mister Jiu's",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Naides",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": true,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/naides",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Nari",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/nari",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Niku Steakhouse",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/niku-steakhouse",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Nisei",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/nisei",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "San Ho Won",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/san-ho-won",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Sorrel",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/sorrel",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Ssal",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/ssal",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "State Bird Provisions",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/state-bird-provisions",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "The Progress",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/the-progress",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Wolfsbane",
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "stars": 1,
+      "new": true,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-francisco/restaurant/wolfsbane",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Sun Moon Studio",
+      "city": "Oakland",
+      "county": "Alameda",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/oakland/restaurant/sun-moon-studio",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Auberge du Soleil",
+      "city": "Rutherford",
+      "county": "Napa",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/rutherford/restaurant/auberge-du-soleil",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Auro",
+      "city": "Calistoga",
+      "county": "Napa",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/calistoga/restaurant/auro",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Press",
+      "city": "Saint Helena",
+      "county": "Napa",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/saint-helena/restaurant/press",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Cyrus",
+      "city": "Geyserville",
+      "county": "Sonoma",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/geyserville/restaurant/cyrus",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Troubadour",
+      "city": "Healdsburg",
+      "county": "Sonoma",
+      "stars": 1,
+      "new": true,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/healdsburg/restaurant/troubadour",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Protégé",
+      "city": "Palo Alto",
+      "county": "Santa Clara",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/palo-alto/restaurant/protege",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Plumed Horse",
+      "city": "Saratoga",
+      "county": "Santa Clara",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/saratoga/restaurant/plumed-horse",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Selby's",
+      "city": "Atherton",
+      "county": "San Mateo",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/atherton/restaurant/selby-s",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Wakuriya",
+      "city": "San Mateo",
+      "county": "San Mateo",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-mateo/restaurant/wakuriya",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "The Village Pub",
+      "city": "Woodside",
+      "county": "San Mateo",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/woodside/restaurant/the-village-pub",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    },
+    {
+      "name": "Madcap",
+      "city": "San Anselmo",
+      "county": "Marin",
+      "stars": 1,
+      "new": false,
+      "cuisine": "",
+      "price_tier": "",
+      "address": "",
+      "hours": "Not captured",
+      "hours_status": "UNVERIFIED",
+      "website": "",
+      "phone": "",
+      "michelin": "https://guide.michelin.com/ca/en/california/san-anselmo/restaurant/madcap",
+      "sources": [
+        "A"
+      ],
+      "couple_cost": "UNVERIFIED"
+    }
+  ]
+}
