@@ -24,7 +24,7 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 | T10 (this session) | Research: official Michelin Guide SF Bay Area list (starred vs Bib Gourmand) | done | `session-arena-e4732d51` | `data/restaurants.json`, `data/bibgourmand.json` | 29 SF-region starred (4×3★, 7×2★, 18×1★) + 30 Bib Gourmand, verified vs guide.michelin.com 2026 guide. |
 | T11 (this session) | Research: 2-adult pricing, hours, days, exceptions, social links | done | `session-arena-e4732d51` | `data/restaurants.json`, `data/bibgourmand.json` | Pricing/hours verified from official restaurant sites where confirmable: Benu (benusf.com/info), Acquerello (acquerellosf.com), Kiln (kilnsf.com/information), Commis (commisrestaurant.com/info), Birdsong (birdsongsf.com/experience). Conflicting/stale sources flagged unverified and never inferred (Quince, Californios, Saison, Sons & Daughters, Lazy Bear, Atelier Crenn). Bib Gourmand details blank/unverified. Verified data published to GitHub Pages main. |
 | T12 (this session) | Build: landing page + category subpages, tables, executive summary, suggestions, questions | done | `session-arena-e4732d51` | `index.html`, `pages/*.html`, `css/style.css`, `js/app.js` | Responsive client-side dashboard; blank/unverified flagged per policy. Preserved in this merge as complementary files alongside the root dashboard. Live site published at https://kanlerxz87-cyber.github.io/Baymich1/ |
-| T13 (session `arena/775cc15c-baymich1`) | Audit: cross-check the two star datasets, scope definition, and irregularities | in progress | `775cc15c` | `reports/audit-775cc15c.md` (new file only), `COORDINATION.md` | Read-only against data files; no shared outputs changed. |
+| T13 (session `arena/775cc15c-baymich1`) | Audit: cross-check the two star datasets, scope definition, and irregularities | done (needs integration) | `775cc15c` | `reports/audit-775cc15c.md` (new file only), `COORDINATION.md` | Read-only against data files; no shared outputs changed. |
 
 ## Log
 
@@ -65,3 +65,9 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Hotel area-density ranking cannot be computed safely until a radius or mode/time threshold and date are selected and validated.
 - Bib Gourmand list is a sample, not a full non-starred MICHELIN Guide selection.
 - Broad MICHELIN “San Francisco and surroundings” live-filter counts can include surrounding results and differ from a declared city-scoped roster; use the dated annual roster for counts and the live directory for individual current details.
+
+### L6 — Session `775cc15c` — T13 audit result
+- Compared `data/michelin_bay_area_stars.json` (41), `data/restaurants.json` (29), and `data.js` (41). Star level and city: 0 mismatches on shared entries.
+- Official MICHELIN pages checked: <https://guide.michelin.com/us/en/california/san-francisco/restaurant/californios>, <https://guide.michelin.com/us/en/california/san-francisco/restaurant/naides>, and the statewide 2026 article <https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california> (83 starred statewide).
+- Irregularities flagged (full list in `reports/audit-775cc15c.md`): I-1 derived 2-adult total for Californios (inferred, not sourced); I-2 Californios closing time 9pm vs 10pm on Michelin page; I-4 Naides address/hours/website blank though official page has them; I-5 three different "Bay Area" scopes; I-6 name variant; I-7 duplicate dashboards and a build script that does not read `restaurants.json`.
+- No shared outputs changed. Integration session should resolve I-1 to I-4 and Q1–Q5 in the audit report.
