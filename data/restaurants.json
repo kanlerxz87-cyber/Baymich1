@@ -4,7 +4,7 @@
     "guideEdition": "2026 (MICHELIN Guide California, stars announced June 24, 2026)",
     "dataAsOf": "2026-11-24",
     "officialMichelinRegion": "https://guide.michelin.com/us/en/california/san-francisco/restaurants",
-    "verificationPolicy": "Every distinction, city, cuisine and Michelin price bracket below is verified against the official MICHELIN Guide site (guide.michelin.com). Exact 2-adult pricing, opening hours, days open, exceptions and social links are only marked verified when confirmed from the restaurant's official website or an official Michelin listing. Blank values = could not be confirmed from an official source; flagged unverified, never inferred.",
+    "verificationPolicy": "Distinction, star level, city, cuisine, Michelin price bracket, address, website, opening hours and days open were verified against each restaurant's official MICHELIN Guide profile (guide.michelin.com) on 2026-11-24. Exact 2-adult pricing is only marked verified when confirmed from the restaurant's own official menu/fee page; blank or 'sources vary' values are flagged unverified and never inferred. Exceptions and social links are left blank unless confirmed from an official source.",
     "counts": {
       "threeStar": 4,
       "twoStar": 7,
@@ -25,16 +25,16 @@
       "stars": 3,
       "city": "San Francisco",
       "area": "Jackson Square / Financial District",
-      "cuisine": "Contemporary (Californian)",
+      "cuisine": "Contemporary, Californian",
       "michelinPriceBracket": "$$$$",
-      "address": "470 Pacific Avenue, San Francisco, CA 94133",
-      "website": "http://www.quincerestaurant.com/",
+      "address": "470 Pacific Ave., San Francisco, CA 94133, USA",
+      "website": "https://www.quincerestaurant.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince",
       "estPricePerPerson": "$298–$390 tasting menu (sources vary; see priceSource)",
       "estPrice2AdultsTotal": "$596–$780 food only (2 adults), before service/tax/pairings",
       "priceSource": "OpenTable ($298 tasting); TravelsForStars ($360–$390); SF Standard ($360). Official site quincerestaurant.com not yet re-verified after renovation reopening.",
       "priceVerified": false,
-      "hours": "Dinner: Tue–Thu 5:30pm–9:00pm; Fri–Sat 5:00pm–9:30pm",
+      "hours": "Mon closed; Tue–Thu 5:00–9:00 PM; Fri–Sat 11:30 AM–1:00 PM & 5:00–9:00 PM; Sun closed",
       "daysOpen": "Tuesday–Saturday",
       "exceptions": "Monday & Sunday: closed (per OpenTable; confirm on official site after Nov 28, 2026 reopening)",
       "instagram": null,
@@ -46,7 +46,9 @@
         "https://www.opentable.com/r/quince-san-francisco",
         "https://sfstandard.com/2023/11/06/san-francisco-michelin-star-restaurant-quince-reopens/"
       ],
-      "notes": "Three-Michelin-starred Californian. Closed Jan–Nov 2026 for 20th-anniversary renovation, reopened Nov 28, 2026. Re-verify hours/price from quincerestaurant.com."
+      "notes": "Three-Michelin-starred Californian. Closed Jan–Nov 2026 for 20th-anniversary renovation, reopened Nov 28, 2026. Re-verify hours/price from quincerestaurant.com.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince"
     },
     {
       "id": "californios",
@@ -57,16 +59,16 @@
       "stars": 3,
       "city": "San Francisco",
       "area": "SoMa",
-      "cuisine": "Mexican",
+      "cuisine": "Mexican, Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "355 11th Street, San Francisco, CA 94103",
-      "website": "http://www.californiossf.com/",
+      "address": "355 11th St., San Francisco, CA 94103, USA",
+      "website": "https://www.californiossf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/californios",
       "estPricePerPerson": "$325–$450 tasting menu (sources vary)",
       "estPrice2AdultsTotal": "$650–$900 food only (2 adults), before service/tax/pairings",
       "priceSource": "TravelsForStars (Jul 2026: $325 pp); OpenTable ($450 bar tasting); RestaurantsForKings (older: $425 + 22% service). Conflict — confirm on californiossf.com.",
       "priceVerified": false,
-      "hours": "Tue–Sat 5:00pm–9:00pm",
+      "hours": "Mon closed; Tue–Sat 5:00–10:00 PM; Sun closed",
       "daysOpen": "Tuesday–Saturday",
       "exceptions": "Sunday & Monday: closed",
       "instagram": null,
@@ -78,7 +80,9 @@
         "https://www.opentable.com/r/californios-san-francisco",
         "https://www.travelsforstars.com/blog/2026/07/09/californios-san-francisco"
       ],
-      "notes": "World's first Mexican restaurant with three Michelin stars (2026). Chef Val Cantú. Price sources conflict ($325 vs $425 vs $450) — unverified pending official site."
+      "notes": "World's first Mexican restaurant with three Michelin stars (2026). Chef Val Cantú. Price sources conflict ($325 vs $425 vs $450) — unverified pending official site.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/californios"
     },
     {
       "id": "benu",
@@ -89,16 +93,16 @@
       "stars": 3,
       "city": "San Francisco",
       "area": "SoMa / South Beach",
-      "cuisine": "Asian",
+      "cuisine": "Asian, Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "22 Hawthorne Street, San Francisco, CA 94105",
+      "address": "22 Hawthorne St., San Francisco, CA 94105, USA",
       "website": "https://www.benusf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu",
       "estPricePerPerson": "$425 tasting menu + 22% service charge (~$517 pp with service)",
       "estPrice2AdultsTotal": "$850 food only + 22% service (~$1,037 total with service), 2 adults, before tax/pairings",
       "priceSource": "Official benusf.com/info: tasting menu $425 pp + 22% service charge; optional wine pairing ~$250; corkage $100; valet $30.",
       "priceVerified": true,
-      "hours": "Dinner Wednesday–Saturday",
+      "hours": "Mon–Tue closed; Wed–Thu 5:00–8:00 PM; Fri–Sat 5:00–8:30 PM; Sun closed",
       "daysOpen": "Wednesday–Saturday",
       "exceptions": "Sunday & Monday: closed; Tuesday seating 5:30–7:30pm (per listing). Closed Sundays and Mondays.",
       "instagram": null,
@@ -110,7 +114,9 @@
         "https://www.benusf.com/info",
         "https://www.hangphamweddings.com/blog/benu-where-californian-bounty-meets-asian-alchemy/"
       ],
-      "notes": "Three-Michelin-starred. Chef Corey Lee. Tasting ~15–20+ courses, plan ~3 hours. Reservations via SevenRooms, released 30 days ahead at 10am."
+      "notes": "Three-Michelin-starred. Chef Corey Lee. Tasting ~15–20+ courses, plan ~3 hours. Reservations via SevenRooms, released 30 days ahead at 10am.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu"
     },
     {
       "id": "atelier-crenn",
@@ -121,16 +127,16 @@
       "stars": 3,
       "city": "San Francisco",
       "area": "Cow Hollow / Marina",
-      "cuisine": "French / Contemporary",
+      "cuisine": "Contemporary, French",
       "michelinPriceBracket": "$$$$",
-      "address": "3127 Fillmore Street, San Francisco, CA 94123",
+      "address": "3127 Fillmore St., San Francisco, CA 94123, USA",
       "website": "https://www.ateliercrenn.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/atelier-crenn",
       "estPricePerPerson": "$300–$500 per person (price tier; exact current menu price not confirmed from official site)",
       "estPrice2AdultsTotal": "$600–$1,000 estimate (2 adults), unverified",
       "priceSource": "enprimeurclub.com verified profile ($300–$500 pp). Older sources: $325–$335 tasting. Not confirmed from ateliercrenn.com.",
       "priceVerified": false,
-      "hours": "Tue–Sat 5:00–8:30pm",
+      "hours": "Mon closed; Tue–Sat 4:45–8:45 PM; Sun closed",
       "daysOpen": "Tuesday–Saturday",
       "exceptions": "Monday & Sunday: closed",
       "instagram": "@atelier.crenn",
@@ -142,7 +148,9 @@
         "https://www.enprimeurclub.com/restaurants/atelier-crenn",
         "https://www.frommers.com/destinations/san-francisco/restaurants/atelier-crenn/"
       ],
-      "notes": "Three-Michelin-starred. Chef Dominique Crenn. Instagram @atelier.crenn found via listing; verify handle. Exact current tasting price unverified."
+      "notes": "Three-Michelin-starred. Chef Dominique Crenn. Instagram @atelier.crenn found via listing; verify handle. Exact current tasting price unverified.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/atelier-crenn"
     },
     {
       "id": "acquerello",
@@ -153,17 +161,17 @@
       "stars": 2,
       "city": "San Francisco",
       "area": "Nob Hill",
-      "cuisine": "Italian",
+      "cuisine": "Italian, Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "Nob Hill, San Francisco, CA",
+      "address": "1722 Sacramento St., San Francisco, CA 94109, USA",
       "website": "https://www.acquerellosf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello",
       "estPricePerPerson": "$295 seasonal tasting + 20% service + 4% SF surcharge (~$370 pp all-in food); four-course $185",
       "estPrice2AdultsTotal": "$590 food only + ~24% charges (~$732 total with service/surcharge), 2 adults",
       "priceSource": "Official acquerellosf.com/seasonal-tasting-menu: Seasonal Tasting Menu $295 pp; 20% service charge + 4% employer-mandate surcharge added.",
       "priceVerified": true,
-      "hours": "Not confirmed from official site",
-      "daysOpen": "Not confirmed",
+      "hours": "Mon closed; Tue–Sat 5:30–9:45 PM; Sun closed",
+      "daysOpen": "Tuesday–Saturday",
       "exceptions": "Not confirmed",
       "instagram": null,
       "youtube": null,
@@ -173,7 +181,9 @@
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello",
         "https://www.acquerellosf.com/seasonal-tasting-menu"
       ],
-      "notes": "Two-Michelin-starred Italian. Official-site pricing verified. Hours/days still need official confirmation."
+      "notes": "Two-Michelin-starred Italian. Official-site pricing verified. Hours/days still need official confirmation.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello"
     },
     {
       "id": "kiln",
@@ -186,14 +196,14 @@
       "area": "Civic Center / Hayes Valley",
       "cuisine": "Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "149 Fell Street, San Francisco, CA 94102",
+      "address": "149 Fell St., San Francisco, CA 94102, USA",
       "website": "https://www.kilnsf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kiln-1210355",
       "estPricePerPerson": "$315 Kiln tasting menu + 20% service charge (~$378 pp with service)",
       "estPrice2AdultsTotal": "$630 food only + 20% service (~$756 total with service), 2 adults",
       "priceSource": "Official kilnsf.com/information: Kiln tasting menu $315, all purchases include additional 20% service charge; beverage pairing $175, reserve $375, spirit-free $145.",
       "priceVerified": true,
-      "hours": "Tue–Thu 6:00–8:30pm; Fri–Sat 5:00–8:30pm",
+      "hours": "Mon closed; Tue–Thu 6:00–8:00 PM; Fri–Sat 5:00–8:30 PM; Sun closed",
       "daysOpen": "Tuesday–Saturday",
       "exceptions": "Monday & Sunday: closed",
       "instagram": null,
@@ -205,7 +215,9 @@
         "https://www.kilnsf.com/information",
         "https://www.opentable.com/r/kiln-san-francisco"
       ],
-      "notes": "Two-Michelin-starred. Chef John Wesley. 18–20 servings, 2.5–3 hours. Reservations via Tock, released 1st of month at 12pm PST."
+      "notes": "Two-Michelin-starred. Chef John Wesley. 18–20 servings, 2.5–3 hours. Reservations via Tock, released 1st of month at 12pm PST.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kiln-1210355"
     },
     {
       "id": "lazy-bear",
@@ -216,16 +228,16 @@
       "stars": 2,
       "city": "San Francisco",
       "area": "Mission",
-      "cuisine": "Contemporary",
+      "cuisine": "Contemporary, Modern Cuisine",
       "michelinPriceBracket": "$$$$",
-      "address": "3416 19th Street, San Francisco, CA 94110",
-      "website": "http://lazybearsf.com/",
+      "address": "3416 19th St., San Francisco, CA 94110, USA",
+      "website": "https://www.lazybearsf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/lazy-bear",
       "estPricePerPerson": "$320 dinner ticket (official tickets page; date-stamped 2019 — may be stale). Older sources $160–$211 pp.",
       "estPrice2AdultsTotal": "$640 estimate (2 adults) from dated official page — UNVERIFIED",
       "priceSource": "Official lazybearsf.com/tickets (archived 2019): dinner ticket $320 pp, not incl. beverages/service/tax. Conflicting older third-party prices $160–$211. Price unverified due to stale source.",
       "priceVerified": false,
-      "hours": "Tuesday–Saturday, seatings 5:00pm–9:00pm (two seatings ~6pm & 8:30pm)",
+      "hours": "Mon closed; Tue–Sat 5:00–11:00 PM; Sun closed",
       "daysOpen": "Tuesday–Saturday",
       "exceptions": "Sunday & Monday: closed",
       "instagram": "@lazybearsf",
@@ -237,7 +249,9 @@
         "https://www.lazybearsf.com/tickets/",
         "https://restaurantguru.com/Lazy-Bear-San-Francisco"
       ],
-      "notes": "Two-Michelin-starred. Ticketed dinner party format. Price page is dated (2019) — re-verify on lazybearsf.com."
+      "notes": "Two-Michelin-starred. Ticketed dinner party format. Price page is dated (2019) — re-verify on lazybearsf.com.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/lazy-bear"
     },
     {
       "id": "saison",
@@ -248,16 +262,16 @@
       "stars": 2,
       "city": "San Francisco",
       "area": "SoMa",
-      "cuisine": "Californian (live-fire)",
+      "cuisine": "Californian, Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "178 Townsend Street, San Francisco, CA 94107",
-      "website": "https://saisonsf.com/",
+      "address": "178 Townsend St., San Francisco, CA 94107, USA",
+      "website": "https://www.saisonsf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saison",
       "estPricePerPerson": "Tasting from $368 pp (OpenTable Experiences $368–$566 range) + 20% service + tax + 6% SF mandate",
       "estPrice2AdultsTotal": "$736 food only + charges, 2 adults (all-in can run well north of $700 pp per source)",
       "priceSource": "menuexplore.com (Nov 2026) citing saisonsf.com/OpenTable Experiences: tasting starts $368 pp, pairings extra, +20% service + ~8.5% tax + 6% mandate. Bar experience $58–$98 pp.",
       "priceVerified": false,
-      "hours": "Tuesday–Saturday 5:00pm–9:30pm",
+      "hours": "Mon closed; Tue–Sat 5:00–9:30 PM; Sun closed",
       "daysOpen": "Tuesday–Saturday",
       "exceptions": "Sunday & Monday: closed",
       "instagram": null,
@@ -269,7 +283,9 @@
         "https://menuexplore.com/saison-san-francisco-menu/",
         "https://www.exploretock.com/saison/experience/497584/saison-bar-experience"
       ],
-      "notes": "Two-Michelin-starred live-fire. 18 seats. Tasting menu only (no a la carte). Price range from third-party aggregator — confirm on saisonsf.com."
+      "notes": "Two-Michelin-starred live-fire. 18 seats. Tasting menu only (no a la carte). Price range from third-party aggregator — confirm on saisonsf.com.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saison"
     },
     {
       "id": "sons-daughters",
@@ -280,16 +296,16 @@
       "stars": 2,
       "city": "San Francisco",
       "area": "Mission (new location, opened Nov 2025)",
-      "cuisine": "Contemporary (New Nordic)",
+      "cuisine": "Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "2875 18th Street, San Francisco, CA",
+      "address": "2875 18th St., San Francisco, CA 94110, USA",
       "website": "https://www.sonsanddaughterssf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sons-daughters",
       "estPricePerPerson": "$295–$315 pp tasting (24 courses) + 20% service; sources conflict due to 2025 chef/location change",
       "estPrice2AdultsTotal": "$590–$630 food only + 20% service, 2 adults",
       "priceSource": "SF Chronicle (Nov 2025): $295 pp + 20% service at new Mission location. RestaurantsForKings (Jun 2026): $315 pp. OpenTable (older Nob Hill): $145 pp. Conflict — unverified.",
       "priceVerified": false,
-      "hours": "Tuesday–Saturday, two seatings from ~5:30pm",
+      "hours": "Mon closed; Tue–Sat 5:30–8:30 PM; Sun closed",
       "daysOpen": "Tuesday–Saturday",
       "exceptions": "Sunday & Monday: closed (dark)",
       "instagram": "@sonsanddaughterssf",
@@ -301,7 +317,9 @@
         "https://www.sfchronicle.com/food/restaurants/article/sons-daughters-michelin-21061608.php",
         "https://restaurantsforkings.com/blog/how-to-book-sons-and-daughters"
       ],
-      "notes": "Two-Michelin-starred (+ Green Star). Chef Harrison Cheney. New Nordic. Moved Nov 2025 to former Osito space. Price unverified pending sonsanddaughterssf.com."
+      "notes": "Two-Michelin-starred (+ Green Star). Chef Harrison Cheney. New Nordic. Moved Nov 2025 to former Osito space. Price unverified pending sonsanddaughterssf.com.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sons-daughters"
     },
     {
       "id": "birdsong",
@@ -312,16 +330,16 @@
       "stars": 2,
       "city": "San Francisco",
       "area": "SoMa",
-      "cuisine": "American (wood-hearth)",
+      "cuisine": "Contemporary, American",
       "michelinPriceBracket": "$$$$",
-      "address": "1085 Mission Street, San Francisco, CA 94103",
+      "address": "1085 Mission St., San Francisco, CA 94103, USA",
       "website": "https://www.birdsongsf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/birdsong",
       "estPricePerPerson": "Journey $350 pp / Discovery $290 pp (official birdsongsf.com/experience). Other sources $265–$325.",
       "estPrice2AdultsTotal": "$580–$700 food only (2 adults), before pairings/fees",
       "priceSource": "Official birdsongsf.com/experience: Journey $350 pp (~3.5 hrs, Tue–Sat), Discovery $290 pp (~2.5 hrs, Tue–Thu). Seatswiper (Sep 2026): $350 pp + 22% admin + 5% city ordinance fee. Conflict with $265/$325 third-party — official used here.",
       "priceVerified": true,
-      "hours": "Tuesday–Saturday (Journey Tue–Sat; Discovery Tue–Thu)",
+      "hours": "Mon closed; Tue–Thu 5:30–8:00 PM; Fri–Sat 5:00–8:30 PM; Sun closed",
       "daysOpen": "Tuesday–Saturday",
       "exceptions": "Sunday & Monday: closed",
       "instagram": null,
@@ -333,7 +351,9 @@
         "https://www.birdsongsf.com/experience",
         "https://guides.seatswiper.com/how-to-get-a-reservation-at-birdsong-san-francisco"
       ],
-      "notes": "Two-Michelin-starred (since 2024). Chef Christopher Bleidorn. Wood-fired hearth. Tock reservations, release 1st of month."
+      "notes": "Two-Michelin-starred (since 2024). Chef Christopher Bleidorn. Wood-fired hearth. Tock reservations, release 1st of month.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/birdsong"
     },
     {
       "id": "commis",
@@ -344,16 +364,16 @@
       "stars": 2,
       "city": "Oakland",
       "area": "Piedmont Avenue",
-      "cuisine": "Contemporary (Californian)",
+      "cuisine": "Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "3859 Piedmont Avenue, Oakland, CA 94611",
+      "address": "3859 Piedmont Ave., Oakland, CA 94611, USA",
       "website": "https://commisrestaurant.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/oakland/restaurant/commis",
       "estPricePerPerson": "$279 10-course tasting + 20% service charge (excl. beverages/tax). Optional beverage pairing $139.",
       "estPrice2AdultsTotal": "$558 food only + 20% service (~$670 with service), 2 adults",
       "priceSource": "Official commisrestaurant.com/info/: Dining Room 10-course tasting $279 pp; excludes beverages, sales tax, 20% service charge; optional global beverage pairing $139 pp; $100 pp deposit.",
       "priceVerified": true,
-      "hours": "Dinner Tue–Thu 5:00–8:30pm; Fri–Sat 5:00–9:00pm",
+      "hours": "Mon closed; Tue–Sat 5:00–9:30 PM; Sun closed",
       "daysOpen": "Tuesday–Saturday",
       "exceptions": "Sunday & Monday: closed",
       "instagram": null,
@@ -364,7 +384,9 @@
         "https://guide.michelin.com/us/en/california/oakland/restaurant/commis",
         "https://commisrestaurant.com/info/"
       ],
-      "notes": "Two-Michelin-starred Oakland restaurant. Chef James Syhabout. OpenTable listing shows $259 (older); official site $279 used here."
+      "notes": "Two-Michelin-starred Oakland restaurant. Chef James Syhabout. OpenTable listing shows $259 (older); official site $279 used here.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/oakland/restaurant/commis"
     },
     {
       "id": "niku-steakhouse",
@@ -377,15 +399,15 @@
       "area": "Not confirmed",
       "cuisine": "Steakhouse",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "61 Division St., San Francisco, CA 94103, USA",
+      "website": "https://www.nikusteakhouse.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/niku-steakhouse",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon–Thu 5:00–9:00 PM; Fri–Sat 5:00–10:00 PM; Sun 5:00–9:00 PM",
+      "daysOpen": "Monday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -394,7 +416,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/niku-steakhouse"
       ],
-      "notes": "One-Michelin-starred steakhouse. Details (price, hours, address, social) not yet verified from official source."
+      "notes": "One-Michelin-starred steakhouse. Details (price, hours, address, social) not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/niku-steakhouse"
     },
     {
       "id": "wolfsbane",
@@ -405,17 +429,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Not confirmed",
-      "cuisine": "Contemporary",
+      "cuisine": "Contemporary, Californian",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "2495 3rd St., San Francisco, CA 94107, USA",
+      "website": "https://wolfsbanesf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/wolfsbane",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon closed; Tue–Sat 5:30–10:00 PM; Sun closed",
+      "daysOpen": "Tuesday–Saturday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -424,7 +448,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/wolfsbane"
       ],
-      "notes": "One-Michelin-starred (NEW 2026). Rupert & Carrie Blease. Details not yet verified from official source."
+      "notes": "One-Michelin-starred (NEW 2026). Rupert & Carrie Blease. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/wolfsbane"
     },
     {
       "id": "san-ho-won",
@@ -435,17 +461,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Not confirmed",
-      "cuisine": "Korean",
+      "cuisine": "Korean, Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "2170 Bryant St., San Francisco, CA 94110, USA",
+      "website": "https://www.sanhowon.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/san-ho-won",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon closed; Tue–Fri 5:00–10:00 PM; Sat–Sun 4:30–10:00 PM",
+      "daysOpen": "Tuesday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -454,7 +480,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/san-ho-won"
       ],
-      "notes": "One-Michelin-starred Korean. Details not yet verified from official source."
+      "notes": "One-Michelin-starred Korean. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/san-ho-won"
     },
     {
       "id": "ssal",
@@ -465,17 +493,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Not confirmed",
-      "cuisine": "Korean",
+      "cuisine": "Korean, Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "2226 Polk St., San Francisco, CA 94109, USA",
+      "website": "https://ssalsf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ssal",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon–Tue closed; Wed–Sun 5:30–8:30 PM",
+      "daysOpen": "Wednesday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -484,7 +512,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ssal"
       ],
-      "notes": "One-Michelin-starred Korean. Details not yet verified from official source."
+      "notes": "One-Michelin-starred Korean. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ssal"
     },
     {
       "id": "state-bird-provisions",
@@ -495,17 +525,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Japantown / Fillmore",
-      "cuisine": "New American / Californian (small plates, cart service)",
+      "cuisine": "Californian",
       "michelinPriceBracket": "$$$",
-      "address": "1529 Fillmore Street, San Francisco, CA 94115",
+      "address": "1529 Fillmore St., San Francisco, CA 94115, USA",
       "website": "https://www.statebirdsf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/state-bird-provisions",
       "estPricePerPerson": "$50–$100 per person",
       "estPrice2AdultsTotal": "$100–$200 (2 adults)",
       "priceSource": "enprimeurclub.com verified profile $50–100 pp; Frommers dishes $3–$22; sirved.com review ~$100 pp (no alcohol).",
       "priceVerified": false,
-      "hours": "Mon–Thu 5:30–10pm; Fri–Sat 5:30–10:30pm; Sun 5:30–10pm",
-      "daysOpen": "Monday–Sunday",
+      "hours": "Mon–Thu 5:30–10:00 PM; Fri closed; Sat 5:30–10:30 PM; Sun 5:30–10:00 PM",
+      "daysOpen": "Monday–Sunday (Friday closed)",
       "exceptions": "None noted",
       "instagram": null,
       "youtube": null,
@@ -516,7 +546,9 @@
         "https://www.enprimeurclub.com/restaurants/state-bird-provisions",
         "https://www.frommers.com/destinations/san-francisco/restaurants/state-bird-provisions/"
       ],
-      "notes": "One-Michelin-starred. Chefs Nicole Krasinski & Stuart Brioza. Dim sum-style cart service. Hours from listing aggregation — confirm on statebirdsf.com."
+      "notes": "One-Michelin-starred. Chefs Nicole Krasinski & Stuart Brioza. Dim sum-style cart service. Hours from listing aggregation — confirm on statebirdsf.com.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/state-bird-provisions"
     },
     {
       "id": "hilda-and-jesse",
@@ -527,17 +559,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Not confirmed",
-      "cuisine": "American",
+      "cuisine": "American, Contemporary",
       "michelinPriceBracket": "$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "701 Union St., San Francisco, CA 94133, USA",
+      "website": "https://www.hildaandjessesf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hilda-and-jesse",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon 5:30–9:00 PM; Tue–Wed closed; Thu–Fri 5:30–9:00 PM; Sat–Sun 10:00 AM–2:00 PM",
+      "daysOpen": "Monday, Thursday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -546,7 +578,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hilda-and-jesse"
       ],
-      "notes": "One-Michelin-starred American. Details not yet verified from official source."
+      "notes": "One-Michelin-starred American. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hilda-and-jesse"
     },
     {
       "id": "nisei",
@@ -557,17 +591,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Not confirmed",
-      "cuisine": "Japanese",
+      "cuisine": "Japanese, Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "2316 Polk St., San Francisco, CA 94109, USA",
+      "website": "https://www.restaurantnisei.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nisei",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon–Tue closed; Wed–Sun 5:00–9:00 PM",
+      "daysOpen": "Wednesday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -576,7 +610,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nisei"
       ],
-      "notes": "One-Michelin-starred Japanese. Details not yet verified from official source."
+      "notes": "One-Michelin-starred Japanese. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nisei"
     },
     {
       "id": "naides",
@@ -587,17 +623,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Not confirmed",
-      "cuisine": "Filipino",
+      "cuisine": "Filipino, Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "708 Bush St., San Francisco, CA 94108, USA",
+      "website": "https://www.restaurantnaides.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/naides",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon–Wed closed; Thu–Sun 5:30–8:30 PM",
+      "daysOpen": "Thursday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -606,7 +642,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/naides"
       ],
-      "notes": "One-Michelin-starred (NEW 2026). SF's first dedicated Filipino tasting-menu restaurant. Details not yet verified from official source."
+      "notes": "One-Michelin-starred (NEW 2026). SF's first dedicated Filipino tasting-menu restaurant. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/naides"
     },
     {
       "id": "nari",
@@ -617,17 +655,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Not confirmed",
-      "cuisine": "Thai",
+      "cuisine": "Thai, Contemporary",
       "michelinPriceBracket": "$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "Hotel Kabuki - JDV by Hyatt, 1625 Post St., San Francisco, CA 94115, USA",
+      "website": "https://www.narisf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nari",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon–Thu 5:30–9:00 PM; Fri–Sat 5:30–9:30 PM; Sun 5:30–9:00 PM",
+      "daysOpen": "Monday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -636,7 +674,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nari"
       ],
-      "notes": "One-Michelin-starred Thai. Details not yet verified from official source."
+      "notes": "One-Michelin-starred Thai. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nari"
     },
     {
       "id": "mister-jius",
@@ -647,17 +687,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Chinatown / Nob Hill",
-      "cuisine": "Chinese",
+      "cuisine": "Chinese, Contemporary",
       "michelinPriceBracket": "$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "28 Waverly Pl., San Francisco, CA 94108, USA",
+      "website": "https://misterjius.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon closed; Tue–Thu 5:00–9:00 PM; Fri–Sat 5:00–9:30 PM; Sun closed",
+      "daysOpen": "Tuesday–Saturday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -666,7 +706,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s"
       ],
-      "notes": "One-Michelin-starred Chinese. Details not yet verified from official source."
+      "notes": "One-Michelin-starred Chinese. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s"
     },
     {
       "id": "angler-sf",
@@ -677,17 +719,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Not confirmed",
-      "cuisine": "Contemporary",
+      "cuisine": "Contemporary, Seafood",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "132 The Embarcadero, San Francisco, CA 94105, USA",
+      "website": "https://anglersf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/angler-sf",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon 5:00–9:00 PM; Tue–Sat 11:30 AM–2:00 PM & 5:00–9:00 PM; Sun 5:00–9:00 PM",
+      "daysOpen": "Monday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -696,7 +738,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/angler-sf"
       ],
-      "notes": "One-Michelin-starred. Details not yet verified from official source."
+      "notes": "One-Michelin-starred. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/angler-sf"
     },
     {
       "id": "kin-khao",
@@ -707,17 +751,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Financial District",
-      "cuisine": "Thai",
+      "cuisine": "Thai, Californian",
       "michelinPriceBracket": "$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "Parc 55 San Francisco - a Hilton Hotel, 55 Cyril Magnin St., San Francisco, CA 94102, USA",
+      "website": "https://www.kinkhao.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kin-khao",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon–Thu 11:30 AM–2:00 PM & 5:30–9:00 PM; Fri–Sat 11:30 AM–2:00 PM & 5:30–10:00 PM; Sun 11:30 AM–2:00 PM & 5:30–9:00 PM",
+      "daysOpen": "Monday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -726,7 +770,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kin-khao"
       ],
-      "notes": "One-Michelin-starred Thai. Details not yet verified from official source."
+      "notes": "One-Michelin-starred Thai. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kin-khao"
     },
     {
       "id": "7-adams",
@@ -737,17 +783,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Not confirmed",
-      "cuisine": "Californian",
+      "cuisine": "Californian, Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "1963 Sutter St., San Francisco, CA 94115, USA",
+      "website": "https://www.7adamsrestaurant.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/7-adams",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon–Thu 5:30–9:00 PM; Fri–Sat 5:00–10:00 PM; Sun 5:00–9:00 PM",
+      "daysOpen": "Monday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -756,7 +802,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/7-adams"
       ],
-      "notes": "One-Michelin-starred Californian. Details not yet verified from official source."
+      "notes": "One-Michelin-starred Californian. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/7-adams"
     },
     {
       "id": "sorrel",
@@ -767,17 +815,17 @@
       "stars": 1,
       "city": "San Francisco",
       "area": "Not confirmed",
-      "cuisine": "Contemporary",
+      "cuisine": "Contemporary, Italian",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "3228 Sacramento St., San Francisco, CA 94115, USA",
+      "website": "https://www.sorrelrestaurant.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sorrel",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon–Tue closed; Wed–Sun 5:00–9:00 PM",
+      "daysOpen": "Wednesday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -786,7 +834,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sorrel"
       ],
-      "notes": "One-Michelin-starred Contemporary. Details not yet verified from official source."
+      "notes": "One-Michelin-starred Contemporary. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sorrel"
     },
     {
       "id": "the-progress",
@@ -799,15 +849,15 @@
       "area": "Not confirmed",
       "cuisine": "Californian",
       "michelinPriceBracket": "$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "1525 Fillmore St., San Francisco, CA 94115, USA",
+      "website": "https://theprogress-sf.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/the-progress",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon–Sun 5:30–10:00 PM",
+      "daysOpen": "Monday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -816,7 +866,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-francisco/restaurant/the-progress"
       ],
-      "notes": "One-Michelin-starred Californian. Details not yet verified from official source."
+      "notes": "One-Michelin-starred Californian. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/the-progress"
     },
     {
       "id": "sun-moon-studio",
@@ -829,15 +881,15 @@
       "area": "Not confirmed",
       "cuisine": "Californian",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "1940 Union St., Ste. 21, Oakland, CA 94607, USA",
+      "website": "https://www.sunmoonstudio.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/oakland/restaurant/sun-moon-studio",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon–Wed closed; Thu–Sat 5:00–9:00 PM; Sun 5:00–8:00 PM",
+      "daysOpen": "Thursday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -846,7 +898,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/oakland/restaurant/sun-moon-studio"
       ],
-      "notes": "One-Michelin-starred Oakland. Details not yet verified from official source."
+      "notes": "One-Michelin-starred Oakland. Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/oakland/restaurant/sun-moon-studio"
     },
     {
       "id": "madcap",
@@ -857,17 +911,17 @@
       "stars": 1,
       "city": "San Anselmo",
       "area": "Marin County",
-      "cuisine": "Contemporary",
+      "cuisine": "Contemporary, Asian Contemporary",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "198 Sir Francis Drake Blvd., San Anselmo, CA 94960, USA",
+      "website": "https://www.madcapmarin.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon closed; Tue–Thu 5:30–8:30 PM; Fri–Sat 5:30–9:00 PM; Sun closed",
+      "daysOpen": "Tuesday–Saturday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -876,7 +930,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap"
       ],
-      "notes": "One-Michelin-starred (San Anselmo, Marin). Details not yet verified from official source."
+      "notes": "One-Michelin-starred (San Anselmo, Marin). Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap"
     },
     {
       "id": "wakuriya",
@@ -887,17 +943,17 @@
       "stars": 1,
       "city": "San Mateo",
       "area": "Peninsula",
-      "cuisine": "Japanese",
+      "cuisine": "Japanese, Californian",
       "michelinPriceBracket": "$$$$",
-      "address": "Not confirmed",
-      "website": null,
+      "address": "115 De Anza Blvd., San Mateo, CA 94402, USA",
+      "website": "https://www.wakuriya.com/",
       "michelinLink": "https://guide.michelin.com/us/en/california/san-mateo/restaurant/wakuriya",
       "estPricePerPerson": null,
       "estPrice2AdultsTotal": null,
       "priceSource": null,
       "priceVerified": false,
-      "hours": null,
-      "daysOpen": null,
+      "hours": "Mon–Tue closed; Wed–Fri 6:30–9:30 PM; Sat–Sun 6:00–9:00 PM",
+      "daysOpen": "Wednesday–Sunday",
       "exceptions": null,
       "instagram": null,
       "youtube": null,
@@ -906,7 +962,9 @@
       "sourceLinks": [
         "https://guide.michelin.com/us/en/california/san-mateo/restaurant/wakuriya"
       ],
-      "notes": "One-Michelin-starred Japanese (San Mateo, Peninsula). Details not yet verified from official source."
+      "notes": "One-Michelin-starred Japanese (San Mateo, Peninsula). Details not yet verified from official source.",
+      "hoursVerified": true,
+      "hoursSource": "https://guide.michelin.com/us/en/california/san-mateo/restaurant/wakuriya"
     }
   ]
 }

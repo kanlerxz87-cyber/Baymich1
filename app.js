@@ -83,8 +83,9 @@
     <div class="hotel-topline"><span class="hotel-order">CANDIDATE ${String(index + 1).padStart(2,"0")}</span><span class="key-badge">${"◆".repeat(h.keys)} <span>${h.keys} MICHELIN ${h.keys === 1 ? "KEY" : "KEYS"}</span></span></div>
     <h3>${safeLink(h.source, escapeHtml(h.name), "hotel-name")}</h3>
     <p class="hotel-loc">${escapeHtml(h.neighborhood)} · ${escapeHtml(h.area)}</p>
-    <div class="hotel-fields"><div><small>Stars in corresponding city cluster</small><b>${h.area === "San Francisco" ? "25 city-wide" : "Not assigned"}</b></div><div><small>Restaurants within chosen radius</small><b class="missing">Not verified</b></div><div><small>Date-specific room rate</small><b class="missing">Not verified</b></div></div>
-    <p class="hotel-caveat">Candidate order is for display only—not a recommendation rank. Open the source for current hotel details and booking dates.</p>
+    <p class="hotel-loc">${escapeHtml(h.address || "")}</p>
+    <div class="hotel-fields"><div><small>MICHELIN Key status</small><b>${"◆".repeat(h.keys)} ${h.keys} Key${h.keys === 1 ? "" : "s"} (verified)</b></div><div><small>Example rate (2026-12-22 → 2026-12-23)</small><b class="${h.exampleRate && !h.exampleRate.startsWith("Not") ? "" : "missing"}">${h.exampleRate ? escapeHtml(h.exampleRate) : "Not verified"}</b></div><div><small>Guest score (of 20)</small><b class="${h.guestScore ? "" : "missing"}">${h.guestScore ? escapeHtml(h.guestScore) : "Not enough verified stays"}</b></div></div>
+    <p class="hotel-caveat">Candidate order is for display only—not a recommendation rank. Key count and example rate verified from the official MICHELIN hotel profile on 2026-11-24; rate is date-specific and changes. Restaurant-count ranking within a chosen radius is not yet computed.</p>
     ${safeLink(h.source, "Official hotel profile ↗", "button button-outline")}
   </article>`).join("");
 
@@ -94,7 +95,7 @@
     schedule: d.restaurants.filter((r) => !r.hours).length,
     dateExceptions: d.restaurants.filter((r) => r.hours && !r.exception).length,
     hotelNearby: d.hotels.length,
-    hotelRate: d.hotels.length
+    hotelRate: d.hotels.filter((h) => !h.rateVerified).length
   };
   $("#flag-count").textContent = `${flags.meal + flags.social + flags.schedule + flags.hotelNearby + flags.hotelRate} unresolved field checks`;
   $("#menu-toggle").addEventListener("click", () => {
