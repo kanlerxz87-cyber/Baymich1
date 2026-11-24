@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Official MICHELIN starred list: San Francisco and surroundings (all-starred page)",
+    "source_url": "https://guide.michelin.com/us/en/california/san-francisco/restaurants/all-starred",
+    "source_label": "MICHELIN Guide official listing, page heading 'San Francisco and surroundings: 1-29 of 29 restaurants'",
+    "checked_on": "2026-11-24",
+    "method": "Read line by line from the official page (7 chunks). Star count = number of star icons on each listing card. City, cuisine and price symbol are as printed on the card.",
+    "scope_note": "This official list is NOT a complete nine-county Bay Area list. Protégé (Palo Alto), Plumed Horse (Saratoga), Selby's (Atherton) and The Village Pub (Woodside) each show a MICHELIN star on their official restaurant page but are not on this list. See data/michelin_bay_area_stars.json for the wider roster.",
+    "counts": {"threeStar": 4, "twoStar": 7, "oneStar": 18, "total": 29}
+  },
+  "restaurants": [
+    {"name": "Quince", "stars": 3, "city": "San Francisco", "cuisine": "Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/quince"},
+    {"name": "Californios", "stars": 3, "city": "San Francisco", "cuisine": "Mexican", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/californios"},
+    {"name": "Benu", "stars": 3, "city": "San Francisco", "cuisine": "Asian", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu"},
+    {"name": "Atelier Crenn", "stars": 3, "city": "San Francisco", "cuisine": "Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/atelier-crenn"},
+    {"name": "Acquerello", "stars": 2, "city": "San Francisco", "cuisine": "Italian", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello"},
+    {"name": "Kiln", "stars": 2, "city": "San Francisco", "cuisine": "Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kiln-1210355"},
+    {"name": "Lazy Bear", "stars": 2, "city": "San Francisco", "cuisine": "Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/lazy-bear"},
+    {"name": "Sons & Daughters", "stars": 2, "city": "San Francisco", "cuisine": "Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sons-daughters"},
+    {"name": "Saison", "stars": 2, "city": "San Francisco", "cuisine": "Californian", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/saison"},
+    {"name": "Birdsong", "stars": 2, "city": "San Francisco", "cuisine": "Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/birdsong"},
+    {"name": "Commis", "stars": 2, "city": "Oakland", "cuisine": "Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/commis"},
+    {"name": "Niku Steakhouse", "stars": 1, "city": "San Francisco", "cuisine": "Steakhouse", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/niku-steakhouse"},
+    {"name": "Wolfsbane", "stars": 1, "city": "San Francisco", "cuisine": "Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/wolfsbane"},
+    {"name": "San Ho Won", "stars": 1, "city": "San Francisco", "cuisine": "Korean", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/san-ho-won"},
+    {"name": "Ssal", "stars": 1, "city": "San Francisco", "cuisine": "Korean", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/ssal"},
+    {"name": "State Bird Provisions", "stars": 1, "city": "San Francisco", "cuisine": "Californian", "price_symbol": "$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/state-bird-provisions"},
+    {"name": "Hilda and Jesse", "stars": 1, "city": "San Francisco", "cuisine": "American", "price_symbol": "$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hilda-and-jesse"},
+    {"name": "Nisei", "stars": 1, "city": "San Francisco", "cuisine": "Japanese", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nisei"},
+    {"name": "Restaurant Naides", "stars": 1, "city": "San Francisco", "cuisine": "Filipino", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/naides"},
+    {"name": "Nari", "stars": 1, "city": "San Francisco", "cuisine": "Thai", "price_symbol": "$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nari"},
+    {"name": "Mister Jiu's", "stars": 1, "city": "San Francisco", "cuisine": "Chinese", "price_symbol": "$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/mister-jiu%E2%80%99s"},
+    {"name": "Angler SF", "stars": 1, "city": "San Francisco", "cuisine": "Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/angler-sf"},
+    {"name": "Kin Khao", "stars": 1, "city": "San Francisco", "cuisine": "Thai", "price_symbol": "$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kin-khao"},
+    {"name": "7 Adams", "stars": 1, "city": "San Francisco", "cuisine": "Californian", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/7-adams"},
+    {"name": "Sorrel", "stars": 1, "city": "San Francisco", "cuisine": "Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/sorrel"},
+    {"name": "The Progress", "stars": 1, "city": "San Francisco", "cuisine": "Californian", "price_symbol": "$$$", "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/the-progress"},
+    {"name": "Sun Moon Studio", "stars": 1, "city": "Oakland", "cuisine": "Californian", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/sun-moon-studio"},
+    {"name": "Madcap", "stars": 1, "city": "San Anselmo", "cuisine": "Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap"},
+    {"name": "Wakuriya", "stars": 1, "city": "San Mateo", "cuisine": "Japanese", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/san-mateo/restaurant/wakuriya"}
+  ],
+  "cross_checks_not_on_list": [
+    {"name": "Protégé", "city": "Palo Alto", "claimed_stars": 1, "cuisine": "Contemporary, Californian", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/palo-alto/restaurant/protege", "note": "Official page shows a MICHELIN star icon; not on SF-region all-starred list."},
+    {"name": "Plumed Horse", "city": "Saratoga", "claimed_stars": 1, "cuisine": "Contemporary, American Contemporary", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/saratoga/restaurant/plumed-horse", "note": "Official page shows a MICHELIN star icon; not on SF-region all-starred list."},
+    {"name": "Selby's", "city": "Atherton", "claimed_stars": 1, "cuisine": "American, Classic Cuisine", "price_symbol": "$$$$", "url": "https://guide.michelin.com/us/en/california/atherton/restaurant/selby-s", "note": "Official page shows a MICHELIN star icon; not on SF-region all-starred list."},
+    {"name": "The Village Pub", "city": "Woodside", "claimed_stars": 1, "cuisine": "Contemporary, American Contemporary", "price_symbol": "$$$", "url": "https://guide.michelin.com/us/en/california/woodside/restaurant/the-village-pub", "note": "Official page shows a MICHELIN star icon; not on SF-region all-starred list."}
+  ]
+}
