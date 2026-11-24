@@ -1,0 +1,91 @@
+{
+  "generated": "2026-11-24",
+  "source": "MICHELIN Guide California 2026 + Michelin Keys 2026 (announced Sept 18, 2026) - official guide.michelin.com",
+  "clusters": [
+    {
+      "id": "sf",
+      "name": "San Francisco (SoMa / Mission / Chinatown / Nob Hill)",
+      "description": "Densest Michelin cluster in the Bay Area: 7 three-star, 8 two-star, 19 one-star restaurants, plus 11 Bib Gourmands.",
+      "michelinRestaurants": 45,
+      "starredCount": 34,
+      "bibCount": 11,
+      "threeStar": ["Atelier Crenn", "Benu", "Californios", "Quince"],
+      "twoStar": ["Acquerello", "Birdsong", "Kiln", "Lazy Bear", "Saison", "Sons & Daughters"],
+      "oneStar": ["7 Adams", "Angler SF", "Hilda and Jesse", "Kin Khao", "Mister Jiu's", "Naides", "Nari", "Niku Steakhouse", "Nisei", "San Ho Won", "Sorrel", "Ssal", "State Bird Provisions", "The Progress", "Wolfsbane"],
+      "bibGourmand": ["A16", "Anchor Oyster Bar", "Bansang", "Dumpling Home", "Good Good Culture Club", "Izakaya Rintaro", "Kitchen Istanbul", "Okane", "Trestle", "Yank Sing", "Z & Y"],
+      "hotels": [
+        {"name":"The Battery","city":"San Francisco","keys":2,"price":"","priceNote":"Price not published on official Michelin page","address":"","source":"guide.michelin.com/us/en/hotels-stays/san-francisco","verified":false,"note":"Official Michelin listing page did not render; address/price unverified - left blank per policy","nearbyRestaurants":34},
+        {"name":"Four Seasons Hotel San Francisco at Embarcadero","city":"San Francisco","keys":2,"price":"","priceNote":"Price not published on official Michelin page","address":"","source":"guide.michelin.com/us/en/hotels-stays/san-francisco","verified":false,"note":"Official Michelin listing page did not render; address/price unverified - left blank per policy","nearbyRestaurants":34},
+        {"name":"1 Hotel San Francisco","city":"San Francisco","keys":1,"price":"","priceNote":"Price not published on official Michelin page","address":"","source":"guide.michelin.com/us/en/hotels-stays/san-francisco","verified":false,"note":"Official Michelin listing page did not render; address/price unverified - left blank per policy","nearbyRestaurants":34},
+        {"name":"Hotel Drisco","city":"San Francisco","keys":1,"price":"","priceNote":"Price not published on official Michelin page","address":"","source":"guide.michelin.com/us/en/hotels-stays/san-francisco","verified":false,"note":"Official Michelin listing page did not render; address/price unverified - left blank per policy","nearbyRestaurants":34}
+      ]
+    },
+    {
+      "id": "wine",
+      "name": "Napa Valley / Sonoma (Wine Country)",
+      "description": "Three-star destination: The French Laundry (Yountville), SingleThread (Healdsburg), Enclos (Sonoma). Plus two-star and one-star throughout Napa and Sonoma.",
+      "michelinRestaurants": 14,
+      "starredCount": 11,
+      "bibCount": 0,
+      "threeStar": ["The French Laundry", "SingleThread", "Enclos"],
+      "twoStar": ["Troubadour", "Press"],
+      "oneStar": ["Auberge du Soleil", "Auro", "Cyrus"],
+      "bibGourmand": [],
+      "hotels": [
+        {"name":"SingleThread Inn","city":"Healdsburg","keys":3,"price":"$1,647","priceNote":"$1,902 total with taxes per night (Dec 22-23, 2026 sample)","address":"131 North Street, Healdsburg, CA","source":"guide.michelin.com/us/en/hotels-stays/napa-sonoma-valleys/singlethread-inn-13698","verified":true,"nearbyRestaurants":4,"onSiteRestaurant":"SingleThread (3★)"},
+        {"name":"Auberge du Soleil, Auberge Collection","city":"Rutherford","keys":3,"price":"","priceNote":"Price not available (no rooms for sample dates)","address":"180 Rutherford Hill Road, Rutherford, CA","source":"guide.michelin.com/us/en/hotels-stays/napa-sonoma-valleys/auberge-du-soleil-auberge-collection-7246","verified":true,"nearbyRestaurants":2,"onSiteRestaurant":"The Restaurant at Auberge du Soleil (1★)"},
+        {"name":"Bardessono","city":"Yountville","keys":2,"price":"","priceNote":"No rooms available for sample dates","address":"6526 Yount Street, Yountville, CA","source":"guide.michelin.com/us/en/hotels-stays/napa-sonoma-valleys/bardessono-4031","verified":true,"nearbyRestaurants":1,"onSiteRestaurant":"None"},
+        {"name":"The Madrona","city":"Healdsburg","keys":2,"price":"$435","priceNote":"$499 total with taxes per night (Dec 22-23, 2026 sample)","address":"1001 Westside Road, Healdsburg, CA","source":"guide.michelin.com/us/en/hotels-stays/napa-sonoma-valleys/the-madrona-12498","verified":true,"guestScore":"19.4/20","nearbyRestaurants":4,"onSiteRestaurant":"None"},
+        {"name":"Hotel Healdsburg","city":"Healdsburg","keys":"","price":"$569","priceNote":"$660 total with taxes per night (Dec 22-23, 2026 sample)","address":"25 Matheson Street, Healdsburg, CA","source":"guide.michelin.com/us/en/hotels-stays/napa-sonoma-valleys/hotel-healdsburg-45","verified":true,"guestScore":"19.2/20","nearbyRestaurants":4,"onSiteRestaurant":"Dry Creek Kitchen"}
+      ]
+    },
+    {
+      "id": "peninsula",
+      "name": "Peninsula / South Bay",
+      "description": "Michelin-starred dining from Palo Alto to Saratoga, plus Bib Gourmands in San Jose, San Mateo, Mill Valley and Menlo Park.",
+      "michelinRestaurants": 10,
+      "starredCount": 4,
+      "bibCount": 6,
+      "threeStar": [],
+      "twoStar": [],
+      "oneStar": ["Protege", "Selbys", "Wakuriya", "The Village Pub"],
+      "bibGourmand": ["Pausa", "Playa", "Eylan", "Luna Mexican Kitchen", "Petiscos", "Insalata's"],
+      "hotels": [
+        {"name":"Rosewood Sand Hill","city":"Menlo Park","keys":1,"price":"","priceNote":"Price not published on official Michelin page","address":"","source":"guide.michelin.com/us/en/hotels-stays/silicon-valley","verified":false,"note":"Official Michelin listing page did not render; address/price unverified - left blank per policy","nearbyRestaurants":1}
+      ]
+    },
+    {
+      "id": "eastbay",
+      "name": "East Bay (Oakland / Berkeley)",
+      "description": "Two-star Commis plus one-star Sun Moon Studio and 9 Bib Gourmands across Oakland.",
+      "michelinRestaurants": 11,
+      "starredCount": 2,
+      "bibCount": 9,
+      "threeStar": [],
+      "twoStar": ["Commis"],
+      "oneStar": ["Sun Moon Studio"],
+      "bibGourmand": ["FOB Kitchen", "Joodooboo", "MAMA Oakland", "Snail Bar", "Soba Ichi", "Tacos Oscar", "Teni East Kitchen", "Bombera", "Horn Barbecue"],
+      "hotels": []
+    }
+  ],
+  "allHotels": [
+    {"name":"SingleThread Inn","city":"Healdsburg","cluster":"wine","keys":3,"price":"$1,647","priceNote":"$1,902 total with taxes per night (Dec 22-23, 2026 sample)","address":"131 North Street, Healdsburg, CA","source":"guide.michelin.com/us/en/hotels-stays/napa-sonoma-valleys/singlethread-inn-13698","verified":true,"guestScore":"","rooms":5,"nearbyRestaurants":4,"onSiteRestaurant":"SingleThread (3★)"},
+    {"name":"Auberge du Soleil, Auberge Collection","city":"Rutherford","cluster":"wine","keys":3,"price":"","priceNote":"Price not available (no rooms for sample dates)","address":"180 Rutherford Hill Road, Rutherford, CA","source":"guide.michelin.com/us/en/hotels-stays/napa-sonoma-valleys/auberge-du-soleil-auberge-collection-7246","verified":true,"guestScore":"","rooms":50,"nearbyRestaurants":2,"onSiteRestaurant":"The Restaurant at Auberge du Soleil (1★)"},
+    {"name":"The Madrona","city":"Healdsburg","cluster":"wine","keys":2,"price":"$435","priceNote":"$499 total with taxes per night (Dec 22-23, 2026 sample)","address":"1001 Westside Road, Healdsburg, CA","source":"guide.michelin.com/us/en/hotels-stays/napa-sonoma-valleys/the-madrona-12498","verified":true,"guestScore":"19.4/20","rooms":24,"nearbyRestaurants":4,"onSiteRestaurant":"None"},
+    {"name":"Bardessono","city":"Yountville","cluster":"wine","keys":2,"price":"","priceNote":"No rooms available for sample dates","address":"6526 Yount Street, Yountville, CA","source":"guide.michelin.com/us/en/hotels-stays/napa-sonoma-valleys/bardessono-4031","verified":true,"guestScore":"","rooms":62,"nearbyRestaurants":1,"onSiteRestaurant":"None"},
+    {"name":"Hotel Healdsburg","city":"Healdsburg","cluster":"wine","keys":"","price":"$569","priceNote":"$660 total with taxes per night (Dec 22-23, 2026 sample)","address":"25 Matheson Street, Healdsburg, CA","source":"guide.michelin.com/us/en/hotels-stays/napa-sonoma-valleys/hotel-healdsburg-45","verified":true,"guestScore":"19.2/20","rooms":55,"nearbyRestaurants":4,"onSiteRestaurant":"Dry Creek Kitchen"},
+    {"name":"The Battery","city":"San Francisco","cluster":"sf","keys":2,"price":"","priceNote":"Price not published on official Michelin page","address":"","source":"guide.michelin.com/us/en/hotels-stays/san-francisco","verified":false,"note":"Official Michelin listing page did not render; address/price unverified - left blank per policy","nearbyRestaurants":34},
+    {"name":"Four Seasons Hotel San Francisco at Embarcadero","city":"San Francisco","cluster":"sf","keys":2,"price":"","priceNote":"Price not published on official Michelin page","address":"","source":"guide.michelin.com/us/en/hotels-stays/san-francisco","verified":false,"note":"Official Michelin listing page did not render; address/price unverified - left blank per policy","nearbyRestaurants":34},
+    {"name":"1 Hotel San Francisco","city":"San Francisco","cluster":"sf","keys":1,"price":"","priceNote":"Price not published on official Michelin page","address":"","source":"guide.michelin.com/us/en/hotels-stays/san-francisco","verified":false,"note":"Official Michelin listing page did not render; address/price unverified - left blank per policy","nearbyRestaurants":34},
+    {"name":"Hotel Drisco","city":"San Francisco","cluster":"sf","keys":1,"price":"","priceNote":"Price not published on official Michelin page","address":"","source":"guide.michelin.com/us/en/hotels-stays/san-francisco","verified":false,"note":"Official Michelin listing page did not render; address/price unverified - left blank per policy","nearbyRestaurants":34},
+    {"name":"Rosewood Sand Hill","city":"Menlo Park","cluster":"peninsula","keys":1,"price":"","priceNote":"Price not published on official Michelin page","address":"","source":"guide.michelin.com/us/en/hotels-stays/silicon-valley","verified":false,"note":"Official Michelin listing page did not render; address/price unverified - left blank per policy","nearbyRestaurants":1}
+  ],
+  "michelinKeys2026": {
+    "announced": "September 18, 2026",
+    "threeKey": ["SingleThread Inn (Healdsburg)", "Auberge du Soleil (Rutherford)", "Meadowood Napa Valley (St. Helena)"],
+    "twoKey": ["Solage (Calistoga)", "The Madrona (Healdsburg)", "Bardessono (Yountville)", "Four Seasons Hotel San Francisco at Embarcadero", "The Battery (San Francisco)", "Cavallo Point Lodge (Sausalito)"],
+    "oneKey": ["Le Petit Pali St Helena", "The Cottages at Little Saint (Healdsburg)", "Four Seasons Resort Napa Valley", "Stanly Ranch (Napa)", "The Francis House (Calistoga)", "Rancho Caymus Inn (Rutherford)", "Rosewood Sand Hill (Menlo Park)", "1 Hotel San Francisco", "Hotel Drisco (San Francisco)"]
+  },
+  "priceForTwoNote": "Hotel prices shown are per-night for one room (2 adults) from the official Michelin booking page, including taxes where listed. Actual rates vary by dates.",
+  "unverifiedNote": "Values left blank and flagged unverified where the official Michelin page could not be fetched after multiple attempts. No values inferred or filled per site policy."
+}

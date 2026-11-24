@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotels — Baymich1 SF Bay Area Michelin Guide</title>
+<meta name="description" hot
+els="Hotels ranked by nearby Michelin restaurants in SF Bay Area clusters, with Michelin Keys, prices for 2 adults, and official source links.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Baymich<span>1</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <div class="nav-header"><strong>Menu</strong><button class="nav-toggle" id="navClose" aria-label="Close menu"><span></span><span></span><span></span></button></div>
+  <ul>
+    <li><a href="index.html">Dashboard</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="hotels.html">Hotels</a></li>
+    <li><a href="map.html">Clusters &amp; Map</a></li>
+    <li><a href="about.html">About &amp; Sources</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+<section class="section">
+  <h2>Hotels Ranked by Nearby Michelin Restaurants</h2>
+  <p class="tagline">Michelin Key hotels in each Bay Area cluster, ranked by number of nearby Michelin-starred / Bib Gourmand restaurants. Price shown is per night for 2 adults from the official Michelin booking page.</p>
+  <p class="small"><strong>Source:</strong> MICHELIN Guide hotel listings + MICHELIN Keys 2026 (announced September 18, 2026). Blank + red flag = unverified (official page could not be rendered; left blank per policy).</p>
+
+  <div class="cluster-grid" id="hotelGrid"></div>
+</section>
+
+<section class="section">
+  <h2>Michelin Keys 2026 — Bay Area</h2>
+  <p class="small">Announced September 18, 2026.</p>
+  <h3>Three Keys (extraordinary stay)</h3>
+  <ul id="keys3"></ul>
+  <h3>Two Keys (exceptional stay)</h3>
+  <ul id="keys2"></ul>
+  <h3>One Key (very special stay)</h3>
+  <ul id="keys1"></ul>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <h3>Price note</h3>
+    <p class="small">Hotel prices are per room per night for 2 adults, with taxes where listed, from sample dates (Dec 22–23, 2026) on the official Michelin booking page. Actual rates vary by dates and availability.</p>
+    <p class="small"><strong>Source policy:</strong> Every hotel row links to its official <a href="https://guide.michelin.com" target="_blank" rel="noopener">MICHELIN Guide</a> page. Blank values are unverified — never inferred.</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+function keyChip(n) {
+  if (!n) return '<span class="key empty"></span>';
+  let html = '';
+  for (let i = 0; i < n; i++) html += '<span class="key"></span>';
+  return html;
+}
+
+function rowStatus(h) {
+  if (h.verified) return '<span class="verified-ok">verified</span>';
+  return `<span class="unverified">unverified</span><span class="flag-note">${h.note || 'official page could not be rendered; left blank per policy'}</span>`;
+}
+
+function sourceCell(h) {
+  return `<a href="https://${h.source}" target="_blank" rel="noopener" class="source-link">michelin.com</a>`;
+}
+
+const clusterGrid = document.getElementById('hotelGrid');
+
+// Render each cluster
+BAYMICH_DATA.clusters.forEach(c => {
+  const clusterHotels = BAYMICH_DATA.allHotels.filter(h => h.cluster === c.id)
+    .sort((a, b) => (b.keys || 0) - (a.keys || 0));
+
+  if (clusterHotels.length === 0) return;
+
+  const section = document.createElement('section');
+  section.id = `cluster-${c.id}`;
+  section.className = 'cluster-card';
+
+  let keysHtml = '';
+  if (c.id === 'wine') {
+    keysHtml = `<p class="small"><strong>Michelin Key hotels near this cluster:</strong> SingleThread Inn (3★), Auberge du Soleil (3★), Bardessono (2★), The Madrona (2★), Hotel Healdsburg (no Key)</p>`;
+  }
+
+  section.innerHTML = `
+    <h3>${c.name}</h3>
+    <p class="small">${c.description}</p>
+    <table>
+      <thead><tr><th>Hotel</th><th>Keys</th><th>Price / night (2 adults)</th><th>Address</th><th>Nearby Michelin</th><th>On-site restaurant</th><th>Official source</th><th>Status</th></tr></thead>
+      <tbody>
+        ${clusterHotels.map(h => `
+          <tr${!h.verified ? ' class="unverified-bg"' : ''}>
+            <td class="name-cell">${h.name}</td>
+            <td>${keyChip(h.keys)}</td>
+            <td>${h.price || '<span class="unverified">—</span>'} ${h.priceNote ? `<br><span class="small" style="color:#666;">${h.priceNote}</span>` : ''}</td>
+            <td class="address-cell">${h.address || '<span class="unverified">—</span>'}</td>
+            <td>${h.nearbyRestaurants}</td>
+            <td>${h.onSiteRestaurant || '—'}</td>
+            <td>${sourceCell(h)}</td>
+            <td>${rowStatus(h)}</td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
+  `;
+  clusterGrid.appendChild(section);
+});
+
+// Michelin Keys lists
+document.getElementById('keys3').innerHTML = BAYMICH_DATA.michelinKeys2026.threeKey.map(h => `<li>${h}</li>`).join('');
+document.getElementById('keys2').innerHTML = BAYMICH_DATA.michelinKeys2026.twoKey.map(h => `<li>${h}</li>`).join('');
+document.getElementById('keys1').innerHTML = BAYMICH_DATA.michelinKeys2026.oneKey.map(h => `<li>${h}</li>`).join('');
+
+// Mobile nav
+const toggle = document.getElementById('navToggle');
+const closeBtn = document.getElementById('navClose');
+const nav = document.getElementById('mobileNav');
+toggle.addEventListener('click', () => nav.classList.add('open'));
+closeBtn.addEventListener('click', () => nav.classList.remove('open'));
+</script>
+</body>
+</html>

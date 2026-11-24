@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clusters &amp; Map — Baymich1 SF Bay Area Michelin Guide</title>
+<meta name="description" content="SF Bay Area Michelin clusters: San Francisco, Napa/Sonoma Wine Country, Peninsula/South Bay, East Bay. With nearby restaurants and hotels.">
+<link rel="stylesheet" href="style.css">
+<style>
+.map-svg { width: 100%; height: 320px; border: 1px solid #e5e5e1; border-radius: 10px; background: #eef2f3; position: relative; overflow: hidden; }
+.map-pin { position: absolute; width: 26px; height: 26px; background: #0066cc; color: #fff; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.85rem; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+.map-pin:hover { background: #d63031; transform: rotate(-45deg) scale(1.1); }
+.map-label { position: absolute; font-size: 0.75rem; font-weight: 700; color: #000; background: rgba(255,255,255,0.9); padding: 2px 6px; border-radius: 4px; pointer-events: none; white-space: nowrap; }
+.map-legend { display: flex; gap: 1rem; margin-top: 0.75rem; font-size: 0.8rem; color: #555; flex-wrap: wrap; }
+.map-legend span { display: flex; align-items: center; gap: 4px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.dot-sf { background: #0066cc; }
+.dot-wine { background: #d63031; }
+.dot-pen { background: #00b894; }
+.dot-eb { background: #fdcb6e; }
+.cluster-detail { display: none; margin-top: 1rem; background: #fff; border: 1px solid #e5e5e1; border-radius: 8px; padding: 1rem; }
+.cluster-detail.active { display: block; }
+.cluster-detail h3 { margin-top: 0; }
+.cluster-detail ul { margin-left: 1.25rem; margin-bottom: 0.5rem; font-size: 0.85rem; }
+.cluster-detail li { margin-bottom: 0.3rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Baymich<span>1</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <div class="nav-header"><strong>Menu</strong><button class="nav-toggle" id="navClose" aria-label="Close menu"><span></span><span></span><span></span></button></div>
+  <ul>
+    <li><a href="index.html">Dashboard</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="hotels.html">Hotels</a></li>
+    <li><a href="map.html">Clusters &amp; Map</a></li>
+    <li><a href="about.html">About &amp; Sources</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+<section class="section">
+  <h2>Michelin Clusters — Bay Area</h2>
+  <p class="tagline">Four geographic clusters where Michelin-starred and Bib Gourmand restaurants concentrate. Approximate pin positions; not to scale. Tap a pin for details.</p>
+
+  <div class="map-svg" id="mapSvg">
+    <!-- San Francisco cluster -->
+    <div class="map-pin" style="top:28%; left:12%;" onclick="showDetail('sf')">SF</div>
+    <div class="map-label" style="top:24%; left:15%;">San Francisco</div>
+
+    <!-- Napa/Sonoma -->
+    <div class="map-pin" style="top:42%; left:48%;" onclick="showDetail('wine')">W</div>
+    <div class="map-label" style="top:38%; left:51%;">Napa / Sonoma</div>
+
+    <!-- Peninsula / South Bay -->
+    <div class="map-pin" style="top:68%; left:42%;" onclick="showDetail('peninsula')">P</div>
+    <div class="map-label" style="top:64%; left:45%;">Peninsula / South Bay</div>
+
+    <!-- East Bay -->
+    <div class="map-pin" style="top:44%; left:24%;" onclick="showDetail('eastbay')">E</div>
+    <div class="map-label" style="top:40%; left:27%;">East Bay</div>
+  </div>
+  <div class="map-legend">
+    <span><span class="dot dot-sf"></span> San Francisco</span>
+    <span><span class="dot dot-wine"></span> Napa / Sonoma</span>
+    <span><span class="dot dot-pen"></span> Peninsula / South Bay</span>
+    <span><span class="dot dot-eb"></span> East Bay</span>
+  </div>
+</section>
+
+<section class="section">
+  <h2 id="detailTitle">Tap a cluster pin above</h2>
+  <div id="detailSf" class="cluster-detail">
+    <h3>San Francisco (SoMa / Mission / Chinatown / Nob Hill)</h3>
+    <p class="small">Densest Michelin cluster in the Bay Area.</p>
+    <ul>
+      <li><strong>3★:</strong> Atelier Crenn, Benu, Californios, Quince</li>
+      <li><strong>2★:</strong> Acquerello, Birdsong, Kiln, Lazy Bear, Saison, Sons &amp; Daughters</li>
+      <li><strong>1★:</strong> 7 Adams, Angler SF, Hilda and Jesse, Kin Khao, Mister Jiu's, Naides, Nari, Niku Steakhouse, Nisei, San Ho Won, Sorrel, Ssal, State Bird Provisions, The Progress, Wolfsbane</li>
+      <li><strong>Bib Gourmand (11):</strong> A16, Anchor Oyster Bar, Bansang, Dumpling Home, Good Good Culture Club, Izakaya Rintaro, Kitchen Istanbul, Okane, Trestle, Yank Sing*, Z &amp; Y</li>
+      <li class="small">*Yank Sing = unverified (official page could not be fetched; left blank per policy)</li>
+    </ul>
+    <a href="restaurants.html" class="btn" style="display:inline-block; margin-top:0.5rem;">View all SF restaurants &rarr;</a>
+    <a href="hotels.html#cluster-sf" class="btn" style="display:inline-block; margin-top:0.5rem; margin-left:0.5rem;">SF hotels &rarr;</a>
+  </div>
+
+  <div id="detailWine" class="cluster-detail">
+    <h3>Napa Valley / Sonoma (Wine Country)</h3>
+    <p class="small">Three-star destination: The French Laundry (Yountville), SingleThread (Healdsburg), Enclos (Sonoma).</p>
+    <ul>
+      <li><strong>3★:</strong> The French Laundry, SingleThread, Enclos</li>
+      <li><strong>1★:</strong> Auberge du Soleil, Auro, Cyrus</li>
+      <li><strong>Key hotels:</strong> SingleThread Inn (3★), Auberge du Soleil (3★), Bardessono (2★), The Madrona (2★), Hotel Healdsburg</li>
+    </ul>
+    <a href="restaurants.html" class="btn" style="display:inline-block; margin-top:0.5rem;">View wine-country restaurants &rarr;</a>
+    <a href="hotels.html#cluster-wine" class="btn" style="display:inline-block; margin-top:0.5rem; margin-left:0.5rem;">Wine-country hotels &rarr;</a>
+  </div>
+
+  <div id="detailPeninsula" class="cluster-detail">
+    <h3>Peninsula / South Bay</h3>
+    <p class="small">Michelin-starred dining from Palo Alto to Saratoga, plus Bib Gourmands in San Jose, San Mateo, Mill Valley, Menlo Park.</p>
+    <ul>
+      <li><strong>1★:</strong> Protege (Palo Alto), Selbys (Redwood City), Wakuriya (San Mateo), The Village Pub (Woodside)</li>
+      <li><strong>Bib Gourmand (6):</strong> Pausa (San Mateo), Playa (Mill Valley), Eylan (Menlo Park), Luna Mexican Kitchen (San Jose), Petiscos (San Jose), Insalata's* (San Anselmo)</li>
+      <li class="small">*Insalata's = unverified (official page could not be fetched; left blank per policy)</li>
+    </ul>
+    <a href="restaurants.html" class="btn" style="display:inline-block; margin-top:0.5rem;">View Peninsula restaurants &rarr;</a>
+    <a href="hotels.html#cluster-peninsula" class="btn" style="display:inline-block; margin-top:0.5rem; margin-left:0.5rem;">Peninsula hotels &rarr;</a>
+  </div>
+
+  <div id="detailEastbay" class="cluster-detail">
+    <h3>East Bay (Oakland / Berkeley)</h3>
+    <p class="small">Two-star Commis plus one-star Sun Moon Studio and 9 Bib Gourmands across Oakland.</p>
+    <ul>
+      <li><strong>2★:</strong> Commis (Oakland)</li>
+      <li><strong>1★:</strong> Sun Moon Studio (Oakland)</li>
+      <li><strong>Bib Gourmand (9):</strong> FOB Kitchen, Joodooboo, MAMA Oakland, Snail Bar, Soba Ichi, Tacos Oscar, Teni East Kitchen, Bombera, Horn Barbecue*</li>
+      <li class="small">*Horn Barbecue = unverified (official page could not be fetched; left blank per policy)</li>
+    </ul>
+    <a href="restaurants.html" class="btn" style="display:inline-block; margin-top:0.5rem;">View East Bay restaurants &rarr;</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <h3>About the map</h3>
+    <p class="small">Pin positions are approximate and not to scale. Cluster restaurant counts are drawn from the official MICHELIN Guide California 2026. No values are inferred — blank fields are flagged unverified.</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+function showDetail(id) {
+  // Hide all
+  document.querySelectorAll('.cluster-detail').forEach(d => d.classList.remove('active'));
+  // Show target
+  document.getElementById('detail' + id.charAt(0).toUpperCase() + id.slice(1)).classList.add('active');
+  // Scroll into view
+  setTimeout(() => {
+    const el = document.getElementById('detail' + id.charAt(0).toUpperCase() + id.slice(1));
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, 100);
+}
+
+// Mobile nav
+const toggle = document.getElementById('navToggle');
+const closeBtn = document.getElementById('navClose');
+const nav = document.getElementById('mobileNav');
+toggle.addEventListener('click', () => nav.classList.add('open'));
+closeBtn.addEventListener('click', () => nav.classList.remove('open'));
+</script>
+</body>
+</html>

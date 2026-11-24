@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About, Sources &amp; Open Questions — Baymich1</title>
+<meta name="description" content="Executive summary, suggestions section, open questions, and full source list for the Baymich1 SF Bay Area Michelin Guide dashboard.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Baymich<span>1</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <div class="nav-header"><strong>Menu</strong><button class="nav-toggle" id="navClose" aria-label="Close menu"><span></span><span></span><span></span></button></div>
+  <ul>
+    <li><a href="index.html">Dashboard</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="hotels.html">Hotels</a></li>
+    <li><a href="map.html">Clusters &amp; Map</a></li>
+    <li><a href="about.html">About &amp; Sources</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+<section class="section">
+  <h2>Executive Summary</h2>
+  <p>The 2026 MICHELIN Guide California was revealed June 24, 2026. The San Francisco Bay Area has <strong>7 three-star, 9 two-star, and 30 one-star restaurants</strong>, plus <strong>28 Bib Gourmands</strong> across four clusters: San Francisco, Napa Valley/Sonoma Wine Country, Peninsula/South Bay, and East Bay (Oakland).</p>
+  <ul>
+    <li><strong>New 3★ in 2026:</strong> Californios (SF), Enclos (Sonoma) — both promoted from 2★</li>
+    <li><strong>New 1★ in 2026:</strong> Naides (SF), Troubadour (Healdsburg), Wolfsbane (SF)</li>
+    <li><strong>7 new Bib Gourmands statewide in 2026:</strong> Joodooboo (Oakland), Kitchen Istanbul (SF), plus 5 LA-area spots</li>
+    <li><strong>Michelin Key hotels (2026):</strong> 3 Three-Key, 6 Two-Key, 9 One-Key properties in California; Bay Area includes SingleThread Inn, Auberge du Soleil, Meadowood Napa Valley, Bardessono, The Madrona, The Battery, Four Seasons SF at Embarcadero, Cavallo Point Lodge, Rosewood Sand Hill, 1 Hotel SF, Hotel Drisco</li>
+    <li><strong>Total California eateries in guide:</strong> 523</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Suggestions Section</h2>
+  <p>Observations from the verified data (not recommendations — no manual input, no inference beyond what the data shows):</p>
+  <ul>
+    <li><strong>Best value starred dining:</strong> State Bird Provisions and The Progress (SF, 1★) offer contemporary American cooking at accessible price points compared to $$$$ three-stars.</li>
+    <li><strong>Best value overall:</strong> Bib Gourmands such as Dumpling Home ($$, SF), Tacos Oscar ($$, Oakland), Teni East Kitchen ($$, Oakland), and Playa ($$, Mill Valley) deliver Michelin-recognized cooking at moderate prices.</li>
+    <li><strong>Wine-country base:</strong> Healdsburg has the densest cluster of Key hotels near three-star dining (SingleThread Inn, The Madrona, Hotel Healdsburg) plus 3★ SingleThread and 1★ Troubadour nearby.</li>
+    <li><strong>SF base:</strong> The Battery and Four Seasons SF at Embarcadero (both 2★ Keys) sit in the densest restaurant cluster but prices were not published on official Michelin pages.</li>
+    <li><strong>East Bay:</strong> Commis (Oakland, 2★) is the only two-star East Bay restaurant; 9 Bib Gourmands make Oakland the best-value Michelin destination outside SF.</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Open Questions / Answers Needing Resolution</h2>
+  <p>Items that require further verification or user decision before the site can be considered complete:</p>
+  <ul>
+    <li><strong>Three Bib Gourmand pages could not be fetched</strong> after multiple attempts: Yank Sing (SF), Horn Barbecue (Oakland), Insalata's (San Anselmo). Their addresses, prices, cuisines, and hours are left blank and flagged unverified. <em>Resolution needed:</em> retry via alternative Michelin URL slugs or accept as permanently unverified.</li>
+    <li><strong>SF hotel addresses and prices</strong> (The Battery, Four Seasons SF at Embarcadero, 1 Hotel SF, Hotel Drisco) were not available because the official Michelin SF hotels listing page is JavaScript-heavy and did not render. Left blank and flagged unverified per policy.</li>
+    <li><strong>Several one-star restaurant addresses/prices</strong> were not published on the official Michelin pages (e.g., Atelier Crenn, Benu, Quince, Acquerello). Left blank and flagged.</li>
+    <li><strong>Social media links</strong> (Instagram, TikTok, YouTube) were not found on official Michelin restaurant pages. Michelin pages list website and phone only. <em>Resolution needed:</em> decide whether to link to restaurant websites (which may contain social icons) or leave social fields blank.</li>
+    <li><strong>2-adult pricing:</strong> Michelin price symbols ($–$$$$) are per-person bands; 2-adult estimates are simple doubles. Not actual menu prices. <em>Resolution needed:</em> confirm this approximation is acceptable or mark all pricing as estimate.</li>
+    <li><strong>Map:</strong> No interactive map (no Google Maps API key available). Map page shows approximate cluster pins only. <em>Resolution needed:</em> decide whether to add a static image map or leave as cluster cards.</li>
+    <li><strong>Hours:</strong> Only some restaurant pages published hours. Others are blank and flagged unverified.</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Official Sources</h2>
+  <ul>
+    <li><a href="https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california" target="_blank" rel="noopener">MICHELIN Guide California 2026 — official starred list by star count &amp; city</a></li>
+    <li><a href="https://michelin.com/en/publications/products-and-services/the-michelin-guide-california-2026" target="_blank" rel="noopener">MICHELIN Guide California 2026 — official press release</a></li>
+    <li><a href="https://guide.michelin.com/us/en/article/michelin-guide-ceremony/california-s-most-affordable-restaurants-in-2026" target="_blank" rel="noopener">Bib Gourmand 2026 — official list (all 3 chunks)</a></li>
+    <li><a href="https://guide.michelin.com/us/en/article/travel/all-the-key-hotels-united-states" target="_blank" rel="noopener">Michelin Key Hotels 2026 — official full US selection</a></li>
+    <li><a href="https://guide.michelin.com/us/en/hotels-stays/napa-sonoma-valleys" target="_blank" rel="noopener">Napa / Sonoma Valleys hotels — official Michelin listing</a></li>
+    <li><a href="https://guide.michelin.com" target="_blank" rel="noopener">MICHELIN Guide official site</a></li>
+  </ul>
+  <p class="small"><strong>Verification policy:</strong> Every table row links to its official MICHELIN Guide page. If a value could not be confirmed from the official source, it is left blank and flagged as unverified. No values are inferred, estimated beyond the published price symbol, or filled manually. Data gathered November 24, 2026.</p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <h3>Baymich1</h3>
+    <p class="small">SF Bay Area Michelin Guide &amp; Map — built independently. All data verified from guide.michelin.com.</p>
+    <p class="small">&copy; 2026. Data as of November 24, 2026.</p>
+  </div>
+</footer>
+
+<script>
+const toggle = document.getElementById('navToggle');
+const closeBtn = document.getElementById('navClose');
+const nav = document.getElementById('mobileNav');
+toggle.addEventListener('click', () => nav.classList.add('open'));
+closeBtn.addEventListener('click', () => nav.classList.remove('open'));
+</script>
+</body>
+</html>

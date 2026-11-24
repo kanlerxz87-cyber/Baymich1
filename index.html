@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baymich1 — SF Bay Area Michelin Guide &amp; Map</title>
+<meta name="description" content="San Francisco Bay Area Michelin Guide 2026: starred restaurants, Bib Gourmands, hotels near Michelin clusters, and map. All data verified from guide.michelin.com.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Baymich<span>1</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<nav class="mobile-nav" id="mobileNav">
+  <div class="nav-header">
+    <strong>Menu</strong>
+    <button class="nav-toggle" id="navClose" aria-label="Close menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <ul>
+    <li><a href="index.html">Dashboard</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="hotels.html">Hotels</a></li>
+    <li><a href="map.html">Clusters &amp; Map</a></li>
+    <li><a href="about.html">About &amp; Sources</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <!-- Hero -->
+  <section class="section">
+    <h1>SF Bay Area Michelin Guide 2026</h1>
+    <p class="tagline">Starred restaurants &middot; Bib Gourmands &middot; Hotels near Michelin clusters &middot; 2-adult pricing &middot; All data verified from the official MICHELIN Guide.</p>
+    <p class="small">2026 MICHELIN Guide California revealed June 24, 2026. Michelin Keys announced September 18, 2026. Every table row links to its official Michelin page. Blank values = unverified (left blank per policy — never inferred).</p>
+
+    <div class="stat-grid">
+      <div class="stat-card"><div class="stat-value">7</div><div class="stat-label">Three-star</div></div>
+      <div class="stat-card"><div class="stat-value">9</div><div class="stat-label">Two-star</div></div>
+      <div class="stat-card"><div class="stat-value">30</div><div class="stat-label">One-star</div></div>
+      <div class="stat-card"><div class="stat-value">28</div><div class="stat-label">Bib Gourmand</div></div>
+    </div>
+
+    <div class="stat-grid mt-1">
+      <div class="stat-card"><div class="stat-value">10</div><div class="stat-label">Michelin Key hotels</div></div>
+      <div class="stat-card"><div class="stat-value">4</div><div class="stat-label">Clusters</div></div>
+      <div class="stat-card"><div class="stat-value">100%</div><div class="stat-label">Verified sources</div></div>
+      <div class="stat-card"><div class="stat-value">0</div><div class="stat-label">Inferred values</div></div>
+    </div>
+  </section>
+
+  <!-- Clusters -->
+  <section class="section">
+    <h2>Michelin Clusters</h2>
+    <p class="small">Four geographic clusters where Michelin-starred and Bib Gourmand restaurants concentrate. Tap a cluster to see its hotels ranked by nearby Michelin restaurants.</p>
+    <div class="cluster-grid" id="clusterGrid"></div>
+  </section>
+
+  <!-- Quick links -->
+  <section class="section text-center">
+    <h2>Explore</h2>
+    <a href="restaurants.html" class="btn primary mb-1" style="display:inline-block; margin:0.35rem;">View all restaurants</a>
+    <a href="hotels.html" class="btn mb-1" style="display:inline-block; margin:0.35rem;">Hotels by cluster</a>
+    <a href="map.html" class="btn mb-1" style="display:inline-block; margin:0.35rem;">Cluster map</a>
+    <a href="about.html" class="btn mb-1" style="display:inline-block; margin:0.35rem;">Sources &amp; open questions</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <h3>About Baymich1</h3>
+    <p class="small">An independently built SF Bay Area Michelin guide dashboard. Every restaurant table row links to its official MICHELIN Guide page. No manual input — all data gathered directly from guide.michelin.com.</p>
+    <ul>
+      <li><strong>Data as of:</strong> November 24, 2026</li>
+      <li><strong>Guide:</strong> MICHELIN Guide California 2026 (revealed June 24, 2026)</li>
+      <li><strong>Hotel Keys:</strong> MICHELIN Keys 2026 (announced September 18, 2026)</li>
+      <li><strong>Policy:</strong> Blank + flagged = unverified. No inferred values.</li>
+    </ul>
+    <h3>Pages</h3>
+    <ul>
+      <li><a href="restaurants.html">Starred &amp; Bib Gourmand tables</a></li>
+      <li><a href="hotels.html">Hotels ranked by nearby Michelin restaurants</a></li>
+      <li><a href="map.html">Cluster map</a></li>
+      <li><a href="about.html">Suggestions, open questions &amp; sources</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script>
+const clusterGrid = document.getElementById('clusterGrid');
+const clusters = BAYMICH_DATA.clusters;
+
+clusters.forEach(c => {
+  const card = document.createElement('article');
+  card.className = 'cluster-card';
+  card.innerHTML = `
+    <h3>${c.name}</h3>
+    <div class="cluster-meta">
+      <span><b>${c.michelinRestaurants}</b> Michelin restaurants</span>
+      <span><b>${c.starredCount}</b> starred</span>
+      <span><b>${c.bibCount}</b> Bib Gourmand</span>
+    </div>
+    <div class="cluster-restaurants">
+      ${c.threeStar.length ? `<b>3★:</b> ${c.threeStar.join(', ')}<br>` : ''}
+      ${c.twoStar.length ? `<b>2★:</b> ${c.twoStar.join(', ')}<br>` : ''}
+      ${c.oneStar.length ? `<b>1★:</b> ${c.oneStar.join(', ')}<br>` : ''}
+      ${c.bibGourmand.length ? `<b>Bib:</b> ${c.bibGourmand.join(', ')}` : ''}
+    </div>
+    <a href="hotels.html#cluster-${c.id}" class="btn mb-1" style="display:inline-block; margin-top:0.5rem;">Hotels near this cluster &rarr;</a>
+  `;
+  clusterGrid.appendChild(card);
+});
+
+// Mobile nav toggle
+const toggle = document.getElementById('navToggle');
+const closeBtn = document.getElementById('navClose');
+const nav = document.getElementById('mobileNav');
+toggle.addEventListener('click', () => nav.classList.add('open'));
+closeBtn.addEventListener('click', () => nav.classList.remove('open'));
+</script>
+</body>
+</html>
