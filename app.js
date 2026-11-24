@@ -27,7 +27,7 @@
       <td data-label="Cluster">${escapeHtml(r.area)}</td>
       <td data-label="Days, hours & exceptions">${hoursText(r)}</td>
       <td data-label="Total for 2 adults"><span class="missing">Not verified</span><small>Official two-person total not confirmed.</small></td>
-      <td data-label="Official social"><span class="missing">Not verified</span><small>No official social link confirmed.</small></td>
+      <td data-label="Official social">${r.social?.instagram ? `<a href="${escapeHtml(r.social.instagram)}" target="_blank" rel="noopener noreferrer" class="small-link">Instagram ↗</a>${r.socialSource?`<br><small class="src-note">Source: ${escapeHtml(r.socialSource)}</small>`:""}` : `<span class="missing">Not verified</span><small>No official social link confirmed.</small>`}</td>
       <td data-label="Restaurant site">${r.website ? safeLink(r.website, "Official site ↗", "small-link") : `<span class="missing">Not verified</span>`}</td>
       <td data-label="Source">${safeLink(r.source, "MICHELIN ↗", "source-chip")}</td>
     </tr>`;
