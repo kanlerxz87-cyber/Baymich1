@@ -519,6 +519,36 @@
       "notes": "One-Michelin-starred. Chefs Nicole Krasinski & Stuart Brioza. Dim sum-style cart service. Hours from listing aggregation — confirm on statebirdsf.com."
     },
     {
+      "id": "hilda-and-jesse",
+      "name": "Hilda and Jesse",
+      "distinction": "1-star Michelin",
+      "listedInMichelinGuide": true,
+      "hasMichelinStar": true,
+      "stars": 1,
+      "city": "San Francisco",
+      "area": "Not confirmed",
+      "cuisine": "American",
+      "michelinPriceBracket": "$$$",
+      "address": "Not confirmed",
+      "website": null,
+      "michelinLink": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hilda-and-jesse",
+      "estPricePerPerson": null,
+      "estPrice2AdultsTotal": null,
+      "priceSource": null,
+      "priceVerified": false,
+      "hours": null,
+      "daysOpen": null,
+      "exceptions": null,
+      "instagram": null,
+      "youtube": null,
+      "tiktok": null,
+      "socialVerified": false,
+      "sourceLinks": [
+        "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hilda-and-jesse"
+      ],
+      "notes": "One-Michelin-starred American. Details not yet verified from official source."
+    },
+    {
       "id": "nisei",
       "name": "Nisei",
       "distinction": "1-star Michelin",
