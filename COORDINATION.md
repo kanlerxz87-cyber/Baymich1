@@ -73,7 +73,7 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 | T19 | Add verified official social links (Instagram/TikTok/YouTube) from restaurant official sites | in progress | `arena/d45fb154-baymich1` | `data.js` (social field) | Only official-account links confirmed from the restaurant's own site; blank otherwise. |
 | T20 | Add verified two-adult pricing from official menus/fee pages | in progress | `arena/d45fb154-baymich1` | `data.js` (couple field) | Arithmetic only on official per-person prices; state service/tax basis; blank if unverified. |
 | T21 | Fill verified hours/days/exceptions from official sources | in progress | `arena/d45fb154-baymich1` | `data.js` (hours field) | From Michelin profile schedules and restaurant official sites. |
-| T22 | Publish to GitHub Pages and verify build/links | unclaimed | `arena/d45fb154-baymich1` | All site files | Push to branch, open PR to main, merge to publish. |
+| T22 | Publish to GitHub Pages and verify build/links | done | `arena/d45fb154-baymich1` | All site files | PR #10 merged (merge commit 3f5085d) to main on 2026-11-24. GitHub Pages rebuilt from main; live site at https://kanlerxz87-cyber.github.io/Baymich1/ confirmed rendering verified social links, hours, exceptions, and two-adult totals. |
 
 ## Log (this session)
 ### L1 — Session `arena/d45fb154-baymich1` — baseline review
