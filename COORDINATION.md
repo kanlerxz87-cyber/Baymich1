@@ -61,3 +61,15 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Hotel area-density ranking cannot be computed safely until a radius or mode/time threshold and date are selected and validated.
 - Bib Gourmand list is a sample, not a full non-starred MICHELIN Guide selection.
 - Broad MICHELIN “San Francisco and surroundings” live-filter counts can include surrounding results and differ from a declared city-scoped roster; use the dated annual roster for counts and the live directory for individual current details.
+
+## Session `arena-4ffa0e6d` (branch `arena/4ffa0e6d-baymich1`, base `67a6016`) — claim
+
+**Branch note:** this session works only on its Arena-assigned branch `arena/4ffa0e6d-baymich1`. The `session-*/<task>` branch pattern from the task brief is NOT used because the Arena rules fix the session to one branch; coordination is recorded here instead.
+
+| ID | Task | Status | Owner | Scope / files |
+|----|------|--------|-------|----------------|
+| T13 | Re-verify the 41-entry 9-county starred roster line by line against the official 2026 California list | in progress | `arena-4ffa0e6d` | `data/michelin_bay_area_stars.json` |
+| T14 | Re-verify each starred restaurant's address, cuisine, Michelin price tier, website, phone, days and hours on official Michelin pages | in progress | `arena-4ffa0e6d` | `data/michelin_bay_area_stars.json` |
+| T15 | Hotel ranking by nearby Michelin restaurants (official data only) | in progress | `arena-4ffa0e6d` | `data.js` hotels block, `hotels.html`, `data/hotels.json` (new) |
+| T16 | Social links (YouTube / TikTok / Instagram) from official restaurant sites | unclaimed — not started this session; remains open | — | — |
+| T17 | Rebuild site output and flagged-for-review log from the verified data | in progress | `arena-4ffa0e6d` | `index.html`, `pages/*`, `scripts/build_site.py`, `README.md` |
