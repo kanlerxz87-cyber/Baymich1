@@ -1,47 +1,164 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Home · Bay Area Michelin Dashboard</title>
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10271f">
+  <meta name="description" content="A source-first, mobile-friendly Michelin dining and hotel planning guide for the San Francisco Bay Area.">
+  <title>Bay Michelin — San Francisco Bay Area guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
 </head>
 <body>
-<header class="top">
-  <div class="brand"><a href="index.html">Bay Area Michelin Dashboard</a></div>
-  <nav class="nav"><a class="on" href="index.html">Home</a><a class="" href="pages/michelin-starred.html">Michelin starred</a><a class="" href="pages/executive-summary.html">Executive summary</a><a class="" href="pages/flagged-for-review.html">Flagged for review</a><a class="" href="pages/suggestions.html">Suggestions &amp; questions</a><a class="" href="pages/repo-review.html">Repo review</a></nav>
-</header>
-<main class="wrap">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#overview" aria-label="Bay Michelin home">
+      <span class="brand-mark" aria-hidden="true">B</span>
+      <span>Bay <b>Michelin</b><small>FIELD GUIDE · 2026 SELECTION</small></span>
+    </a>
+    <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <a href="index.html" data-nav="overview">Overview</a>
+      <a href="restaurants.html" data-nav="restaurants">Restaurants</a>
+      <a href="clusters.html" data-nav="clusters">Clusters</a>
+      <a href="hotels.html" data-nav="hotels">Hotels</a>
+      <a href="decision-brief.html" data-nav="decisions">Decision brief</a>
+      <a href="suggestions.html" data-nav="suggestions">Suggestions</a>
+      <a href="review.html" data-nav="review">Review flags</a>
+      <a href="sources.html" data-nav="sources">Sources</a>
+    </nav>
+  </header>
 
-<section class="hero">
-  <h1>SF Bay Area Michelin dashboard</h1>
-  <p>Michelin-starred restaurants, sources, open questions and review items. Every value links to an official source or is marked <strong>Unverified</strong>.</p>
-</section>
+  <main id="main">
+    <section class="hero" id="overview">
+      <div class="hero-copy">
+        <p class="eyebrow">San Francisco Bay Area · Source-led planning</p>
+        <h1>Eat well.<br><em>Plan clearly.</em></h1>
+        <p class="hero-intro">A practical map and planning dashboard for current Michelin-starred restaurants, Bib Gourmand picks and Michelin-Key hotels around the Bay Area.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#restaurants">Explore restaurants <span aria-hidden="true">↗</span></a>
+          <a class="text-link light-link" href="#decisions">Read the decision brief</a>
+        </div>
+        <p class="hero-note">Verified against official MICHELIN Guide pages on <strong>November 24, 2026</strong>. Restaurant selection snapshot: 2026 California Guide.</p>
+      </div>
+      <div class="hero-side" aria-label="Executive summary">
+        <div class="hero-stat"><strong id="hero-star-count">41</strong><span>starred restaurants in the defined Bay Area coverage</span></div>
+        <div class="hero-stat"><strong id="hero-sf-count">25</strong><span>of those are listed in San Francisco</span></div>
+        <div class="hero-stat"><strong>8</strong><span>Bib Gourmand examples; a non-star distinction</span></div>
+        <div class="hero-stat"><strong>4</strong><span>Michelin-Key hotel candidates; not proximity-ranked</span></div>
+      </div>
+    </section>
 
-<section class="kpis">
-  <div class="kpi"><div class="n">41</div><div class="l">Starred (Bay Area, 2026)</div></div>
-  <div class="kpi"><div class="n">41 / 41</div><div class="l">Rows with an official Michelin link</div></div>
-  <div class="kpi bad"><div class="n">33</div><div class="l">Rows with hours not captured (of 41)</div></div>
-  <div class="kpi bad"><div class="n">0</div><div class="l">Verified couple costs</div></div>
-</section>
+    <div class="content-wrap">
+      <section class="section executive-section" aria-labelledby="exec-title">
+        <div class="section-heading"><div><p class="eyebrow">At a glance</p><h2 id="exec-title">Executive summary</h2></div><span class="as-of">Source check · Nov 24, 2026</span></div>
+        <div class="summary-grid">
+          <article class="summary-card"><span class="summary-icon">✦</span><h3>2026 star snapshot</h3><p>The official 2026 California roster contains <b>41 starred restaurants</b> across the cities included in this project’s Bay Area scope. The count is grouped by city cluster, not by walking distance.</p></article>
+          <article class="summary-card"><span class="summary-icon">◎</span><h3>Star ≠ guide listing</h3><p>Stars are shown separately from the <b>8 Bib Gourmand</b> restaurants included here. Bib Gourmand is a Guide distinction for good quality, good-value cooking—not a Michelin star.</p></article>
+          <article class="summary-card"><span class="summary-icon">⌂</span><h3>Stay choices</h3><p>Four hotels are shortlisted from the Michelin hotel selection. Michelin Keys rate hotels; they are not restaurant stars. Exact nearby-restaurant counts and date-specific rates are not verified.</p></article>
+          <article class="summary-card summary-card-alert"><span class="summary-icon">!</span><h3>Decision limit</h3><p>No restaurant total for two adults is published here unless an official, current all-in total can be confirmed. Prices, social links and many opening schedules remain blank and flagged rather than guessed.</p></article>
+        </div>
+        <div class="scope-callout"><b>Coverage:</b> San Francisco, Oakland, San Anselmo, Sonoma/Healdsburg/Geyserville, Napa Valley towns, and Peninsula/South Bay cities appearing in the 2026 starred roster. This is a named-city working scope—not a claim that every unstarred restaurant or every Guide selection is included. Current-star dataset: complete against the official MICHELIN 2026 California star roster for these included cities. Bib Gourmand dataset: curated examples, not exhaustive.</div>
+      </section>
 
-<section class="grid">
-  <a class="tile" href="pages/michelin-starred.html"><h3>Michelin starred</h3><p>41 Bay Area restaurants with official 2026 star levels, hours where captured, and sources.</p><span class="badge ok">Live</span></a><a class="tile" href="pages/executive-summary.html"><h3>Executive summary</h3><p>Key findings, clusters, what is still missing.</p><span class="badge ok">Live</span></a><a class="tile" href="pages/suggestions.html"><h3>Suggestions &amp; questions</h3><p>Options to choose from, and the questions that need answers first.</p><span class="badge ok">Live</span></a><a class="tile" href="pages/flagged-for-review.html"><h3>Flagged for review</h3><p>Unverified values, conflicts, open tasks.</p><span class="badge ok">Live</span></a><a class="tile" href="pages/repo-review.html"><h3>Repo review</h3><p>Sourced review of the repo, with links for manual checks.</p><span class="badge ok">Live</span></a><div class="tile dim"><h3>Bib Gourmand &amp; Recommended</h3><p>Listed-but-no-star restaurants. Not captured yet.</p><span class="badge warn">Pending</span></div><div class="tile dim"><h3>Hotels (ranking)</h3><p>Ranked by nearby Michelin restaurants. Needs radius decision.</p><span class="badge warn">Pending</span></div><div class="tile dim"><h3>Activities</h3><p>Not started.</p><span class="badge warn">Pending</span></div><div class="tile dim"><h3>Social links</h3><p>YouTube / TikTok / Instagram. None verified yet.</p><span class="badge warn">Pending</span></div>
-</section>
+      <section class="section" id="restaurants" aria-labelledby="restaurant-title">
+        <div class="section-heading"><div><p class="eyebrow">Officially distinguished · currently starred vs. Guide-listed</p><h2 id="restaurant-title">Restaurant directory</h2><p class="section-lede">Every row has a MICHELIN Guide profile as its primary source. Empty fields mean the value was not verified from an official source in this pass.</p></div><a class="text-link" href="https://guide.michelin.com/us/en/california/san-francisco/restaurants" target="_blank" rel="noopener">Open official Bay Area Guide directory ↗</a></div>
+        <div class="directory-tools">
+          <label class="search-box"><span class="sr-only">Search restaurants</span><span aria-hidden="true">⌕</span><input id="restaurant-search" type="search" placeholder="Search name or city" autocomplete="off"></label>
+          <label class="select-label">Distinction <select id="distinction-filter"><option value="all">All entries</option><option value="star">Michelin-starred</option><option value="bib">Bib Gourmand</option></select></label>
+          <label class="select-label">Area <select id="area-filter"><option value="all">All areas</option></select></label>
+          <span class="result-count" id="restaurant-result-count" aria-live="polite"></span>
+        </div>
+        <div class="legend"><span class="legend-star">★</span> Current star award in the 2026 Guide <span class="legend-bib">BIB</span> Bib Gourmand; guide distinction, no star <span class="legend-flag">!</span> Incomplete field, follow the source</div>
+        <div id="restaurant-table" class="data-table-wrap" aria-live="polite"></div>
+        <p class="table-footnote">Dinner cost is intentionally shown as <b>Not verified</b> rather than translating MICHELIN’s broad $–$$$$ symbols into a couple’s total. A total should identify menu price × 2, taxes, service charge, beverage assumptions and optional supplements. Confirm availability and exceptions directly before booking.</p>
+      </section>
 
-<section class="card">
-  <h2>Start here</h2>
-  <ol class="list">
-    <li><a href="pages/michelin-starred.html">Open the starred table</a> — one row per restaurant, stacks on phones.</li>
-    <li><a href="pages/executive-summary.html">Read the executive summary</a> for the key numbers.</li>
-    <li><a href="pages/suggestions.html">Choose a path</a> — nothing changes until you pick.</li>
-  </ol>
-</section>
+      <section class="section" id="map" aria-labelledby="map-title">
+        <div class="section-heading"><div><p class="eyebrow">City-level aggregation · not route distance</p><h2 id="map-title">Bay Area restaurant clusters</h2><p class="section-lede">A schematic cluster map from the cities in the 2026 star roster. It is deliberately not drawn to scale and does not imply that restaurants are walkable from each other.</p></div></div>
+        <div class="cluster-layout">
+          <div id="cluster-map" class="cluster-map" role="img" aria-label="Schematic map of Bay Area restaurant clusters"></div>
+          <aside class="cluster-note"><span class="note-kicker">How to read this</span><h3>Counts are a starting point—not a proximity score.</h3><p>Counts include only current 2026 starred restaurants, by the city groups shown. They do not count Bib Gourmand entries, do not use a radius, and do not include driving or transit time.</p><a href="#decisions" class="text-link">See missing trip inputs ↗</a></aside>
+        </div>
+        <div id="cluster-cards" class="cluster-cards"></div>
+      </section>
 
-</main>
-<footer class="foot">
-  Data as of 2026-11-24 · Every value links to an official source or is marked <strong>Unverified</strong>. ·
-  Source repo: <a href="https://github.com/kanlerxz87-cyber/Baymich1">github.com/kanlerxz87-cyber/Baymich1</a>
-</footer>
+      <section class="section" id="stays" aria-labelledby="stays-title">
+        <div class="section-heading"><div><p class="eyebrow">MICHELIN hotel selection · shortlist only</p><h2 id="stays-title">Where to stay</h2><p class="section-lede">Candidates are selected for a spread of hotel areas and official Michelin Key status. No hotel is ranked by nearby restaurant count until a radius or travel-time rule is chosen and exact locations are validated.</p></div><a class="text-link" href="https://guide.michelin.com/us/en/hotels-stays/san-francisco-bay-area" target="_blank" rel="noopener">See all MICHELIN Guide hotels ↗</a></div>
+        <div class="hotel-warning"><b>Ranking withheld:</b> the source confirms hotel neighborhood and its Key award, but the restaurant-density comparison requires a chosen radius or travel mode. A date-specific room rate is also not a stable value; no dates were supplied, so rates are left blank.</div>
+        <div id="hotel-cards" class="hotel-grid"></div>
+        <div class="table-footnote"><b>Safe first read:</b> the SF hotels listed below share the same city-level star roster count (25) only. That is not a “restaurants nearby” count. Cavallo Point is in Sausalito; no local walking-radius count is asserted.</div>
+      </section>
+
+      <section class="section" id="decisions" aria-labelledby="decision-title">
+        <div class="section-heading"><div><p class="eyebrow">Knowns · unknowns · what must be answered</p><h2 id="decision-title">Decision brief</h2><p class="section-lede">A clear record of what can be concluded from verified sources today—and what cannot reasonably be decided yet.</p></div></div>
+        <div class="known-unknown-grid">
+          <article class="decision-panel"><div class="panel-heading"><span class="status-dot good"></span><h3>Verified enough to use</h3></div><ul>
+            <li><b>Current star status:</b> the 2026 California selection was revealed June 24, 2026; the official Guide article lists the named 3-, 2- and 1-star restaurants.</li>
+            <li><b>Project coverage:</b> 41 starred names in the declared city clusters; 25 are in San Francisco.</li>
+            <li><b>Different distinction:</b> Bib Gourmand examples are labeled separately and never described as starred.</li>
+            <li><b>Hotels:</b> four candidate properties and their Michelin Keys/neighborhoods are sourced from official Michelin hotel listings.</li>
+          </ul></article>
+          <article class="decision-panel panel-open"><div class="panel-heading"><span class="status-dot warn"></span><h3>Still open — blocks ranking or budget decisions</h3></div><ul>
+            <li><b>What does “nearby” mean?</b> Walking distance, transit time, drive time, or a radius? Exact hotel-to-restaurant counts depend on this.</li>
+            <li><b>When is the trip?</b> Hours, special closures, room rates and booking inventory are date-sensitive; dates are unknown.</li>
+            <li><b>What is the meal budget?</b> The requested two-adult total needs menu price, tax, service charge, drinks, supplements and dietary assumptions. Official all-in totals were not found.</li>
+            <li><b>Which restaurants matter?</b> Star tier, cuisine, dietary needs, reservation lead time and accessibility are not ranked or filtered beyond current distinction/area.</li>
+            <li><b>Do social links need to be official accounts?</b> Yes for this version; no social link is filled unless confirmed from an official restaurant source.</li>
+            <li><b>What does “Bay Area” include?</b> This version uses the named MICHELIN roster cities shown above; it does not claim to cover every adjacent county or an arbitrary driving radius.</li>
+          </ul></article>
+        </div>
+        <div class="question-matrix"><h3>Questions, current answers, and best next verification</h3><div class="question-row question-header"><span>Question</span><span>Answer from verified information</span><span>Next source / test</span></div>
+          <div class="question-row"><b>Which restaurants currently hold stars?</b><span>2026 status is listed for all 41 included Bay Area-city entries. This is the 2026 Guide snapshot, not a promise about future editions.</span><a href="https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california" target="_blank" rel="noopener">Official 2026 roster ↗</a></div>
+          <div class="question-row"><b>Which are Guide-listed but not starred?</b><span>Eight Bib Gourmand examples are labeled separately. Bib is a Guide distinction, not a star. This subset is not exhaustive.</span><a href="https://guide.michelin.com/us/en/california/san-francisco/restaurants/all-starred/bib-gourmand" target="_blank" rel="noopener">Official Guide Bib directory ↗</a></div>
+          <div class="question-row"><b>Which hotel has the most restaurants nearby?</b><span>Cannot be answered from city membership alone. No hotel is ranked on this page.</span><a href="#suggestions">Choose radius / travel mode below ↗</a></div>
+          <div class="question-row"><b>What is dinner for two, all in?</b><span>Unverified. Price bands are not total prices; no unverified estimate is substituted.</span><a href="#review">Open the flagged-fields list ↗</a></div>
+          <div class="question-row"><b>Can the hours be relied on?</b><span>Only hours explicitly transcribed from the linked official source are populated; all other rows require a live source check. Holiday exceptions are not assumed.</span><a href="https://guide.michelin.com/us/en/california/san-francisco/restaurants" target="_blank" rel="noopener">Open official restaurant directory ↗</a></div>
+        </div>
+      </section>
+
+      <section class="section" id="suggestions" aria-labelledby="suggestions-title">
+        <div class="section-heading"><div><p class="eyebrow">Review choices before implementation</p><h2 id="suggestions-title">Suggestions & decision options</h2><p class="section-lede">These options are proposals, not assumptions. Select a preferred method to save a local planning note; selections do not alter the verified records or publish a ranking.</p></div></div>
+        <div class="suggestion-list">
+          <article class="suggestion-card"><div class="suggestion-number">01</div><div><h3>Set the hotel “nearby” rule</h3><p>Recommended for an actionable ranking: compare the number of 2026 starred restaurants within a <b>15-minute walk</b> of each hotel, then show 30-minute transit as a secondary view. Verify each hotel and restaurant point and route against a map source before publishing.</p><fieldset><legend>Choose a future comparison basis</legend><label><input type="radio" name="nearby" value="walk"> 15-minute walk</label><label><input type="radio" name="nearby" value="radius"> Fixed radius (choose miles later)</label><label><input type="radio" name="nearby" value="transit"> 30-minute transit</label></fieldset></div></article>
+          <article class="suggestion-card"><div class="suggestion-number">02</div><div><h3>Define the meal-for-two total</h3><p>Recommended display: publish the base tasting menu × 2, then a separate all-in estimate with tax and mandatory service; show beverages and optional supplements as separate add-ons. Update from each restaurant’s live official menu.</p><fieldset><legend>Choose the primary budget figure</legend><label><input type="radio" name="meal" value="base"> Menu base × 2</label><label><input type="radio" name="meal" value="allin"> Estimated all-in total</label><label><input type="radio" name="meal" value="both"> Both, with assumptions</label></fieldset></div></article>
+          <article class="suggestion-card"><div class="suggestion-number">03</div><div><h3>Expand Guide-listed coverage</h3><p>The star roster is complete for the defined included-city scope. The 8 Bib Gourmand rows are examples only. A full recommendation-grade directory should separately ingest all current Bib Gourmand and Selected Restaurants, preserving each category and checking closures.</p><fieldset><legend>Choose scope for a future expansion</legend><label><input type="radio" name="scope" value="bib"> All Bay Area Bib Gourmand</label><label><input type="radio" name="scope" value="selected"> Bib + all selected (non-starred) restaurants</label><label><input type="radio" name="scope" value="nine"> All Guide categories in nine counties</label></fieldset></div></article>
+          <article class="suggestion-card"><div class="suggestion-number">04</div><div><h3>Add booking and access decision factors</h3><p>Useful next layer: reservation release rules/lead time, real-time availability link, dietary accommodation, step-free access, cancellation policy and transit/parking. Keep the source and “last checked” date visible per field.</p><fieldset><legend>Choose what should be prioritized</legend><label><input type="radio" name="priority" value="booking"> Availability and booking difficulty</label><label><input type="radio" name="priority" value="access"> Accessibility and dietary needs</label><label><input type="radio" name="priority" value="both"> Both</label></fieldset></div></article>
+        </div>
+        <div class="choice-status" id="choice-status" aria-live="polite">No choices saved yet. Your selections stay in this browser only.</div>
+        <button class="button button-dark" id="clear-choices" type="button">Clear local choices</button>
+      </section>
+
+      <section class="section" id="review" aria-labelledby="review-title">
+        <div class="section-heading"><div><p class="eyebrow">No unsupported values</p><h2 id="review-title">Flagged for review</h2><p class="section-lede">Flags are gaps or limits, not claims about a business. Each is paired with a practical way to close it.</p></div><span class="flag-count" id="flag-count">0 fields flagged</span></div>
+        <div class="flag-grid">
+          <article class="flag-card"><span>01</span><h3>Meal totals for two</h3><p>Not populated for any row. Michelin price bands are relative, not a reliable two-person total.</p><b>Resolve with:</b> each restaurant’s official current menu and published tax/service terms; state beverage and add-on assumptions.</article>
+          <article class="flag-card"><span>02</span><h3>Hours and holiday exceptions</h3><p>Exact schedule is entered only for restaurants whose official source was checked in this pass. Special-date closures may still change.</p><b>Resolve with:</b> restaurant’s official hours/reservation page, check against visit date, retain timestamp.</article>
+          <article class="flag-card"><span>03</span><h3>Official social accounts</h3><p>No account link is displayed unless it was directly verified from an official restaurant page. Social links are intentionally blank.</p><b>Resolve with:</b> link from the restaurant’s own website to Instagram, TikTok or YouTube; do not use fan reposts.</article>
+          <article class="flag-card"><span>04</span><h3>Hotel proximity ranking</h3><p>Hotel Key, city and neighborhood are verified; hotel-to-restaurant distance counts and a winner are not.</p><b>Resolve with:</b> choose radius or travel mode, geocode official street addresses, and validate routes/points on an official map source.</article>
+          <article class="flag-card"><span>05</span><h3>Hotel nightly rates</h3><p>No price appears without dates, occupancy and fee/tax basis. Live hotel rates are date-dependent.</p><b>Resolve with:</b> exact stay dates, party size, refundable/non-refundable preference and a direct-booking quote; timestamp it.</article>
+          <article class="flag-card"><span>06</span><h3>Guide-listed non-star coverage</h3><p>Eight Bib Gourmand examples are included, but the full non-starred Guide selection is not.</p><b>Resolve with:</b> choose whether to include every current Bib Gourmand, Selected/MICHELIN Plate entry, or only those useful for the trip.</article>
+        </div>
+        <div class="integrity-note"><b>Known source inconsistency to watch:</b> MICHELIN’s live filter pages can show category totals and surrounding-area results that do not match this project’s city-scoped 2026 roster count. The 41-star total therefore uses the official dated 2026 award roster and explicitly defined cities, not a live filter’s broad “San Francisco and surroundings” tally. Always open the restaurant profile for latest operating details.</div>
+      </section>
+
+      <section class="section" id="sources" aria-labelledby="sources-title">
+        <div class="section-heading"><div><p class="eyebrow">Primary sources first</p><h2 id="sources-title">Sources & verification notes</h2><p class="section-lede">Every directory row links to an official MICHELIN Guide restaurant profile. Hotel rows link to the official MICHELIN hotel review. Links open in a new tab.</p></div></div>
+        <div class="source-list">
+          <a href="https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california" target="_blank" rel="noopener"><span class="source-number">01</span><span><b>2026 complete California starred roster</b><small>MICHELIN Guide · published 24 June 2026 · star status and city used for the defined 41-entry Bay Area roster.</small></span><span class="source-arrow">↗</span></a>
+          <a href="https://guide.michelin.com/us/en/california/san-francisco/restaurants/all-starred/bib-gourmand" target="_blank" rel="noopener"><span class="source-number">02</span><span><b>San Francisco & surroundings Guide directory</b><small>MICHELIN Guide · live category listings. Results include surrounding areas; not used as a city-scoped star count.</small></span><span class="source-arrow">↗</span></a>
+          <a href="https://guide.michelin.com/us/en/hotels-stays/san-francisco-bay-area" target="_blank" rel="noopener"><span class="source-number">03</span><span><b>San Francisco Bay Area hotel directory</b><small>MICHELIN Guide · hotel selection, current hotel details and Key filters.</small></span><span class="source-arrow">↗</span></a>
+          <a href="https://www.quincerestaurant.com/" target="_blank" rel="noopener"><span class="source-number">04</span><span><b>Quince official restaurant site</b><small>Official schedule and published holiday exception checked 24 November 2026; no meal price posted in the page checked.</small></span><span class="source-arrow">↗</span></a>
+          <a href="https://guide.michelin.com/us/en/california/san-francisco/restaurant/californios" target="_blank" rel="noopener"><span class="source-number">05</span><span><b>Californios official MICHELIN profile</b><small>Three-star award, location, profile link, current posted hours and official website were checked.</small></span><span class="source-arrow">↗</span></a>
+          <a href="https://guide.michelin.com/us/en/california/san-francisco/restaurant/benu" target="_blank" rel="noopener"><span class="source-number">06</span><span><b>Benu official MICHELIN profile</b><small>Three-star award, location, current posted hours and official website were checked.</small></span><span class="source-arrow">↗</span></a>
+          <a href="https://guide.michelin.com/us/en/california/san-francisco/restaurant/acquerello" target="_blank" rel="noopener"><span class="source-number">07</span><span><b>Acquerello official MICHELIN profile</b><small>Two-star award, location, current posted hours and official website were checked.</small></span><span class="source-arrow">↗</span></a>
+          <a href="https://www.quincerestaurant.com/info-reservations" target="_blank" rel="noopener"><span class="source-number">08</span><span><b>Quince official info & reservations page</b><small>Menu formats and reservation-release information; no menu price was stated on the page checked.</small></span><span class="source-arrow">↗</span></a>
+        </div>
+        <p class="method-note"><b>Verification method:</b> used official MICHELIN 2026 California starred roster as the award-of-record; checked individual official profiles for entries and exact details where populated. Restaurant and hotel live availability, prices, schedules, and social accounts may change. No figure is interpolated from a price band or map distance. Last source review: 24 November 2026 (UTC).</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-brand"><span class="brand-mark" aria-hidden="true">B</span><span>Bay Michelin</span></div><p>Independent planning interface. Michelin awards, Keys and directory profiles belong to the MICHELIN Guide. Confirm directly before travel.</p><a href="#overview">Back to top ↑</a></footer>
 </body>
 </html>
