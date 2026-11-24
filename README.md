@@ -25,6 +25,6 @@ The full star roster shown is transcribed from the [MICHELIN Guide's California 
 
 Prices for two, current opening schedules and exceptions, venue-owned websites beyond the Michelin profile, official social/video accounts, hotel rates, hotel proximity counts, and a complete non-starred Guide roster are not yet verified. They are intentionally blank or called out in the page's flagged-review section. Do not treat a blank as zero or as a negative claim.
 
-## GitHub Pages
+## GitHub Pages publication status
 
-A GitHub Actions Pages workflow is included at `.github/workflows/pages.yml`. It deploys the current Arena branch when its repository Pages source is configured to **GitHub Actions** and the repository permits Pages deployments. GitHub Pages account/repository settings are external to these static files.
+GitHub Pages is already enabled for this repository at `https://kanlerxz87-cyber.github.io/Baymich1/` and is currently configured to publish the `main` branch root (legacy Pages source). This Arena branch is not allowed to deploy: GitHub's Pages deployment rejected it because only `main` is permitted by the repository's environment/source rules. Attempts to switch Pages configuration to Actions returned HTTP 403. No alternate deployment workflow is left enabled to avoid repeated failing runs. The static site can be previewed from this branch in Arena; the GitHub Pages URL will reflect these files only after the branch is integrated into `main` under the repository's normal integration process.
