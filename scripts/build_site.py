@@ -14,6 +14,15 @@ import sys
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA = json.load(open(os.path.join(ROOT, "data", "michelin_bay_area_stars.json"), encoding="utf-8"))
 AS_OF = DATA["as_of"]
+OFFICIAL = json.load(open(os.path.join(ROOT, "data", "official_sf_region_starred_2026-11-24.json"), encoding="utf-8"))
+
+
+def _norm(name):
+    n = name.replace("\u2019", "'").strip().lower()
+    return n[len("restaurant "):] if n.startswith("restaurant ") else n
+
+
+OFFICIAL_SF_NAMES = {_norm(x["name"]) for x in OFFICIAL["restaurants"]}
 E = html.escape
 
 
@@ -93,6 +102,8 @@ def starred_page():
                else '<span class="muted">UNVERIFIED</span>')
         mich = f'<a href="{E(x["michelin"])}" target="_blank" rel="noopener">Michelin page</a>'
         flag = f' {badge(x["flag"], "bad")}' if x.get("flag") else ""
+        on_off = (badge("Yes", "ok") if _norm(x["name"]) in OFFICIAL_SF_NAMES
+                  else badge("Not on list", "warn"))
         rows.append(f"""
 <tr>
   <td data-label="#">{i}</td>
@@ -106,13 +117,14 @@ def starred_page():
   <td data-label="Address">{addr}</td>
   <td data-label="Website / phone">{web}{'<br><span class="muted">' + E(x["phone"]) + '</span>' if x["phone"] else ''}</td>
   <td data-label="Social (YT / TikTok / IG)">{badge("Not searched", "bad")}</td>
+  <td data-label="On official SF-region list (2026-11-24)">{on_off}</td>
   <td data-label="Sources">{mich}<br>{src_links(x["sources"])}</td>
 </tr>""")
     counts = {k: sum(1 for x in s if x["stars"] == k) for k in (3, 2, 1)}
     body = f"""
 <section class="hero">
   <h1>Michelin-starred restaurants · SF Bay Area</h1>
-  <p>Official 2026 Michelin star list for the 9-county Bay Area. <strong>{len(s)} starred</strong>:
+  <p><strong>Scope warning:</strong> this table is the wider roster (nine Bay Area counties plus Napa and Sonoma) from Michelin's 2026 California article. Michelin's official "San Francisco and surroundings" all-starred page lists only 29 restaurants (checked 2026-11-24; see the "On official SF-region list" column). Four Peninsula/South Bay restaurants (Protégé, Plumed Horse, Selby's, The Village Pub) show a star on their official pages but are not on that list. <strong>{len(s)} starred</strong> in this table:
      {counts[3]} three-star · {counts[2]} two-star · {counts[1]} one-star.
      Status shown is the star level from Michelin's 2026 California list (ceremony 24 Jun 2026).</p>
   <p class="legend">
@@ -130,7 +142,7 @@ def starred_page():
     <thead><tr>
       <th>#</th><th>Restaurant</th><th>Michelin status</th><th>City / county</th><th>Cuisine</th>
       <th>Michelin price tier</th><th>Est. cost, 2 adults (total)</th><th>Days &amp; hours (official)</th>
-      <th>Address</th><th>Website / phone</th><th>Social (YT / TikTok / IG)</th><th>Sources</th>
+      <th>Address</th><th>Website / phone</th><th>Social (YT / TikTok / IG)</th><th>On official SF-region list</th><th>Sources</th>
     </tr></thead>
     <tbody>{''.join(rows)}</tbody>
   </table>
