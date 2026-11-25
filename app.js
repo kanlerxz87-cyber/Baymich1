@@ -37,7 +37,11 @@
     }
     return `<span class="missing">Not verified</span><small>Official two-adult total not confirmed; Michelin price bands are not converted into a dollar total.</small>`;
   }
-  function socialText() {
+  function socialText(r) {
+    if (r.social && r.social.instagram) {
+      const src = r.socialSource ? ` <small class="src-note">Source: ${escapeHtml(r.socialSource)}</small>` : '';
+      return `<a href="${escapeHtml(r.social.instagram)}" target="_blank" rel="noopener noreferrer" class="small-link">Instagram ↗</a>${src}`;
+    }
     return `<span class="missing">Not verified</span><small>No Instagram / TikTok / YouTube link confirmed from an official restaurant source.</small>`;
   }
   function restaurantRow(r) {
@@ -48,7 +52,7 @@
       <td data-label="Area cluster">${escapeHtml(r.area)}</td>
       <td data-label="Days, hours & exceptions">${hoursText(r)}</td>
       <td data-label="Total for 2 adults">${priceText(r)}</td>
-      <td data-label="Official social">${socialText()}</td>
+      <td data-label="Official social">${socialText(r)}</td>
       <td data-label="Restaurant site">${r.website ? safeLink(r.website, "Official site &nbsp;&rarr;", "small-link") : `<span class="missing">Not verified</span>`}</td>
       <td data-label="Source">${safeLink(r.source, "MICHELIN &nbsp;&rarr;", "source-chip")}</td>
     </tr>`;
@@ -111,7 +115,7 @@
 
   const flags = {
     meal: d.restaurants.filter((r) => !r.couple).length,
-    social: d.restaurants.length,
+    social: d.restaurants.filter((r) => !(r.social && r.social.instagram)).length,
     schedule: d.restaurants.filter((r) => !r.hours).length,
     hotelNearby: d.hotels.length,
     hotelRate: d.hotels.length
