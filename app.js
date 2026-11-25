@@ -39,9 +39,13 @@
     return `<span class="missing">Not verified</span><small>Official two-adult total not confirmed; Michelin price bands are not converted into a dollar total.</small>`;
   }
   function socialText(r) {
-    if (r.social && r.social.instagram) {
-      const src = r.socialSource ? ` <small class="src-note">Source: ${escapeHtml(r.socialSource)}</small>` : '';
-      return `<a href="${escapeHtml(r.social.instagram)}" target="_blank" rel="noopener noreferrer" class="small-link">Instagram ↗</a>${src}`;
+    const s = r.social || {};
+    const links = [];
+    if (s.instagram) links.push(`<a href="${escapeHtml(s.instagram)}" target="_blank" rel="noopener noreferrer" class="small-link">Instagram &#8594;</a>`);
+    if (s.facebook) links.push(`<a href="${escapeHtml(s.facebook)}" target="_blank" rel="noopener noreferrer" class="small-link">Facebook &#8594;</a>`);
+    if (links.length) {
+      const src = r.socialSource ? `<br><small class="src-note">Source: ${escapeHtml(r.socialSource)}</small>` : '';
+      return `${links.join(' &#8226; ')}${src}`;
     }
     return `<span class="missing">Not verified</span><small>No Instagram / TikTok / YouTube link confirmed from an official restaurant source.</small>`;
   }

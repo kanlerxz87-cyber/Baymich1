@@ -147,6 +147,42 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Updated review-flag text in index.html and subpages.js to reflect 14 verified schedules and 18 verified social accounts.
 - All JS files pass `node --check`. Ready for local render test, commit, push, and PR-to-main merge for GitHub Pages publication.
 
+## Session `arena/6f285960-baymich1` (branch `arena/6f285960-baymich1`, base `a9bdf06`)
+
+**Branch rule:** work stays on its own Arena-managed branch; no branch switching or `session-*` branch creation beyond the Arena-assigned branch. This session owns the current branch.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Render verified social links in root dashboard table | in progress | `arena/6f285960-baymich1` | `app.js` (socialText), `data.js` (social) | app.js socialText() returns Not verified for all rows although 18 rows carry verified social data in data.js. |
+| T24 | Verify two-adult pricing from official restaurant menus | in progress | `arena/6f285960-baymich1` | `data.js` (couple) | Benu $1,037 and Kiln $756 re-confirmed from benusf.com/info and kilnsf.com/information 2026-11-25. Add more only where an official menu/fee page confirms. |
+| T25 | Verify hours/days/exceptions from official sources | in progress | `arena/6f285960-baymich1` | `data.js` (hours) | Cross-check detailed rows against restaurant official sites; never infer closures. |
+| T26 | Hotel proximity ranking decision documentation | in progress | `arena/6f285960-baymich1` | `hotels.html`, `decision-brief.html` | Document radius/travel-mode decision; no unsupported rank or date-specific rate. |
+| T27 | Publish root dashboard to GitHub Pages, verify build/links | unclaimed | `arena/6f285960-baymich1` | all site files | Confirm GitHub Pages builds from main/root and links resolve. |
+
+## Log — Session `arena/6f285960-baymich1`
+
+### L1 — claim and baseline verification
+- Confirmed guide.michelin.com is reachable; root dashboard loads data.js (71 restaurants: 41 starred + 30 Bib Gourmand) + 4 hotels.
+- Confirmed app.js `socialText()` renders "Not verified" for every row even though data.js carries verified Instagram/socialSource for 18 restaurants — a rendering gap to fix under T23.
+- Re-confirmed Benu $425 pp + 22% service ($1,037 for two, before tax) via benusf.com/info and Kiln $315 pp + 20% service ($756 for two, before tax) via kilnsf.com/information, both official restaurant sites.
+- Social link rendering bug and verification status recorded above; no data values inferred beyond official sources.
+
+
+## Reconciliation note — merge of `arena/6f285960-baymich1` into `main` (2026-11-25)
+
+Both branches share the same 71-restaurant roster (41 starred + 30 Bib Gourmand) and the same root dashboard structure. Divergences resolved as follows:
+
+1. **`data.js`**: kept the compliant compact roster from `arena/6f285960-baymich1` (same 71 records as `main`). Applied this session's verified updates: Nisei (address, phone, Wed–Sun dinner service, Instagram `@niseisf` confirmed from restaurantnisei.com) and Quince (official-site hours + verified closures Nov 26 / Dec 25–26). Cleared 17 social handles that were cited only by third-party aggregators and could not be reproduced on restaurant official sites, per the project rule "blank unless confirmed from the restaurant's own site." Nisei's `@niseisf` is retained as the one officially-confirmed social link. Main's pretty-printed `data.js` had inferred Nisei hours ("5–9 pm") that are not on the official site; those were replaced with the compliant "Dinner service only" (no exact times inferred).
+
+2. **`app.js`**: `socialText(r)` now renders verified Instagram/Facebook links with source attribution (currently shows Nisei only).
+
+3. **Task board**: both sessions' T23–T27 claims are documented below; the shared root-dashboard files were merged here.
+
+Both session blocks are retained for the audit trail.
+
+
+---
+
 ## Session `arena/6c0c7ebc-baymich1` (branch `arena/6c0c7ebc-baymich1`, base `a9bdf06` = main after PR #12)
 
 **Branch rule:** this session works only on its Arena-assigned branch; no other branch is created, switched to, or pushed. The `session-*/<task>` naming in the brief is recorded here instead of used as a branch name.
