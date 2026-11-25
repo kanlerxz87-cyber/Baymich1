@@ -128,3 +128,28 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Added 18 verified Instagram social links, each tied to a source pairing the official restaurant website with the handle; rendered in the Official social column of app.js and subpages.js.
 - Updated review-flag text in index.html and subpages.js to reflect 14 verified schedules and 18 verified social accounts.
 - All JS files pass `node --check`. Ready for local render test, commit, push, and PR-to-main merge for GitHub Pages publication.
+
+## Session `arena/9338f7dc-baymich1` — claim (this session)
+
+**Branch rule:** Arena fixes this session to `arena/9338f7dc-baymich1`; no other branch is created or pushed. The task brief's `session-*/<task>` pattern is recorded as a coordination note here instead.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Official Michelin page reads for the 27 one-star entries (address, cuisine, price, website, phone, weekly schedule) — completes the T14 remainder | done | `arena/9338f7dc-baymich1` | `data.js` (one-star rows), `data/michelin_onestar_reads_2026-11-25.json`, `scripts/apply_onestar_reads.py`, `README.md`, `index.html` (date note), `subpages.js` (date note) | All 41 starred entries now have an official Michelin page read (14 on 24 Nov, 27 on 25 Nov). Only values on the page were written. Exceptions listed in the log. |
+
+### L6 — Session `arena/9338f7dc-baymich1` — 27 one-star official reads (T23)
+- **Sources.** Each one-star restaurant's official Michelin restaurant page, read with a page fetch (chunk 0 for header, website, phone and the Location weekly schedule). Pages are listed in `data/michelin_onestar_reads_2026-11-25.json` under `url`. Examples: <https://guide.michelin.com/ca/en/california/san-francisco/restaurant/nari>, <https://guide.michelin.com/ca/en/california/calistoga/restaurant/auro>.
+- **Written.** For all 27 rows: address, cuisine, price symbol, website (as listed on the Michelin page), weekly hours, and a `verified` note dated 2026-11-25. Phone was written where the page showed one.
+- **Not written (blank by policy).** Phone for Sun Moon Studio and Restaurant Naides (not on chunk 0 of the page). Troubadour, Ssal and Plumed Horse hours were completed from chunk 1 (Troubadour, Ssal) or chunk 0 (Plumed Horse); nothing was inferred.
+- **Method.** `scripts/apply_onestar_reads.py` rewrites only the 27 one-star lines in `data.js`. Existing `source`, `social` and `socialSource` values are kept.
+- **QA.** `node --check data.js`; jsdom render of `restaurants.html` (71 data rows, 0 script errors), `index.html` (71 rows, 0 script errors), and the other category pages (0 script errors). Hours are shown as day-by-day objects, as the existing renderers expect.
+
+### Irregularities from T23 (for manual review, not changed)
+1. **Protégé phone.** The official page lists +1 707-312-0931. Palo Alto numbers are normally 650. Written as shown and flagged in the row's `verified` note. Check the restaurant's own site before relying on it.
+2. **Name mismatch.** The roster name is "Auberge du Soleil"; the Michelin page title is "The Restaurant at Auberge du Soleil". Both kept; the row note says so.
+3. **Mister Jiu's website.** The earlier row had `https://www.misterjius.com/`. The official Michelin page lists `https://misterjius.com/`; the Michelin value was written. The socials on this row (and on Niku, Nisei, State Bird Provisions) were NOT re-verified this session; their earlier pairing sources are third-party.
+4. **Hours come from Michelin.** The schedules are the Michelin "Location" weekly schedule. They were not checked against each restaurant's own website, and holiday exceptions were not checked.
+5. **Michelin domain.** These pages were read on guide.michelin.com/ca/en/. The Bib list and Benu links use guide.michelin.com/us/en/. Same content, different locale path; no link was changed.
+6. **Sons & Daughters** still has no schedule on its Michelin page (carried from L5).
+7. **Two-adult totals, Bib Gourmand rows, hotel ranking, and the 2026 "San Francisco and surroundings" vs nine-county mismatch** are unchanged by this task and remain open (see earlier flags).
+

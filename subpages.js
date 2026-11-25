@@ -15,7 +15,7 @@
     const opts=[...new Set(d.restaurants.map(r=>r.area))].sort().map(a=>`<option>${e(a)}</option>`).join("");
     root.innerHTML = `${cardHeading("Official Guide profiles · 2026 status","Restaurant directory","Starred restaurants are the city-scoped 2026 current-star roster. Bib Gourmand is listed separately and is not a star. Blank operating details remain unverified.")}
       <div class="directory-tools"><label class="search-box">⌕ <input id="q" type="search" placeholder="Search by name or city" aria-label="Search restaurants"></label><label class="select-label">Type <select id="type"><option value="all">All</option><option value="star">Starred</option><option value="bib">Bib Gourmand</option></select></label><label class="select-label">Area <select id="area"><option value="all">All areas</option>${opts}</select></label><span class="result-count" id="count"></span></div>
-      <div class="table-footnote">Date checked: 24 Nov 2026. Meal-for-two totals are not verified from official current menu and fee details. Social links are blank until verified from an official restaurant source. Every record includes a Michelin Guide profile link.</div>
+      <div class="table-footnote">Date checked: 24–25 Nov 2026. Meal-for-two totals are not verified from official current menu and fee details. Social links are blank until verified from an official restaurant source. Every record includes a Michelin Guide profile link.</div>
       <div id="rows" class="data-table-wrap"></div>`;
     const draw=()=>{
       const q=document.querySelector("#q").value.toLowerCase();const type=document.querySelector("#type").value;const area=document.querySelector("#area").value;

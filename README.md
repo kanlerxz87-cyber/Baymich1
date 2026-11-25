@@ -11,7 +11,7 @@ The repository’s GitHub Pages publishing source is the `main` branch at the re
 ## Scope and evidence
 
 - **Starred (41):** the official MICHELIN Guide California 2026 list (revealed 24 June 2026), filtered to the nine Bay Area counties: 7 three-star, 7 two-star, 27 one-star. Source: <https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california>.
-- **Verified in detail (14 of 41, 24 Nov 2026):** address, cuisine, price tier, website, phone and schedule, read from each official Michelin restaurant page. Sons & Daughters has no schedule. The other 27 have roster status only.
+- **Verified on official Michelin pages (41 of 41, read 24–25 Nov 2026):** address, cuisine, price symbol, website, phone and weekly schedule, read from each official Michelin restaurant page. Exceptions: Sons & Daughters has no schedule on its page; Sun Moon Studio and Restaurant Naides show no phone on the page; Protégé's listed phone uses a 707 area code and is flagged for review.
 - **Bib Gourmand (30):** the official "San Francisco and surroundings" Bib Gourmand filter. Count and first three names re-read on 24 Nov 2026; the rest carried from the earlier pass. Michelin's 86 "Selected Restaurants" are not catalogued.
 - **Couple totals:** five restaurants show arithmetic on official per-person prices, with service stated and tax excluded. All others are marked "Not verified".
 - **Social links:** none verified yet; every social cell is blank.
