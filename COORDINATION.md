@@ -122,7 +122,25 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 10. **Selected Restaurants:** Michelin lists 86 'Selected' restaurants in the SF filter. None are catalogued.
 11. **Michelin filter mismatch:** the live "San Francisco and surroundings" filter (4 / 7 / 18 / 30) is not the nine-county roster (7 / 7 / 27); the difference is not reconciled line by line.
 
-## Log (continued) — Session `arena/d45fb154-baymich1`, L3 — publish preparation
+## Session `arena/968369ca-baymich1` (branch `arena/968369ca-baymich1`, base `a9bdf06` = current `main`)
+
+**Branch rule:** work stays on this Arena-assigned branch; no branch switching or additional branch creation.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Re-render verified social links in dashboard restaurant table | done | `arena/968369ca-baymich1` | `app.js` | `socialText()` now renders `r.social.instagram` (18 of 71 entries) instead of "Not verified" for every row; unresolved social flag count corrected from 71 to 53. |
+| T24 | Internal consistency verification of `data.js` | done | `arena/968369ca-baymich1` | `data.js`, `index.html` | 71 entries (41 starred: 7×3★ / 7×2★ / 27×1★; 30 Bib Gourmand); 25 SF-starred matches the index.html hero figure; every source URL is guide.michelin.com; couple arithmetic re-checked (Benu $1,037; Commis $670 rounded from $669.60; Kiln $756; Acquerello and Birdsong bases shown with fees not stated as all-in). |
+| T25 | Local render + link QA | done | `arena/968369ca-baymich1` | root HTML pages | All 8 root pages return HTTP 200; `node --check` passes on app.js and subpages.js. |
+
+### Log — Session `arena/968369ca-baymich1`
+
+- L1 — Session start: read COORDINATION.md; reviewed repo line by line (data.js, index.html, app.js, subpages.js, styles.css, clusters.html, hotels.html, decision-brief.html, suggestions.html, review.html, sources.html, data JSONs).
+- Irregularity found and fixed: the dashboard "Official social" column suppressed 18 already-verified Instagram links (hard-coded to "Not verified"). Fixed so verified links render with their source note; remaining 53 cells stay blank and flagged. No new links were invented.
+- External-verification limit: sandbox outbound access does not include michelin.com or restaurant sites, so no new official-source verification was possible this session. Unverified fields (hours, prices, most socials) were intentionally left blank; nothing was inferred or filled in.
+- Hotel proximity ranking intentionally withheld: radius / travel mode / trip date are open decisions, documented in the decision brief and suggestions card #1; no hotel is ranked.
+- Planned next: commit + push to `arena/968369ca-baymich1`, open a PR to `main` so GitHub Pages rebuilds and publishes the updated live site.
+
+### Log (continued) — Session `arena/d45fb154-baymich1`, L3 — publish preparation
 - Verified Benu official Michelin page (3★, address, cuisine, $$$$, website, phone, Wed–Sat dinner hours) matches data.js exactly.
 - Confirmed 5 two-adult totals from official per-person prices and fee terms: Benu $1,037, Kiln $756, Commis $670 (before tax); Acquerello $590 base; Birdsong $700 base. Tax excluded, service stated, no all-in total beyond these.
 - Added 18 verified Instagram social links, each tied to a source pairing the official restaurant website with the handle; rendered in the Official social column of app.js and subpages.js.
