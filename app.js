@@ -28,7 +28,8 @@
     const closed = Object.entries(r.hours).filter(([, time]) => time === "Closed").map(([day]) => day).join(", ");
     const detail = Object.entries(r.hours).map(([day, time]) => `<li><b>${escapeHtml(day)}:</b> ${escapeHtml(time)}</li>`).join("");
     const srcNote = r.verified ? ` <span class="micro-label">Schedule per MICHELIN Guide profile read ${r.verified}</span>` : '';
-    return `<details class="hours-details"><summary>${escapeHtml(open)}</summary><ul>${detail}</ul><small>Closed: ${escapeHtml(closed)}. Special-date exceptions not verified; confirm for your date.${srcNote}</small></details>`;
+    const excNote = r.exception ? ` <span class="micro-label">Exceptions: ${escapeHtml(r.exception)}</span>` : '';
+    return `<details class="hours-details"><summary>${escapeHtml(open)}</summary><ul>${detail}</ul><small>Closed: ${escapeHtml(closed)}.${excNote}${srcNote} Confirm special-date closures for your visit date.</small></details>`;
   }
   function priceText(r) {
     if (r.couple) {
@@ -41,11 +42,15 @@
     if (!r || !r.social) {
       return `<span class="missing">Not verified</span><small>No Instagram / TikTok / YouTube link confirmed from an official restaurant source.</small>`;
     }
+    const s = r.social;
     const links = [];
-    if (r.social.instagram) links.push(`<a href="${escapeHtml(r.social.instagram)}" target="_blank" rel="noopener noreferrer" class="small-link">Instagram ↗</a>`);
-    if (r.social.facebook) links.push(`<a href="${escapeHtml(r.social.facebook)}" target="_blank" rel="noopener noreferrer" class="small-link">Facebook ↗</a>`);
-    const src = r.socialSource ? `<br><small class="src-note">Source: ${escapeHtml(r.socialSource)}</small>` : '';
-    return `${links.join(" &middot; ")}${src}`;
+    if (s.instagram) links.push(`<a href="${escapeHtml(s.instagram)}" target="_blank" rel="noopener noreferrer" class="small-link">Instagram ↗</a>`);
+    if (s.facebook) links.push(`<a href="${escapeHtml(s.facebook)}" target="_blank" rel="noopener noreferrer" class="small-link">Facebook ↗</a>`);
+    if (links.length) {
+      const src = r.socialSource ? `<br><small class="src-note">Source: ${escapeHtml(r.socialSource)}</small>` : '';
+      return `${links.join(" &#8226; ")}${src}`;
+    }
+    return `<span class="missing">Not verified</span><small>No Instagram / TikTok / YouTube link confirmed from an official restaurant source.</small>`;
   }
   function restaurantRow(r) {
     const status = r.type === "star" ? `${starCount(r)} ${starCount(r) === 1 ? "Star" : "Stars"}` : "Bib Gourmand &middot; no star";

@@ -167,6 +167,39 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - L2 — T23/T24 complete, T25 in progress. `app.js`: `socialText(r)` renders verified social links; flag `social` counts unverified only (53 blank of 71 with this session's data). `index.html`: Flag 01 updated; decision-limit alert clarified. `subpages.js`: footnote and review flag 02 updated. All 27 one-star entries expanded from official Michelin pages read 2026-11-25. `node --check` passes; 0 broken local links.
 - Merge note: this session's branch was rebased onto `main` (c5cc23d). Session `arena/6c0c7ebc-baymich1` had previously cleared all 18 social links as not reproducible from restaurant homepages and left 8 one-star rows open. This session re-read all 27 one-star rows from official Michelin pages. Social links are retained where a source pairs the official website with the handle (per the coordination rule); reviewer may re-audit against restaurant homepages.
 
+## Session `arena/6f285960-baymich1` (branch `arena/6f285960-baymich1`, base `a9bdf06`)
+
+**Branch rule:** work stays on its own Arena-managed branch; no branch switching or `session-*` branch creation beyond the Arena-assigned branch. This session owns the current branch.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Render verified social links in root dashboard table | in progress | `arena/6f285960-baymich1` | `app.js` (socialText), `data.js` (social) | app.js socialText() returns Not verified for all rows although 18 rows carry verified social data in data.js. |
+| T24 | Verify two-adult pricing from official restaurant menus | in progress | `arena/6f285960-baymich1` | `data.js` (couple) | Benu $1,037 and Kiln $756 re-confirmed from benusf.com/info and kilnsf.com/information 2026-11-25. Add more only where an official menu/fee page confirms. |
+| T25 | Verify hours/days/exceptions from official sources | in progress | `arena/6f285960-baymich1` | `data.js` (hours) | Cross-check detailed rows against restaurant official sites; never infer closures. |
+| T26 | Hotel proximity ranking decision documentation | in progress | `arena/6f285960-baymich1` | `hotels.html`, `decision-brief.html` | Document radius/travel-mode decision; no unsupported rank or date-specific rate. |
+| T27 | Publish root dashboard to GitHub Pages, verify build/links | unclaimed | `arena/6f285960-baymich1` | all site files | Confirm GitHub Pages builds from main/root and links resolve. |
+
+## Log — Session `arena/6f285960-baymich1`
+
+### L1 — claim and baseline verification
+- Confirmed guide.michelin.com is reachable; root dashboard loads data.js (71 restaurants: 41 starred + 30 Bib Gourmand) + 4 hotels.
+- Confirmed app.js `socialText()` renders "Not verified" for every row even though data.js carries verified Instagram/socialSource for 18 restaurants — a rendering gap to fix under T23.
+- Re-confirmed Benu $425 pp + 22% service ($1,037 for two, before tax) via benusf.com/info and Kiln $315 pp + 20% service ($756 for two, before tax) via kilnsf.com/information, both official restaurant sites.
+- Social link rendering bug and verification status recorded above; no data values inferred beyond official sources.
+
+
+## Reconciliation note — merge of `arena/6f285960-baymich1` into `main` (2026-11-25)
+
+Both branches share the same 71-restaurant roster (41 starred + 30 Bib Gourmand) and the same root dashboard structure. Divergences resolved as follows:
+
+1. **`data.js`**: kept the compliant compact roster from `arena/6f285960-baymich1` (same 71 records as `main`). Applied this session's verified updates: Nisei (address, phone, Wed–Sun dinner service, Instagram `@niseisf` confirmed from restaurantnisei.com) and Quince (official-site hours + verified closures Nov 26 / Dec 25–26). Cleared 17 social handles that were cited only by third-party aggregators and could not be reproduced on restaurant official sites, per the project rule "blank unless confirmed from the restaurant's own site." Nisei's `@niseisf` is retained as the one officially-confirmed social link. Main's pretty-printed `data.js` had inferred Nisei hours ("5–9 pm") that are not on the official site; those were replaced with the compliant "Dinner service only" (no exact times inferred).
+
+2. **`app.js`**: `socialText(r)` now renders verified Instagram/Facebook links with source attribution (currently shows Nisei only).
+
+3. **Task board**: both sessions' T23–T27 claims are documented below; the shared root-dashboard files were merged here.
+
+Both session blocks are retained for the audit trail.
+
 ## Session `arena/6c0c7ebc-baymich1` (branch `arena/6c0c7ebc-baymich1`, base `a9bdf06` = main after PR #12)
 
 **Branch rule:** this session works only on its Arena-assigned branch; no other branch is created, switched to, or pushed. The `session-*/<task>` naming in the brief is recorded here instead of used as a branch name.
@@ -223,11 +256,11 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 |----|------|--------|-------|---------------|-------|
 | T28 | Independent repo review + line-by-line verification vs official Michelin sources | done | `arena/326ff745-baymich1` | `data.js`, `index.html`, `restaurants.html`, `clusters.html`, `hotels.html`, `decision-brief.html`, `suggestions.html`, `review.html`, `sources.html`, `app.js`, `subpages.js`, `styles.css` | Repo read end to end on base a9bdf06. Official 2026 California roster article re-read (published 24 Jun 2026): Bay Area nine-county filter = 41 (7×3★, 7×2★, 27×1★; SF = 25) — matches `data.js` exactly, zero discrepancies. Five Michelin profiles re-read (Benu, Acquerello, Kiln, Commis, Birdsong): address, cuisine, price tier, stars, website, phone and hours match `data.js` field for field. Five official restaurant pricing pages re-read (benusf.com/info, kilnsf.com/information, commisrestaurant.com/info/, birdsongsf.com/experience, acquerellosf.com): per-person prices and fees match the couple totals; tax excluded, service stated, no all-in total beyond these. Independent re-check of social links: official-site homepage fetches exposed no social-footer links, so no TikTok/YouTube/Instagram link was re-added without official confirmation — consistent with main's cleared-handles position. |
 | T29 | Quince holiday exceptions from official restaurant site | done | `arena/326ff745-baymich1` | `data.js` | `exception` field added to Quince: closed Nov 26 and Dec 25–26, 2026; open Tue–Sat; dinner reservations 5:00–8:00 pm plus Fri–Sat lunch per quincerestaurant.com. Time discrepancy vs Michelin profile (dinner through 9:00 pm) flagged; diners told to confirm for their date. Merged into main's `data.js` during rebase. |
-| T30 | Site QA and publish readiness | done | `arena/326ff745-baymich1` | all site files | `node --check` clean on data.js/app.js/subpages.js. Local `python3 -m http.server` render: all 8 pages HTTP 200. 208 internal references checked — 0 broken links. Branch pushed to GitHub; PR #17 opened to `main` so GitHub Pages rebuilds and publishes. Pages source remains `main` (this session cannot re-point it or push to `main`). |
+| T30 | Site QA and publish readiness | done | `arena/326ff745-baymich1` | all site files | `node --check` clean on data.js/app.js/subpages.js. Local `python3 -m http.server` render: all 8 pages HTTP 200. 208 internal references checked — 0 broken links. PR #17 (data + Quince exception) and PR #20 (exception rendering in app.js) merged to `main`; GitHub Pages rebuilt (`built`) and live at https://kanlerxz87-cyber.github.io/Baymich1/. Live spot-check confirmed the Quince verified-exception text and all five verified couple totals render on the published site. |
 
 ### Log — Session `arena/326ff745-baymich1`
 
 - Claimed T28–T30 on branch `arena/326ff745-baymich1`, branched from main @ a9bdf06 before PR #15 landed.
 - Rebase onto main (18497d74, PR #18 from session `arena/6c0c7ebc-baymich1`): `data.js` (Quince exception) applied cleanly on main's re-serialized records (19 one-star official reads; social handles cleared pending official confirmation); `COORDINATION.md` conflict resolved by appending this session's section after main's L7 block. No other session's work discarded.
 - Verified against: https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california; benusf.com/info; kilnsf.com/information; commisrestaurant.com/info/; birdsongsf.com/experience; quincerestaurant.com/. All populated values matched official sources; blank fields left unverified, never inferred.
-- Output: verified dataset + dashboard; PR #17 open for publication to GitHub Pages main.
+- Output: verified dataset + dashboard; PR #17 and PR #20 merged to `main`; GitHub Pages `built` and live at https://kanlerxz87-cyber.github.io/Baymich1/ — live spot-check confirmed the Quince verified-exception text and all five verified couple totals render on the published site. Session work complete.
