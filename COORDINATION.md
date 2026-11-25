@@ -128,3 +128,11 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Added 18 verified Instagram social links, each tied to a source pairing the official restaurant website with the handle; rendered in the Official social column of app.js and subpages.js.
 - Updated review-flag text in index.html and subpages.js to reflect 14 verified schedules and 18 verified social accounts.
 - All JS files pass `node --check`. Ready for local render test, commit, push, and PR-to-main merge for GitHub Pages publication.
+
+## Session `arena/9338f7dc-baymich1` — claim (this session)
+
+**Branch rule:** Arena fixes this session to `arena/9338f7dc-baymich1`; no other branch is created or pushed. The task brief's `session-*/<task>` pattern is recorded as a coordination note here instead.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Official Michelin page reads for the 27 one-star entries (address, cuisine, price, website, phone, weekly schedule) — completes the T14 remainder | in progress | `arena/9338f7dc-baymich1` | `data.js` (one-star lines), `data/michelin_official_pages_2026-11-24.json` (new records only) | Claimed 2026-11-25. Only fields shown on the official Michelin page are written; blanks stay blank. |
