@@ -1,0 +1,276 @@
+{
+ "checked": "2026-11-25",
+ "method": "fetch of official guide.michelin.com Bib Gourmand restaurant page (chunk 0; chunk 1/2 where schedule was cut off). Fields = page header (address, cuisine, price symbol), 'Visit Website' and phone links, and the Location weekly schedule. Filter-level verification (name/city/cuisine/price for all 30) done separately against the official Bib filter page.",
+ "records": {
+  "Izakaya Rintaro": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/izakaya-rintaro",
+   "address": "82 14th St., San Francisco, CA 94103",
+   "cuisine": "Japanese, Izakaya",
+   "price": "$$",
+   "website": "https://www.izakayarintaro.com/",
+   "phone": "+1 415-589-7022",
+   "schedule": "Mon 5-10 PM; Tue 5-10 PM; Wed 5-10 PM; Thu 5-10 PM; Fri 5-10 PM; Sat 5-10 PM; Sun 5-10 PM"
+  },
+  "A16": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/a16",
+   "address": "2355 Chestnut St., San Francisco, CA 94123",
+   "cuisine": "Pizza, Italian",
+   "price": "$$",
+   "website": "https://www.a16pizza.com/",
+   "phone": "+1 415-771-2216",
+   "schedule": "Mon 5-9:30 PM; Tue 5-9:30 PM; Wed 5-9:30 PM; Thu 5-9:30 PM; Fri 12-10 PM; Sat 12-10 PM; Sun 12-9:30 PM"
+  },
+  "Z & Y": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/z-y",
+   "address": "655 Jackson St., San Francisco, CA 94133",
+   "cuisine": "Chinese, Sichuan",
+   "price": "$$",
+   "website": "https://www.zandyrestaurant.com/",
+   "phone": "+1 415-981-8988",
+   "schedule": "Mon 11:30 AM-3 PM & 4:30-9 PM; Tue closed; Wed 11:30 AM-3 PM & 4:30-9 PM; Thu 11:30 AM-3 PM & 4:30-9 PM; Fri 11:30 AM-3 PM & 4:30-9 PM; Sat 11:30 AM-3 PM & 4:30-9 PM; Sun 11:30 AM-3 PM & 4:30-9 PM"
+  },
+  "Good Good Culture Club": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/good-good-culture-club",
+   "address": "3560 18th St., San Francisco, CA 94110",
+   "cuisine": "South East Asian, Californian",
+   "price": "$$",
+   "website": "https://goodgoodcultureclub.com/",
+   "phone": "not on page",
+   "schedule": "Mon 5-9 PM; Tue 5-9 PM; Wed 5-9 PM; Thu 5-9 PM; Fri 5-9:30 PM; Sat 5-9:30 PM; Sun closed"
+  },
+  "Kitchen Istanbul": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kitchen-istanbul",
+   "address": "349 Clement St., San Francisco, CA 94118",
+   "cuisine": "Turkish, Californian",
+   "price": "$$",
+   "website": "https://www.kitchenistanbulsf.com/",
+   "phone": "+1 415-753-9479",
+   "schedule": "Mon 5-9:30 PM; Tue closed; Wed closed; Thu 5-9:30 PM; Fri 5-9:30 PM; Sat 5-9:30 PM; Sun 5-9:30 PM"
+  },
+  "Okane": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/okane",
+   "address": "669 Townsend St., San Francisco, CA 94103",
+   "cuisine": "Japanese, Izakaya",
+   "price": "$$",
+   "website": "https://www.okanesf.com/",
+   "phone": "+1 415-865-9788",
+   "schedule": "Mon 11:30 AM-2:30 PM & 5-9 PM; Tue 11:30 AM-2:30 PM & 5-9 PM; Wed 11:30 AM-2:30 PM & 5-9 PM; Thu 11:30 AM-2:30 PM & 5-9 PM; Fri 11:30 AM-2:30 PM & 5-10 PM; Sat 5-10 PM; Sun 5-9 PM"
+  },
+  "Trestle": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/trestle",
+   "address": "531 Jackson St., San Francisco, CA 94133",
+   "cuisine": "Contemporary, Californian",
+   "price": "$$",
+   "website": "https://www.trestlesf.com/",
+   "phone": "+1 415-772-0922",
+   "schedule": "Mon 5:30-9 PM; Tue 5:30-9 PM; Wed 5:30-9 PM; Thu 5:30-9 PM; Fri 5:30-10 PM; Sat 5:30-10 PM; Sun 5:30-9 PM"
+  },
+  "Bansang": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/bansang",
+   "address": "1560 Fillmore St., San Francisco, CA 94115",
+   "cuisine": "Korean, Contemporary",
+   "price": "$$",
+   "website": "https://bansangsf.com/",
+   "phone": "+1 415-441-9294",
+   "schedule": "Mon closed; Tue closed; Wed 5:30-8:30 PM; Thu 5:30-8:30 PM; Fri 5:30-9 PM; Sat 5:30-9 PM; Sun 5:30-8:30 PM"
+  },
+  "Dumpling Home": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/dumpling-home",
+   "address": "298 Gough St., San Francisco, CA 94102",
+   "cuisine": "Chinese, Dumplings",
+   "price": "$",
+   "website": "https://www.dumplinghome.com/",
+   "phone": "+1 415-503-1666",
+   "schedule": "Mon 11:30 AM-2:15 PM & 5-8:15 PM; Tue 11:30 AM-2:15 PM & 5-8:15 PM; Wed 11:30 AM-2:15 PM & 5-8:15 PM; Thu 11:30 AM-2:15 PM & 5-8:15 PM; Fri 11:30 AM-2:15 PM & 5-8:45 PM; Sat 11:30 AM-2:15 PM & 5-8:45 PM; Sun 11:30 AM-2:15 PM & 5-8:15 PM"
+  },
+  "Anchor Oyster Bar": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/anchor-oyster-bar",
+   "address": "579 Castro St., San Francisco, CA 94114",
+   "cuisine": "Seafood, Italian-American",
+   "price": "$$",
+   "website": "https://www.anchoroysterbar.com/",
+   "phone": "+1 415-431-3990",
+   "schedule": "Mon 2-8 PM; Tue closed; Wed closed; Thu 2-8 PM; Fri 2-8 PM; Sat 2-8 PM; Sun 2-8 PM"
+  },
+  "Outerlands": {
+   "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/outerlands",
+   "address": "4001 Judah St., San Francisco, CA 94122",
+   "cuisine": "Californian",
+   "price": "$$",
+   "website": "https://outerlandssf.com/",
+   "phone": "+1 415-661-6140",
+   "schedule": "Mon 5-9 PM; Tue 5-9 PM; Wed 5-9 PM; Thu 5-9 PM; Fri 5-9:30 PM; Sat 9:30 AM-2 PM & 4:30-9:30 PM; Sun 9:30 AM-2 PM & 4:30-9 PM"
+  },
+  "MAMA Oakland": {
+   "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/mama-oakland",
+   "address": "388 Grand Ave., Oakland, CA 94610",
+   "cuisine": "Italian, Contemporary",
+   "price": "$$",
+   "website": "https://mama-oakland.com/",
+   "phone": "+1 510-974-6372",
+   "schedule": "Mon 5-9 PM; Tue 5-9 PM; Wed 5-9 PM; Thu 5-9 PM; Fri 5-9:30 PM; Sat 5-9:30 PM; Sun 5-9 PM"
+  },
+  "Soba Ichi": {
+   "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/soba-ichi",
+   "address": "2311A Magnolia St., Oakland, CA 94607",
+   "cuisine": "Japanese",
+   "price": "$$",
+   "website": "https://sobaichioakland.com/",
+   "phone": "+1 510-465-1969",
+   "schedule": "Mon 5-9 PM; Tue closed; Wed 5-9 PM; Thu 5-9 PM; Fri 5-9 PM; Sat 5-9 PM; Sun 5-9 PM"
+  },
+  "Joodooboo": {
+   "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/joodooboo",
+   "address": "4201 Market St., Oakland, CA 94608",
+   "cuisine": "Korean, Californian",
+   "price": "$$",
+   "website": "https://www.joodooboo.co/",
+   "phone": "+1 510-500-1001",
+   "schedule": "Mon closed; Tue 12-3 PM & 4:30-8 PM; Wed 12-3 PM & 4:30-8 PM; Thu 12-3 PM & 4:30-8 PM; Fri 12-3 PM & 4:30-8 PM; Sat 12-3 PM & 4:30-8 PM; Sun closed"
+  },
+  "Bombera": {
+   "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/bombera",
+   "address": "3459 Champion St., Oakland, CA 94602",
+   "cuisine": "Mexican, Californian",
+   "price": "$$",
+   "website": "https://www.bomberaoakland.com/",
+   "phone": "+1 510-452-5900",
+   "schedule": "Mon 5-9 PM; Tue closed; Wed 5-9 PM; Thu 5-9 PM; Fri 5-9 PM; Sat 5-9 PM; Sun closed"
+  },
+  "Snail Bar": {
+   "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/snail-bar",
+   "address": "4935 Shattuck Ave., Oakland, CA 94609",
+   "cuisine": "Contemporary, Californian",
+   "price": "$$$",
+   "website": "https://snailbaroakland.com/",
+   "phone": "+1 510-879-7678",
+   "schedule": "Mon 5-9 PM; Tue closed; Wed closed; Thu closed; Fri 5-10 PM; Sat 5-10 PM; Sun 5-9 PM"
+  },
+  "Comal": {
+   "url": "https://guide.michelin.com/us/en/california/berkeley/restaurant/comal",
+   "address": "2020 Shattuck Ave., Berkeley, CA 94704",
+   "cuisine": "Mexican",
+   "price": "$$",
+   "website": "https://www.comalberkeley.com/",
+   "phone": "+1 510-926-6300",
+   "schedule": "Mon 5-9 PM; Tue 5-9 PM; Wed 5-9 PM; Thu 5-10 PM; Fri 5-10 PM; Sat 5-10 PM; Sun 5-9 PM"
+  },
+  "Ippuku": {
+   "url": "https://guide.michelin.com/us/en/california/berkeley/restaurant/ippuku",
+   "address": "2130 Center St., Berkeley, CA 94704",
+   "cuisine": "Japanese",
+   "price": "$$",
+   "website": "https://ippukuberkeley.com/",
+   "phone": "+1 510-655-1969",
+   "schedule": "Mon 5-9:30 PM; Tue 5-9:30 PM; Wed 5-9:30 PM; Thu 5-9:30 PM; Fri 5-10:30 PM; Sat 5-10:30 PM; Sun 5-9:30 PM"
+  },
+  "Spinning Bones": {
+   "url": "https://guide.michelin.com/us/en/california/alameda/restaurant/spinning-bones",
+   "address": "1205 Park St., Alameda, CA 94501",
+   "cuisine": "Californian",
+   "price": "$$",
+   "website": "https://www.spinningbones.com/",
+   "phone": "+1 510-263-9290",
+   "schedule": "Mon closed; Tue closed; Wed 11:30 AM-8 PM; Thu 11:30 AM-8 PM; Fri 11:30 AM-9 PM; Sat 11:30 AM-9 PM; Sun 11:30 AM-8 PM"
+  },
+  "Great China": {
+   "url": "https://guide.michelin.com/us/en/california/berkeley/restaurant/great-china",
+   "address": "2190 Bancroft Way, Berkeley, CA 94704",
+   "cuisine": "Chinese",
+   "price": "$$",
+   "website": "https://www.greatchinaberkeley.com/",
+   "phone": "+1 510-843-7996",
+   "schedule": "Mon 5-8:30 PM; Tue closed; Wed 5-8:30 PM; Thu 5-8:30 PM; Fri 5-9 PM; Sat 11:30 AM-2:30 PM & 5-9 PM; Sun 11:30 AM-2:30 PM & 5-9 PM"
+  },
+  "Playa": {
+   "url": "https://guide.michelin.com/us/en/california/mill-valley/restaurant/playa",
+   "address": "41 Throckmorton Ave., Mill Valley, CA 94941",
+   "cuisine": "Mexican, Contemporary",
+   "price": "$$",
+   "website": "https://www.playamv.com/",
+   "phone": "+1 415-384-8871",
+   "schedule": "Mon closed; Tue 4-9 PM; Wed 11:30 AM-2 PM & 4-9 PM; Thu 11:30 AM-2 PM & 4-9 PM; Fri 11:30 AM-10 PM; Sat 11 AM-10 PM; Sun 11 AM-8 PM"
+  },
+  "New Dumpling": {
+   "url": "https://guide.michelin.com/us/en/california/el-cerrito/restaurant/new-dumpling",
+   "address": "10064 San Pablo Ave., El Cerrito, CA 94530",
+   "cuisine": "Chinese, Dumplings",
+   "price": "$",
+   "website": "https://www.newdumplingfood.com/",
+   "phone": "+1 510-529-4161",
+   "schedule": "Mon closed; Tue 11 AM-2:30 PM & 4:30-8 PM; Wed 11 AM-2:30 PM & 4:30-8 PM; Thu 11 AM-2:30 PM & 4:30-8 PM; Fri 11 AM-2:30 PM & 4:30-8 PM; Sat 11 AM-2:30 PM & 4:30-8 PM; Sun 11 AM-2:30 PM & 4:30-8 PM"
+  },
+  "FOB Kitchen": {
+   "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/fob-kitchen",
+   "address": "5179 Telegraph Ave., Oakland, CA 94609",
+   "cuisine": "Filipino, Contemporary",
+   "price": "$$",
+   "website": "https://www.fobkitchen.com/",
+   "phone": "+1 510-817-4169",
+   "schedule": "Mon closed; Tue 9 AM-2 PM; Wed 11 AM-9 PM; Thu 11 AM-9 PM; Fri 11 AM-9 PM; Sat 11 AM-9 PM; Sun 11 AM-9 PM"
+  },
+  "Tacos Oscar": {
+   "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/tacos-oscar",
+   "address": "420 40th St., Oakland, CA 94609",
+   "cuisine": "Mexican, Contemporary",
+   "price": "$",
+   "website": "https://www.tacososcar.com/",
+   "phone": "not on page",
+   "schedule": "Mon 5-9 PM; Tue closed; Wed closed; Thu 5-9 PM; Fri 5-9:30 PM; Sat 11 AM-2 PM & 5-9:30 PM; Sun 11 AM-2 PM & 5-9 PM"
+  },
+  "Teni East Kitchen": {
+   "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/teni-east-kitchen",
+   "address": "4015 Broadway, Oakland, CA 94611",
+   "cuisine": "Burmese",
+   "price": "$",
+   "website": "https://www.tenieastkitchen.com/",
+   "phone": "+1 510-597-1860",
+   "schedule": "Mon closed; Tue 5-9 PM; Wed 5-9 PM; Thu 5-9 PM; Fri 5-9:30 PM; Sat 5-9:30 PM; Sun 5-8:30 PM"
+  },
+  "Top Hatters Kitchen": {
+   "url": "https://guide.michelin.com/us/en/california/san-leandro/restaurant/top-hatters-kitchen",
+   "address": "855 MacArthur Blvd., San Leandro, CA 94577",
+   "cuisine": "Contemporary, Vietnamese",
+   "price": "$$",
+   "website": "https://tophatterskitchen.com/",
+   "phone": "+1 510-777-9777",
+   "schedule": "Mon closed; Tue 11:45 AM-2:30 PM & 4:45-8:30 PM; Wed 11:45 AM-2:30 PM & 4:45-8:30 PM; Thu 11:45 AM-2:30 PM & 4:45-8:30 PM; Fri 11:45 AM-2:30 PM & 4:45-8:30 PM; Sat 11:45 AM-2:30 PM & 4:45-8:30 PM; Sun 11:45 AM-2:30 PM & 4:45-8:30 PM"
+  },
+  "Jo's Modern Thai": {
+   "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/jo-s-modern-thai",
+   "address": "3725 MacArthur Blvd., Oakland, CA 94619",
+   "cuisine": "Thai, Californian",
+   "price": "$$",
+   "website": "https://www.josmodernthai.com/",
+   "phone": "+1 510-479-3167",
+   "schedule": "Mon closed; Tue closed; Wed 12-2:30 PM & 5-9 PM; Thu 12-2:30 PM & 5-9 PM; Fri 12-2:30 PM & 5-9:30 PM; Sat 12-2:30 PM & 5-9:30 PM; Sun 12-2:30 PM & 5-9 PM"
+  },
+  "Pausa": {
+   "url": "https://guide.michelin.com/us/en/california/san-mateo/restaurant/pausa",
+   "address": "223 E. 4th Ave., San Mateo, CA 94401",
+   "cuisine": "Italian, Regional Cuisine",
+   "price": "$$",
+   "website": "https://www.pausasanmateo.com/",
+   "phone": "+1 650-375-0818",
+   "schedule": "Mon 4:30-9 PM; Tue 4:30-9 PM; Wed 4:30-9 PM; Thu 4:30-9 PM; Fri 4-9:30 PM; Sat 4-9:30 PM; Sun 4-8:30 PM"
+  },
+  "Village Sake": {
+   "url": "https://guide.michelin.com/us/en/california/fairfax/restaurant/village-sake",
+   "address": "19 Bolinas Rd., Fairfax, CA 94930",
+   "cuisine": "Japanese",
+   "price": "$$",
+   "website": "https://www.villagesake.com/",
+   "phone": "+1 415-521-5790",
+   "schedule": "Mon closed; Tue closed; Wed 5-8 PM; Thu 5-8 PM; Fri 5-8:30 PM; Sat 5-8:30 PM; Sun 5-8 PM"
+  },
+  "Insalata's": {
+   "url": "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/insalata-s",
+   "address": "120 Sir Francis Drake Blvd., San Anselmo, CA 94960",
+   "cuisine": "Mediterranean Cuisine",
+   "price": "$$",
+   "website": "https://insalatas.com/",
+   "phone": "+1 415-457-7700",
+   "schedule": "Mon 11:30 AM-2:30 PM & 5-8:30 PM; Tue 11:30 AM-2:30 PM & 5-8:30 PM; Wed 11:30 AM-2:30 PM & 5-8:30 PM; Thu 11:30 AM-2:30 PM & 5-8:30 PM; Fri 11:30 AM-2:30 PM & 5-9 PM; Sat 11:30 AM-2:30 PM & 5-9 PM; Sun 11 AM-2:30 PM & 5-8:30 PM"
+  }
+ }
+}
