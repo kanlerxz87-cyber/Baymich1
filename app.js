@@ -28,7 +28,8 @@
     const closed = Object.entries(r.hours).filter(([, time]) => time === "Closed").map(([day]) => day).join(", ");
     const detail = Object.entries(r.hours).map(([day, time]) => `<li><b>${escapeHtml(day)}:</b> ${escapeHtml(time)}</li>`).join("");
     const srcNote = r.verified ? ` <span class="micro-label">Schedule per MICHELIN Guide profile read ${r.verified}</span>` : '';
-    return `<details class="hours-details"><summary>${escapeHtml(open)}</summary><ul>${detail}</ul><small>Closed: ${escapeHtml(closed)}. Special-date exceptions not verified; confirm for your date.${srcNote}</small></details>`;
+    const excNote = r.exception ? ` <span class="micro-label">Exceptions: ${escapeHtml(r.exception)}</span>` : '';
+    return `<details class="hours-details"><summary>${escapeHtml(open)}</summary><ul>${detail}</ul><small>Closed: ${escapeHtml(closed)}.${excNote}${srcNote} Confirm special-date closures for your visit date.</small></details>`;
   }
   function priceText(r) {
     if (r.couple) {
