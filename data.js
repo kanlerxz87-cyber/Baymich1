@@ -102,7 +102,8 @@ window.BAY_DATA = {
         Sat: "11:30 am–1:00 pm & 5:00–9:00 pm",
         Sun: "Closed"
       },
-      note: "Official page (read 24 Nov 2026) shows Tue–Sat dinner and Fri–Sat lunch; the earlier 5–8 PM Tuesday hours were replaced"
+      note: "Official page (read 24 Nov 2026) shows Tue–Sat dinner and Fri–Sat lunch; the earlier 5–8 PM Tuesday hours were replaced",
+      exception: "Closed Nov 26 and Dec 25–26, 2026 (quincerestaurant.com). The restaurant’s own site lists dinner reservations 5:00–8:00 pm Tue–Sat plus Fri–Sat lunch; the Michelin profile lists Tue–Sat dinner through 9:00 pm — confirm exact times for your date."
     },
     {
       name: "Enclos",
