@@ -128,3 +128,17 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Added 18 verified Instagram social links, each tied to a source pairing the official restaurant website with the handle; rendered in the Official social column of app.js and subpages.js.
 - Updated review-flag text in index.html and subpages.js to reflect 14 verified schedules and 18 verified social accounts.
 - All JS files pass `node --check`. Ready for local render test, commit, push, and PR-to-main merge for GitHub Pages publication.
+
+## Session `arena/6c0c7ebc-baymich1` (branch `arena/6c0c7ebc-baymich1`, base `a9bdf06` = main after PR #12)
+
+**Branch rule:** this session works only on its Arena-assigned branch; no other branch is created, switched to, or pushed. The `session-*/<task>` naming in the brief is recorded here instead of used as a branch name.
+
+**Stale claims taken over:** T18–T21 (`arena/d45fb154-baymich1`) were still marked `in progress` although that session finished and merged (PR #10, T22 done). No commits from that session after its merge. This session takes over the open follow-up work below and notes the handoff here.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Read the 27 one-star rows from their official MICHELIN restaurant pages (address, cuisine, price, website, daily schedule) | in progress | `arena/6c0c7ebc-baymich1` | `data.js` (one-star rows only) | Claimed 2026-11-25. Every value copied from the official Michelin page or left blank. |
+| T24 | Re-verify every social handle from the restaurant's own official website; blank any handle that only cites third-party sites | in progress | `arena/6c0c7ebc-baymich1` | `data.js` (`social`, `socialSource` fields) | Takes over the open T16/T19 social work. Fan, aggregator and third-party handles are not kept. |
+| T25 | Read the 30 Bib Gourmand rows from the official Bib Gourmand list (name, city, price, cuisine) | in progress | `arena/6c0c7ebc-baymich1` | `data.js` (bib rows) | Claimed 2026-11-25. |
+| T26 | Hotels: official MICHELIN hotel pages, "Nearby Restaurants" counts and a stated ranking rule | in progress | `arena/6c0c7ebc-baymich1` | `data.js` (`hotels` block) | Ranking is shown only with the rule Michelin's page states; radius caveat kept. |
+| T27 | Dashboard, executive summary, questions, suggestions, flagged-for-review refresh; build and link check; publish via PR to `main` | in progress | `arena/6c0c7ebc-baymich1` | `index.html`, `restaurants.html`, `hotels.html`, `clusters.html`, `decision-brief.html`, `suggestions.html`, `review.html`, `sources.html`, `app.js`, `subpages.js`, `styles.css`, `COORDINATION.md`, `README.md` | Integration step for this branch only. |
