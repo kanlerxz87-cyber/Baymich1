@@ -128,3 +128,45 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Added 18 verified Instagram social links, each tied to a source pairing the official restaurant website with the handle; rendered in the Official social column of app.js and subpages.js.
 - Updated review-flag text in index.html and subpages.js to reflect 14 verified schedules and 18 verified social accounts.
 - All JS files pass `node --check`. Ready for local render test, commit, push, and PR-to-main merge for GitHub Pages publication.
+
+## Session `arena/6c0c7ebc-baymich1` (branch `arena/6c0c7ebc-baymich1`, base `a9bdf06` = main after PR #12)
+
+**Branch rule:** this session works only on its Arena-assigned branch; no other branch is created, switched to, or pushed. The `session-*/<task>` naming in the brief is recorded here instead of used as a branch name.
+
+**Stale claims taken over:** T18–T21 (`arena/d45fb154-baymich1`) were still marked `in progress` although that session finished and merged (PR #10, T22 done). No commits from that session after its merge. This session takes over the open follow-up work below and notes the handoff here.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Read the 27 one-star rows from their official MICHELIN restaurant pages (address, cuisine, price, website, daily schedule) | needs review (19 of 27 read; 8 open) | `arena/6c0c7ebc-baymich1` | `data.js` (one-star rows only) | 19 one-star rows read on official MICHELIN pages 25 Nov 2026 (`data/official_one_star_reads_2026-11-25.json`). Still open: The Village Pub, Mister Jiu’s (two slug guesses failed), San Ho Won, Sorrel, Ssal, State Bird Provisions, The Progress, Wolfsbane. Selby’s and Protégé: no schedule in page chunk 0; chunk 1 not read. |
+| T24 | Re-verify every social handle from the restaurant's own official website; blank any handle that only cites third-party sites | needs review | `arena/6c0c7ebc-baymich1` | `data.js` (`social`, `socialSource` fields) | No handle verified. 18 earlier handles cleared; 16 cited aggregators, Atelier Crenn sameAs claim not reproducible, State Bird cited its own about page (not reproducible from homepage text). Candidates kept in `data/social_candidates_unverified_2026-11-25.json`. |
+| T25 | Read the 30 Bib Gourmand rows from the official Bib Gourmand list (name, city, price, cuisine) | unclaimed (open; claim released 25 Nov) | — | `data.js` (bib rows) | Not started this session. The 30 Bib rows are unchanged from the earlier pass; only the count and first names were re-read on 24 Nov 2026. |
+| T26 | Hotels: official MICHELIN hotel pages, "Nearby Restaurants" counts and a stated ranking rule | unclaimed (open; claim released 25 Nov) | — | `data.js` (`hotels` block) | Not ranked. No radius or travel rule chosen. Hotel pages carry a Nearby Restaurants list with no stated radius; four candidates stay unranked. |
+| T27 | Dashboard, executive summary, questions, suggestions, flagged-for-review refresh; build and link check; publish via PR to `main` | in progress | `arena/6c0c7ebc-baymich1` | `index.html`, `restaurants.html`, `hotels.html`, `clusters.html`, `decision-brief.html`, `suggestions.html`, `review.html`, `sources.html`, `app.js`, `subpages.js`, `styles.css`, `COORDINATION.md`, `README.md` | Dashboard text updated to the corrected counts; `data.js` regenerated; jsdom render: restaurants 71 rows, 0 broken local links; PR to `main` for GitHub Pages. |
+
+### L6 — Session `arena/6c0c7ebc-baymich1` — this session (25 Nov 2026)
+- **Claims.** Took over the open follow-up tasks from stale T18–T21 (`arena/d45fb154-baymich1`, merged in PR #10). Claimed T23–T27 in commit `8af4750` before any research.
+- **One-star rows (T23).** Read 19 of 27 official MICHELIN restaurant pages (https://guide.michelin.com/us/en/california/<city>/restaurant/<slug>). Fields copied: address, cuisine, price symbol, Visit Website link, phone where shown, and the weekday schedule. Source file: `data/official_one_star_reads_2026-11-25.json`.
+  - Naides, Auro, Cyrus, Troubadour, The Restaurant at Auberge du Soleil, Press, Madcap, Sun Moon Studio, Selby’s, Protégé, Wakuriya, Plumed Horse, 7 Adams, Angler SF, Hilda and Jesse, Kin Khao, Nari, Niku Steakhouse, Nisei.
+  - Press and Plumed Horse: Sunday hours cut off in chunk 0; shown as `Not verified`.
+  - Selby’s and Protégé: schedule not on chunk 0; left unset (`Not verified locally`).
+- **Social handles (T24).** Audited all 18 handles on `data.js`. Sources cited were third-party aggregators (restaurantguru.com, culinaryagents.com, foodandwine.com, exploretock.com, opulist.co, sfstandard.com, foodgressing.com, fb101.com) except Atelier Crenn (claims a sameAs link on ateliercrenn.com) and State Bird Provisions (statebirdsf.com about page). I fetched the official homepages for Atelier Crenn and State Bird Provisions: the rendered text contains no social links, so neither claim could be reproduced. All 18 handles are cleared from the table. Candidates are kept in `data/social_candidates_unverified_2026-11-25.json`, unrendered.
+- **Mister Jiu’s.** Two Michelin slug guesses (`mister-jius`, `mister-jiu-s`) returned fetch errors. Not read.
+- **Code.** `scripts/apply_one_star_reads_2026-11-25.js` applies the reads and clears social fields. `data.js` was re-serialized (same records; one-object-per-line JSON-style). Star types are unchanged (`"2"`/`"3"` strings, numeric `1`).
+- **Text.** Updated the social card and the schedule card in `index.html` and `subpages.js` to the corrected counts. README updated.
+- **Checks.** Syntax check (`node --check`) on `data.js`, `app.js`, `subpages.js`. jsdom render of `restaurants.html`: 71 rows, 0 broken local links, 0 script errors. `index.html` renders 71 rows; the only jsdom error is `IntersectionObserver` not defined in the test DOM, not a page fault.
+
+### Verification performed this session
+- Official article header (24 Jun 2026): 83 starred statewide; live SF filter page: 4 three-star, 7 two-star, 18 one-star, 30 Bib, 86 Selected, 145 total. Sources: https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california and https://guide.michelin.com/us/en/california/san-francisco/restaurants
+- 19 restaurant pages read as listed above. Each address/cuisine/price/schedule compared with the page text as read; no value filled from memory.
+- Couple totals (Benu, Commis, Kiln, Acquerello, Birdsong) carried from the prior pass; **not re-read** this session.
+
+## Irregularities / review flags — session `arena/6c0c7ebc-baymich1`
+1. **Social handles.** All 18 earlier handles cited aggregators (or could not be reproduced on official sites). 0 verified. Reviewer action: confirm each from the restaurant’s own website or a Michelin profile “Visit website” link, then re-add.
+2. **Eight one-star rows not read:** The Village Pub, Mister Jiu’s, San Ho Won, Sorrel, Ssal, State Bird Provisions, The Progress, Wolfsbane. Reviewer action: next pass.
+3. **Schedule gaps:** Selby’s and Protégé (no schedule in chunk 0), Sons & Daughters (no schedule), Press and Plumed Horse (Sunday missing).
+4. **SingleThread and The French Laundry** show identical daily hours on the Michelin page; still flagged for confirmation on the restaurant sites.
+5. **Two-adult totals:** unchanged from the prior pass (5 rows). Not re-checked. Tax, drinks and gratuity not included.
+6. **Bib Gourmand rows (30):** only the count and first names re-read on 24 Nov 2026. Other fields carried from the earlier pass and still incomplete. Not in scope this session.
+7. **Hotel ranking (T26):** not computed. Michelin’s Nearby Restaurants list on each page has no stated radius; the rule has to be chosen first.
+8. **Michelin filter mismatch:** the SF filter (4 / 7 / 18) differs from the nine-county roster (7 / 7 / 27). Still unreconciled line by line.
+9. **Legacy files not regenerated:** `pages/*`, `scripts/build_site.py`, `data/restaurants.json` (29 entries from the SF filter), `data/michelin_bay_area_stars.json`. They do not match the live roster. Reviewer action: retire or regenerate in the integration step.
