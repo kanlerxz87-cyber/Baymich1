@@ -118,7 +118,7 @@
 
   const flags = {
     meal: d.restaurants.filter((r) => !r.couple).length,
-    social: d.restaurants.filter((r) => !r.social).length,
+    social: d.restaurants.filter((r) => !(r.social && r.social.instagram)).length,
     schedule: d.restaurants.filter((r) => !r.hours).length,
     hotelNearby: d.hotels.length,
     hotelRate: d.hotels.length
