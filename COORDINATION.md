@@ -125,6 +125,18 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 ## Log (continued) — Session `arena/d45fb154-baymich1`, L3 — publish preparation
 - Verified Benu official Michelin page (3★, address, cuisine, $$$$, website, phone, Wed–Sat dinner hours) matches data.js exactly.
 - Confirmed 5 two-adult totals from official per-person prices and fee terms: Benu $1,037, Kiln $756, Commis $670 (before tax); Acquerello $590 base; Birdsong $700 base. Tax excluded, service stated, no all-in total beyond these.
-- Added 18 verified Instagram social links, each tied to a source pairing the official restaurant website with the handle; rendered in the Official social column of app.js and subpages.js.
-- Updated review-flag text in index.html and subpages.js to reflect 14 verified schedules and 18 verified social accounts.
-- All JS files pass `node --check`. Ready for local render test, commit, push, and PR-to-main merge for GitHub Pages publication.
+- Added 18 Instagram links, each described as tied to a restaurant site + handle; published in the Official social column. Current task re-audits these links against the stricter requirement that the official restaurant site itself must directly confirm the account.
+- Updated review-flag text in index.html and subpages.js to reflect 14 schedules and 18 social accounts.
+- All JS files passed `node --check`; PR #10 was merged to main on 2026-11-24.
+
+## Session `arena/a18d5f99-baymich1` — current claim
+
+**Base:** `a9bdf06dc1f7a77373981de8ad0b075279d94897` (`main`). **Branch:** Arena-managed `arena/a18d5f99-baymich1`; this is the only branch for this session.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Final source-first audit and reconcile live dashboard claims with the data actually rendered | in progress | `arena/a18d5f99-baymich1` | `data.js`, `app.js`, `subpages.js`, `index.html`, `README.md`, `COORDINATION.md`; new audit/QA script only if needed | Audit all restaurant rows and key fields against official pages; correct contradictory labels/claims; never infer missing price, schedule, social, location or hotel-density values. Recheck mobile layout and local links. |
+
+**Handoff:** T18–T21 remain marked `in progress` in the older board even though their work was merged to `main` via PR #10 on 2026-11-24 and the board contains later conflicting completion notes. Their last recorded activity is now over 60 minutes old. This session takes over the overlapping source/render audit under the stale-claim handoff rule; all corrections and residual gaps will be logged below. T16 (socials) and T15 (hotel ranking) also remain open/review items; no other session's unmerged branch is assumed available.
+
+**Claim scope:** do not touch legacy `pages/*`, `data/restaurants.json`, `data/michelin_bay_area_stars.json`, or the old build pipeline unless a concrete cross-reference issue is found; log any needed changes rather than silently diverging the two site generations.
