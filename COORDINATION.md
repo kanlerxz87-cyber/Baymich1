@@ -128,3 +128,23 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Added 18 verified Instagram social links, each tied to a source pairing the official restaurant website with the handle; rendered in the Official social column of app.js and subpages.js.
 - Updated review-flag text in index.html and subpages.js to reflect 14 verified schedules and 18 verified social accounts.
 - All JS files pass `node --check`. Ready for local render test, commit, push, and PR-to-main merge for GitHub Pages publication.
+
+## Session `arena/6f285960-baymich1` (branch `arena/6f285960-baymich1`, base `a9bdf06`)
+
+**Branch rule:** work stays on its own Arena-managed branch; no branch switching or `session-*` branch creation beyond the Arena-assigned branch. This session owns the current branch.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Render verified social links in root dashboard table | in progress | `arena/6f285960-baymich1` | `app.js` (socialText), `data.js` (social) | app.js socialText() returns Not verified for all rows although 18 rows carry verified social data in data.js. |
+| T24 | Verify two-adult pricing from official restaurant menus | in progress | `arena/6f285960-baymich1` | `data.js` (couple) | Benu $1,037 and Kiln $756 re-confirmed from benusf.com/info and kilnsf.com/information 2026-11-25. Add more only where an official menu/fee page confirms. |
+| T25 | Verify hours/days/exceptions from official sources | in progress | `arena/6f285960-baymich1` | `data.js` (hours) | Cross-check detailed rows against restaurant official sites; never infer closures. |
+| T26 | Hotel proximity ranking decision documentation | in progress | `arena/6f285960-baymich1` | `hotels.html`, `decision-brief.html` | Document radius/travel-mode decision; no unsupported rank or date-specific rate. |
+| T27 | Publish root dashboard to GitHub Pages, verify build/links | unclaimed | `arena/6f285960-baymich1` | all site files | Confirm GitHub Pages builds from main/root and links resolve. |
+
+## Log — Session `arena/6f285960-baymich1`
+
+### L1 — claim and baseline verification
+- Confirmed guide.michelin.com is reachable; root dashboard loads data.js (71 restaurants: 41 starred + 30 Bib Gourmand) + 4 hotels.
+- Confirmed app.js `socialText()` renders "Not verified" for every row even though data.js carries verified Instagram/socialSource for 18 restaurants — a rendering gap to fix under T23.
+- Re-confirmed Benu $425 pp + 22% service ($1,037 for two, before tax) via benusf.com/info and Kiln $315 pp + 20% service ($756 for two, before tax) via kilnsf.com/information, both official restaurant sites.
+- Social link rendering bug and verification status recorded above; no data values inferred beyond official sources.
