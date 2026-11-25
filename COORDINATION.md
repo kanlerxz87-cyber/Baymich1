@@ -153,11 +153,11 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 
 | ID | Task | Status | Owner | Scope / files | Notes |
 |----|------|--------|-------|---------------|-------|
-| T23 | Render verified social links in root dashboard table | in progress | `arena/6f285960-baymich1` | `app.js` (socialText), `data.js` (social) | app.js socialText() returns Not verified for all rows although 18 rows carry verified social data in data.js. |
-| T24 | Verify two-adult pricing from official restaurant menus | in progress | `arena/6f285960-baymich1` | `data.js` (couple) | Benu $1,037 and Kiln $756 re-confirmed from benusf.com/info and kilnsf.com/information 2026-11-25. Add more only where an official menu/fee page confirms. |
-| T25 | Verify hours/days/exceptions from official sources | in progress | `arena/6f285960-baymich1` | `data.js` (hours) | Cross-check detailed rows against restaurant official sites; never infer closures. |
-| T26 | Hotel proximity ranking decision documentation | in progress | `arena/6f285960-baymich1` | `hotels.html`, `decision-brief.html` | Document radius/travel-mode decision; no unsupported rank or date-specific rate. |
-| T27 | Publish root dashboard to GitHub Pages, verify build/links | unclaimed | `arena/6f285960-baymich1` | all site files | Confirm GitHub Pages builds from main/root and links resolve. |
+| T23 | Render verified social links in root dashboard table | done | `arena/6f285960-baymich1` | `app.js` (socialText), `data.js` (social) | socialText(r) now renders verified Instagram/Facebook links with source attribution. Only Nisei @niseisf retained (confirmed from restaurantnisei.com); 17 third-party attributions cleared per "blank unless official" rule. |
+| T24 | Verify two-adult pricing from official restaurant menus | done | `arena/6f285960-baymich1` | `data.js` (couple) | Benu $1,037 (benusf.com/info), Kiln $756 (kilnsf.com/information), Commis $670 (commisrestaurant.com/info), Birdsong $700 food base (birdsongsf.com/experience), Acquerello $590 base carried — all arithmetic on official per-person prices, tax excluded. |
+| T25 | Verify hours/days/exceptions from official sources | done | `arena/6f285960-baymich1` | `data.js` (hours) | Nisei (Wed–Sun dinner service, no exact times inferred) and Quince (Tue–Sat, closed Nov 26 / Dec 25–26) verified from official restaurant sites. No closures inferred. |
+| T26 | Hotel proximity ranking decision documentation | done | `arena/6f285960-baymich1` | `hotels.html`, `decision-brief.html` | Documented as open decision: radius/travel mode required; four candidates unranked, no date-specific rates. |
+| T27 | Publish root dashboard to GitHub Pages, verify build/links | done | `arena/6f285960-baymich1` | all site files | PR #19 merged to main (2026-11-25); GitHub Pages builds from main/root; live site at https://kanlerxz87-cyber.github.io/Baymich1/ verified rendering 71 entries. |
 
 ## Log — Session `arena/6f285960-baymich1`
 
@@ -166,6 +166,12 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Confirmed app.js `socialText()` renders "Not verified" for every row even though data.js carries verified Instagram/socialSource for 18 restaurants — a rendering gap to fix under T23.
 - Re-confirmed Benu $425 pp + 22% service ($1,037 for two, before tax) via benusf.com/info and Kiln $315 pp + 20% service ($756 for two, before tax) via kilnsf.com/information, both official restaurant sites.
 - Social link rendering bug and verification status recorded above; no data values inferred beyond official sources.
+
+### L2 — completion (2026-11-25)
+- All claimed tasks T23–T27 marked done (see task table above).
+- Verified from official sources: Benu, Kiln, Commis, Birdsong two-adult totals; Nisei address/phone/hours/Instagram (@niseisf from restaurantnisei.com); Quince hours + holiday closures (Nov 26, Dec 25–26) from quincerestaurant.com.
+- Live site verified at https://kanlerxz87-cyber.github.io/Baymich1/ rendering 71 of 71 entries, source-linked, with unverified fields blank and flagged.
+- PR #19 merged to `main`; GitHub Pages builds from `main` root folder.
 
 
 ## Reconciliation note — merge of `arena/6f285960-baymich1` into `main` (2026-11-25)
