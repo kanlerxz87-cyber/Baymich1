@@ -128,3 +128,20 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Added 18 verified Instagram social links, each tied to a source pairing the official restaurant website with the handle; rendered in the Official social column of app.js and subpages.js.
 - Updated review-flag text in index.html and subpages.js to reflect 14 verified schedules and 18 verified social accounts.
 - All JS files pass `node --check`. Ready for local render test, commit, push, and PR-to-main merge for GitHub Pages publication.
+
+## Session `arena-5e4862ec` (branch `arena/5e4862ec-baymich1`, branched from `main` at `a9bdf06`) — claims
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Fix app.js social rendering bug + flag count + README staleness | in progress | `arena-5e4862ec` | `app.js`, `README.md`, `index.html` (flag text only) | app.js `socialText()` ignores `r.social` (18 verified Instagrams hidden on landing table); flag count uses 71 not unverified count; README says "none verified yet" (stale). |
+| T24 | One-star detail verification (27 entries): address/cuisine/price/website/phone/hours from official Michelin pages | in progress | `arena-5e4862ec` | `data.js` (1★ section), `data/michelin_official_pages_2026-11-25.json` | Fetch each official guide.michelin.com profile; blank + flag if not on page. |
+| T25 | Bib Gourmand line-by-line verification (30 entries) | in progress | `arena-5e4862ec` | `data.js` (bib section), `data/bibgourmand.json` | Verify each name/city/cuisine/price vs official Bib filter pages; correct or flag mismatches. |
+| T26 | Hotel proximity ranking with documented rule (user directed: no manual input, work autonomously) | in progress | `arena-5e4862ec` | `data.js` (hotels), `subpages.js` (hotels), `index.html` (stays), `hotels.html` | Adopt 15-min walk primary + 30-min transit secondary (per Suggestion 01 recommendation); compute from verified official addresses; label method + limits; never present city count as radius count. |
+| T27 | Couple-total expansion from official menus (Atelier Crenn, Californios, Quince, Enclos, SingleThread, TFL, Lazy Bear, Saison, Sons & Daughters + one-stars where posted) | in progress | `arena-5e4862ec` | `data.js` (couple fields) | Arithmetic only on official per-person prices; state service/tax basis; blank if unverified. |
+| T28 | Social expansion: verify more Instagram + YouTube/TikTok from official restaurant sites | in progress | `arena-5e4862ec` | `data.js` (social fields) | Only official-account links confirmed from the restaurant's own site or a source pairing the official website with the handle; blank otherwise. |
+| T29 | Final integration: rebuild QA, link check, publish to GitHub Pages | in progress | `arena-5e4862ec` | All shared outputs | PR to `main`; verify Pages build + live render. |
+
+### L1 — Session `arena-5e4862ec` — baseline review (2026-11-25)
+- Read COORDINATION.md, README.md, data.js (41★ + 30 Bib), index.html, app.js, subpages.js. Live site: GitHub Pages `built` from `main` root; https://kanlerxz87-cyber.github.io/Baymich1/ .
+- Confirmed bugs/gaps: (1) app.js landing table hides all 18 verified Instagram links (`socialText()` takes no arg); (2) flag count overstates social gaps (71 vs 53); (3) README "Social links: none verified yet" is stale vs data.js; (4) 27 one-stars roster-only; (5) Bib details carried from earlier pass, only count + first 3 re-read; (6) hotel ranking withheld (radius undecided); (7) couple totals only 5; (8) duplicate legacy `pages/*` + `data/restaurants.json` (29-entry SF-filter) coexist with live root set — live site uses 41-entry roster.
+- User direction "no manual input on my part" resolves T15/T26 decision: this session adopts the site's own recommended rule (15-min walk primary, 30-min transit secondary) and documents it, rather than leaving ranking withheld.
