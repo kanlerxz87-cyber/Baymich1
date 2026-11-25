@@ -1,0 +1,346 @@
+{
+  "_note": "Values copied from official MICHELIN Guide restaurant pages (guide.michelin.com) read on 2026-11-25. Schedule blocks are the 'Location' weekday table. Blank = not shown on the page read; never inferred.",
+  "reads": [
+    {
+      "name": "Naides",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/naides",
+      "address": "708 Bush St., San Francisco, CA 94108",
+      "cuisine": "Filipino, Contemporary",
+      "price": "$$$$",
+      "website": "https://www.restaurantnaides.com/",
+      "phone": "",
+      "hours": {
+        "Mon": "Closed",
+        "Tue": "Closed",
+        "Wed": "Closed",
+        "Thu": "5:30–8:30 pm",
+        "Fri": "5:30–8:30 pm",
+        "Sat": "5:30–8:30 pm",
+        "Sun": "5:30–8:30 pm"
+      }
+    },
+    {
+      "name": "Auro",
+      "url": "https://guide.michelin.com/us/en/california/calistoga/restaurant/auro",
+      "address": "400 Silverado Trl., Calistoga, CA 94515 (Four Seasons Resort and Residences Napa Valley)",
+      "cuisine": "Contemporary, French",
+      "price": "$$$$",
+      "website": "https://www.auronapavalley.com/",
+      "phone": "+1 707-709-2100",
+      "hours": {
+        "Mon": "Closed",
+        "Tue": "Closed",
+        "Wed": "5–9 pm",
+        "Thu": "5–9 pm",
+        "Fri": "5–9 pm",
+        "Sat": "5–9 pm",
+        "Sun": "Closed"
+      }
+    },
+    {
+      "name": "Cyrus",
+      "url": "https://guide.michelin.com/us/en/california/geyserville/restaurant/cyrus",
+      "address": "275 CA-128, Geyserville, CA 95441",
+      "cuisine": "Californian, Modern Cuisine",
+      "price": "$$$$",
+      "website": "https://www.cyrusrestaurant.com/",
+      "phone": "+1 707-723-5999",
+      "hours": {
+        "Mon": "Closed",
+        "Tue": "Closed",
+        "Wed": "Closed",
+        "Thu": "5–9 pm",
+        "Fri": "5–9 pm",
+        "Sat": "5–9 pm",
+        "Sun": "5–9 pm"
+      }
+    },
+    {
+      "name": "Troubadour",
+      "url": "https://guide.michelin.com/us/en/california/healdsburg/restaurant/troubadour",
+      "address": "381 Healdsburg Ave., Healdsburg, CA 95448",
+      "cuisine": "French, Californian",
+      "price": "$$$$",
+      "website": "https://www.troubadourhbg.com/",
+      "phone": "+1 707-756-3972",
+      "hours": {
+        "Mon": "Closed",
+        "Tue": "Closed",
+        "Wed": "Closed",
+        "Thu": "5:30–8:30 pm",
+        "Fri": "5:30–8:30 pm",
+        "Sat": "5:30–8:30 pm",
+        "Sun": "5:30–8:30 pm"
+      }
+    },
+    {
+      "name": "The Restaurant at Auberge du Soleil",
+      "url": "https://guide.michelin.com/us/en/california/rutherford/restaurant/auberge-du-soleil",
+      "address": "180 Rutherford Hill Rd., Rutherford, CA 94573",
+      "cuisine": "Californian",
+      "price": "$$$$",
+      "website": "https://auberge.com/auberge-du-soleil/dine/the-restaurant-at-auberge-du-soleil/",
+      "phone": "+1 707-967-3111",
+      "hours": {
+        "Mon": "11:30 am–2:15 pm & 5:30–9 pm",
+        "Tue": "11:30 am–2:15 pm & 5:30–9 pm",
+        "Wed": "11:30 am–2:15 pm & 5:30–9 pm",
+        "Thu": "11:30 am–2:15 pm & 5:30–9 pm",
+        "Fri": "11:30 am–2:15 pm & 5:30–9 pm",
+        "Sat": "11:30 am–2:15 pm & 5:30–9 pm",
+        "Sun": "11:30 am–2:15 pm & 5:30–9 pm"
+      }
+    },
+    {
+      "name": "Press",
+      "url": "https://guide.michelin.com/us/en/california/saint-helena/restaurant/press",
+      "address": "587 St. Helena St., Saint Helena, CA 94574",
+      "cuisine": "Modern Cuisine",
+      "price": "$$$$",
+      "website": "https://www.pressnapavalley.com/",
+      "phone": "+1 707-967-0550",
+      "hours": {
+        "Mon": "5–9 pm",
+        "Tue": "5–9 pm",
+        "Wed": "5–9 pm",
+        "Thu": "5–9 pm",
+        "Fri": "5–10 pm",
+        "Sat": "5–10 pm",
+        "Sun": ""
+      },
+      "note": "Sunday hours cut off in the page read; left blank. Page states the restaurant manages its own bookings."
+    },
+    {
+      "name": "Madcap",
+      "url": "https://guide.michelin.com/us/en/california/san-anselmo/restaurant/madcap",
+      "address": "198 Sir Francis Drake Blvd., San Anselmo, CA 94960",
+      "cuisine": "Contemporary, Asian Contemporary",
+      "price": "$$$$",
+      "website": "https://www.madcapmarin.com/",
+      "phone": "+1 415-453-9898",
+      "hours": {
+        "Mon": "Closed",
+        "Tue": "5:30–8:30 pm",
+        "Wed": "5:30–8:30 pm",
+        "Thu": "5:30–8:30 pm",
+        "Fri": "5:30–9 pm",
+        "Sat": "5:30–9 pm",
+        "Sun": "Closed"
+      }
+    },
+    {
+      "name": "Sun Moon Studio",
+      "url": "https://guide.michelin.com/us/en/california/oakland/restaurant/sun-moon-studio",
+      "address": "1940 Union St., Ste. 21, Oakland, CA 94607",
+      "cuisine": "Californian",
+      "price": "$$$$",
+      "website": "https://www.sunmoonstudio.com/",
+      "phone": "",
+      "hours": {
+        "Mon": "Closed",
+        "Tue": "Closed",
+        "Wed": "Closed",
+        "Thu": "5–9 pm",
+        "Fri": "5–9 pm",
+        "Sat": "5–9 pm",
+        "Sun": "5–8 pm"
+      }
+    },
+    {
+      "name": "Selby's",
+      "url": "https://guide.michelin.com/us/en/california/atherton/restaurant/selby-s",
+      "address": "3001 El Camino Real, Atherton, CA 94061",
+      "cuisine": "American, Classic Cuisine",
+      "price": "$$$$",
+      "website": "https://www.selbysrestaurant.com/",
+      "phone": "+1 650-546-7700",
+      "hours": {},
+      "note": "Schedule not shown in the page read; left blank."
+    },
+    {
+      "name": "Protégé",
+      "url": "https://guide.michelin.com/us/en/california/palo-alto/restaurant/protege",
+      "address": "250 California Ave., Palo Alto, CA 94306",
+      "cuisine": "Contemporary, Californian",
+      "price": "$$$$",
+      "website": "https://www.protegepaloalto.com/",
+      "phone": "+1 707-312-0931",
+      "hours": {},
+      "note": "Schedule not shown in the page read; left blank."
+    },
+    {
+      "name": "Wakuriya",
+      "url": "https://guide.michelin.com/us/en/california/san-mateo/restaurant/wakuriya",
+      "address": "115 De Anza Blvd., San Mateo, CA 94402",
+      "cuisine": "Japanese, Californian",
+      "price": "$$$$",
+      "website": "https://www.wakuriya.com/",
+      "phone": "+1 650-286-0410",
+      "hours": {
+        "Mon": "Closed",
+        "Tue": "Closed",
+        "Wed": "6:30–9:30 pm",
+        "Thu": "6:30–9:30 pm",
+        "Fri": "6:30–9:30 pm",
+        "Sat": "6–9 pm",
+        "Sun": "6–9 pm"
+      },
+      "note": "Page states the restaurant manages its own bookings."
+    },
+    {
+      "name": "Plumed Horse",
+      "url": "https://guide.michelin.com/us/en/california/saratoga/restaurant/plumed-horse",
+      "address": "14555 Big Basin Way, Saratoga, CA 95070",
+      "cuisine": "Contemporary, American Contemporary",
+      "price": "$$$$",
+      "website": "https://plumedhorse.com/",
+      "phone": "+1 408-867-4711",
+      "hours": {
+        "Mon": "Closed",
+        "Tue": "5–10 pm",
+        "Wed": "5–10 pm",
+        "Thu": "5–10 pm",
+        "Fri": "5–10 pm",
+        "Sat": "5–10 pm",
+        "Sun": ""
+      },
+      "note": "Sunday hours cut off in the page read; left blank. Page states the restaurant manages its own bookings."
+    },
+    {
+      "name": "7 Adams",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/7-adams",
+      "address": "1963 Sutter St., San Francisco, CA 94115",
+      "cuisine": "Californian, Contemporary",
+      "price": "$$$$",
+      "website": "https://www.7adamsrestaurant.com/",
+      "phone": "+1 415-655-9154",
+      "hours": {
+        "Mon": "5:30–9 pm",
+        "Tue": "5:30–9 pm",
+        "Wed": "5:30–9 pm",
+        "Thu": "5:30–9 pm",
+        "Fri": "5–10 pm",
+        "Sat": "5–10 pm",
+        "Sun": "5–9 pm"
+      }
+    },
+    {
+      "name": "Angler SF",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/angler-sf",
+      "address": "132 The Embarcadero, San Francisco, CA 94105",
+      "cuisine": "Contemporary, Seafood",
+      "price": "$$$$",
+      "website": "https://anglersf.com/",
+      "phone": "+1 415-872-9442",
+      "hours": {
+        "Mon": "5–9 pm",
+        "Tue": "11:30 am–2 pm & 5–9 pm",
+        "Wed": "11:30 am–2 pm & 5–9 pm",
+        "Thu": "11:30 am–2 pm & 5–9 pm",
+        "Fri": "11:30 am–2 pm & 5–9 pm",
+        "Sat": "11:30 am–2 pm & 5–9 pm",
+        "Sun": "5–9 pm"
+      }
+    },
+    {
+      "name": "Hilda and Jesse",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/hilda-and-jesse",
+      "address": "701 Union St., San Francisco, CA 94133",
+      "cuisine": "American, Contemporary",
+      "price": "$$$",
+      "website": "https://www.hildaandjessesf.com/",
+      "phone": "+1 415-872-7023",
+      "hours": {
+        "Mon": "5:30–9 pm",
+        "Tue": "Closed",
+        "Wed": "Closed",
+        "Thu": "5:30–9 pm",
+        "Fri": "5:30–9 pm",
+        "Sat": "10 am–2 pm",
+        "Sun": "10 am–2 pm"
+      }
+    },
+    {
+      "name": "Kin Khao",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/kin-khao",
+      "address": "55 Cyril Magnin St., San Francisco, CA 94102 (Parc 55 San Francisco, a Hilton Hotel)",
+      "cuisine": "Thai, Californian",
+      "price": "$$$",
+      "website": "https://www.kinkhao.com/",
+      "phone": "+1 415-362-7456",
+      "hours": {
+        "Mon": "11:30 am–2 pm & 5:30–9 pm",
+        "Tue": "11:30 am–2 pm & 5:30–9 pm",
+        "Wed": "11:30 am–2 pm & 5:30–9 pm",
+        "Thu": "11:30 am–2 pm & 5:30–9 pm",
+        "Fri": "11:30 am–2 pm & 5:30–10 pm",
+        "Sat": "11:30 am–2 pm & 5:30–10 pm",
+        "Sun": "11:30 am–2 pm & 5:30–9 pm"
+      }
+    },
+    {
+      "name": "Nari",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nari",
+      "address": "1625 Post St., San Francisco, CA 94115 (Hotel Kabuki, JDV by Hyatt)",
+      "cuisine": "Thai, Contemporary",
+      "price": "$$$",
+      "website": "https://www.narisf.com/",
+      "phone": "+1 415-868-6274",
+      "hours": {
+        "Mon": "5:30–9 pm",
+        "Tue": "5:30–9 pm",
+        "Wed": "5:30–9 pm",
+        "Thu": "5:30–9 pm",
+        "Fri": "5:30–9:30 pm",
+        "Sat": "5:30–9:30 pm",
+        "Sun": "5:30–9 pm"
+      }
+    },
+    {
+      "name": "Niku Steakhouse",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/niku-steakhouse",
+      "address": "61 Division St., San Francisco, CA 94103",
+      "cuisine": "Steakhouse",
+      "price": "$$$$",
+      "website": "https://www.nikusteakhouse.com/",
+      "phone": "+1 415-829-7817",
+      "hours": {
+        "Mon": "5–9 pm",
+        "Tue": "5–9 pm",
+        "Wed": "5–9 pm",
+        "Thu": "5–9 pm",
+        "Fri": "5–10 pm",
+        "Sat": "5–10 pm",
+        "Sun": "5–9 pm"
+      }
+    },
+    {
+      "name": "Nisei",
+      "url": "https://guide.michelin.com/us/en/california/san-francisco/restaurant/nisei",
+      "address": "2316 Polk St., San Francisco, CA 94109",
+      "cuisine": "Japanese, Contemporary",
+      "price": "$$$$",
+      "website": "https://www.restaurantnisei.com/",
+      "phone": "+1 415-827-6898",
+      "hours": {
+        "Mon": "Closed",
+        "Tue": "Closed",
+        "Wed": "5–9 pm",
+        "Thu": "5–9 pm",
+        "Fri": "5–9 pm",
+        "Sat": "5–9 pm",
+        "Sun": "5–9 pm"
+      }
+    }
+  ],
+  "unread_pending": [
+    "Sorrel",
+    "Ssal",
+    "State Bird Provisions",
+    "The Progress",
+    "Wolfsbane",
+    "San Ho Won",
+    "The Village Pub (Woodside)",
+    "Mister Jiu's (two URL guesses returned fetch errors)"
+  ]
+}
