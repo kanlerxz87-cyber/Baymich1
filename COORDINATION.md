@@ -128,3 +128,16 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Added 18 verified Instagram social links, each tied to a source pairing the official restaurant website with the handle; rendered in the Official social column of app.js and subpages.js.
 - Updated review-flag text in index.html and subpages.js to reflect 14 verified schedules and 18 verified social accounts.
 - All JS files pass `node --check`. Ready for local render test, commit, push, and PR-to-main merge for GitHub Pages publication.
+
+## Session `arena/929edd82-baymich1` (branch `arena/929edd82-baymich1`, base `a9bdf06`)
+
+**Branch rule:** work stays on its own Arena-managed branch; no branch switching or `session-*` branch creation beyond the Arena-assigned branch. This session owns the current branch.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Fix dashboard bugs + reconcile stale text | in progress | `arena/929edd82-baymich1` | `app.js`, `index.html`, `subpages.js` | `app.js` `socialText()` ignores `r.social` (18 verified Instagrams never render on landing); `index.html` says "No restaurant total" / "Not populated for any row" but 5 couple totals exist; hours count says 14, `data.js` has 13; flag total counts all 71 as missing social. |
+| T24 | Re-verify roster + expand 1-star detail reads from official Michelin pages | in progress | `arena/929edd82-baymich1` | `data.js`, `data/michelin_official_pages_2026-11-25.json` | Re-read official 2026 California roster; read official Michelin profile pages for 1-star entries lacking address/cuisine/price/website/phone/hours. Never infer; blank stays blank. |
+| T25 | QA + publish to GitHub Pages | unclaimed | `arena/929edd82-baymich1` | all site files | Render test, link check, PR to `main`, Pages build verify. |
+
+### Log — Session `arena/929edd82-baymich1`
+- L1 — Claimed T23–T25 on its Arena branch. Baseline reviewed line by line: 41 starred (7/7/27) + 30 Bib = 71 rows; 4 hotels; 5 clusters; 13 with hours; 5 with couple totals; 18 with social; 18 with website. Bugs found (T23): landing-page social column never renders verified links; stale "no totals" text in `index.html`; hours count 14 vs 13 actual; flag counter overcounts. No other session's files touched.
