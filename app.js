@@ -37,8 +37,15 @@
     }
     return `<span class="missing">Not verified</span><small>Official two-adult total not confirmed; Michelin price bands are not converted into a dollar total.</small>`;
   }
-  function socialText() {
-    return `<span class="missing">Not verified</span><small>No Instagram / TikTok / YouTube link confirmed from an official restaurant source.</small>`;
+  function socialText(r) {
+    if (!r || !r.social) {
+      return `<span class="missing">Not verified</span><small>No Instagram / TikTok / YouTube link confirmed from an official restaurant source.</small>`;
+    }
+    const links = [];
+    if (r.social.instagram) links.push(`<a href="${escapeHtml(r.social.instagram)}" target="_blank" rel="noopener noreferrer" class="small-link">Instagram ↗</a>`);
+    if (r.social.facebook) links.push(`<a href="${escapeHtml(r.social.facebook)}" target="_blank" rel="noopener noreferrer" class="small-link">Facebook ↗</a>`);
+    const src = r.socialSource ? `<br><small class="src-note">Source: ${escapeHtml(r.socialSource)}</small>` : '';
+    return `${links.join(" &middot; ")}${src}`;
   }
   function restaurantRow(r) {
     const status = r.type === "star" ? `${starCount(r)} ${starCount(r) === 1 ? "Star" : "Stars"}` : "Bib Gourmand &middot; no star";
@@ -48,7 +55,7 @@
       <td data-label="Area cluster">${escapeHtml(r.area)}</td>
       <td data-label="Days, hours & exceptions">${hoursText(r)}</td>
       <td data-label="Total for 2 adults">${priceText(r)}</td>
-      <td data-label="Official social">${socialText()}</td>
+      <td data-label="Official social">${socialText(r)}</td>
       <td data-label="Restaurant site">${r.website ? safeLink(r.website, "Official site &nbsp;&rarr;", "small-link") : `<span class="missing">Not verified</span>`}</td>
       <td data-label="Source">${safeLink(r.source, "MICHELIN &nbsp;&rarr;", "source-chip")}</td>
     </tr>`;
@@ -111,7 +118,7 @@
 
   const flags = {
     meal: d.restaurants.filter((r) => !r.couple).length,
-    social: d.restaurants.length,
+    social: d.restaurants.filter((r) => !r.social).length,
     schedule: d.restaurants.filter((r) => !r.hours).length,
     hotelNearby: d.hotels.length,
     hotelRate: d.hotels.length
