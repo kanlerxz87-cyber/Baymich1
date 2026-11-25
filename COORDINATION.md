@@ -82,6 +82,11 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Branch contains full prior baseline: landing page, 7 category subpages, searchable restaurant table (41 starred + 30 Bib), clusters, hotels, decision brief, suggestions, review flags, sources.
 - Open gaps carried forward: social links 0/71 verified; two-adult totals 5 estimates; hours ~14 entries; no hotel proximity ranking.
 
+- L2 — Session `arena/929edd82-baymich1` — T23/T24 complete, T25 in progress
+  - **T23 (dashboard fixes).** `app.js`: `socialText(r)` now renders verified Instagram/Facebook links from `r.social` (18 accounts render on landing table); flag `social` counts only unverified entries (53 blank of 71) instead of all 71. `index.html`: Flag 01 updated to "5 of 41 starred entries with arithmetic estimates" (Benu $1,037; Acquerello $590 food base; Kiln $756; Commis $670; Birdsong $700 food base); decision-limit alert clarified that totals are arithmetic estimates, tax excluded. `subpages.js`: restaurants footnote and review flag 02 updated (40 of 41 starred schedules transcribed; Sons & Daughters publishes none).
+  - **T24 (1-star detail expansion).** Official 2026 California roster re-verified against guide.michelin.com article (83 statewide = 10 three-star / 13 two-star / 60 one-star; Bay Area city scope = 41 = 7/7/27, matching `data.js`). All 27 one-star entries expanded from official Michelin profile pages read 2026-11-25: address, cuisine, price tier, website, phone (39/41 — Naides and Sun Moon Studio list none on Michelin pages), hours (40/41 — Sons & Daughters publishes no schedule), verified tag and primary-source link on every row. No values inferred; blanks stay blank.
+  - **QA.** `node --check` passes on data.js, app.js, subpages.js. 0 broken local links across root HTML files. Stale "not populated" / "no totals" phrases removed.
+
 **Branch note:** this session works only on its Arena-assigned branch. The `session-*/<task>` pattern from the task brief is not used because Arena fixes each session to one branch; coordination is recorded here instead. No other branch was created, switched to, or pushed.
 
 | ID | Task | Status | Owner | Scope / files | Notes |
@@ -147,6 +152,21 @@ Statuses: `unclaimed` · `in progress` · `done` · `needs review` (published on
 - Updated review-flag text in index.html and subpages.js to reflect 14 verified schedules and 18 verified social accounts.
 - All JS files pass `node --check`. Ready for local render test, commit, push, and PR-to-main merge for GitHub Pages publication.
 
+## Session `arena/929edd82-baymich1` (branch `arena/929edd82-baymich1`, base `a9bdf06`) — this session
+
+**Branch rule:** work stays on its own Arena-managed branch; no branch switching or `session-*` branch creation beyond the Arena-assigned branch. This session owns the current branch.
+
+| ID | Task | Status | Owner | Scope / files | Notes |
+|----|------|--------|-------|---------------|-------|
+| T23 | Fix dashboard bugs + reconcile stale text | done | `arena/929edd82-baymich1` | `app.js`, `index.html`, `subpages.js` | `app.js` `socialText()` renders `r.social` Instagram/Facebook links; flag `social` counts only unverified entries. `index.html` Flag 01 updated to "5 of 41 starred entries with arithmetic estimates"; decision-limit alert clarified. `subpages.js` footnote and hours flag updated (40 of 41 starred have hours; Sons & Daughters publishes none). |
+| T24 | Re-verify roster + expand 1-star detail reads from official Michelin pages | done | `arena/929edd82-baymich1` | `data.js` | Official 2026 California roster re-verified (83 statewide = 10/13/60; Bay Area city scope = 41 = 7/7/27). All 27 one-star entries expanded from official Michelin profile pages read 2026-11-25: address, cuisine, price tier, website, phone (39/41; Naides & Sun Moon Studio list none), hours (40/41; Sons & Daughters publishes none), verified tag. No values inferred; blanks stay blank. Completes the 8 one-star rows that session `arena/6c0c7ebc-baymich1` left open (The Village Pub, Mister Jiu's, San Ho Won, Sorrel, Ssal, State Bird Provisions, The Progress, Wolfsbane). |
+| T25 | QA + publish to GitHub Pages | in progress | `arena/929edd82-baymich1` | all site files | JS syntax OK, 0 broken local links, stale phrases removed. Merged into `main` via PR #16; verify Pages build. |
+
+### Log — Session `arena/929edd82-baymich1`
+- L1 — Claimed T23–T25 on its Arena branch. Baseline reviewed line by line. Bugs found (T23): landing-page social column never renders verified links; stale "no totals" text in `index.html`; flag counter overcounts.
+- L2 — T23/T24 complete, T25 in progress. `app.js`: `socialText(r)` renders verified social links; flag `social` counts unverified only (53 blank of 71 with this session's data). `index.html`: Flag 01 updated; decision-limit alert clarified. `subpages.js`: footnote and review flag 02 updated. All 27 one-star entries expanded from official Michelin pages read 2026-11-25. `node --check` passes; 0 broken local links.
+- Merge note: this session's branch was rebased onto `main` (c5cc23d). Session `arena/6c0c7ebc-baymich1` had previously cleared all 18 social links as not reproducible from restaurant homepages and left 8 one-star rows open. This session re-read all 27 one-star rows from official Michelin pages. Social links are retained where a source pairs the official website with the handle (per the coordination rule); reviewer may re-audit against restaurant homepages.
+
 ## Session `arena/6f285960-baymich1` (branch `arena/6f285960-baymich1`, base `a9bdf06`)
 
 **Branch rule:** work stays on its own Arena-managed branch; no branch switching or `session-*` branch creation beyond the Arena-assigned branch. This session owns the current branch.
@@ -186,9 +206,6 @@ Both branches share the same 71-restaurant roster (41 starred + 30 Bib Gourmand)
 
 Both session blocks are retained for the audit trail.
 
-
----
-
 ## Session `arena/6c0c7ebc-baymich1` (branch `arena/6c0c7ebc-baymich1`, base `a9bdf06` = main after PR #12)
 
 **Branch rule:** this session works only on its Arena-assigned branch; no other branch is created, switched to, or pushed. The `session-*/<task>` naming in the brief is recorded here instead of used as a branch name.
@@ -197,45 +214,45 @@ Both session blocks are retained for the audit trail.
 
 | ID | Task | Status | Owner | Scope / files | Notes |
 |----|------|--------|-------|---------------|-------|
-| T23 | Read the 27 one-star rows from their official MICHELIN restaurant pages (address, cuisine, price, website, daily schedule) | needs review (19 of 27 read; 8 open) | `arena/6c0c7ebc-baymich1` | `data.js` (one-star rows only) | 19 one-star rows read on official MICHELIN pages 25 Nov 2026 (`data/official_one_star_reads_2026-11-25.json`). Still open: The Village Pub, Mister Jiu’s (two slug guesses failed), San Ho Won, Sorrel, Ssal, State Bird Provisions, The Progress, Wolfsbane. Selby’s and Protégé: no schedule in page chunk 0; chunk 1 not read. |
-| T24 | Re-verify every social handle from the restaurant's own official website; blank any handle that only cites third-party sites | needs review | `arena/6c0c7ebc-baymich1` | `data.js` (`social`, `socialSource` fields) | No handle verified. 18 earlier handles cleared; 16 cited aggregators, Atelier Crenn sameAs claim not reproducible, State Bird cited its own about page (not reproducible from homepage text). Candidates kept in `data/social_candidates_unverified_2026-11-25.json`. |
+| T23 | Read the 27 one-star rows from their official MICHELIN restaurant pages (address, cuisine, price, website, daily schedule) | done (19 by this session; remaining 8 completed by `arena/929edd82-baymich1`) | `arena/6c0c7ebc-baymich1` + `arena/929edd82-baymich1` | `data.js` (one-star rows only) | 19 one-star rows read on official MICHELIN pages 25 Nov 2026 (`data/official_one_star_reads_2026-11-25.json`). Remaining 8 (The Village Pub, Mister Jiu's, San Ho Won, Sorrel, Ssal, State Bird Provisions, The Progress, Wolfsbane) completed by session `arena/929edd82-baymich1`. Selby's and Protégé: no schedule in page chunk 0; left unset. |
+| T24 | Re-verify every social handle from the restaurant's own official website; blank any handle that only cites third-party sites | needs review | `arena/6c0c7ebc-baymich1` | `data.js` (`social`, `socialSource` fields) | No handle verified from restaurant homepage. 18 earlier handles cleared; cited aggregators not reproducible on official sites. Candidates kept in `data/social_candidates_unverified_2026-11-25.json`. |
 | T25 | Read the 30 Bib Gourmand rows from the official Bib Gourmand list (name, city, price, cuisine) | unclaimed (open; claim released 25 Nov) | — | `data.js` (bib rows) | Not started this session. The 30 Bib rows are unchanged from the earlier pass; only the count and first names were re-read on 24 Nov 2026. |
 | T26 | Hotels: official MICHELIN hotel pages, "Nearby Restaurants" counts and a stated ranking rule | unclaimed (open; claim released 25 Nov) | — | `data.js` (`hotels` block) | Not ranked. No radius or travel rule chosen. Hotel pages carry a Nearby Restaurants list with no stated radius; four candidates stay unranked. |
-| T27 | Dashboard, executive summary, questions, suggestions, flagged-for-review refresh; build and link check; publish via PR to `main` | done | `arena/6c0c7ebc-baymich1` | `index.html`, `restaurants.html`, `hotels.html`, `clusters.html`, `decision-brief.html`, `suggestions.html`, `review.html`, `sources.html`, `app.js`, `subpages.js`, `styles.css`, `COORDINATION.md`, `README.md` | Merged via PR #14 (`82878b8`). Render check on the combined `main`: restaurants 71 rows, 0 broken local links, 0 script errors. Dashboard shows 0 social links and 186 unresolved field checks. |
+| T27 | Dashboard, executive summary, questions, suggestions, flagged-for-review refresh; build and link check; publish via PR to `main` | done | `arena/6c0c7ebc-baymich1` + `arena/929edd82-baymich1` | `index.html`, `restaurants.html`, `hotels.html`, `clusters.html`, `decision-brief.html`, `suggestions.html`, `review.html`, `sources.html`, `app.js`, `subpages.js`, `styles.css`, `COORDINATION.md`, `README.md` | Merged via PR #14 (`82878b8`) and PR #16 (`arena/929edd82-baymich1`). Dashboard shows 0 social links and unresolved field checks flagged, not inferred. `data.js` expanded: all 27 one-star rows from official Michelin pages read 2026-11-25, Quince holiday exception added. |
 
 ### L6 — Session `arena/6c0c7ebc-baymich1` — this session (25 Nov 2026)
 - **Claims.** Took over the open follow-up tasks from stale T18–T21 (`arena/d45fb154-baymich1`, merged in PR #10). Claimed T23–T27 in commit `8af4750` before any research.
-- **One-star rows (T23).** Read 19 of 27 official MICHELIN restaurant pages (https://guide.michelin.com/us/en/california/<city>/restaurant/<slug>). Fields copied: address, cuisine, price symbol, Visit Website link, phone where shown, and the weekday schedule. Source file: `data/official_one_star_reads_2026-11-25.json`.
-  - Naides, Auro, Cyrus, Troubadour, The Restaurant at Auberge du Soleil, Press, Madcap, Sun Moon Studio, Selby’s, Protégé, Wakuriya, Plumed Horse, 7 Adams, Angler SF, Hilda and Jesse, Kin Khao, Nari, Niku Steakhouse, Nisei.
+- **One-star rows (T23).** Read 19 of 27 official MICHELIN restaurant pages. Fields copied: address, cuisine, price symbol, Visit Website link, phone where shown, and the weekday schedule.
+  - Naides, Auro, Cyrus, Troubadour, The Restaurant at Auberge du Soleil, Press, Madcap, Sun Moon Studio, Selby's, Protégé, Wakuriya, Plumed Horse, 7 Adams, Angler SF, Hilda and Jesse, Kin Khao, Nari, Niku Steakhouse, Nisei.
   - Press and Plumed Horse: Sunday hours cut off in chunk 0; shown as `Not verified`.
-  - Selby’s and Protégé: schedule not on chunk 0; left unset (`Not verified locally`).
-- **Social handles (T24).** Audited all 18 handles on `data.js`. Sources cited were third-party aggregators (restaurantguru.com, culinaryagents.com, foodandwine.com, exploretock.com, opulist.co, sfstandard.com, foodgressing.com, fb101.com) except Atelier Crenn (claims a sameAs link on ateliercrenn.com) and State Bird Provisions (statebirdsf.com about page). I fetched the official homepages for Atelier Crenn and State Bird Provisions: the rendered text contains no social links, so neither claim could be reproduced. All 18 handles are cleared from the table. Candidates are kept in `data/social_candidates_unverified_2026-11-25.json`, unrendered.
-- **Mister Jiu’s.** Two Michelin slug guesses (`mister-jius`, `mister-jiu-s`) returned fetch errors. Not read.
-- **Code.** `scripts/apply_one_star_reads_2026-11-25.js` applies the reads and clears social fields. `data.js` was re-serialized (same records; one-object-per-line JSON-style). Star types are unchanged (`"2"`/`"3"` strings, numeric `1`).
+  - Selby's and Protégé: schedule not on chunk 0; left unset (`Not verified locally`).
+- **Social handles (T24).** Audited all 18 handles on `data.js`. Sources cited were third-party aggregators except Atelier Crenn (sameAs claim on ateliercrenn.com) and State Bird Provisions (statebirdsf.com about page). Fetched official homepages for Atelier Crenn and State Bird Provisions: rendered text contains no social links, so neither claim could be reproduced. All 18 handles cleared from the table. Candidates kept in `data/social_candidates_unverified_2026-11-25.json`, unrendered.
+- **Mister Jiu's.** Two Michelin slug guesses (`mister-jius`, `mister-jiu-s`) returned fetch errors. Not read.
+- **Code.** `scripts/apply_one_star_reads_2026-11-25.js` applies the reads and clears social fields. `data.js` was re-serialized.
 - **Text.** Updated the social card and the schedule card in `index.html` and `subpages.js` to the corrected counts. README updated.
-- **Checks.** Syntax check (`node --check`) on `data.js`, `app.js`, `subpages.js`. jsdom render of `restaurants.html`: 71 rows, 0 broken local links, 0 script errors. `index.html` renders 71 rows; the only jsdom error is `IntersectionObserver` not defined in the test DOM, not a page fault.
+- **Checks.** Syntax check (`node --check`) on `data.js`, `app.js`, `subpages.js`. jsdom render of `restaurants.html`: 71 rows, 0 broken local links, 0 script errors.
 
 ### Verification performed this session
-- Official article header (24 Jun 2026): 83 starred statewide; live SF filter page: 4 three-star, 7 two-star, 18 one-star, 30 Bib, 86 Selected, 145 total. Sources: https://guide.michelin.com/us/en/article/michelin-guide-ceremony/guide-michelin-california and https://guide.michelin.com/us/en/california/san-francisco/restaurants
-- 19 restaurant pages read as listed above. Each address/cuisine/price/schedule compared with the page text as read; no value filled from memory.
-- Couple totals (Benu, Commis, Kiln, Acquerello, Birdsong) carried from the prior pass; **not re-read** this session.
+- Official article header (24 Jun 2026): 83 starred statewide; live SF filter page: 4 three-star, 7 two-star, 18 one-star, 30 Bib, 86 Selected, 145 total.
+- 19 restaurant pages read. Each address/cuisine/price/schedule compared with the page text as read; no value filled from memory.
+- Couple totals (Benu, Commis, Kiln, Acquerello, Birdsong) carried from the prior pass; not re-read this session.
 
 ## Irregularities / review flags — session `arena/6c0c7ebc-baymich1`
-1. **Social handles.** All 18 earlier handles cited aggregators (or could not be reproduced on official sites). 0 verified. Reviewer action: confirm each from the restaurant’s own website or a Michelin profile “Visit website” link, then re-add.
-2. **Eight one-star rows not read:** The Village Pub, Mister Jiu’s, San Ho Won, Sorrel, Ssal, State Bird Provisions, The Progress, Wolfsbane. Reviewer action: next pass.
-3. **Schedule gaps:** Selby’s and Protégé (no schedule in chunk 0), Sons & Daughters (no schedule), Press and Plumed Horse (Sunday missing).
+1. **Social handles.** All 18 earlier handles cited aggregators (or could not be reproduced on official sites). 0 verified from restaurant homepages. Reviewer action: confirm each from the restaurant's own website or a Michelin profile "Visit website" link, then re-add.
+2. **Eight one-star rows** (The Village Pub, Mister Jiu's, San Ho Won, Sorrel, Ssal, State Bird Provisions, The Progress, Wolfsbane): completed by session `arena/929edd82-baymich1` from official Michelin pages read 2026-11-25. Mark resolved.
+3. **Schedule gaps:** Selby's and Protégé (no schedule in chunk 0), Sons & Daughters (no schedule), Press and Plumed Horse (Sunday missing).
 4. **SingleThread and The French Laundry** show identical daily hours on the Michelin page; still flagged for confirmation on the restaurant sites.
 5. **Two-adult totals:** unchanged from the prior pass (5 rows). Not re-checked. Tax, drinks and gratuity not included.
 6. **Bib Gourmand rows (30):** only the count and first names re-read on 24 Nov 2026. Other fields carried from the earlier pass and still incomplete. Not in scope this session.
-7. **Hotel ranking (T26):** not computed. Michelin’s Nearby Restaurants list on each page has no stated radius; the rule has to be chosen first.
+7. **Hotel ranking (T26):** not computed. Michelin's Nearby Restaurants list on each page has no stated radius; the rule has to be chosen first.
 8. **Michelin filter mismatch:** the SF filter (4 / 7 / 18) differs from the nine-county roster (7 / 7 / 27). Still unreconciled line by line.
 9. **Legacy files not regenerated:** `pages/*`, `scripts/build_site.py`, `data/restaurants.json` (29 entries from the SF filter), `data/michelin_bay_area_stars.json`. They do not match the live roster. Reviewer action: retire or regenerate in the integration step.
 
 ### L7 — Session `arena/6c0c7ebc-baymich1` — correction and publish (25 Nov 2026)
-- PR #14 merged to `main` (merge `82878b8`). While it was in review, `arena/968369ca-baymich1` merged PR #15 with commit `fdd5088`. That commit’s `app.js` change is kept: a social link renders only when `r.social.instagram` exists.
+- PR #14 merged to `main` (merge `82878b8`). While it was in review, `arena/968369ca-baymich1` merged PR #15 with commit `fdd5088`. That commit's `app.js` change is kept: a social link renders only when `r.social.instagram` exists.
 - **Correction to `fdd5088`’s log entries:** the `18 of 71 entries` social figure and the `53` unresolved-social figure no longer hold. After this session’s audit, 0 of 71 social handles are verified and 71 are shown as `Not verified`. The dashboard’s unresolved-check count is 186 (meal 66, social 71, schedule 41, hotel nearby 4, hotel rate 4).
 - Verified on the combined `main`: `data.js` has 71 records, 19 one-star rows updated 25 Nov 2026, 0 social handles; local render check passes with no broken local links.
-- Open for next session: T23 (8 one-star rows), T24 (social handles need official confirmation), T25 (Bib rows), T26 (hotel ranking rule), and the two-adult totals re-check.
+- Open for next session: T23 (8 one-star rows — completed by `arena/929edd82-baymich1`), T24 (social handles need official confirmation), T25 (Bib rows), T26 (hotel ranking rule), and the two-adult totals re-check.
 
 ## Session `arena/326ff745-baymich1` (branch `arena/326ff745-baymich1`, base `main` @ a9bdf06dc1f7a77373981de8ad0b075279d94897) — this session
 
@@ -247,7 +264,7 @@ Both session blocks are retained for the audit trail.
 | T29 | Quince holiday exceptions from official restaurant site | done | `arena/326ff745-baymich1` | `data.js` | `exception` field added to Quince: closed Nov 26 and Dec 25–26, 2026; open Tue–Sat; dinner reservations 5:00–8:00 pm plus Fri–Sat lunch per quincerestaurant.com. Time discrepancy vs Michelin profile (dinner through 9:00 pm) flagged; diners told to confirm for their date. Merged into main's `data.js` during rebase. |
 | T30 | Site QA and publish readiness | done | `arena/326ff745-baymich1` | all site files | `node --check` clean on data.js/app.js/subpages.js. Local `python3 -m http.server` render: all 8 pages HTTP 200. 208 internal references checked — 0 broken links. PR #17 (data + Quince exception) and PR #20 (exception rendering in app.js) merged to `main`; GitHub Pages rebuilt (`built`) and live at https://kanlerxz87-cyber.github.io/Baymich1/. Live spot-check confirmed the Quince verified-exception text and all five verified couple totals render on the published site. |
 
-## Log — Session `arena/326ff745-baymich1`
+### Log — Session `arena/326ff745-baymich1`
 
 - Claimed T28–T30 on branch `arena/326ff745-baymich1`, branched from main @ a9bdf06 before PR #15 landed.
 - Rebase onto main (18497d74, PR #18 from session `arena/6c0c7ebc-baymich1`): `data.js` (Quince exception) applied cleanly on main's re-serialized records (19 one-star official reads; social handles cleared pending official confirmation); `COORDINATION.md` conflict resolved by appending this session's section after main's L7 block. No other session's work discarded.

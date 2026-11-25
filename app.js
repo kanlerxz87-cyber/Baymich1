@@ -39,13 +39,16 @@
     return `<span class="missing">Not verified</span><small>Official two-adult total not confirmed; Michelin price bands are not converted into a dollar total.</small>`;
   }
   function socialText(r) {
-    const s = r.social || {};
+    if (!r || !r.social) {
+      return `<span class="missing">Not verified</span><small>No Instagram / TikTok / YouTube link confirmed from an official restaurant source.</small>`;
+    }
+    const s = r.social;
     const links = [];
-    if (s.instagram) links.push(`<a href="${escapeHtml(s.instagram)}" target="_blank" rel="noopener noreferrer" class="small-link">Instagram &#8594;</a>`);
-    if (s.facebook) links.push(`<a href="${escapeHtml(s.facebook)}" target="_blank" rel="noopener noreferrer" class="small-link">Facebook &#8594;</a>`);
+    if (s.instagram) links.push(`<a href="${escapeHtml(s.instagram)}" target="_blank" rel="noopener noreferrer" class="small-link">Instagram ↗</a>`);
+    if (s.facebook) links.push(`<a href="${escapeHtml(s.facebook)}" target="_blank" rel="noopener noreferrer" class="small-link">Facebook ↗</a>`);
     if (links.length) {
       const src = r.socialSource ? `<br><small class="src-note">Source: ${escapeHtml(r.socialSource)}</small>` : '';
-      return `${links.join(' &#8226; ')}${src}`;
+      return `${links.join(" &#8226; ")}${src}`;
     }
     return `<span class="missing">Not verified</span><small>No Instagram / TikTok / YouTube link confirmed from an official restaurant source.</small>`;
   }
